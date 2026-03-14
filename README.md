@@ -107,7 +107,7 @@ implementation 'com.nanohttpd:nanohttpd:2.1.1'
 | `com.sony.scalar.sysutil.*` | ScalarInput (buttons), ScalarProperties, Settings |
 | `com.sony.scalar.widget.*` | OptimizedImageView |
 
-See [Bible.md](Bible.md) for the complete API reference, or browse the [docs site](docs/index.html).
+See [Bible.md](Bible.md) for the complete API reference, or browse the [[docs site](docs/index.html)](https://up209d.github.io/open-memories-app-ai/).
 
 ## License
 
