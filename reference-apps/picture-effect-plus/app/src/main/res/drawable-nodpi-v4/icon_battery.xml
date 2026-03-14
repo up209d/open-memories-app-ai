@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="0x1080d4e"
+        android:maxLevel="0"/>
+    <item
+        android:drawable="@android:drawable/ic_popup_sync_3"
+        android:maxLevel="1"/>
+    <item
+        android:drawable="0x1080ca2"
+        android:maxLevel="2"/>
+    <item
+        android:drawable="@android:drawable/ic_bt_hearing_aid"
+        android:maxLevel="3"/>
+    <item
+        android:drawable="0x1080b0a"
+        android:maxLevel="4"/>
+</level-list>

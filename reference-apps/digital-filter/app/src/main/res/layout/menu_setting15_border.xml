@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:base="http://schemas.android.com/apk/res-auto" xmlns:ls="http://schemas.android.com/apk/res/com.sony.imaging.app.digitalfilter"
+    android:id="@+id/pb_parts_cmn_skarea"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.sony.imaging.app.digitalfilter.shooting.widget.GFGraphView
+        android:id="@+id/filter_histgram"
+        android:background="0x10810bf"
+        android:layout_width="132px"
+        android:layout_height="36px"
+        android:layout_marginLeft="500px"
+        android:layout_marginTop="281px"
+        base:color="#ffff8800"
+        base:hist_mode="filter"/>
+    <com.sony.imaging.app.digitalfilter.shooting.widget.GFGraphView
+        android:id="@+id/base_histgram"
+        android:background="0x10810bf"
+        android:layout_width="132px"
+        android:layout_height="36px"
+        android:layout_marginLeft="500px"
+        android:layout_marginTop="317px"
+        base:color="#ffffffff"
+        base:hist_mode="base"/>
+</RelativeLayout>

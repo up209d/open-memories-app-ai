@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:base="http://schemas.android.com/apk/res-auto">
+    <com.sony.imaging.app.base.shooting.widget.VisibilityChangeZoombarGroup
+        android:id="@+id/info_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="0px"
+        base:zoombargroup="info_second">
+        <com.sony.imaging.app.util.RelativeLayoutGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0px"
+            android:layout_marginTop="0px"
+            base:group="ZoomBar"/>
+    </com.sony.imaging.app.base.shooting.widget.VisibilityChangeZoombarGroup>
+</merge>

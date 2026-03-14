@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sony.imaging.app.base.shooting.widget.StillImageAspectratioIcon xmlns:android="http://schemas.android.com/apk/res/android" xmlns:base="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/still_image_aspectratio_icon"
+    android:layout_width="70px"
+    android:layout_height="60px"
+    base:ASP_3_2="@android:drawable/minitab_lt"
+    base:ASP_16_9="0x1080a52"
+    base:ASP_4_3="0x1080da3"
+    base:ASP_1_1="@android:drawable/popup_bottom_bright"/>

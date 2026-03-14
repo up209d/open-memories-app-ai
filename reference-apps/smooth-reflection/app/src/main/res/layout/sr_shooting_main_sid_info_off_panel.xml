@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/shooting_parts_sid_other"
+        layout="@layout/shooting_parts_sid_other_panel"/>
+    <include
+        android:id="@+id/shooting_parts_sid_error"
+        layout="@layout/shooting_parts_sid_error_panel"/>
+    <include
+        android:id="@+id/shooting_parts_sid_basic_info_for_info_off_hist_level"
+        layout="@layout/sr_shooting_parts_sid_basic_info_for_info_off_hist_level_panel"/>
+</RelativeLayout>

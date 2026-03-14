@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:base="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/backgroundImgVw"
+        android:layout_width="527px"
+        android:layout_height="240px"
+        android:layout_marginLeft="113px"
+        android:layout_marginTop="186px"/>
+    <include
+        android:id="@+id/colorgrading_menu_sub"
+        layout="@layout/common_menu_special"/>
+    <TextView
+        android:textColor="@color/RESID_FONTSTYLE_STD_NORMAL"
+        android:gravity="left"
+        android:id="@+id/screen_title"
+        android:layout_width="604px"
+        android:layout_height="46px"
+        android:layout_marginLeft="70px"
+        android:layout_marginTop="6px"
+        style="@style/RESID_FONTSIZE_BIG_L_EDGE_ON"/>
+    <ImageView
+        android:id="@+id/appicon"
+        android:layout_width="70px"
+        android:layout_height="55px"
+        android:layout_marginLeft="6px"
+        android:layout_marginTop="0px"
+        android:src="@drawable/p_16_dd_parts_lvg_appicon"/>
+    <TextView
+        android:textColor="@color/RESID_FONTSTYLE_CMN_WHITE_NO_SKIN"
+        android:gravity="top|left"
+        android:id="@+id/guide_view"
+        android:layout_width="484px"
+        android:layout_height="272px"
+        android:layout_marginLeft="132px"
+        android:layout_marginTop="136px"
+        style="@style/RESID_FONTSIZE_M_EDGE"/>
+</RelativeLayout>

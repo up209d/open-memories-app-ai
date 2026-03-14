@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:base="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.sony.imaging.app.base.menu.layout.SpecialScreenView
+        android:id="@+id/listview"
+        android:scrollbars="none"
+        android:fadingEdge="none"
+        android:layout_width="122px"
+        android:layout_height="330px"
+        android:layout_marginLeft="552px"
+        android:layout_marginTop="75px"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0px"
+        android:smoothScrollbar="true"/>
+    <com.sony.imaging.app.base.menu.layout.SpecialScreenArea
+        android:id="@+id/listviewarea"
+        android:layout_width="122px"
+        android:layout_height="330px"
+        android:layout_marginLeft="552px"
+        android:layout_marginTop="0px"/>
+</RelativeLayout>

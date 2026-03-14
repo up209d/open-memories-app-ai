@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/message_single_container"
+    android:background="@android:color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/block_touch_below_guide_layout"
+        android:background="@drawable/p_16_dd_parts_common_button_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ImageView
+        android:background="@drawable/p_16_dd_parts_mle_guide_base"
+        android:layout_width="540px"
+        android:layout_height="298px"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="91px"/>
+    <TextView
+        android:textColor="@color/RESID_FONTSTYLE_CMN_WHITE_NO_SKIN"
+        android:gravity="center"
+        android:id="@+id/message_single"
+        android:layout_width="484px"
+        android:layout_height="112px"
+        android:layout_marginLeft="28px"
+        android:layout_marginTop="187px"
+        style="@style/RESID_FONTSIZE_M"/>
+</RelativeLayout>

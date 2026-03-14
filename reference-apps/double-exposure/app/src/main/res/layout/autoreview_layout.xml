@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#0000"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.sony.scalar.widget.OptimizedImageView
+        android:id="@+id/opt_img_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</RelativeLayout>

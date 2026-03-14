@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/block_touch_below_guide_layout"
+        android:background="@drawable/p_16_dd_parts_common_button_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <com.sony.imaging.app.base.common.widget.SoftKeyArea
+        android:id="@+id/softkeyarea"
+        android:layout_width="120px"
+        android:layout_height="516px"
+        android:layout_marginLeft="520px"
+        android:layout_marginTop="-18px"
+        android:layout_marginBottom="-18px"/>
+    <RelativeLayout
+        android:id="@+id/msg_alert_0"
+        android:background="@drawable/p_16_dd_parts_mle_guide_base"
+        android:layout_width="540px"
+        android:layout_height="298px"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="91px">
+        <TextView
+            android:textColor="@color/RESID_FONTSTYLE_CMN_WHITE_NO_SKIN"
+            android:gravity="center"
+            android:id="@+id/msg_alert"
+            android:layout_width="484px"
+            android:layout_height="224px"
+            android:layout_marginLeft="28px"
+            android:layout_marginTop="34px"
+            style="@style/RESID_FONTSIZE_M"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:base="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/up_arrow"
+        android:background="@drawable/p_16_dd_parts_hgf_up_arrow_icon"
+        android:layout_width="34px"
+        android:layout_height="18px"
+        android:layout_marginLeft="303px"
+        android:layout_marginTop="276px"/>
+    <ImageView
+        android:id="@+id/down_arrow"
+        android:background="@drawable/p_16_dd_parts_hgf_down_arrow_icon"
+        android:layout_width="34px"
+        android:layout_height="18px"
+        android:layout_marginLeft="303px"
+        android:layout_marginTop="340px"/>
+    <TextView
+        android:textColor="@color/RESID_FONTSTYLE_STD_FOCUSED"
+        android:gravity="center"
+        android:id="@+id/shading_level"
+        android:layout_width="72px"
+        android:layout_height="46px"
+        android:layout_marginLeft="283px"
+        android:layout_marginTop="294px"
+        style="@style/RESID_FONTSIZE_BIG_L_EDGE_ON"/>
+    <com.sony.imaging.app.digitalfilter.shooting.widget.GFGraphView
+        android:id="@+id/filter_histgram"
+        android:background="0x10810bf"
+        android:layout_width="132px"
+        android:layout_height="36px"
+        android:layout_marginLeft="500px"
+        android:layout_marginTop="281px"
+        base:color="#ffff8800"
+        base:hist_mode="filter"/>
+    <com.sony.imaging.app.digitalfilter.shooting.widget.GFGraphView
+        android:id="@+id/base_histgram"
+        android:background="0x10810bf"
+        android:layout_width="132px"
+        android:layout_height="36px"
+        android:layout_marginLeft="500px"
+        android:layout_marginTop="317px"
+        base:color="#ffffffff"
+        base:hist_mode="base"/>
+</RelativeLayout>

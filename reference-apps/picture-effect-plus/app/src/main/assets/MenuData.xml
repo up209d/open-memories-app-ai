@@ -1,0 +1,3400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root
+    CautionID="0"
+    ConfigClass="NULL"
+    ExecType="CmnViewMenuDataIF::DItemExecTypeExplore"
+    GuideRes=""
+    IconRes=""
+    ItemId="Main1"
+    NextMenuID="ID_PAGEMENULAYOUT"
+    SelectedIconRes=""
+    TextRes="" >
+
+    <Global
+        CautionID="0"
+        ExecType="NO_ACTION"
+        IconRes="android:drawable/p_16_dd_parts_43_set_indicator_pageposition_1"
+        ItemId="Page1"
+        NextMenuID="ID_PAGEMENULAYOUT"
+        SelectedIconRes="android:drawable/p_16_dd_parts_43_set_indicator_pageposition_1_selected" >
+
+        <Layer1
+            CautionID="0"
+            ExecType="NULL"
+            GuideRes="android:string/STRID_MSG_EXIT_APPLICATION_GUIDE"
+            ItemId="ExitApplication"
+            TextRes="android:string/STRID_MSG_EXIT_APPLICATION" />
+
+        <Layer1
+            CautionID="0"
+            ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+            ExecType="NEXT_LAYOUT_WITHOUT_SET"
+            GuideRes="android:string/STRID_MSG_APPLICATION_TOP_GUIDE"
+            IconRes="drawable/s_16_dd_parts_bm_appsettings"
+            ItemId="ApplicationTop"
+            NextMenuID="ID_PICTUREEFFECTPLUSOPTIONMENULAYOUT"
+            OptionStr="NULL"
+            SelectedIconRes="drawable/s_16_dd_parts_bm_appsettings"
+            TextRes="android:string/STRID_MSG_APPLICATION_TOP"
+            Value="ApplicationTop" >
+
+            <Layer2
+                CautionID="0"
+                ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                ExecType="NEXT_LAYOUT"
+                GuideRes="string/STRID_FUNC_MLTPARTCLR_GUIDE"
+                IconRes="drawable/p_16_dd_parts_pe_menu_icon_normal_part_color_plus"
+                ItemId="part-color-plus"
+                NextMenuID="ID_PICTUREEFFECTPLUSEEDOUBLEICONSUBMENULAYOUT"
+                OptionStr="drawable/p_16_dd_parts_pe_image_part_color_plus"
+                SelectedIconRes="drawable/p_16_dd_parts_pe_menu_icon_normal_part_color_plus"
+                TextRes="string/STRID_FUNC_MLTPARTCLR"
+                Value="part-color-plus" >
+
+                <Layer3
+                    CautionID="0"
+                    ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                    ExecType="NEXT_LAYOUT_WITHOUT_SET"
+                    GuideRes="string/STRID_AMC_STR_04126"
+                    IconRes="drawable/p_16_dd_parts_multieffect_icon_pictureeffect_partr_normal"
+                    ItemId="part-color-ch0"
+                    NextMenuID="ID_PICTUREEFFECTPLUSEEDOUBLEICONSUBMENULAYOUT"
+                    OptionStr="pictureeffectsample_7"
+                    SelectedIconRes="drawable/p_16_dd_parts_multieffect_icon_pictureeffect_partr_normal"
+                    TextRes="string/STRID_FUNC_MLTPARTCLR"
+                    UpdateTag="PictureEffectPlusChange"
+                    Value="part-color-ch0" >
+
+                    <!-- Ch0 -->
+
+                    <Layer4
+                        CautionID="0"
+                        ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                        ExecType="SET_VALUE"
+                        GuideRes="string/STRID_FUNC_MLTPARTCLR_RED_GUIDE"
+                        IconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_partr_normal"
+                        ItemId="partredch0"
+                        Layer1IconRes="INVALID_RESID"
+                        NextMenuID="ID_PICTUREEFFECTPLUSSATUCOMPOPTIONMENULAYOUT"
+                        OptionStr="NULL"
+                        SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_partr_selected"
+                        TextRes="string/STRID_AMC_STR_07263"
+                        Value="partredch0" >
+                    </Layer4>
+
+                    <Layer4
+                        CautionID="0"
+                        ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                        ExecType="SET_VALUE"
+                        GuideRes="string/STRID_FUNC_MLTPARTCLR_GREEN_GUIDE"
+                        IconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_partg_normal"
+                        ItemId="partgreench0"
+                        Layer1IconRes="INVALID_RESID"
+                        NextMenuID="ID_PICTUREEFFECTPLUSSATUCOMPOPTIONMENULAYOUT"
+                        OptionStr="NULL"
+                        SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_partg_selected"
+                        TextRes="string/STRID_AMC_STR_07264"
+                        Value="partgreench0" >
+                    </Layer4>
+
+                    <Layer4
+                        CautionID="0"
+                        ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                        ExecType="SET_VALUE"
+                        GuideRes="string/STRID_FUNC_MLTPARTCLR_BLUE_GUIDE"
+                        IconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_partb_normal"
+                        ItemId="partbluech0"
+                        Layer1IconRes="INVALID_RESID"
+                        NextMenuID="ID_PICTUREEFFECTPLUSSATUCOMPOPTIONMENULAYOUT"
+                        OptionStr="NULL"
+                        SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_partb_selected"
+                        TextRes="string/STRID_AMC_STR_07265"
+                        Value="partbluech0" >
+                    </Layer4>
+
+                    <Layer4
+                        CautionID="0"
+                        ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                        ExecType="SET_VALUE"
+                        GuideRes="string/STRID_FUNC_MLTPARTCLR_YELLOW_GUIDE"
+                        IconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_party_normal"
+                        ItemId="partyellowch0"
+                        Layer1IconRes="INVALID_RESID"
+                        NextMenuID="ID_PICTUREEFFECTPLUSSATUCOMPOPTIONMENULAYOUT"
+                        OptionStr="NULL"
+                        SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_party_selected"
+                        TextRes="string/STRID_AMC_STR_07266"
+                        Value="partyellowch0" >
+                    </Layer4>
+
+                    <Layer4
+                        CautionID="0"
+                        ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                        ExecType="SET_VALUE"
+                        GuideRes="string/STRID_FUNC_MLTPARTCLR_CUSTOM_GUIDE"
+                        IconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_part_custom_normal"
+                        ItemId="part-color-custom-ch0"
+                        Layer1IconRes="INVALID_RESID"
+                        NextMenuID="ID_PICTUREEFFECTPLUSSATUCOMPOPTIONMENULAYOUT"
+                        OptionStr="string/STRID_FUNC_MLTPARTCLR_CSTMSET_TP_GUIDE"
+                        SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_part_custom_selected"
+                        TextRes="string/STRID_AMC_STR_01036"
+                        Value="part-color-custom-ch0" >
+                    </Layer4>
+
+                    <Layer4
+                        CautionID="0"
+                        ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                        ExecType="NEXT_LAYOUT"
+                        GuideRes="string/STRID_FUNC_MLTPARTCLR_CSTMSET_GUIDE"
+                        IconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_part_set_normal"
+                        ItemId="part-color-custom-set-ch0"
+                        Layer1IconRes="INVALID_RESID"
+                        NextMenuID="ID_PICTUREEFFECTPLUSCUSTOMCOLORCAPTURELAYOUT"
+                        OptionStr="string/STRID_FUNC_MLTPARTCLR_CSTMSET_TP_GUIDE"
+                        SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_part_set_selected"
+                        TextRes="string/STRID_AMC_STR_01037"
+                        Value="part-color-custom-set-ch0" >
+                    </Layer4>
+
+                    <Layer4
+                        CautionID="0"
+                        ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                        ExecType="SET_VALUE"
+                        GuideRes="string/STRID_AMC_STR_06310"
+                        IconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_part_noset_normal"
+                        ItemId="part-color-non-set-ch0"
+                        Layer1IconRes="INVALID_RESID"
+                        OptionStr="NULL"
+                        SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_part_noset_selected"
+                        TextRes="string/STRID_FUNC_MLTPARTCLR_NO_CLR"
+                        Value="part-color-non-set-ch0" >
+                    </Layer4>
+
+                    <!-- Ch0 -->
+
+                </Layer3>
+
+                <!-- ch1 -->
+
+                <Layer3
+                    CautionID="0"
+                    ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                    ExecType="NEXT_LAYOUT_WITHOUT_SET"
+                    GuideRes="string/STRID_AMC_STR_04126"
+                    IconRes="drawable/p_16_dd_parts_multieffect_icon_pictureeffect_part_noset_normal"
+                    ItemId="part-color-ch1"
+                    NextMenuID="ID_PICTUREEFFECTPLUSEEDOUBLEICONSUBMENULAYOUT"
+                    OptionStr="NULL"
+                    SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_part_noset_selected"
+                    TextRes="string/STRID_FUNC_MLTPARTCLR"
+                    UpdateTag="PictureEffectPlusChange"
+                    Value="part-color-ch1" >
+
+                    <Layer4
+                        CautionID="0"
+                        ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                        ExecType="SET_VALUE"
+                        GuideRes="string/STRID_FUNC_MLTPARTCLR_RED_GUIDE"
+                        IconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_partr_normal"
+                        ItemId="red"
+                        Layer1IconRes="INVALID_RESID"
+                        NextMenuID="ID_PICTUREEFFECTPLUSSATUCOMPOPTIONMENULAYOUT"
+                        OptionStr="NULL"
+                        SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_partr_selected"
+                        TextRes="string/STRID_AMC_STR_07263"
+                        Value="red" >
+                    </Layer4>
+
+                    <Layer4
+                        CautionID="0"
+                        ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                        ExecType="SET_VALUE"
+                        GuideRes="string/STRID_FUNC_MLTPARTCLR_GREEN_GUIDE"
+                        IconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_partg_normal"
+                        ItemId="partgreen"
+                        Layer1IconRes="INVALID_RESID"
+                        NextMenuID="ID_PICTUREEFFECTPLUSSATUCOMPOPTIONMENULAYOUT"
+                        OptionStr="NULL"
+                        SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_partg_selected"
+                        TextRes="string/STRID_AMC_STR_07264"
+                        Value="partgreen" >
+                    </Layer4>
+
+                    <Layer4
+                        CautionID="0"
+                        ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                        ExecType="SET_VALUE"
+                        GuideRes="string/STRID_FUNC_MLTPARTCLR_BLUE_GUIDE"
+                        IconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_partb_normal"
+                        ItemId="partblue"
+                        Layer1IconRes="INVALID_RESID"
+                        NextMenuID="ID_PICTUREEFFECTPLUSSATUCOMPOPTIONMENULAYOUT"
+                        OptionStr="NULL"
+                        SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_partb_selected"
+                        TextRes="string/STRID_AMC_STR_07265"
+                        Value="partblue" >
+                    </Layer4>
+
+                    <Layer4
+                        CautionID="0"
+                        ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                        ExecType="SET_VALUE"
+                        GuideRes="string/STRID_FUNC_MLTPARTCLR_YELLOW_GUIDE"
+                        IconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_party_normal"
+                        ItemId="yellow"
+                        Layer1IconRes="INVALID_RESID"
+                        NextMenuID="ID_PICTUREEFFECTPLUSSATUCOMPOPTIONMENULAYOUT"
+                        OptionStr="NULL"
+                        SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_party_selected"
+                        TextRes="string/STRID_AMC_STR_07266"
+                        Value="yellow" >
+                    </Layer4>
+
+                    <Layer4
+                        CautionID="0"
+                        ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                        ExecType="SET_VALUE"
+                        GuideRes="string/STRID_FUNC_MLTPARTCLR_CUSTOM_GUIDE"
+                        IconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_part_custom_normal"
+                        ItemId="part-color-custom"
+                        Layer1IconRes="INVALID_RESID"
+                        NextMenuID="ID_PICTUREEFFECTPLUSSATUCOMPOPTIONMENULAYOUT"
+                        OptionStr="string/STRID_FUNC_MLTPARTCLR_CSTMSET_TP_GUIDE"
+                        SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_part_custom_selected"
+                        TextRes="string/STRID_AMC_STR_01036"
+                        Value="part-color-custom" >
+                    </Layer4>
+
+                    <Layer4
+                        CautionID="0"
+                        ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                        ExecType="NEXT_LAYOUT"
+                        GuideRes="string/STRID_FUNC_MLTPARTCLR_CSTMSET_GUIDE"
+                        IconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_part_set_normal"
+                        ItemId="part-color-custom-set"
+                        Layer1IconRes="INVALID_RESID"
+                        NextMenuID="ID_PICTUREEFFECTPLUSCUSTOMCOLORCAPTURELAYOUT"
+                        OptionStr="string/STRID_FUNC_MLTPARTCLR_CSTMSET_TP_GUIDE"
+                        SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_part_set_selected"
+                        TextRes="string/STRID_AMC_STR_01037"
+                        Value="part-color-custom-set" >
+                    </Layer4>
+
+                    <Layer4
+                        CautionID="0"
+                        ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                        ExecType="SET_VALUE"
+                        GuideRes="string/STRID_AMC_STR_06310"
+                        IconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_part_noset_normal"
+                        ItemId="part-color-non-set"
+                        Layer1IconRes="INVALID_RESID"
+                        OptionStr="NULL"
+                        SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_part_noset_selected"
+                        TextRes="string/STRID_FUNC_MLTPARTCLR_NO_CLR"
+                        Value="part-color-non-set" >
+                    </Layer4>
+                </Layer3>
+                <!-- ch1 -->
+
+            </Layer2>
+
+            <Layer2
+                CautionID="0"
+                ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                ExecType="SET_VALUE"
+                GuideRes="string/STRID_AMC_STR_04130"
+                IconRes="drawable/p_16_dd_parts_pe_menu_icon_normal_high_contrast_mono"
+                ItemId="rough-mono"
+                NextMenuID="ID_PICTUREEFFECTPLUSOPTIONMENULAYOUTSUB"
+                OptionStr="drawable/p_16_dd_parts_pe_image_high_contrast_mono"
+                SelectedIconRes="drawable/p_16_dd_parts_pe_menu_icon_normal_high_contrast_mono"
+                TextRes="string/STRID_AMC_STR_04014"
+                Value="rough-mono" >
+            </Layer2>
+
+            <Layer2
+                CautionID="0"
+                ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                ExecType="NEXT_LAYOUT"
+                GuideRes="string/STRID_FUNC_SOFTFOCUS_GUIDE"
+                IconRes="drawable/p_16_dd_parts_pe_menu_icon_normal_soft_focus"
+                ItemId="soft-focus"
+                NextMenuID="ID_VERTICALSCROLLMENULAYOUT"
+                SelectedIconRes="drawable/p_16_dd_parts_pe_menu_icon_normal_soft_focus"
+                TextRes="string/STRID_AMC_STR_06824"
+                Value="soft-focus" >
+
+                <Layer3
+                    CautionID="0"
+                    ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                    ExecType="SET_VALUE"
+                    GuideRes="string/STRID_FUNC_EFFECTMASTER_EFFECT_HIGH_GUIDE"
+                    IconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_sf_3_normal"
+                    ItemId="soft-focus-3"
+                    Layer1IconRes="INVALID_RESID"
+                    SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_sf_3_selected"
+                    TextRes="string/STRID_AMC_STR_06050"
+                    Value="soft-focus-3" >
+                </Layer3>
+
+                <Layer3
+                    CautionID="0"
+                    ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                    ExecType="SET_VALUE"
+                    GuideRes="string/STRID_FUNC_EFFECTMASTER_EFFECT_MID_GUIDE"
+                    IconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_sf_2_normal"
+                    ItemId="soft-focus-2"
+                    Layer1IconRes="INVALID_RESID"
+                    SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_sf_2_selected"
+                    TextRes="string/STRID_AMC_STR_06049"
+                    Value="soft-focus-2" >
+                </Layer3>
+
+                <Layer3
+                    CautionID="0"
+                    ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                    ExecType="SET_VALUE"
+                    GuideRes="string/STRID_FUNC_EFFECTMASTER_EFFECT_LOW_GUIDE"
+                    IconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_sf_1_normal"
+                    ItemId="soft-focus-1"
+                    SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_sf_1_selected"
+                    TextRes="string/STRID_AMC_STR_06048"
+                    Value="soft-focus-1" >
+                </Layer3>
+            </Layer2>
+
+            <Layer2
+                CautionID="0"
+                ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                ExecType="NEXT_LAYOUT"
+                GuideRes="string/STRID_FUNC_HDRPAINT_GUIDE"
+                IconRes="drawable/p_16_dd_parts_pe_menu_icon_normal_hdr"
+                ItemId="hdr-art"
+                NextMenuID="ID_VERTICALSCROLLMENULAYOUT"
+                OptionStr="drawable/p_16_dd_parts_pe_image_hdr"
+                SelectedIconRes="drawable/p_16_dd_parts_pe_menu_icon_normal_hdr"
+                TextRes="string/STRID_AMC_STR_06825"
+                Value="hdr-art" >
+
+                <Layer3
+                    CautionID="0"
+                    ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                    ExecType="SET_VALUE"
+                    GuideRes="string/STRID_FUNC_EFFECTMASTER_EFFECT_HIGH_GUIDE"
+                    IconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_hdrp_3_normal"
+                    ItemId="hdr-art-3"
+                    OptionStr="NULL"
+                    SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_hdrp_3_selected"
+                    TextRes="string/STRID_AMC_STR_06122"
+                    Value="hdr-art-3" >
+                </Layer3>
+
+                <Layer3
+                    CautionID="0"
+                    ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                    ExecType="SET_VALUE"
+                    GuideRes="string/STRID_FUNC_EFFECTMASTER_EFFECT_MID_GUIDE"
+                    IconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_hdrp_2_normal"
+                    ItemId="hdr-art-2"
+                    OptionStr="NULL"
+                    SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_hdrp_2_selected"
+                    TextRes="string/STRID_AMC_STR_06052"
+                    Value="hdr-art-2" >
+                </Layer3>
+
+                <Layer3
+                    CautionID="0"
+                    ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                    ExecType="SET_VALUE"
+                    GuideRes="string/STRID_FUNC_EFFECTMASTER_EFFECT_LOW_GUIDE"
+                    IconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_hdrp_1_normal"
+                    ItemId="hdr-art-1"
+                    OptionStr="NULL"
+                    SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_hdrp_1_selected"
+                    TextRes="string/STRID_AMC_STR_06051"
+                    Value="hdr-art-1" >
+                </Layer3>
+            </Layer2>
+
+            <Layer2
+                CautionID="0"
+                ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                ExecType="SET_VALUE"
+                GuideRes="string/STRID_AMC_STR_06329"
+                IconRes="drawable/p_16_dd_parts_pe_menu_icon_normal_rich_tone_mono"
+                ItemId="richtone-mono"
+                NextMenuID="ID_PICTUREEFFECTPLUSOPTIONMENULAYOUTSUB"
+                OptionStr="drawable/p_16_dd_parts_pe_image_rich_tone_mono"
+                SelectedIconRes="drawable/p_16_dd_parts_pe_menu_icon_normal_rich_tone_mono"
+                TextRes="string/STRID_AMC_STR_06123"
+                Value="richtone-mono" >
+            </Layer2>
+
+            <Layer2
+                CautionID="0"
+                ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                ExecType="NEXT_LAYOUT"
+                GuideRes="string/STRID_FUNC_MINIATPLUS_GUIDE"
+                IconRes="drawable/p_16_dd_parts_pe_menu_icon_normal_miniature_plus"
+                ItemId="miniature-plus"
+                NextMenuID="ID_PICTUREEFFECTPLUSEEDOUBLEICONSUBMENULAYOUT"
+                OptionStr="drawable/p_16_dd_parts_pe_image_miniature_plus"
+                SelectedIconRes="drawable/p_16_dd_parts_pe_menu_icon_normal_miniature_plus"
+                TextRes="string/STRID_FUNC_MINIATPLUS"
+                Value="miniature-plus" >
+
+                <!-- 3rd layer -->
+
+                <Layer3
+                    CautionID="0"
+                    ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                    ExecType="NEXT_LAYOUT_WITHOUT_SET"
+                    GuideRes="string/STRID_AMC_STR_06322"
+                    IconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_mini_auto_normal"
+                    ItemId="miniature-area"
+                    Layer1IconRes="INVALID_RESID"
+                    NextMenuID="ID_PICTUREEFFECTPLUSEEDOUBLEICONSUBMENULAYOUT"
+                    OptionStr="pictureeffectsample_11"
+                    SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_mini_auto_selected"
+                    TextRes="string/STRID_FUNC_MINIATPLUS"
+                    UpdateTag="PictureEffectPlusChange"
+                    Value="miniature-area" >
+
+                    <Layer4
+                        CautionID="0"
+                        ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                        ExecType="SET_VALUE"
+                        GuideRes="string/STRID_FUNC_MINIATPLUS_AREA_AUTO_GUIDE"
+                        IconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_mini_auto_normal"
+                        ItemId="auto"
+                        Layer1IconRes="INVALID_RESID"
+                        OptionStr="pictureeffectsample_11"
+                        SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_mini_auto_selected"
+                        TextRes="string/STRID_AMC_STR_06126"
+                        Value="auto" >
+                    </Layer4>
+
+                    <Layer4
+                        CautionID="0"
+                        ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                        ExecType="SET_VALUE"
+                        GuideRes="string/STRID_FUNC_MINIATPLUS_AREA_TOP_GUIDE"
+                        IconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_mini_h1_normal"
+                        ItemId="upper"
+                        Layer1IconRes="INVALID_RESID"
+                        OptionStr="NULL"
+                        SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_mini_h1_selected"
+                        TextRes="string/STRID_AMC_STR_06127"
+                        Value="upper" >
+                    </Layer4>
+
+                    <Layer4
+                        CautionID="0"
+                        ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                        ExecType="SET_VALUE"
+                        GuideRes="string/STRID_FUNC_MINIATPLUS_AREA_HORIZONTAL_CENTER_GUIDE"
+                        IconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_mini_h2_normal"
+                        ItemId="hcenter"
+                        Layer1IconRes="INVALID_RESID"
+                        OptionStr="NULL"
+                        SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_mini_h2_selected"
+                        TextRes="string/STRID_AMC_STR_06128"
+                        Value="hcenter" >
+                    </Layer4>
+
+                    <Layer4
+                        CautionID="0"
+                        ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                        ExecType="SET_VALUE"
+                        GuideRes="string/STRID_FUNC_MINIATPLUS_AREA_BOTTOM_GUIDE"
+                        IconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_mini_h3_normal"
+                        ItemId="lower"
+                        Layer1IconRes="INVALID_RESID"
+                        OptionStr="NULL"
+                        SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_mini_h3_selected"
+                        TextRes="string/STRID_AMC_STR_06129"
+                        Value="lower" >
+                    </Layer4>
+
+                    <Layer4
+                        CautionID="0"
+                        ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                        ExecType="SET_VALUE"
+                        GuideRes="string/STRID_FUNC_MINIATPLUS_AREA_RIGHT_GUIDE"
+                        IconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_mini_v1_normal"
+                        ItemId="right"
+                        Layer1IconRes="INVALID_RESID"
+                        OptionStr="NULL"
+                        SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_mini_v1_selected"
+                        TextRes="string/STRID_AMC_STR_06130"
+                        Value="right" >
+                    </Layer4>
+
+                    <Layer4
+                        CautionID="0"
+                        ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                        ExecType="SET_VALUE"
+                        GuideRes="string/STRID_FUNC_MINIATPLUS_AREA_VERTICAL_CENTER_GUIDE"
+                        IconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_mini_v2_normal"
+                        ItemId="vcenter"
+                        Layer1IconRes="INVALID_RESID"
+                        OptionStr="NULL"
+                        SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_mini_v2_selected"
+                        TextRes="string/STRID_AMC_STR_06131"
+                        Value="vcenter" >
+                    </Layer4>
+
+                    <Layer4
+                        CautionID="0"
+                        ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                        ExecType="SET_VALUE"
+                        GuideRes="string/STRID_FUNC_MINIATPLUS_AREA_LEFT_GUIDE"
+                        IconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_mini_v3_normal"
+                        ItemId="left"
+                        Layer1IconRes="INVALID_RESID"
+                        OptionStr="NULL"
+                        SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_mini_v3_selected"
+                        TextRes="string/STRID_AMC_STR_06132"
+                        Value="left" >
+                    </Layer4>
+                </Layer3>
+
+                <Layer3
+                    CautionID="0"
+                    ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                    ExecType="NEXT_LAYOUT_WITHOUT_SET"
+                    GuideRes="string/STRID_AMC_STR_06322"
+                    IconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_mini_default_normal"
+                    ItemId="miniature-effect"
+                    Layer1IconRes="INVALID_RESID"
+                    NextMenuID="ID_PICTUREEFFECTPLUSEEDOUBLEICONSUBMENULAYOUT"
+                    OptionStr="pictureeffectsample_11"
+                    SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_mini_default_selected"
+                    TextRes="string/STRID_FUNC_MINIATPLUS"
+                    UpdateTag="PictureEffectPlusChange"
+                    Value="miniature-effect" >
+
+                    <Layer4
+                        CautionID="0"
+                        ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                        ExecType="SET_VALUE"
+                        GuideRes="string/STRID_AMC_STR_06310"
+                        IconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_mini_default_normal"
+                        ItemId="comb-off"
+                        Layer1IconRes="INVALID_RESID"
+                        OptionStr="NULL"
+                        SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_mini_default_selected"
+                        TextRes="string/STRID_FUNC_MINIATPLUS_ADD_NO_EFFECT"
+                        Value="comb-off" >
+                    </Layer4>
+
+                    <Layer4
+                        CautionID="0"
+                        ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                        ExecType="SET_VALUE"
+                        GuideRes="string/STRID_AMC_STR_04124"
+                        IconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_rtro_normal"
+                        ItemId="min_retro"
+                        Layer1IconRes="INVALID_RESID"
+                        OptionStr="NULL"
+                        SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_rtro_selected"
+                        TextRes="string/STRID_FUNC_MINIATPLUS_ADD_RTRO"
+                        Value="min_retro" >
+                    </Layer4>
+
+                    <Layer4
+                        CautionID="0"
+                        ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                        ExecType="SET_VALUE"
+                        GuideRes="string/STRID_FUNC_TOYCAMPLUS_TONE_NORM_GUIDE"
+                        IconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_toy_normal"
+                        ItemId="normal"
+                        Layer1IconRes="INVALID_RESID"
+                        OptionStr="NULL"
+                        SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_toy_selected"
+                        TextRes="string/STRID_FUNC_MINIATPLUS_ADD_TOYCAM_NORM"
+                        Value="normal" >
+                    </Layer4>
+
+                    <Layer4
+                        CautionID="0"
+                        ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                        ExecType="SET_VALUE"
+                        GuideRes="string/STRID_FUNC_TOYCAMPLUS_TONE_GUIDE_COOL"
+                        IconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_toy_cool_normal"
+                        ItemId="cool"
+                        Layer1IconRes="INVALID_RESID"
+                        OptionStr="NULL"
+                        SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_toy_cool_selected"
+                        TextRes="string/STRID_FUNC_MINIATPLUS_ADD_TOYCAM_COOL"
+                        Value="cool" >
+                    </Layer4>
+
+                    <Layer4
+                        CautionID="ViewBootElementInvalid"
+                        ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                        ExecType="SET_VALUE"
+                        GuideRes="string/STRID_FUNC_TOYCAMPLUS_TONE_GUIDE_WRM"
+                        IconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_toy_warm_normal"
+                        ItemId="warm"
+                        Layer1IconRes="INVALID_RESID"
+                        OptionStr="view/PICTURE_EFFECT"
+                        SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_toy_warm_selected"
+                        TextRes="string/STRID_FUNC_MINIATPLUS_ADD_TOYCAM_WRM"
+                        Value="warm" >
+                    </Layer4>
+
+                    <Layer4
+                        CautionID="0"
+                        ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                        ExecType="SET_VALUE"
+                        GuideRes="string/STRID_FUNC_TOYCAMPLUS_TONE_GUIDE_GRN"
+                        IconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_toy_g_normal"
+                        ItemId="green"
+                        Layer1IconRes="INVALID_RESID"
+                        OptionStr="NULL"
+                        SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_toy_g_selected"
+                        TextRes="string/STRID_FUNC_MINIATPLUS_ADD_TOY_CAMERA_GRN"
+                        Value="green" >
+                    </Layer4>
+
+                    <Layer4
+                        CautionID="0"
+                        ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                        ExecType="SET_VALUE"
+                        GuideRes="string/STRID_FUNC_TOYCAMPLUS_TONE_GUIDE_MGNT"
+                        IconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_toy_m_normal"
+                        ItemId="magenta"
+                        Layer1IconRes="INVALID_RESID"
+                        OptionStr="NULL"
+                        SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_toy_m_selected"
+                        TextRes="string/STRID_FUNC_MINIATPLUS_ADD_TOY_CAMERA_MGNT"
+                        Value="magenta" >
+                    </Layer4>
+                </Layer3>
+
+                <!-- 3rd layer -->
+
+            </Layer2>
+
+            <Layer2
+                CautionID="0"
+                ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                ExecType="SET_VALUE"
+                GuideRes="string/STRID_FUNC_WATERCLR_GUIDE"
+                IconRes="drawable/p_16_dd_parts_pe_menu_icon_normal_watercolor"
+                ItemId="watercolor"
+                NextMenuID="ID_PICTUREEFFECTPLUSOPTIONMENULAYOUTSUB"
+                OptionStr="drawable/p_16_dd_parts_pe_image_watercolor"
+                SelectedIconRes="drawable/p_16_dd_parts_pe_menu_icon_normal_watercolor"
+                TextRes="string/STRID_MODE_SCN_WATERCOLOR"
+                Value="watercolor" >
+            </Layer2>
+
+            <Layer2
+                CautionID="0"
+                ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                ExecType="NEXT_LAYOUT"
+                GuideRes="string/STRID_FUNC_ILLUSTRATION_GUIDE"
+                IconRes="drawable/p_16_dd_parts_pe_menu_icon_normal_illustration"
+                ItemId="illust"
+                NextMenuID="ID_VERTICALSCROLLMENULAYOUT"
+                OptionStr="drawable/p_16_dd_parts_pe_image_illustration"
+                SelectedIconRes="drawable/p_16_dd_parts_pe_menu_icon_normal_illustration"
+                TextRes="string/STRID_MODE_SCN_ILLUSTRATION"
+                Value="illust" >
+
+                <Layer3
+                    CautionID="0"
+                    ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                    ExecType="SET_VALUE"
+                    GuideRes="string/STRID_FUNC_EFFECTMASTER_EFFECT_HIGH_GUIDE"
+                    IconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_illust_high_normal"
+                    ItemId="illust-3"
+                    Layer1IconRes="INVALID_RESID"
+                    OptionStr="NULL"
+                    SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_illust_high_selected"
+                    TextRes="string/STRID_FUNC_ILLUSTRATION_HIGH"
+                    Value="illust-3" >
+                </Layer3>
+
+                <Layer3
+                    CautionID="0"
+                    ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                    ExecType="SET_VALUE"
+                    GuideRes="string/STRID_FUNC_EFFECTMASTER_EFFECT_MID_GUIDE"
+                    IconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_illust_mid_normal"
+                    ItemId="illust-2"
+                    Layer1IconRes="INVALID_RESID"
+                    OptionStr="NULL"
+                    SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_illust_mid_selected"
+                    TextRes="string/STRID_FUNC_ILLUSTRATION_MID"
+                    Value="illust-2" >
+                </Layer3>
+
+                <Layer3
+                    AndroidResource="FALSE"
+                    CautionID="0"
+                    ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                    ExecType="SET_VALUE"
+                    GuideRes="string/STRID_FUNC_EFFECTMASTER_EFFECT_LOW_GUIDE"
+                    IconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_illust_low_normal"
+                    ItemId="illust-1"
+                    Layer1IconRes="INVALID_RESID"
+                    OptionStr="NULL"
+                    SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_illust_low_selected"
+                    TextRes="string/STRID_FUNC_ILLUSTRATION_LOW"
+                    Value="illust-1" >
+                </Layer3>
+            </Layer2>
+
+            <Layer2
+                CautionID="0"
+                ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                ExecType="NEXT_LAYOUT"
+                GuideRes="string/STRID_FUNC_TOYCAMPLUS_GUIDE"
+                IconRes="drawable/p_16_dd_parts_pe_menu_icon_normal_toycamera_plus"
+                ItemId="toy-camera-plus"
+                NextMenuID="ID_PICTUREEFFECTPLUSEEDOUBLEICONSUBMENULAYOUT"
+                OptionStr="drawable/p_16_dd_parts_pe_image_toycamera_plus"
+                SelectedIconRes="drawable/p_16_dd_parts_pe_menu_icon_normal_toycamera_plus"
+                TextRes="string/STRID_FUNC_TOYCAMPLUS"
+                Value="toy-camera-plus" >
+
+                <!-- Layer 3 & 4 -->
+
+                <Layer3
+                    CautionID="0"
+                    ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                    ExecType="NEXT_LAYOUT_WITHOUT_SET"
+                    GuideRes="string/STRID_AMC_STR_06311"
+                    IconRes="drawable/p_16_dd_parts_multieffect_icon_pictureeffect_toy_normal"
+                    ItemId="toy-camera-color"
+                    Layer1IconRes="INVALID_RESID"
+                    NextMenuID="ID_PICTUREEFFECTPLUSEEDOUBLEICONSUBMENULAYOUT"
+                    OptionStr="NULL"
+                    SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_toy_selected"
+                    TextRes="string/STRID_FUNC_TOYCAMPLUS"
+                    UpdateTag="PictureEffectPlusChange"
+                    Value="toy-camera-color" >
+
+                    <Layer4
+                        CautionID="0"
+                        ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                        ExecType="SET_VALUE"
+                        GuideRes="string/STRID_FUNC_TOYCAMPLUS_TONE_NORM_GUIDE"
+                        IconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_toy_normal"
+                        ItemId="toy-normal"
+                        Layer1IconRes="INVALID_RESID"
+                        OptionStr="NULL"
+                        SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_toy_selected"
+                        TextRes="string/STRID_FUNC_TOYCAMPLUS_TONE_NORM"
+                        Value="toy-normal" >
+                    </Layer4>
+
+                    <Layer4
+                        CautionID="0"
+                        ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                        ExecType="SET_VALUE"
+                        GuideRes="string/STRID_FUNC_TOYCAMPLUS_TONE_GUIDE_COOL"
+                        IconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_toy_cool_normal"
+                        ItemId="toy-cool"
+                        Layer1IconRes="INVALID_RESID"
+                        OptionStr="NULL"
+                        SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_toy_cool_selected"
+                        TextRes="string/STRID_FUNC_TOYCAMPLUS_TONE_COOL"
+                        Value="toy-cool" >
+                    </Layer4>
+
+                    <Layer4
+                        CautionID="ViewBootElementInvalid"
+                        ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                        ExecType="SET_VALUE"
+                        GuideRes="string/STRID_FUNC_TOYCAMPLUS_TONE_GUIDE_WRM"
+                        IconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_toy_warm_normal"
+                        ItemId="toy-warm"
+                        Layer1IconRes="INVALID_RESID"
+                        OptionStr="view/PICTURE_EFFECT"
+                        SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_toy_warm_selected"
+                        TextRes="string/STRID_FUNC_TOYCAMPLUS_TONE_WRM"
+                        Value="toy-warm" >
+                    </Layer4>
+
+                    <Layer4
+                        CautionID="0"
+                        ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                        ExecType="SET_VALUE"
+                        GuideRes="string/STRID_FUNC_TOYCAMPLUS_TONE_GUIDE_GRN"
+                        IconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_toy_g_normal"
+                        ItemId="toy-green"
+                        Layer1IconRes="INVALID_RESID"
+                        OptionStr="NULL"
+                        SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_toy_g_selected"
+                        TextRes="string/STRID_FUNC_TOYCAMPLUS_TONE_GRN"
+                        Value="toy-green" >
+                    </Layer4>
+
+                    <Layer4
+                        CautionID="0"
+                        ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                        ExecType="SET_VALUE"
+                        GuideRes="string/STRID_FUNC_TOYCAMPLUS_TONE_GUIDE_MGNT"
+                        IconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_toy_m_normal"
+                        ItemId="toy-magenta"
+                        Layer1IconRes="INVALID_RESID"
+                        OptionStr="NULL"
+                        SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_toy_m_selected"
+                        TextRes="string/STRID_FUNC_TOYCAMPLUS_TONE_MGNT"
+                        Value="toy-magenta" >
+                    </Layer4>
+                </Layer3>
+
+                <Layer3
+                    CautionID="0"
+                    ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                    ExecType="NEXT_LAYOUT_WITHOUT_SET"
+                    GuideRes="string/STRID_FUNC_TOYCAMPLUS"
+                    IconRes="drawable/s_16_dd_parts_specialscreen_icon_pictureeffect_toy_normal"
+                    ItemId="toy-camera-darkness"
+                    Layer1IconRes="INVALID_RESID"
+                    NextMenuID="ID_PICTUREEFFECTPLUSEEDOUBLEICONSUBMENULAYOUT"
+                    OptionStr="NULL"
+                    SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_toy_high_selected"
+                    TextRes="string/STRID_FUNC_TOYCAMPLUS"
+                    UpdateTag="PictureEffectPlusChange"
+                    Value="toy-camera-darkness" >
+
+                    <Layer4
+                        CautionID="ViewBootElementInvalid"
+                        ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                        ExecType="SET_VALUE"
+                        GuideRes="string/STRID_FUNC_EFFECTMASTER_EFFECT_HIGH_GUIDE"
+                        IconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_toy_high_normal"
+                        ItemId="toy-camera-16"
+                        Layer1IconRes="INVALID_RESID"
+                        OptionStr="view/PICTURE_EFFECT"
+                        SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_toy_high_selected"
+                        TextRes="string/STRID_FUNC_TOYCAMPLUS_DARK_LV_HI"
+                        Value="toy-camera-16" >
+                    </Layer4>
+
+                    <Layer4
+                        CautionID="0"
+                        ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                        ExecType="SET_VALUE"
+                        GuideRes="string/STRID_FUNC_EFFECTMASTER_EFFECT_MID_GUIDE"
+                        IconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_toy_mid"
+                        ItemId="toy-camera-0"
+                        Layer1IconRes="INVALID_RESID"
+                        OptionStr="NULL"
+                        SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_toy_mid_selected"
+                        TextRes="string/STRID_FUNC_TOYCAMPLUS_DARK_LV_MID"
+                        Value="toy-camera-0" >
+                    </Layer4>
+
+                    <Layer4
+                        CautionID="0"
+                        ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                        ExecType="SET_VALUE"
+                        GuideRes="string/STRID_FUNC_EFFECTMASTER_EFFECT_LOW_GUIDE"
+                        IconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_toy_low_normal"
+                        ItemId="toy-camera--16"
+                        Layer1IconRes="INVALID_RESID"
+                        OptionStr="NULL"
+                        SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_toy_low_selected"
+                        TextRes="string/STRID_FUNC_TOYCAMPLUS_DARK_LV_LO"
+                        Value="toy-camera--16" >
+                    </Layer4>
+                </Layer3>
+
+                <!-- Layer 3 & 4 -->
+
+            </Layer2>
+
+            <Layer2
+                CautionID="0"
+                ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                ExecType="SET_VALUE"
+                GuideRes="string/STRID_AMC_STR_04121"
+                IconRes="drawable/p_16_dd_parts_pe_menu_icon_normal_pop_color"
+                ItemId="pop-color"
+                NextMenuID=""
+                OptionStr="drawable/p_16_dd_parts_pe_image_pop_color"
+                SelectedIconRes="drawable/p_16_dd_parts_pe_menu_icon_normal_pop_color"
+                TextRes="string/STRID_AMC_STR_04005"
+                Value="pop-color" >
+            </Layer2>
+
+            <Layer2
+                CautionID="0"
+                ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                ExecType="NEXT_LAYOUT"
+                GuideRes="string/STRID_FUNC_POSTERIZATION_GUIDE"
+                IconRes="drawable/p_16_dd_parts_pe_menu_icon_normal_posterization"
+                ItemId="posterization"
+                NextMenuID="ID_VERTICALSCROLLMENULAYOUT"
+                OptionStr="drawable/p_16_dd_parts_pe_image_posterization"
+                SelectedIconRes="drawable/p_16_dd_parts_pe_menu_icon_normal_posterization"
+                TextRes="string/STRID_AMC_STR_06821"
+                Value="posterization" >
+
+                <Layer3
+                    CautionID="0"
+                    ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                    ExecType="SET_VALUE"
+                    GuideRes="string/STRID_FUNC_POSTERIZATION_BW_GUIDE"
+                    IconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_posbw_normal"
+                    ItemId="posterization-mono"
+                    Layer1IconRes="INVALID_RESID"
+                    OptionStr="NULL"
+                    SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_posbw_selected"
+                    TextRes="string/STRID_AMC_STR_04007"
+                    Value="posterization-mono" >
+                </Layer3>
+
+                <Layer3
+                    CautionID="0"
+                    ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                    ExecType="SET_VALUE"
+                    GuideRes="string/STRID_FUNC_POSTERIZATION_COLOR_GUIDE"
+                    IconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_poscol_normal"
+                    ItemId="posterization-color"
+                    Layer1IconRes="INVALID_RESID"
+                    OptionStr="NULL"
+                    SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_poscol_selected"
+                    TextRes="string/STRID_AMC_STR_04006"
+                    Value="posterization-color" >
+                </Layer3>
+            </Layer2>
+
+            <Layer2
+                CautionID="0"
+                ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                ExecType="SET_VALUE"
+                GuideRes="string/STRID_AMC_STR_04124"
+                IconRes="drawable/p_16_dd_parts_pe_menu_icon_normal_retro"
+                ItemId="retro-photo"
+                NextMenuID="ID_PICTUREEFFECTPLUSOPTIONMENULAYOUTSUB"
+                OptionStr="drawable/p_16_dd_parts_pe_image_retro"
+                SelectedIconRes="drawable/p_16_dd_parts_pe_menu_icon_normal_retro"
+                TextRes="string/STRID_AMC_STR_04008"
+                Value="retro-photo" >
+            </Layer2>
+
+            <Layer2
+                CautionID="0"
+                ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                ExecType="NEXT_LAYOUT"
+                GuideRes="string/STRID_FUNC_SOFTHIKEYPLUS_GUIDE"
+                IconRes="drawable/p_16_dd_parts_pe_menu_icon_normal_soft_high_key_plus"
+                ItemId="soft-high-key"
+                NextMenuID="ID_VERTICALSCROLLMENULAYOUT"
+                SelectedIconRes="drawable/p_16_dd_parts_pe_menu_icon_normal_soft_high_key_plus"
+                TextRes="string/STRID_FUNC_SOFTHIKEYPLUS"
+                Value="soft-high-key" >
+
+                <Layer3
+                    CautionID="0"
+                    ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                    ExecType="SET_VALUE"
+                    GuideRes="string/STRID_FUNC_SOFTHIKEYPLUS_BLUE_GUIDE"
+                    IconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_hikey_ble_normal"
+                    ItemId="softhighkeyblue"
+                    Layer1IconRes="INVALID_RESID"
+                    OptionStr="NULL"
+                    SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_hikey_ble_selected"
+                    TextRes="string/STRID_FUNC_SOFTHIKEYPLUS_BLUE"
+                    Value="softhighkeyblue" >
+                </Layer3>
+
+                <Layer3
+                    CautionID="0"
+                    ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                    ExecType="SET_VALUE"
+                    GuideRes="string/STRID_FUNC_SOFTHIKEYPLUS_GRN_GUIDE"
+                    IconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_hikey_green_normal"
+                    ItemId="softhighkeygreen"
+                    Layer1IconRes="INVALID_RESID"
+                    OptionStr="NULL"
+                    SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_hikey_green_selected"
+                    TextRes="string/STRID_FUNC_SOFTHIKEYPLUS_GRN"
+                    Value="softhighkeygreen" >
+                </Layer3>
+
+                <Layer3
+                    CautionID="0"
+                    ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusController"
+                    ExecType="SET_VALUE"
+                    GuideRes="string/STRID_FUNC_SOFTHIKEYPLUS_PNK_GUIDE"
+                    IconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_hikey_pink_normal"
+                    ItemId="softhighkeypink"
+                    Layer1IconRes="INVALID_RESID"
+                    OptionStr="NULL"
+                    SelectedIconRes="drawable/p_16_dd_parts_specialscreen_icon_pictureeffect_hikey_pink_selected"
+                    TextRes="string/STRID_FUNC_SOFTHIKEYPLUS_PNK"
+                    Value="softhighkeypink" >
+                </Layer3>
+            </Layer2>
+        </Layer1>
+
+        <Layer1
+            CautionID="CAUTION_ID_INVALID_THIS_FUNCTION"
+            ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusAppSettingController"
+            ExecType="NEXT_LAYOUT_WITHOUT_SET"
+            GuideRes="android:string/STRID_MSG_APPSETTINGS_GUIDE"
+            ItemId="ApplicationSettings"
+            NextMenuID=""
+            TextRes="android:string/STRID_MSG_APPSETTINGS" />
+    </Global>
+
+    <Global
+        CautionID="0"
+        ExecType="NEXT_LAYOUT_WITHOUT_SET"
+        IconRes="android:drawable/p_16_dd_parts_43_set_indicator_pageposition_2"
+        ItemId="Page2"
+        NextMenuID="ID_PAGEMENULAYOUT"
+        SelectedIconRes="android:drawable/p_16_dd_parts_43_set_indicator_pageposition_2_selected" >
+
+        <Layer1
+            CautionID="CAUTION_ID_INVALID_THIS_FUNCTION"
+            ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusExposureModeController"
+            ExecType="NEXT_LAYOUT_WITHOUT_SET"
+            FnActiveIcon="layout/icon_exposuremode"
+            FnNextMenuID="ID_FN15LAYERMENULAYOUT"
+            FnValue="ExposureModeFn"
+            GuideRes="android:string/STRID_FUNC_SHOOTINGMODE_GUIDE"
+            IconRes="s_16_dd_parts_menu_icon_top_photomode"
+            ItemId="ExposureMode"
+            NextMenuID="ID_EXPOSUREMODEMENULAYOUT"
+            OptionStr="android:drawable/p_16_dd_parts_expmode_r_sceneselection_sampleimage"
+            SelectedIconRes="s_16_dd_parts_menu_icon_top_photomode"
+            TextRes="android:string/STRID_AMC_STR_01860"
+            Value="ExposureMode" >
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_SHOOTING_MODE_SUPERIOR_AUTO_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusExposureModeController"
+                ExecType="SET_VALUE"
+                FnIconRes="android:drawable/p_expmode_n_028"
+                FnSelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_automode_superior"
+                GuideRes="android:string/STRID_MSG_SUPERIORAUTO"
+                IconRes="android:drawable/p_expmodeguideicon_n_018"
+                ItemId="ExposureMode_SuperiorAuto"
+                OptionStr="android:drawable/p_16_dd_parts_expmode_r_superiorauto_sampleimage,android:drawable/p_expmodesampleimage_003"
+                SelectedIconRes="android:drawable/p_expmodeguideicon_f_018"
+                TextRes="android:string/STRID_AMC_STR_SAUTO_MODE"
+                Value="SuperiorAuto" />
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_SHOOTING_MODE_INTELIGENT_AUTO_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusExposureModeController"
+                ExecType="SET_VALUE"
+                FnIconRes="android:drawable/p_expmode_n_027"
+                FnSelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_automode_intelligent"
+                GuideRes="android:string/STRID_AMC_STR_01241"
+                IconRes="android:drawable/p_expmodeguideicon_n_017"
+                ItemId="ExposureMode_IntelligentAuto"
+                OptionStr="android:drawable/p_16_dd_parts_expmode_r_intelligentauto_sampleimage,android:drawable/p_expmodesampleimage_002"
+                SelectedIconRes="android:drawable/p_expmodeguideicon_f_017"
+                TextRes="android:string/STRID_AMC_STR_00949"
+                Value="IntelligentAuto" />
+
+            <Layer2
+                CautionID="0"
+                ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusExposureModeController"
+                ExecType="SET_VALUE"
+                FnIconRes="android:drawable/p_expmodeguideicon_n_001"
+                FnSelectedIconRes="android:drawable/p_expmodeguideicon_f_001"
+                GuideRes="android:string/STRID_AMC_STR_FLASH_OFF_MODE_GUIDE"
+                IconRes="android:drawable/p_expmodeguideicon_n_001"
+                ItemId="ExposureMode_flash_off"
+                OptionStr="null,android:drawable/p_expmodesampleimage_001"
+                SelectedIconRes="android:drawable/p_expmodeguideicon_f_001"
+                TextRes="android:string/STRID_AMC_STR_00980"
+                Value="flash_off" />
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_SCENE_SELECTION_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.base.shooting.camera.ExposureModeController"
+                ExecType="NEXT_LAYOUT"
+                GuideRes="android:string/STRID_AMC_STR_05145"
+                IconRes="android:drawable/p_expmodeguideicon_n_014"
+                ItemId="ExposureMode_SceneSelectionMode"
+                NextMenuID="ID_SCENESELECTIONMENULAYOUT"
+                OptionStr="android:drawable/p_16_dd_parts_expmode_r_sceneselection_sampleimage,android:drawable/p_expmodesampleimage_013"
+                SelectedIconRes="android:drawable/p_expmodeguideicon_f_014"
+                TextRes="android:string/STRID_AMC_STR_05062"
+                Value="SceneSelectionMode" >
+
+                <Layer3
+                    CautionID="CAUTION_GRP_ID_SHOOTING_MODE_PORTRAIT_INVALID_GUIDE"
+                    ConfigClass="com.sony.imaging.app.base.shooting.camera.ExposureModeController"
+                    ExecType="SET_VALUE"
+                    FnIconRes="android:drawable/p_scnselect_n_001"
+                    FnSelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_scn_portrait"
+                    GuideRes="android:string/STRID_AMC_STR_05289"
+                    IconRes="android:drawable/p_scnselect_n_001"
+                    ItemId="ExposureMode_SceneSelectionMode_portrait"
+                    OptionStr="android:drawable/p_scnsampleimage_001"
+                    SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_scn_portrait"
+                    TextRes="android:string/STRID_AMC_STR_05064"
+                    Value="portrait" />
+
+                <Layer3
+                    CautionID="0"
+                    ConfigClass="com.sony.imaging.app.base.shooting.camera.ExposureModeController"
+                    ExecType="SET_VALUE"
+                    FnIconRes="android:drawable/p_16_dd_parts_43_shoot_icon_info_scn_softsnap"
+                    FnSelectedIconRes="android:drawable/p_16_dd_parts_44_shoot_icon_setting_scn_softsnap_selected"
+                    GuideRes="android:string/STRID_MODE_SCN_SOFTSNAP_GUIDE_U"
+                    IconRes="android:drawable/p_16_dd_parts_43_shoot_icon_info_scn_softsnap"
+                    ItemId="ExposureMode_SceneSelectionMode_soft-snap"
+                    OptionStr="android:drawable/p_16_dd_parts_scn_softsnap_sampleimage"
+                    SelectedIconRes="android:drawable/p_16_dd_parts_44_shoot_icon_setting_scn_softsnap_selected"
+                    TextRes="android:string/STRID_MODE_SCN_SOFTSNAP_GUIDE"
+                    Value="soft-snap" />
+
+                <Layer3
+                    CautionID="CAUTION_GRP_ID_SHOOTING_MODE_SPORTS_ACTION_INVALID_GUIDE"
+                    ConfigClass="com.sony.imaging.app.base.shooting.camera.ExposureModeController"
+                    ExecType="SET_VALUE"
+                    FnIconRes="android:drawable/p_scnselect_n_002"
+                    FnSelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_scn_sports_action"
+                    GuideRes="android:string/STRID_AMC_STR_05147"
+                    IconRes="android:drawable/p_scnselect_n_002"
+                    ItemId="ExposureMode_SceneSelectionMode_sports"
+                    OptionStr="android:drawable/p_scnsampleimage_002"
+                    SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_scn_sports_action"
+                    TextRes="android:string/STRID_AMC_STR_05065"
+                    Value="sports" />
+
+                <Layer3
+                    CautionID="0"
+                    ConfigClass="com.sony.imaging.app.base.shooting.camera.ExposureModeController"
+                    ExecType="SET_VALUE"
+                    FnIconRes="android:drawable/p_16_dd_parts_44_shoot_icon_info_scn_advancedsportsaction"
+                    FnSelectedIconRes="android:drawable/p_16_dd_parts_45_shoot_icon_setting_scn_advancedsportsaction_selected"
+                    GuideRes="android:string/STRID_MODE_SCN_ADVANCEDSPORTS_GUIDE_U"
+                    IconRes="android:drawable/p_16_dd_parts_44_shoot_icon_info_scn_advancedsportsaction"
+                    ItemId="ExposureMode_SceneSelectionMode_advance-sports"
+                    OptionStr="android:drawable/p_16_dd_parts_scn_advanced_sports_sampleimage"
+                    SelectedIconRes="android:drawable/p_16_dd_parts_45_shoot_icon_setting_scn_advancedsportsaction_selected"
+                    TextRes="android:string/STRID_MODE_ADVANCEDSPORTS_SHORT"
+                    Value="advance-sports" />
+
+                <Layer3
+                    CautionID="CAUTION_GRP_ID_SHOOTING_MODE_MACRO_INVALID_GUIDE"
+                    ConfigClass="com.sony.imaging.app.base.shooting.camera.ExposureModeController"
+                    ExecType="SET_VALUE"
+                    FnIconRes="android:drawable/p_scnselect_n_003"
+                    FnSelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_scn_macro"
+                    GuideRes="android:string/STRID_MSG_SCN_MACRO"
+                    IconRes="android:drawable/p_scnselect_n_003"
+                    ItemId="ExposureMode_SceneSelectionMode_macro"
+                    OptionStr="android:drawable/p_scnsampleimage_003"
+                    SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_scn_macro"
+                    TextRes="android:string/STRID_AMC_STR_05066"
+                    Value="macro" />
+
+                <Layer3
+                    CautionID="CAUTION_GRP_ID_SHOOTING_MODE_LANDSCAPE_INVALID_GUIDE"
+                    ConfigClass="com.sony.imaging.app.base.shooting.camera.ExposureModeController"
+                    ExecType="SET_VALUE"
+                    FnIconRes="android:drawable/p_scnselect_n_004"
+                    FnSelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_scn_landscape"
+                    GuideRes="android:string/STRID_AMC_STR_01251"
+                    IconRes="android:drawable/p_scnselect_n_004"
+                    ItemId="ExposureMode_SceneSelectionMode_landscape"
+                    OptionStr="android:drawable/p_scnsampleimage_004"
+                    SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_scn_landscape"
+                    TextRes="android:string/STRID_AMC_STR_05067"
+                    Value="landscape" />
+
+                <Layer3
+                    CautionID="CAUTION_GRP_ID_SHOOTING_MODE_SUNSET_INVALID_GUIDE"
+                    ConfigClass="com.sony.imaging.app.base.shooting.camera.ExposureModeController"
+                    ExecType="SET_VALUE"
+                    FnIconRes="android:drawable/p_scnselect_n_005"
+                    FnSelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_scn_sunset"
+                    GuideRes="android:string/STRID_AMC_STR_05291"
+                    IconRes="android:drawable/p_scnselect_n_005"
+                    ItemId="ExposureMode_SceneSelectionMode_sunset"
+                    OptionStr="android:drawable/p_scnsampleimage_005"
+                    SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_scn_sunset"
+                    TextRes="android:string/STRID_AMC_STR_05068"
+                    Value="sunset" />
+
+                <Layer3
+                    CautionID="CAUTION_GRP_ID_SHOOTING_MODE_NIGHT_SCENE_INVALID_GUIDE"
+                    ConfigClass="com.sony.imaging.app.base.shooting.camera.ExposureModeController"
+                    ExecType="SET_VALUE"
+                    FnIconRes="android:drawable/p_scnselect_n_006"
+                    FnSelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_scn_night_view"
+                    GuideRes="android:string/STRID_AMC_STR_04031"
+                    IconRes="android:drawable/p_scnselect_n_006"
+                    ItemId="ExposureMode_SceneSelectionMode_twilight"
+                    OptionStr="android:drawable/p_scnsampleimage_006"
+                    SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_scn_night_view"
+                    TextRes="android:string/STRID_AMC_STR_05070"
+                    Value="twilight" />
+
+                <Layer3
+                    CautionID="CAUTION_GRP_ID_SHOOTING_MODE_HANDHELD_TWILIGHT_INVALID_GUIDE"
+                    ConfigClass="com.sony.imaging.app.base.shooting.camera.ExposureModeController"
+                    ExecType="SET_VALUE"
+                    FnIconRes="android:drawable/p_scnselect_n_007"
+                    FnSelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_scn_hand_held_twilight"
+                    GuideRes="android:string/STRID_AMC_STR_05148"
+                    IconRes="android:drawable/p_scnselect_n_007"
+                    ItemId="ExposureMode_SceneSelectionMode_hand_held_twilight"
+                    OptionStr="android:drawable/p_scnsampleimage_007"
+                    SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_scn_hand_held_twilight"
+                    TextRes="android:string/STRID_AMC_STR_00963"
+                    Value="hand_held_twilight" />
+
+                <Layer3
+                    CautionID="CAUTION_GRP_ID_SHOOTING_MODE_NIGHT_PORTRAIT_INVALID_GUIDE"
+                    ConfigClass="com.sony.imaging.app.base.shooting.camera.ExposureModeController"
+                    ExecType="SET_VALUE"
+                    FnIconRes="android:drawable/p_scnselect_n_008"
+                    FnSelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_scn_night_portrait"
+                    GuideRes="android:string/STRID_AMC_STR_05056"
+                    IconRes="android:drawable/p_scnselect_n_008"
+                    ItemId="ExposureMode_SceneSelectionMode_twilight_portrait"
+                    OptionStr="android:drawable/p_scnsampleimage_008"
+                    SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_scn_night_portrait"
+                    TextRes="android:string/STRID_AMC_STR_05069"
+                    Value="twilight_portrait" />
+
+                <Layer3
+                    CautionID="CAUTION_GRP_ID_SHOOTING_MODE_ANTI_MOTHION_BLUR_INVALID_GUIDE"
+                    ConfigClass="com.sony.imaging.app.base.shooting.camera.ExposureModeController"
+                    ExecType="SET_VALUE"
+                    FnIconRes="android:drawable/p_16_dd_parts_scn_antimotionblur_menulist_n"
+                    FnSelectedIconRes="android:drawable/p_16_dd_parts_43_shoot_icon_setting_scn_antimotionblur_selected"
+                    GuideRes="android:string/STRID_AMC_STR_01993"
+                    IconRes="android:drawable/p_16_dd_parts_scn_antimotionblur_menulist_n"
+                    ItemId="ExposureMode_SceneSelectionMode_anti_motion_blur"
+                    OptionStr="android:drawable/p_16_dd_parts_scn_antimotionblur_sampleimage"
+                    SelectedIconRes="android:drawable/p_16_dd_parts_43_shoot_icon_setting_scn_antimotionblur_selected"
+                    TextRes="android:string/STRID_AMC_STR_01821"
+                    Value="anti_motion_blur" />
+
+                <Layer3
+                    CautionID="0"
+                    ConfigClass="com.sony.imaging.app.base.shooting.camera.ExposureModeController"
+                    ExecType="SET_VALUE"
+                    FnIconRes="android:drawable/p_16_dd_parts_45_shoot_icon_info_scn_backlighthdr"
+                    FnSelectedIconRes="android:drawable/p_16_dd_parts_46_shoot_icon_setting_scn_backlighthdr_selected"
+                    GuideRes="android:string/STRID_MODE_SCN_BACKLIGHTCORRECTIONHDR_GUIDE_U"
+                    IconRes="android:drawable/p_16_dd_parts_45_shoot_icon_info_scn_backlighthdr"
+                    ItemId="ExposureMode_SceneSelectionMode_back-light"
+                    OptionStr="android:drawable/p_16_dd_parts_scn_backlighthdr_sampleimage"
+                    SelectedIconRes="android:drawable/p_16_dd_parts_46_shoot_icon_setting_scn_backlighthdr_selected"
+                    TextRes="android:string/STRID_MODE_SCN_BACKLIGHTCORRECTIONHDR"
+                    Value="back-light" />
+
+                <Layer3
+                    CautionID="0"
+                    ConfigClass="com.sony.imaging.app.base.shooting.camera.ExposureModeController"
+                    ExecType="SET_VALUE"
+                    FnIconRes="android:drawable/p_16_dd_parts_scn_pet_menulist_n"
+                    FnSelectedIconRes="android:drawable/p_16_dd_parts_43_shoot_icon_setting_scn_pet_selected"
+                    GuideRes="android:string/STRID_MSG_SCN_PET"
+                    IconRes="android:drawable/p_16_dd_parts_scn_pet_menulist_n"
+                    ItemId="ExposureMode_SceneSelectionMode_pet"
+                    OptionStr="android:drawable/p_16_dd_parts_scn_pet_sampleimage"
+                    SelectedIconRes="android:drawable/p_16_dd_parts_43_shoot_icon_setting_scn_pet_selected"
+                    TextRes="android:string/STRID_MODE_SCN_PET"
+                    Value="pet" />
+
+                <Layer3
+                    CautionID="0"
+                    ConfigClass="com.sony.imaging.app.base.shooting.camera.ExposureModeController"
+                    ExecType="SET_VALUE"
+                    FnIconRes="android:drawable/p_16_dd_parts_scn_gourmet_menulist_n"
+                    FnSelectedIconRes="android:drawable/p_16_dd_parts_43_shoot_icon_setting_scn_gourmet_selected"
+                    GuideRes="android:string/STRID_MSG_SCN_GOURMET"
+                    IconRes="android:drawable/p_16_dd_parts_scn_gourmet_menulist_n"
+                    ItemId="ExposureMode_SceneSelectionMode_gourmet"
+                    OptionStr="android:drawable/p_16_dd_parts_scn_gourmet_sampleimage"
+                    SelectedIconRes="android:drawable/p_16_dd_parts_43_shoot_icon_setting_scn_gourmet_selected"
+                    TextRes="android:string/STRID_MODE_SCN_GOURMET"
+                    Value="gourmet" />
+
+                <Layer3
+                    CautionID="0"
+                    ConfigClass="com.sony.imaging.app.base.shooting.camera.ExposureModeController"
+                    ExecType="SET_VALUE"
+                    FnIconRes="android:drawable/p_16_dd_parts_46_shoot_icon_info_scn_beach"
+                    FnSelectedIconRes="android:drawable/p_16_dd_parts_47_shoot_icon_setting_scn_beach_selected"
+                    GuideRes="android:string/STRID_MODE_SCN_BEACH_GUIDE_U"
+                    IconRes="android:drawable/p_16_dd_parts_46_shoot_icon_info_scn_beach"
+                    ItemId="ExposureMode_SceneSelectionMode_beach"
+                    OptionStr=""
+                    SelectedIconRes="android:drawable/p_16_dd_parts_47_shoot_icon_setting_scn_beach_selected"
+                    TextRes="android:string/STRID_MODE_SCN_BEACH"
+                    Value="beach" />
+
+                <Layer3
+                    CautionID="0"
+                    ConfigClass="com.sony.imaging.app.base.shooting.camera.ExposureModeController"
+                    ExecType="SET_VALUE"
+                    FnIconRes="android:drawable/p_16_dd_parts_46_shoot_icon_info_scn_snow"
+                    FnSelectedIconRes="android:drawable/p_16_dd_parts_48_shoot_icon_setting_scn_snow_selected"
+                    GuideRes="android:string/STRID_MODE_SCN_SNOW_GUIDE_U"
+                    IconRes="android:drawable/p_16_dd_parts_46_shoot_icon_info_scn_snow"
+                    ItemId="ExposureMode_SceneSelectionMode_snow"
+                    OptionStr="android:drawable/p_16_dd_parts_scn_snow_sampleimage"
+                    SelectedIconRes="android:drawable/p_16_dd_parts_48_shoot_icon_setting_scn_snow_selected"
+                    TextRes="android:string/STRID_MODE_SCN_SNOW"
+                    Value="snow" />
+
+                <Layer3
+                    CautionID="0"
+                    ConfigClass="com.sony.imaging.app.base.shooting.camera.ExposureModeController"
+                    ExecType="SET_VALUE"
+                    FnIconRes="android:drawable/p_16_dd_parts_scn_fireworks_menulist_n"
+                    FnSelectedIconRes="android:drawable/p_16_dd_parts_43_shoot_icon_setting_scn_fireworks_selected"
+                    GuideRes="android:string/STRID_MSG_SCN_FIREWORKS"
+                    IconRes="android:drawable/p_16_dd_parts_scn_fireworks_menulist_n"
+                    ItemId="ExposureMode_SceneSelectionMode_fireworks"
+                    OptionStr="android:drawable/p_16_dd_parts_scn_fireworks_sampleimage"
+                    SelectedIconRes="android:drawable/p_16_dd_parts_43_shoot_icon_setting_scn_fireworks_selected"
+                    TextRes="android:string/STRID_MODE_SCN_FIREWORKS"
+                    Value="fireworks" />
+
+                <Layer3
+                    CautionID="0"
+                    ConfigClass="com.sony.imaging.app.base.shooting.camera.ExposureModeController"
+                    ExecType="SET_VALUE"
+                    FnIconRes="android:drawable/p_16_dd_parts_48_shoot_icon_info_scn_softskin"
+                    FnSelectedIconRes="android:drawable/p_16_dd_parts_49_shoot_icon_setting_scn_softskin_selected"
+                    GuideRes="android:string/STRID_MODE_SCN_SOFTSKIN_GUIDE_U"
+                    IconRes="android:drawable/p_16_dd_parts_48_shoot_icon_info_scn_softskin"
+                    ItemId="ExposureMode_SceneSelectionMode_soft-skin"
+                    OptionStr="android:drawable/p_16_dd_parts_scn_softskin_sampleimage"
+                    SelectedIconRes="android:drawable/p_16_dd_parts_49_shoot_icon_setting_scn_softskin_selected"
+                    TextRes="android:string/STRID_MODE_SCN_SOFTSKIN_U"
+                    Value="soft-skin" />
+
+                <Layer3
+                    CautionID="0"
+                    ConfigClass="com.sony.imaging.app.base.shooting.camera.ExposureModeController"
+                    ExecType="SET_VALUE"
+                    FnIconRes="android:drawable/p_16_dd_parts_scn_highsensitivity_menulist_n"
+                    FnSelectedIconRes="android:drawable/p_16_dd_parts_43_shoot_icon_setting_scn_highsensitivity_selected"
+                    GuideRes="android:string/STRID_MSG_SCN_HIGHSENSITIVITY"
+                    IconRes="android:drawable/p_16_dd_parts_scn_highsensitivity_menulist_n"
+                    ItemId="ExposureMode_SceneSelectionMode_high-sensitivity"
+                    OptionStr="android:drawable/p_16_dd_parts_scn_highsensitivity_sampleimage"
+                    SelectedIconRes="android:drawable/p_16_dd_parts_43_shoot_icon_setting_scn_highsensitivity_selected"
+                    TextRes="android:string/STRID_MODE_SCN_HIGHSENSITIVITY"
+                    Value="high-sensitivity" />
+
+                <!-- TODO Resource for Fn is not descrived in Spec. -->
+
+                <Layer3
+                    CautionID="0"
+                    ConfigClass="com.sony.imaging.app.base.shooting.camera.ExposureModeController"
+                    ExecType="SET_VALUE"
+                    FnIconRes="android:drawable/p_16_dd_parts_43_shoot_icon_info_sceneselection_underwater"
+                    FnSelectedIconRes="android:drawable/p_16_dd_parts_43_shoot_icon_info_sceneselection_underwater_selected"
+                    GuideRes="android:string/STRID_MODE_SCN_UNDERWATER_GUIDE_U"
+                    IconRes="android:drawable/p_16_dd_parts_43_shoot_icon_info_sceneselection_underwater"
+                    ItemId="ExposureMode_SceneSelectionMode_underwater"
+                    OptionStr="android:drawable/p_16_dd_parts_scn_underwater_sampleimage"
+                    SelectedIconRes="android:drawable/p_16_dd_parts_43_shoot_icon_info_sceneselection_underwater_selected"
+                    TextRes="android:string/STRID_MODE_SCN_UNDERWATER"
+                    Value="underwater" />
+            </Layer2>
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_SHOOTING_MODE_PANORAMA_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusExposureModeController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_05144"
+                IconRes="android:drawable/p_expmodeguideicon_n_013"
+                ItemId="ExposureMode_SweepShooting"
+                OptionStr="android:drawable/p_16_dd_parts_expmode_r_sweepshooting_sampleimage,android:drawable/p_expmodesampleimage_012"
+                SelectedIconRes="android:drawable/p_expmodeguideicon_f_013"
+                TextRes="android:string/STRID_AMC_STR_05063"
+                Value="SweepShooting" />
+
+            <Layer2
+                CautionID="0"
+                ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusExposureModeController"
+                ExecType="SET_VALUE"
+                FnIconRes="android:drawable/"
+                FnSelectedIconRes="android:drawable/"
+                GuideRes="android:string/STRID_AMC_STR_TELEZOOMCONT_GUIDE"
+                IconRes="android:drawable/p_16_dd_parts_expmodeguiden_contpriae10_divi1"
+                ItemId="ExposureMode_cont-priority-ae-crop"
+                OptionStr="android:drawable/p_contpriae_expmodesampleimage_002,android:drawable/p_expmodesampleimage_010"
+                SelectedIconRes="android:drawable/p_16_dd_parts_expmodeguidef_contpriae10_divi1"
+                TextRes="android:string/STRID_AMC_STR_05452"
+                Value="cont-priority-ae-crop" />
+
+            <Layer2
+				ItemId="ExposureMode_movie"
+				Value="movie"
+				TextRes="android:string/STRID_AMC_STR_06227"
+				GuideRes="android:string/STRID_AMC_STR_06255"
+				IconRes="android:drawable/p_expmodeguideicon_n_009"
+				SelectedIconRes="android:drawable/p_expmodeguideicon_f_009"
+				ExecType="NEXT_LAYOUT"
+				CautionID="0"
+				OptionStr="android:drawable/p_16_dd_parts_expmode_r_movie_sampleimage,android:drawable/p_expmodesampleimage_009"
+				ConfigClass="com.sony.imaging.app.base.shooting.camera.ExposureModeController"
+				NextMenuID="ID_MOVIEMODEMENULAYOUT"
+				 >
+				
+				<Layer3
+					ItemId="ExposureMode_movie_ProgramAuto"
+					Value="movieProgramAuto"
+					TextRes="android:string/STRID_AMC_STR_06112"
+					GuideRes="android:string/STRID_AMC_STR_06116"
+					IconRes="android:drawable/p_16_dd_parts_5w_shoot_icon_setting_movie_p"
+					FnIconRes="android:drawable/p_16_dd_parts_5w_shoot_icon_setting_movie_p"
+					FnSelectedIconRes="android:drawable/p_16_dd_parts_5w_shoot_icon_setting_movie_p_selected"
+					ExecType="SET_VALUE"
+					CautionID="CAUTION_GRP_ID_SHOOTING_MODE_MOVIE_P_INVALID_GUIDE"
+					OptionStr="android:drawable/p_movieexpmodesampleimage_001"
+					ConfigClass="com.sony.imaging.app.base.shooting.camera.ExposureModeController"/>
+				
+				<Layer3
+					ItemId="ExposureMode_movie_Aperture"
+					Value="movieAperture"
+					TextRes="android:string/STRID_AMC_STR_06113"
+					GuideRes="android:string/STRID_AMC_STR_06117"
+					IconRes="android:drawable/p_16_dd_parts_5w_shoot_icon_setting_movie_a"
+					FnIconRes="android:drawable/p_16_dd_parts_5w_shoot_icon_setting_movie_a"
+				    FnSelectedIconRes="android:drawable/p_16_dd_parts_5w_shoot_icon_setting_movie_a_selected"
+					ExecType="SET_VALUE"
+					CautionID="CAUTION_GRP_ID_SHOOTING_MODE_MOVIE_A_INVALID_GUIDE"
+					OptionStr="android:drawable/p_movieexpmodesampleimage_002"
+					ConfigClass="com.sony.imaging.app.base.shooting.camera.ExposureModeController"/>
+					
+				<Layer3
+					ItemId="ExposureMode_movie_Shutter"
+					Value="movieShutter"
+					TextRes="android:string/STRID_AMC_STR_06114"
+					GuideRes="android:string/STRID_AMC_STR_06118"
+					IconRes="android:drawable/p_16_dd_parts_5w_shoot_icon_setting_movie_s"
+					FnIconRes="android:drawable/p_16_dd_parts_5w_shoot_icon_setting_movie_s"
+				    FnSelectedIconRes="android:drawable/p_16_dd_parts_5w_shoot_icon_setting_movie_s_selected"
+					ExecType="SET_VALUE"
+					CautionID="CAUTION_GRP_ID_SHOOTING_MODE_MOVIE_S_INVALID_GUIDE"
+					OptionStr="android:drawable/p_movieexpmodesampleimage_003"
+					ConfigClass="com.sony.imaging.app.base.shooting.camera.ExposureModeController"/>
+					
+			    <Layer3
+					ItemId="ExposureMode_movie_Manual"
+					Value="movieManual"
+					TextRes="android:string/STRID_AMC_STR_06115"
+					GuideRes="android:string/STRID_AMC_STR_06119"
+					IconRes="android:drawable/p_16_dd_parts_5w_shoot_icon_setting_movie_m"
+					FnIconRes="android:drawable/p_16_dd_parts_5w_shoot_icon_setting_movie_m"
+				    FnSelectedIconRes="android:drawable/p_16_dd_parts_5w_shoot_icon_setting_movie_m_selected"
+					ExecType="SET_VALUE"
+					CautionID="CAUTION_GRP_ID_SHOOTING_MODE_MOVIE_M_INVALID_GUIDE"
+					OptionStr="android:drawable/p_movieexpmodesampleimage_004"
+					ConfigClass="com.sony.imaging.app.base.shooting.camera.ExposureModeController"/>
+				
+				<!-- DSC Movie Sｃｎ -->
+			    <Layer3
+					ItemId="ExposureMode_movie_Auto"
+					Value="movieAuto"
+					TextRes="android:string/STRID_AMC_STR_00949"
+					GuideRes="android:string/STRID_MSG_AUTO_NEW"
+					IconRes="android:drawable/p_16_dd_parts_43_shooting_icon_info_movieiauto_dedicated"
+					FnIconRes="android:drawable/p_16_dd_parts_43_shooting_icon_info_movieiauto_dedicated"
+				    FnSelectedIconRes="android:drawable/p_16_dd_parts_43_shooting_icon_info_movieiauto_selected"
+					ExecType="SET_VALUE"
+					CautionID="CAUTION_GRP_ID_SHOOTING_MODE_MOVIE_M_INVALID_GUIDE"
+					OptionStr="android:drawable/p_movieexpmodesampleimage_001"
+					ConfigClass="com.sony.imaging.app.base.shooting.camera.ExposureModeController"/>
+					
+			    <Layer3
+					ItemId="ExposureMode_movie_Portrait"
+					Value="moviePortrait"
+					TextRes="android:string/STRID_AMC_STR_05064"
+					GuideRes="android:string/STRID_AMC_STR_01248"
+					IconRes="android:drawable/p_16_dd_parts_5w_set_icon_setting_portrait_normal_belt"
+					FnIconRes="android:drawable/p_16_dd_parts_5w_shoot_icon_info_scene_selection_portrait"
+				    FnSelectedIconRes="android:drawable/p_16_dd_parts_5w_set_icon_setting_portrait_selected"
+					ExecType="SET_VALUE"
+					CautionID="CAUTION_GRP_ID_MOVIE_SCENE_SELECTION_PORTRAIT_INVALID_GUIDE"
+					OptionStr="android:drawable/p_movieexpmodesampleimage_001"
+					ConfigClass="com.sony.imaging.app.base.shooting.camera.ExposureModeController"/>
+					
+			    <Layer3
+					ItemId="ExposureMode_movie_landscape"
+					Value="movieLandscape"
+					TextRes="android:string/STRID_AMC_STR_05067"
+					GuideRes="android:string/STRID_AMC_STR_05290"
+					IconRes="android:drawable/p_16_dd_parts_5w_set_icon_setting_landscape_normal_belt"
+					FnIconRes="android:drawable/p_16_dd_parts_5w_shoot_icon_info_scene_selection_landscape"
+				    FnSelectedIconRes="android:drawable/p_16_dd_parts_5w_set_icon_setting_landscape_selected"
+					ExecType="SET_VALUE"
+					CautionID="CAUTION_GRP_ID_MOVIE_SCENE_SELECTION_LANDSCAPE_INVALID_GUIDE"
+					OptionStr="android:drawable/p_movieexpmodesampleimage_001"
+					ConfigClass="com.sony.imaging.app.base.shooting.camera.ExposureModeController"/>
+					
+			    <Layer3
+					ItemId="ExposureMode_movie_twilight"
+					Value="movieTwilight"
+					TextRes="android:string/STRID_AMC_STR_05070"
+					GuideRes="android:string/STRID_AMC_STR_04031"
+					IconRes="android:drawable/p_16_dd_parts_5w_set_icon_setting_night_scene_normal_belt"
+					FnIconRes="android:drawable/p_16_dd_parts_5w_shoot_icon_info_scene_selection_night_scene"
+				    FnSelectedIconRes="android:drawable/p_16_dd_parts_5w_set_icon_setting_night_scene_selected"
+					ExecType="SET_VALUE"
+					CautionID="CAUTION_GRP_ID_MOVIE_SCENE_SELECTION_NIGHT_SCENE_INVALID_GUIDE"
+					OptionStr="android:drawable/p_movieexpmodesampleimage_001"
+					ConfigClass="com.sony.imaging.app.base.shooting.camera.ExposureModeController"/>
+					
+			    <Layer3
+					ItemId="ExposureMode_movie_beach"
+					Value="movieBeach"
+					TextRes="android:string/STRID_MODE_SCN_BEACH"
+					GuideRes="android:string/STRID_MODE_SCN_BEACH_GUIDE_U"
+					IconRes="android:drawable/p_16_dd_parts_5w_set_icon_setting_beach_normal_belt"
+					FnIconRes="android:drawable/p_16_dd_parts_5w_shoot_icon_info_scene_selection_beach"
+				    FnSelectedIconRes="android:drawable/p_16_dd_parts_5w_set_icon_setting_beach_selected"
+					ExecType="SET_VALUE"
+					CautionID="CAUTION_GRP_ID_MOVIE_SCENE_SELECTION_BEACH_INVALID_GUIDE"
+					OptionStr="android:drawable/p_movieexpmodesampleimage_001"
+					ConfigClass="com.sony.imaging.app.base.shooting.camera.ExposureModeController"/>
+					
+			    <Layer3
+					ItemId="ExposureMode_movie_snow"
+					Value="movieSnow"
+					TextRes="android:string/STRID_MODE_SCN_SNOW"
+					GuideRes="android:string/STRID_MODE_SCN_SNOW_GUIDE_U"
+					IconRes="android:drawable/p_16_dd_parts_5w_set_icon_setting_snow_normal_belt"
+					FnIconRes="android:drawable/p_16_dd_parts_5w_shoot_icon_info_scene_selection_snow"
+				    FnSelectedIconRes="android:drawable/p_16_dd_parts_5w_set_icon_setting_snow_selected"
+					ExecType="SET_VALUE"
+					CautionID="CAUTION_GRP_ID_MOVIE_SCENE_SELECTION_SNOW_INVALID_GUIDE"
+					OptionStr="android:drawable/p_movieexpmodesampleimage_001"
+					ConfigClass="com.sony.imaging.app.base.shooting.camera.ExposureModeController"/>
+					
+			    <Layer3
+					ItemId="ExposureMode_movie_fireworks"
+					Value="movieFireworks"
+					TextRes="android:string/STRID_MODE_SCN_FIREWORKS"
+					GuideRes="android:string/STRID_MODE_SCN_FIREWORKS_GUIDE_U"
+					IconRes="android:drawable/p_16_dd_parts_5w_set_icon_setting_fireworks_normal_belt"
+					FnIconRes="android:drawable/p_16_dd_parts_5w_shoot_icon_info_scene_selection_fireworks"
+				    FnSelectedIconRes="android:drawable/p_16_dd_parts_5w_set_icon_setting_fireworks_selected"
+					ExecType="SET_VALUE"
+					CautionID="CAUTION_GRP_ID_MOVIE_SCENE_SELECTION_FIREWORKS_INVALID_GUIDE"
+					ConfigClass="com.sony.imaging.app.base.shooting.camera.ExposureModeController"/>
+					
+			    <Layer3
+					ItemId="ExposureMode_movie_high-sensitivity"
+					Value="movieHigh-sensitivity"
+					TextRes="android:string/STRID_MODE_SCN_HIGHSENSITIVITY"
+					GuideRes="android:string/STRID_FUNC_MOVIEMODE_GUIDE_HIGHSENSITIVITY_ML_U"
+					IconRes="android:drawable/p_16_dd_parts_5w_set_icon_setting_high_sensitivity_normal_belt"
+					FnIconRes="android:drawable/p_16_dd_parts_5w_shoot_icon_info_scene_selection_high_sensitivity"
+				    FnSelectedIconRes="android:drawable/p_16_dd_parts_5w_set_icon_setting_high_sensitivity_selected"
+					ExecType="SET_VALUE"
+					CautionID="CAUTION_GRP_ID_MOVIE_SCENE_SELECTION_HIGH_SENSITIVITY_INVALID_GUIDE"
+					ConfigClass="com.sony.imaging.app.base.shooting.camera.ExposureModeController"/>
+					
+			</Layer2>
+
+            <Layer2
+                CautionID="0"
+                ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusExposureModeController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_06256"
+                IconRes="android:drawable/p_expmodeguideicon_n_008"
+                ItemId="ExposureMode_custom1"
+                OptionStr="android:drawable/p_16_dd_parts_expmode_r_memoryrecall_sampleimage,android:drawable/p_expmodesampleimage_008"
+                SelectedIconRes="android:drawable/p_expmodeguideicon_f_008"
+                TextRes="android:string/STRID_AMC_STR_00215"
+                Value="custom1" />
+
+            <Layer2
+                CautionID="0"
+                ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusExposureModeController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_06256"
+                IconRes="android:drawable/p_16_dd_parts_expmodeguiden_mr2_divi1"
+                ItemId="ExposureMode_custom2"
+                OptionStr="android:drawable/p_16_dd_parts_expmode_r_memoryrecall_sampleimage,android:drawable/p_expmodesampleimage_008"
+                SelectedIconRes="android:drawable/p_16_dd_parts_expmodeguidef_mr2_divi1"
+                TextRes="android:string/STRID_AMC_STR_00215"
+                Value="custom2" />
+
+            <Layer2
+                CautionID="0"
+                ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusExposureModeController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_06256"
+                IconRes="android:drawable/p_16_dd_parts_expmodeguiden_mr3_divi1"
+                ItemId="ExposureMode_custom3"
+                OptionStr="android:drawable/p_16_dd_parts_expmode_r_memoryrecall_sampleimage,android:drawable/p_expmodesampleimage_008"
+                SelectedIconRes="android:drawable/p_16_dd_parts_expmodeguidef_mr3_divi1"
+                TextRes="android:string/STRID_AMC_STR_00215"
+                Value="custom3" />
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_SHOOTING_MODE_M_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusExposureModeController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_05288"
+                IconRes="android:drawable/p_expmodeguideicon_n_007"
+                ItemId="ExposureMode_Manual"
+                OptionStr="android:drawable/p_16_dd_parts_expmode_r_manualexposure_sampleimage,android:drawable/p_expmodesampleimage_007"
+                SelectedIconRes="android:drawable/p_expmodeguideicon_f_007"
+                TextRes="android:string/STRID_AMC_STR_05061"
+                Value="Manual" />
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_SHOOTING_MODE_S_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusExposureModeController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_05143"
+                IconRes="android:drawable/p_expmodeguideicon_n_006"
+                ItemId="ExposureMode_Shutter"
+                OptionStr="android:drawable/p_16_dd_parts_expmode_r_shutterpriority_sampleimage,android:drawable/p_expmodesampleimage_006"
+                SelectedIconRes="android:drawable/p_expmodeguideicon_f_006"
+                TextRes="android:string/STRID_AMC_STR_05060"
+                Value="Shutter" />
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_SHOOTING_MODE_A_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusExposureModeController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_05142"
+                IconRes="android:drawable/p_expmodeguideicon_n_005"
+                ItemId="ExposureMode_Aperture"
+                OptionStr="android:drawable/p_16_dd_parts_expmode_r_aperturepriority_sampleimage,android:drawable/p_expmodesampleimage_005"
+                SelectedIconRes="android:drawable/p_expmodeguideicon_f_005"
+                TextRes="android:string/STRID_AMC_STR_05059"
+                Value="Aperture" />
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_SHOOTING_MODE_P_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusExposureModeController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_05141"
+                IconRes="android:drawable/p_expmodeguideicon_n_004"
+                ItemId="ExposureMode_ProgramAuto"
+                OptionStr="android:drawable/p_16_dd_parts_expmode_r_programauto_sampleimage,android:drawable/p_expmodesampleimage_004"
+                SelectedIconRes="android:drawable/p_expmodeguideicon_f_004"
+                TextRes="android:string/STRID_AMC_STR_05058"
+                Value="ProgramAuto" />
+
+            <!-- For Movie Main Set -->
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_SHOOTING_MODE_MOVIE_P_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusExposureModeController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_06116"
+                IconRes="android:drawable/p_movieexpmode_n_001"
+                ItemId="ExposureMode_movie_ProgramAuto_2ndlayer"
+                OptionStr="android:drawable/p_movieexpmodesampleimage_001"
+                SelectedIconRes="android:drawable/p_16_dd_parts_fnmenu_expmode_sel_movie_p"
+                TextRes="android:string/STRID_AMC_STR_06112"
+                Value="movieProgramAuto" />
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_SHOOTING_MODE_MOVIE_A_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusExposureModeController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_06117"
+                IconRes="android:drawable/p_movieexpmode_n_002"
+                ItemId="ExposureMode_movie_Aperture_2ndlayer"
+                OptionStr="android:drawable/p_movieexpmodesampleimage_002"
+                SelectedIconRes="android:drawable/p_16_dd_parts_fnmenu_expmode_sel_movie_a"
+                TextRes="android:string/STRID_AMC_STR_06113"
+                Value="movieAperture" />
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_SHOOTING_MODE_MOVIE_S_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusExposureModeController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_06118"
+                IconRes="android:drawable/p_movieexpmode_n_003"
+                ItemId="ExposureMode_movie_Shutter_2ndlayer"
+                OptionStr="android:drawable/p_movieexpmodesampleimage_003"
+                SelectedIconRes="android:drawable/p_16_dd_parts_fnmenu_expmode_sel_movie_s"
+                TextRes="android:string/STRID_AMC_STR_06114"
+                Value="movieShutter" />
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_SHOOTING_MODE_MOVIE_M_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusExposureModeController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_06119"
+                IconRes="android:drawable/p_movieexpmode_n_004"
+                ItemId="ExposureMode_movie_Manual_2ndlayer"
+                OptionStr="android:drawable/p_movieexpmodesampleimage_004"
+                SelectedIconRes="android:drawable/p_16_dd_parts_fnmenu_expmode_sel_movie_m"
+                TextRes="android:string/STRID_AMC_STR_06115"
+                Value="movieManual" />
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_SHOOTING_MODE_MOVIE_M_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusExposureModeController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_06119"
+                IconRes="android:drawable/p_16_dd_parts_43_shooting_icon_info_exposuremode_movieauto_dedicated"
+                ItemId="ExposureMode_movie_IntelligentAuto_2ndlayer"
+                OptionStr="android:drawable/p_movieexpmodesampleimage_004"
+                SelectedIconRes=""
+                TextRes="android:string/STRID_AMC_STR_06115"
+                Value="movieIntelligentAuto" />
+
+            <Layer2
+                CautionID="0"
+                ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusExposureModeController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_01860"
+                IconRes="android:drawable/p_expmodeguideicon_n_unknown"
+                ItemId="ExposureMode_unknown"
+                SelectedIconRes="android:drawable/p_expmodeguideicon_f_unknown"
+                TextRes="android:string/STRID_AMC_STR_01860"
+                Value="unknown" />
+        </Layer1>
+
+        <Layer1
+            CautionID="CAUTION_GRP_ID_STILL_IMAGE_IMAGE_SIZE_INVALID_GUIDE"
+            ConfigClass="com.sony.imaging.app.base.shooting.camera.PictureSizeController"
+            CustomStartLayoutID="ID_SPECIALSCREENMENULAYOUT"
+            ExecType="NEXT_LAYOUT_WITHOUT_SET"
+            FnActiveIcon="layout/icon_still_image_size"
+            FnNextMenuID="ID_FN15LAYERMENULAYOUT"
+            GuideRes="android:string/STRID_AMC_STR_01363"
+            IconRes="android:drawable/p_16_dd_parts_43_shoot_icon_setting_stillimagesize_invalid"
+            ItemId="Still_ImageSize"
+            NextMenuID="ID_SETMENULAYOUT"
+            SelectedIconRes="android:drawable/p_16_dd_parts_43_shoot_icon_setting_stillimagesize_invalid"
+            TextRes="android:string/STRID_FUNC_STILL_IMAGESIZE_I"
+            UpdateTag="PictureSize"
+            Value="Still_ImageSize" >
+
+            <Layer2
+                CautionID0="CAUTION_GRP_ID_STILL_IMAGE_IMAGE_SIZE_L_24M_3_2_INVALID_GUIDE"
+                CautionID1="CAUTION_GRP_ID_STILL_IMAGE_IMAGE_SIZE_L_20M_3_2_INVALID_GUIDE"
+                CautionID10="CAUTION_GRP_ID_STILL_IMAGE_IMAGE_SIZE_L_10M_APS_C_3_2_INVALID_GUIDE"
+                CautionID11="CAUTION_GRP_ID_STILL_IMAGE_IMAGE_SIZE_L_8_7M_APS_C_16_9_INVALID_GUIDE"
+                CautionID12="CAUTION_GRP_ID_STILL_IMAGE_IMAGE_SIZE_L_36M_3_2_INVALID_GUIDE"
+                CautionID13="CAUTION_GRP_ID_STILL_IMAGE_IMAGE_SIZE_L_15M_3_2_INVALID_GUIDE"
+                CautionID14="CAUTION_GRP_ID_STILL_IMAGE_IMAGE_SIZE_L_15M_APS_C_3_2_INVALID_GUIDE"
+                CautionID15="CAUTION_GRP_ID_STILL_IMAGE_IMAGE_SIZE_L_13M_APS_C_16_9_INVALID_GUIDE"
+                CautionID2="CAUTION_GRP_ID_STILL_IMAGE_IMAGE_SIZE_L_16M_3_2_INVALID_GUIDE"
+                CautionID3="CAUTION_GRP_ID_STILL_IMAGE_IMAGE_SIZE_L_20M_4_3_INVALID_GUIDE"
+                CautionID4="CAUTION_GRP_ID_STILL_IMAGE_IMAGE_SIZE_L_18M_4_3_INVALID_GUIDE"
+                CautionID5="CAUTION_GRP_ID_STILL_IMAGE_IMAGE_SIZE_L_20M_16_9_INVALID_GUIDE"
+                CautionID6="CAUTION_GRP_ID_STILL_IMAGE_IMAGE_SIZE_L_17M_16_9_INVALID_GUIDE"
+                CautionID7="CAUTION_GRP_ID_STILL_IMAGE_IMAGE_SIZE_L_15M_16_9_INVALID_GUIDE"
+                CautionID8="CAUTION_GRP_ID_STILL_IMAGE_IMAGE_SIZE_L_14M_16_9_INVALID_GUIDE"
+                CautionID9="CAUTION_GRP_ID_STILL_IMAGE_IMAGE_SIZE_L_13M_1_1_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.base.shooting.camera.PictureSizeController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_01364"
+                IconRes="android:drawable/p_stillsizel_set_list"
+                ItemId="Still_ImageSize_SIZE_L"
+                SelectedIconRes="android:drawable/p_16_dd_parts_43_shoot_icon_settingstillimagesize_l_selected"
+                TextRes="android:string/STRID_FUNC_EZEDIT_RESIZE_L"
+                Value="SIZE_L" >
+            </Layer2>
+
+            <Layer2
+                CautionID0="CAUTION_GRP_ID_STILL_IMAGE_IMAGE_SIZE_M_12M_3_2_INVALID_GUIDE"
+                CautionID1="CAUTION_GRP_ID_STILL_IMAGE_IMAGE_SIZE_M_10M_3_2_INVALID_GUIDE"
+                CautionID10="CAUTION_GRP_ID_STILL_IMAGE_IMAGE_SIZE_M_3_9M_APS_C_16_9_INVALID_GUIDE"
+                CautionID11="CAUTION_GRP_ID_STILL_IMAGE_IMAGE_SIZE_M_9_0M_3_2_INVALID_GUIDE"
+                CautionID12="CAUTION_GRP_ID_STILL_IMAGE_IMAGE_SIZE_M_13M_16_9_INVALID_GUIDE"
+                CautionID13="CAUTION_GRP_ID_STILL_IMAGE_IMAGE_SIZE_M_8_4M_16_9_INVALID_GUIDE"
+                CautionID14="CAUTION_GRP_ID_STILL_IMAGE_IMAGE_SIZE_M_9_0M_APS_C_3_2_INVALID_GUIDE"
+                CautionID15="CAUTION_GRP_ID_STILL_IMAGE_IMAGE_SIZE_M_6_0M_APS_C_3_2_INVALID_GUIDE"
+                CautionID16="CAUTION_GRP_ID_STILL_IMAGE_IMAGE_SIZE_M_7_6M_APS_C_16_9_INVALID_GUIDE"
+                CautionID17="CAUTION_GRP_ID_STILL_IMAGE_IMAGE_SIZE_M_5_0M_APS_C_16_9_INVALID_GUIDE"
+                CautionID2="CAUTION_GRP_ID_STILL_IMAGE_IMAGE_SIZE_M_8_4M_3_2_INVALID_GUIDE"
+                CautionID3="CAUTION_GRP_ID_STILL_IMAGE_IMAGE_SIZE_M_10M_4_3_INVALID_GUIDE"
+                CautionID4="CAUTION_GRP_ID_STILL_IMAGE_IMAGE_SIZE_M_10M_16_9_INVALID_GUIDE"
+                CautionID5="CAUTION_GRP_ID_STILL_IMAGE_IMAGE_SIZE_M_8_7M_16_9_INVALID_GUIDE"
+                CautionID6="CAUTION_GRP_ID_STILL_IMAGE_IMAGE_SIZE_M_7_5M_16_9_INVALID_GUIDE"
+                CautionID7="CAUTION_GRP_ID_STILL_IMAGE_IMAGE_SIZE_M_7_1M_16_9_INVALID_GUIDE"
+                CautionID8="CAUTION_GRP_ID_STILL_IMAGE_IMAGE_SIZE_M_6_5M_1_1_INVALID_GUIDE"
+                CautionID9="CAUTION_GRP_ID_STILL_IMAGE_IMAGE_SIZE_M_4_6M_APS_C_3_2_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.base.shooting.camera.PictureSizeController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_01365"
+                IconRes="android:drawable/p_stillsizem_set_list"
+                ItemId="Still_ImageSize_SIZE_M"
+                SelectedIconRes="android:drawable/p_16_dd_parts_43_shoot_icon_settingstillimagesize_m_selected"
+                TextRes="android:string/STRID_FUNC_EZEDIT_RESIZE_M"
+                Value="SIZE_M" >
+            </Layer2>
+
+            <Layer2
+                CautionID0="CAUTION_GRP_ID_STILL_IMAGE_IMAGE_SIZE_S_6_0M_3_2_INVALID_GUIDE"
+                CautionID1="CAUTION_GRP_ID_STILL_IMAGE_IMAGE_SIZE_S_5_0M_3_2_INVALID_GUIDE"
+                CautionID10="CAUTION_GRP_ID_STILL_IMAGE_IMAGE_SIZE_S_3_7M_1_1_INVALID_GUIDE"
+                CautionID11="CAUTION_GRP_ID_STILL_IMAGE_IMAGE_SIZE_S_2_0M_APS_C_3_2_INVALID_GUIDE"
+                CautionID12="CAUTION_GRP_ID_STILL_IMAGE_IMAGE_SIZE_S_1_7M_APS_C_16_9_INVALID_GUIDE"
+                CautionID13="CAUTION_GRP_ID_STILL_IMAGE_IMAGE_SIZE_S_7_6M_16_9_INVALID_GUIDE"
+                CautionID14="CAUTION_GRP_ID_STILL_IMAGE_IMAGE_SIZE_S_5_0M_16_9_INVALID_GUIDE"
+                CautionID15="CAUTION_GRP_ID_STILL_IMAGE_IMAGE_SIZE_S_3_8M_APS_C_3_2_INVALID_GUIDE"
+                CautionID16="CAUTION_GRP_ID_STILL_IMAGE_IMAGE_SIZE_S_2_5M_APS_C_3_2_INVALID_GUIDE"
+                CautionID2="CAUTION_GRP_ID_STILL_IMAGE_IMAGE_SIZE_S_4_6M_3_2_INVALID_GUIDE"
+                CautionID3="CAUTION_GRP_ID_STILL_IMAGE_IMAGE_SIZE_S_4_0M_3_2_INVALID_GUIDE"
+                CautionID4="CAUTION_GRP_ID_STILL_IMAGE_IMAGE_SIZE_S_5_0M_4_3_INVALID_GUIDE"
+                CautionID5="CAUTION_GRP_ID_STILL_IMAGE_IMAGE_SIZE_S_5_1M_16_9_INVALID_GUIDE"
+                CautionID6="CAUTION_GRP_ID_STILL_IMAGE_IMAGE_SIZE_S_4_2M_16_9_INVALID_GUIDE"
+                CautionID7="CAUTION_GRP_ID_STILL_IMAGE_IMAGE_SIZE_S_3_9M_16_9_INVALID_GUIDE"
+                CautionID8="CAUTION_GRP_ID_STILL_IMAGE_IMAGE_SIZE_S_3_4M_16_9_INVALID_GUIDE"
+                CautionID9="CAUTION_GRP_ID_STILL_IMAGE_IMAGE_SIZE_S_2_0M_16_9_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.base.shooting.camera.PictureSizeController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_01366"
+                IconRes="android:drawable/p_stillsizes_set_list"
+                ItemId="Still_ImageSize_SIZE_S"
+                SelectedIconRes="android:drawable/p_16_dd_parts_43_shoot_icon_settingstillimagesize_s_selected"
+                TextRes="android:string/STRID_FUNC_EZEDIT_RESIZE_S"
+                Value="SIZE_S" >
+            </Layer2>
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_STILL_IMAGE_IMAGE_SIZE_VGA_4_3_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.base.shooting.camera.PictureSizeController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_FUNC_IMAGESIZE_VGA_GUIDE"
+                IconRes="android:drawable/p_16_dd_parts_lcd_stillsize_set_n_vga"
+                ItemId="Still_ImageSize_SIZE_VGA"
+                SelectedIconRes="android:drawable/p_16_dd_parts_43_shoot_icon_settingstillimagesize_vga_selected"
+                TextRes="android:string/STRID_FUNC_IMGSIZE_VGA"
+                Value="SIZE_VGA" >
+            </Layer2>
+        </Layer1>
+
+        <Layer1
+            CautionID="CAUTION_GRP_ID_STILL_IMAGE_ASPECT_RATIO_INVALID_GUIDE"
+            ConfigClass="com.sony.imaging.app.base.shooting.camera.PictureSizeController"
+            CustomStartLayoutID="ID_SPECIALSCREENMENULAYOUT"
+            ExecType="NEXT_LAYOUT_WITHOUT_SET"
+            FnActiveIcon="layout/icon_still_image_aspectratio"
+            FnNextMenuID="ID_FN15LAYERMENULAYOUT"
+            GuideRes="android:string/STRID_AMC_STR_01355"
+            IconRes="android:drawable/p_16_dd_parts_43_shoot_icon_setting_stillimageaspect_invalid"
+            ItemId="Still_AspectRatio"
+            NextMenuID="ID_SETMENULAYOUT"
+            SelectedIconRes="android:drawable/p_16_dd_parts_43_shoot_icon_setting_stillimageaspect_invalid"
+            TextRes="android:string/STRID_FUNC_STILL_ASPECT_I"
+            UpdateTag="PictureSize"
+            Value="Still_AspectRatio" >
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_STILL_IMAGE_ASPECT_RATIO_3_2_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.base.shooting.camera.PictureSizeController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_01356"
+                IconRes="android:drawable/p_16_dd_parts_lcd_aspect_set_n_3_2"
+                ItemId="Still_AspectRatio_3_2"
+                SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_aspect_3_2_43"
+                TextRes="android:string/STRID_AMC_STR_01010"
+                Value="3_2" >
+            </Layer2>
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_STILL_IMAGE_ASPECT_RATIO_16_9_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.base.shooting.camera.PictureSizeController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_01357"
+                IconRes="android:drawable/p_16_dd_parts_lcd_aspect_set_n_16_9"
+                ItemId="Still_AspectRatio_16_9"
+                SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_aspect_16_9_43"
+                TextRes="android:string/STRID_AMC_STR_05308"
+                Value="16_9" >
+            </Layer2>
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_STILL_IMAGE_ASPECT_RATIO_4_3_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.base.shooting.camera.PictureSizeController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_CAMMENU_ASPECT_4_3_GUIDE"
+                IconRes="android:drawable/p_16_dd_parts_lcd_aspect_set_n_4_3"
+                ItemId="Still_AspectRatio_4_3"
+                SelectedIconRes="android:drawable/p_16_dd_parts_43_shoot_icon_settingstillimageaspect_4_3_selected"
+                TextRes="android:string/STRID_CAMMENU_ASPECT_4_3"
+                Value="4_3" >
+            </Layer2>
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_STILL_IMAGE_ASPECT_RATIO_1_1_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.base.shooting.camera.PictureSizeController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_CAMMENU_ASPECT_1_1_GUIDE"
+                IconRes="android:drawable/p_16_dd_parts_lcd_aspect_set_n_1_1"
+                ItemId="Still_AspectRatio_1_1"
+                SelectedIconRes="android:drawable/p_16_dd_parts_43_shoot_icon_settingstillimageaspect_1_1_selected"
+                TextRes="android:string/STRID_CAMMENU_ASPECT_1_1"
+                Value="1_1" >
+            </Layer2>
+        </Layer1>
+
+        <Layer1
+            CautionID="CAUTION_GRP_ID_STILL_IMAGE_QUALITY_INVALID_GUIDE"
+            ConfigClass="com.sony.imaging.app.base.shooting.camera.PictureQualityController"
+            CustomStartLayoutID="ID_SPECIALSCREENMENULAYOUT"
+            ExecType="NEXT_LAYOUT_WITHOUT_SET"
+            FnActiveIcon="layout/icon_still_image_quality"
+            FnNextMenuID="ID_FN15LAYERMENULAYOUT"
+            GuideRes="android:string/STRID_AMC_STR_01358"
+            IconRes="android:drawable/p_16_dd_parts_43_shoot_icon_setting_stillquality_invalid"
+            ItemId="setPictureStorageFormat"
+            NextMenuID="ID_SETMENULAYOUT"
+            SelectedIconRes="android:drawable/p_16_dd_parts_43_shoot_icon_setting_stillquality_invalid"
+            TextRes="android:string/STRID_FUNC_STILL_QUALITY_I"
+            UpdateTag="PictureQuality"
+            Value="setPictureStorageFormat" >
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_STILL_IMAGE_QUALITY_EXTRA_FINE_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.base.shooting.camera.PictureQualityController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_06380"
+                IconRes="android:drawable/p_stillquality_set_n_005"
+                ItemId="setPictureStorageFormat_jpegextrafine"
+                SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_imagequality_x_fine"
+                TextRes="android:string/STRID_AMC_STR_00006"
+                Value="jpegextrafine" >
+            </Layer2>
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_STILL_IMAGE_QUALITY_FINE_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.base.shooting.camera.PictureQualityController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_01361"
+                IconRes="android:drawable/p_stillquality_set_n_003"
+                ItemId="setPictureStorageFormat_jpegfine"
+                SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_imagequality_fine"
+                TextRes="android:string/STRID_AMC_STR_01015"
+                Value="jpegfine" >
+            </Layer2>
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_STILL_IMAGE_QUALITY_STANDARD_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.base.shooting.camera.PictureQualityController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_01362"
+                IconRes="android:drawable/p_stillquality_set_n_004"
+                ItemId="setPictureStorageFormat_jpegstandard"
+                SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_imagequality_std"
+                TextRes="android:string/STRID_AMC_STR_01016"
+                Value="jpegstandard" >
+            </Layer2>
+        </Layer1>
+
+        <Layer1
+            CautionID="CAUTION_GRP_ID_DRIVE_MODE_INVALID_GUIDE"
+            ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusDriveModeController"
+            CustomStartLayoutID="ID_SPECIALSCREENMENULAYOUT"
+            ExecType="NEXT_LAYOUT_WITHOUT_SET"
+            FnActiveIcon="layout/icon_drivemode"
+            FnNextMenuID="ID_FN15LAYERMENULAYOUT"
+            GuideRes="android:string/STRID_AMC_STR_01268"
+            ItemId="drivemode"
+            NextMenuID="ID_SPECIALSCREENMENULAYOUT"
+            TextRes="android:string/STRID_AMC_STR_05442"
+            UpdateTag="DriveMode"
+            Value="drivemode" >
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_DRIVE_MODE_1_IMAGE_SHOOTING_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusDriveModeController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_01269"
+                IconRes="android:drawable/p_drivemode_n_001"
+                ItemId="drivemode_single"
+                SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_drivemode_single"
+                TextRes="android:string/STRID_AMC_STR_00965"
+                Value="single" >
+            </Layer2>
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_DRIVE_MODE_CONT_SHOOTING_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusDriveModeController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_01270"
+                IconRes="android:drawable/p_16_dd_parts_contshot"
+                ItemId="drivemode_burst"
+                SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_drivemode_continuous"
+                TextRes="android:string/STRID_AMC_STR_00966"
+                Value="burst" >
+
+                <Layer3
+                    CautionID="0"
+                    ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusDriveModeController"
+                    ExecType="SET_VALUE"
+                    FnOptionIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_opt_drivemode_continuous_high"
+                    GuideRes="android:string/STRID_AMC_STR_01270"
+                    IconRes="android:drawable/p_drivemode_n_002"
+                    ItemId="drivemode_burst-speed_high"
+                    SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_drivemode_continuous_high"
+                    TextRes="android:string/STRID_AMC_STR_06566"
+                    Value="high" >
+                </Layer3>
+
+                <Layer3
+                    CautionID="0"
+                    ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusDriveModeController"
+                    ExecType="SET_VALUE"
+                    FnOptionIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_opt_drivemode_continuous_mid"
+                    GuideRes="android:string/STRID_AMC_STR_05076"
+                    IconRes="android:drawable/p_16_dd_amount_parts_shoot_icon_continuousshooting_mid"
+                    ItemId="drivemode_burst-speed_middle"
+                    SelectedIconRes="android:drawable/p_16_dd_amount_parts_shoot_icon_continuousshooting_mid_selected"
+                    TextRes="android:string/STRID_FUNC_SPEEDSELECT_MID"
+                    Value="middle" >
+                </Layer3>
+
+                <Layer3
+                    CautionID="0"
+                    ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusDriveModeController"
+                    ExecType="SET_VALUE"
+                    FnOptionIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_opt_drivemode_continuous_low"
+                    GuideRes="android:string/STRID_AMC_STR_01270"
+                    IconRes="android:drawable/p_drivemode_n_003"
+                    ItemId="drivemode_burst-speed_low"
+                    SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_drivemode_continuous_low"
+                    TextRes="android:string/STRID_AMC_STR_06567"
+                    Value="low" >
+                </Layer3>
+            </Layer2>
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_DRIVE_MODE_SPD_PRIORITY_CONT_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusDriveModeController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_04164"
+                IconRes="android:drawable/p_16_dd_parts_speedprioritycont"
+                ItemId="drivemode_speed-prior-burst"
+                SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_drivemode_continuous_speed_priority"
+                TextRes="android:string/STRID_AMC_STR_00969"
+                Value="speed-prior-burst" >
+            </Layer2>
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_DRIVE_MODE_SELF_TIMER_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusDriveModeController"
+                ExecType="SET_VALUE"
+                GuideRes=""
+                IconRes=""
+                ItemId="drivemode_selftimer"
+                NextMenuID="ID_OPTIONMENULAYOUT"
+                SelectedIconRes=""
+                TextRes="android:string/STRID_AMC_STR_01869"
+                Value="selftimer" >
+
+                <Layer3
+                    CautionID="CAUTION_GRP_ID_DRIVE_MODE_SELF_TIMER_INVALID_GUIDE"
+                    ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusDriveModeController"
+                    ExecType="SET_VALUE"
+                    FnOptionIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_opt_drivemode_10s_self_timer"
+                    GuideRes="android:string/STRID_AMC_STR_01273"
+                    IconRes="android:drawable/p_drivemode_n_004"
+                    ItemId="drivemode_selftimer_selftimer-10s"
+                    SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_drivemode_10s_self_timer"
+                    TextRes="android:string/STRID_AMC_STR_02149"
+                    Value="selftimer-10s" >
+                </Layer3>
+
+                <Layer3
+                    CautionID="CAUTION_GRP_ID_DRIVE_MODE_SELF_TIMER_INVALID_GUIDE"
+                    ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusDriveModeController"
+                    ExecType="SET_VALUE"
+                    FnOptionIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_opt_drivemode_2s_self_timer"
+                    GuideRes="android:string/STRID_AMC_STR_01274"
+                    IconRes="android:drawable/p_drivemode_n_005"
+                    ItemId="drivemode_selftimer_selftimer-2s"
+                    SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_drivemode_2s_self_timer"
+                    TextRes="android:string/STRID_AMC_STR_02150"
+                    Value="selftimer-2s" >
+                </Layer3>
+            </Layer2>
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_DRIVE_MODE_CONT_SELF_TIMER_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusDriveModeController"
+                ExecType="SET_VALUE"
+                GuideRes=""
+                IconRes=""
+                ItemId="drivemode_selftimer-burst"
+                NextMenuID="ID_OPTIONMENULAYOUT"
+                SelectedIconRes=""
+                TextRes="android:string/STRID_AMC_STR_02296"
+                Value="selftimer-burst" >
+
+                <Layer3
+                    CautionID="CAUTION_GRP_ID_DRIVE_MODE_CONT_SELF_TIMER_INVALID_GUIDE"
+                    ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusDriveModeController"
+                    ExecType="SET_VALUE"
+                    FnOptionIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_opt_drivemode_10s_self_timer_3_shoot"
+                    GuideRes="android:string/STRID_AMC_STR_01277"
+                    IconRes="android:drawable/p_16_dd_parts_selftimer_cont3"
+                    ItemId="drivemode_selftimer-burst_selftimer-burst-10s-3shot"
+                    SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_drivemode_10s_self_timer_3_shoot"
+                    TextRes="android:string/STRID_AMC_STR_02151"
+                    Value="selftimer-burst-10s-3shot" >
+                </Layer3>
+
+                <Layer3
+                    CautionID="CAUTION_GRP_ID_DRIVE_MODE_CONT_SELF_TIMER_INVALID_GUIDE"
+                    ConfigClass="com.sony.imaging.app.pictureeffectplus.shooting.camera.PictureEffectPlusDriveModeController"
+                    ExecType="SET_VALUE"
+                    FnOptionIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_opt_drivemode_10s_self_timer_5_shoot"
+                    GuideRes="android:string/STRID_AMC_STR_01278"
+                    IconRes="android:drawable/p_16_dd_parts_selftimer_cont5"
+                    ItemId="drivemode_selftimer-burst_selftimer-burst-10s-5shot"
+                    SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_drivemode_10s_self_timer_5_shoot"
+                    TextRes="android:string/STRID_AMC_STR_02152"
+                    Value="selftimer-burst-10s-5shot" >
+                </Layer3>
+            </Layer2>
+        </Layer1>
+    </Global>
+
+    <Global
+        CautionID="0"
+        ExecType="NEXT_LAYOUT_WITHOUT_SET"
+        IconRes="android:drawable/p_16_dd_parts_43_set_indicator_pageposition_3"
+        ItemId="Page3"
+        NextMenuID="ID_PAGEMENULAYOUT"
+        SelectedIconRes="android:drawable/p_16_dd_parts_43_set_indicator_pageposition_3_selected" >
+
+        <Layer1
+            CautionID="CAUTION_GRP_ID_FLASH_MODE_INVALID_GUIDE"
+            ConfigClass="com.sony.imaging.app.base.shooting.camera.FlashController"
+            CustomStartLayoutID="ID_SPECIALSCREENMENULAYOUT"
+            ExecType="NEXT_LAYOUT_WITHOUT_SET"
+            FnActiveIcon="layout/icon_flashmode"
+            FnNextMenuID="ID_FN15LAYERMENULAYOUT"
+            GuideRes="android:string/STRID_AMC_STR_01333"
+            IconRes="s_16_dd_parts_specialscreen_custom_icon_flashmode_normal"
+            ItemId="FlashMode"
+            NextMenuID="ID_SPECIALSCREENMENULAYOUT"
+            SelectedIconRes="s_16_dd_parts_specialscreen_custom_icon_flashmode_selected"
+            TextRes="android:string/STRID_AMC_STR_05447"
+            UpdateTag="FlashChange"
+            Value="FlashMode" >
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_FLASH_MODE_FLASH_OFF_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.base.shooting.camera.FlashController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_01334"
+                IconRes="android:drawable/p_flashmode_n_001"
+                ItemId="FlashMode_off"
+                SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_flashmode_off"
+                TextRes="android:string/STRID_AMC_STR_00980"
+                Value="off" >
+            </Layer2>
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_FLASH_MODE_AUTO_FLASH_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.base.shooting.camera.FlashController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_01335"
+                IconRes="android:drawable/p_flashmode_n_002"
+                ItemId="FlashMode_auto"
+                SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_flashmode_auto"
+                TextRes="android:string/STRID_AMC_STR_00981"
+                Value="auto" >
+            </Layer2>
+
+            <!-- front-sync means fill flash mode -->
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_FLASH_MODE_FILL_FLASH_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.base.shooting.camera.FlashController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_01336"
+                IconRes="android:drawable/p_flashmode_n_003"
+                ItemId="FlashMode_front-sync"
+                SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_flashmode_fill"
+                TextRes="android:string/STRID_AMC_STR_00982"
+                Value="front-sync" >
+            </Layer2>
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_FLASH_MODE_SLOW_SYNC_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.base.shooting.camera.FlashController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_01337"
+                IconRes="android:drawable/p_flashmode_n_004"
+                ItemId="FlashMode_slow-sync"
+                SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_flashmode_slow_sync"
+                TextRes="android:string/STRID_AMC_STR_00983"
+                Value="slow-sync" >
+            </Layer2>
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_FLASH_MODE_REAR_SYNC_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.base.shooting.camera.FlashController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_01338"
+                IconRes="android:drawable/p_flashmode_n_005"
+                ItemId="FlashMode_slow-rear-sync"
+                SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_flashmode_rear_sync"
+                TextRes="android:string/STRID_AMC_STR_00984"
+                Value="slow-rear-sync" >
+            </Layer2>
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_FLASH_MODE_REAR_SYNC_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.base.shooting.camera.FlashController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_01338"
+                IconRes="android:drawable/p_flashmode_n_005"
+                ItemId="FlashMode_rear-sync"
+                SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_flashmode_rear_sync"
+                TextRes="android:string/STRID_AMC_STR_00984"
+                Value="rear-sync" >
+            </Layer2>
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_FLASH_MODE_WIRELESS_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.base.shooting.camera.FlashController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_00516"
+                IconRes="android:drawable/p_flashmode_n_006"
+                ItemId="FlashMode_wireless"
+                SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_flashmode_wireless"
+                TextRes="android:string/STRID_AMC_STR_00029"
+                Value="wireless" >
+            </Layer2>
+        </Layer1>
+
+        <Layer1
+            CautionID="CAUTION_GRP_ID_FLASH_COMPENSATION_INVALID_GUIDE"
+            ConfigClass="com.sony.imaging.app.base.shooting.camera.FlashController"
+            CustomStartLayoutID="ID_FLASHCOMPENSATIONMENULAYOUT"
+            ExecType="NEXT_LAYOUT_WITHOUT_SET"
+            FnActiveIcon="layout/icon_flashlevel"
+            FnNextMenuID="ID_FN15LAYERFLASHCOMPENSATIONLAYOUT"
+            GuideRes="android:string/STRID_AMC_STR_00772"
+            IconRes="s_16_dd_parts_doublemenu_flashcomp_normal"
+            ItemId="FlashCompensation"
+            NextMenuID="ID_FLASHCOMPENSATIONMENULAYOUT"
+            SelectedIconRes="s_16_dd_parts_doublemenu_flashcomp_selected"
+            TextRes="android:string/STRID_AMC_STR_01084"
+            UpdateTag=""
+            Value="FlashCompensation" >
+        </Layer1>
+
+        <Layer1
+            CautionID="CAUTION_GRP_ID_FOCUS_MODE_INVALID_GUIDE"
+            ConfigClass="com.sony.imaging.app.base.shooting.camera.FocusModeController"
+            CustomStartLayoutID="ID_FOCUSMODESPECIALSCREENMENULAYOUT"
+            ExecType="NEXT_LAYOUT_WITHOUT_SET"
+            FnActiveIcon="layout/icon_focusmode"
+            FnNextMenuID="ID_FN15LAYERMENULAYOUT"
+            GuideRes="android:string/STRID_FUNC_FOCUSMODE_GUIDE"
+            IconRes="android:drawable/p_focusmode_n_004"
+            ItemId="FocusSelection"
+            NextMenuID="ID_FOCUSMODESPECIALSCREENMENULAYOUT"
+            SelectedIconRes="android:drawable/p_focusmode_n_004"
+            TextRes="android:string/STRID_U_FUNC_FOCUS_MODE"
+            UpdateTag="FocusChange"
+            Value="FocusSelection" >
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_FOCUS_MODE_AF_S_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.base.shooting.camera.FocusModeController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_01262"
+                IconRes="android:drawable/p_focusmode_n_001"
+                ItemId="FocusSelection_af-s"
+                SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_focusmode_single_af"
+                TextRes="android:string/STRID_AMC_STR_00430"
+                Value="af-s" >
+            </Layer2>
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_FOCUS_MODE_AF_C_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.base.shooting.camera.FocusModeController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_01263"
+                IconRes="android:drawable/p_focusmode_n_003"
+                ItemId="FocusSelection_af-c"
+                SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_focusmode_cont_af"
+                TextRes="android:string/STRID_AMC_STR_00433"
+                Value="af-c" >
+            </Layer2>
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_FOCUS_MODE_DMF_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.base.shooting.camera.FocusModeController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_01267"
+                IconRes="android:drawable/p_focusmode_n_005"
+                ItemId="FocusSelection_dmf"
+                SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_focusmode_dmf"
+                TextRes="android:string/STRID_AMC_STR_01001"
+                Value="dmf" >
+            </Layer2>
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_FOCUS_MODE_MF_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.base.shooting.camera.FocusModeController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_01266"
+                IconRes="android:drawable/p_focusmode_n_004"
+                ItemId="FocusSelection_manual"
+                SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_focusmode_mf"
+                TextRes="android:string/STRID_AMC_STR_01002"
+                Value="manual" >
+            </Layer2>
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_FOCUS_MODE_MF_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.base.shooting.camera.FocusModeController"
+                ExecType="NEXT_STATE"
+                GuideRes="android:string/STRID_AMC_STR_01266"
+                IconRes="android:drawable/p_focusmode_n_004"
+                ItemId="FocusSelection_manual_adjust_conrol_wheel"
+                NextMenuID="FocusAdjustmentMf"
+                SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_focusmode_mf"
+                TextRes="android:string/STRID_AMC_STR_01002"
+                Value="manual_adjust_conrol_wheel" >
+            </Layer2>
+        </Layer1>
+
+        <Layer1
+            CautionID0="CAUTION_GRP_ID_FOCUS_AREA_CONTRAST_AF_INVALID_GUIDE"
+            CautionID1="CAUTION_GRP_ID_FOCUS_AREA_PHASE_AF_INVALID_GUIDE"
+            CautionID2="CAUTION_ID_EXCLUSIVE_REASON_EZOOM"
+            ConfigClass="com.sony.imaging.app.base.shooting.camera.FocusAreaController"
+            CustomStartLayoutID="ID_SPECIALSCREENMENULAYOUT"
+            ExecType="NEXT_LAYOUT_WITHOUT_SET"
+            FnActiveIcon="layout/icon_focusarea"
+            FnNextMenuID="ID_FN15LAYERMENULAYOUT"
+            GuideRes="android:string/STRID_AMC_STR_00605"
+            IconRes="android:drawable/p_16_dd_parts_multi"
+            ItemId="FocusArea"
+            NextMenuID="ID_SPECIALSCREENMENULAYOUT"
+            SelectedIconRes="android:drawable/p_16_dd_parts_multi"
+            TextRes="android:string/STRID_AMC_STR_02367"
+            UpdateTag="AutoFocusArea"
+            Value="FocusArea" >
+
+            <!-- CautionID2はPF1.1以上のEYS/EYC用に用意 -->
+            <!-- TODO オートフォーカスエリア設定無効 CAUTION_GRP_ID_FOCUS_AREA_INVALIDじゃなくてよい？ -->
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_FOCUS_AREA_CONTRAST_AF_MULTI_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.base.shooting.camera.FocusAreaController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_01258"
+                IconRes="android:drawable/p_16_dd_parts_multi"
+                ItemId="FocusArea_multi"
+                SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_focusarea_multi"
+                TextRes="android:string/STRID_AMC_STR_00022"
+                Value="multi" >
+            </Layer2>
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_FOCUS_AREA_CONTRAST_AF_CENTER_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.base.shooting.camera.FocusAreaController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_01259"
+                IconRes="android:drawable/p_16_dd_parts_center"
+                ItemId="FocusArea_center"
+                SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_focusarea_center"
+                TextRes="android:string/STRID_AMC_STR_00023"
+                Value="center" >
+            </Layer2>
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_FOCUS_AREA_CONTRAST_AF_FLEXIBLE_SPOT_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.base.shooting.camera.FocusAreaController"
+                ExecType="NEXT_LAYOUT"
+                GuideRes="android:string/STRID_AMC_STR_01260"
+                IconRes="android:drawable/p_16_dd_parts_flexible"
+                ItemId="FocusArea_flex-spot"
+                NextMenuID="ID_AFFLEXIBLEPOSITIONMENULAYOUT"
+                SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_focusarea_flexiblespot"
+                TextRes="android:string/STRID_AMC_STR_00995"
+                Value="flex-spot" >
+            </Layer2>
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_FOCUS_AREA_PHASE_AF_WIDE_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.base.shooting.camera.FocusAreaController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_06277"
+                IconRes="android:drawable/p_focusarea_n_001"
+                ItemId="FocusArea_wide"
+                SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_focusarea_wide"
+                TextRes="android:string/STRID_AMC_STR_00022"
+                Value="wide" >
+            </Layer2>
+            <!-- TODO Spotアイコン15/19点AF対応必要？ FSには19点指定しかない。 -->
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_FOCUS_AREA_PHASE_AF_SPOT_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.base.shooting.camera.FocusAreaController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_06281"
+                IconRes="android:drawable/p_focusarea_n_003"
+                ItemId="FocusArea_spot"
+                SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_focusarea_spot_entry"
+                TextRes="android:string/STRID_AMC_STR_00023"
+                Value="spot" >
+            </Layer2>
+            <!-- TODO Localアイコン15/19点AF対応必要？ FSには19点指定しかない。 -->
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_FOCUS_AREA_PHASE_AF_LOCAL_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.base.shooting.camera.FocusAreaController"
+                ExecType="NEXT_LAYOUT"
+                GuideRes="android:string/STRID_AMC_STR_06282"
+                IconRes="android:drawable/p_focusarea_n_004"
+                ItemId="FocusArea_local"
+                NextMenuID="ID_AFLOCALPOSITIONMENULAYOUT"
+                SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_focusarea_local_entry"
+                TextRes="android:string/STRID_AMC_STR_00024"
+                Value="local" >
+            </Layer2>
+        </Layer1>
+
+        <Layer1
+            CautionID="CAUTION_GRP_ID_EXPOSURE_COMPENSATION_INVALID_GUIDE"
+            ConfigClass="com.sony.imaging.app.base.shooting.camera.ExposureCompensationController"
+            CustomStartLayoutID="ID_EXPOSURECOMPENSATIONMENULAYOUT"
+            ExecType="NEXT_LAYOUT_WITHOUT_SET"
+            FnActiveIcon="layout/icon_exposurecompensation"
+            FnNextMenuID="ID_FN15LAYEREXPOSURECOMPENSATIONLAYOUT"
+            GuideRes="android:string/STRID_AMC_STR_01322"
+            IconRes="s_16_dd_parts_doublemenu_exposurecomp_normal"
+            ItemId="ExposureCompensation"
+            NextMenuID="ID_EXPOSURECOMPENSATIONMENULAYOUT"
+            SelectedIconRes="s_16_dd_parts_doublemenu_exposurecomp_selected"
+            TextRes="android:string/STRID_AMC_STR_01047"
+            UpdateTag=""
+            Value="ExposureCompensation" >
+        </Layer1>
+
+        <Layer1
+			ItemId="Iso"
+			Value="Iso"
+			TextRes="android:string/STRID_AMC_STR_05439"
+			GuideRes="android:string/STRID_AMC_STR_01317"
+			IconRes="s_16_dd_parts_specialscreen_custom_icon_iso_normal"
+			SelectedIconRes="s_16_dd_parts_specialscreen_custom_icon_iso_selected"
+			ExecType="NEXT_LAYOUT_WITHOUT_SET"
+			CautionID="CAUTION_GRP_ID_ISO_SENSITIVITY_INVALID_GUIDE"
+			ConfigClass="com.sony.imaging.app.base.shooting.camera.ISOSensitivityController"
+			NextMenuID="ID_ISOSPECIALSCREENMENULAYOUT"
+			CustomStartLayoutID = "ID_ISOSPECIALSCREENMENULAYOUT"
+			UpdateTag="ISOSensitivity"
+			FnNextMenuID="ID_ISOFN15LAYERMENULAYOUT"
+			FnActiveIcon="layout/icon_iso"
+		>
+
+			<Layer2
+				ItemId="Iso_0"
+				Value="0"
+				TextRes="android:string/STRID_AMC_STR_01045"
+				GuideRes="android:string/STRID_AMC_STR_01318"
+				IconRes="android:drawable/p_icon_n_auto"
+				FnIconRes="android:drawable/p_iso_n_011"
+				SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_iso_auto"
+				ExecType="SET_VALUE"
+				CautionID="CAUTION_GRP_ID_ISO_SENSITIVITY_ISO_AUTO_INVALID_GUIDE"
+				ConfigClass="com.sony.imaging.app.base.shooting.camera.ISOSensitivityController"
+				
+			>
+			</Layer2>
+
+			<Layer2
+				ItemId="Iso_50Expanded"
+				Value="50Expanded"
+				TextRes="android:string/STRID_AMC_STR_06000"
+				GuideRes="android:string/STRID_AMC_STR_06288"
+				IconRes="android:drawable/p_icon_n_50"
+				FnIconRes="android:drawable/p_iso_n_012"
+				SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_iso_50_expanded"
+				ExecType="SET_VALUE"
+				CautionID="CAUTION_GRP_ID_ISO_SENSITIVITY_ISO_50_INVALID_GUIDE"
+				ConfigClass="com.sony.imaging.app.base.shooting.camera.ISOSensitivityController"
+				
+			>
+			</Layer2>
+
+			<Layer2
+				ItemId="Iso_64Expanded"
+				Value="64Expanded"
+				TextRes="android:string/STRID_AMC_STR_06001"
+				GuideRes="android:string/STRID_AMC_STR_06288"
+				IconRes="android:drawable/p_icon_n_64"
+				FnIconRes="android:drawable/p_iso_n_013"
+				SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_iso_64_expanded"
+				ExecType="SET_VALUE"
+				CautionID="CAUTION_GRP_ID_ISO_SENSITIVITY_ISO_64_INVALID_GUIDE"
+				ConfigClass="com.sony.imaging.app.base.shooting.camera.ISOSensitivityController"
+				
+			>
+			</Layer2>
+
+			<Layer2
+				ItemId="Iso_80Expanded"
+				Value="80Expanded"
+				TextRes="android:string/STRID_AMC_STR_06002"
+				GuideRes="android:string/STRID_AMC_STR_06288"
+				IconRes="android:drawable/p_icon_n_80"
+				FnIconRes="android:drawable/p_iso_n_014"
+				SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_iso_80_expanded"
+				ExecType="SET_VALUE"
+				CautionID="CAUTION_GRP_ID_ISO_SENSITIVITY_ISO_80_INVALID_GUIDE"
+				ConfigClass="com.sony.imaging.app.base.shooting.camera.ISOSensitivityController"
+				
+			>
+			</Layer2>
+
+			<Layer2
+				ItemId="Iso_100Expanded"
+				Value="100Expanded"
+				TextRes="android:string/STRID_AMC_STR_01046"
+				GuideRes="android:string/STRID_AMC_STR_06288"
+				IconRes="android:drawable/p_16_dd_parts_set_iso100"
+				FnIconRes="android:drawable/p_16_dd_parts_iso100"
+				SelectedIconRes="android:drawable/p_16_DD_parts_Fn_1_5_layer_sel_iso_100_expanded"
+				ExecType="SET_VALUE"
+				CautionID="CAUTION_GRP_ID_ISO_SENSITIVITY_ISO_100_INVALID_GUIDE"
+				ConfigClass="com.sony.imaging.app.base.shooting.camera.ISOSensitivityController"
+				
+			>
+			</Layer2>
+			
+			<Layer2
+				ItemId="Iso_80"
+				Value="80"
+				TextRes="android:string/STRID_AMC_STR_06002"
+				GuideRes="android:string/STRID_AMC_STR_06288"
+				IconRes="android:drawable/p_16_dd_parts_set_iso80"
+				FnIconRes="android:drawable/p_16_dd_parts_iso80"
+				SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_iso_80"
+				ExecType="SET_VALUE"
+				CautionID="CAUTION_GRP_ID_ISO_SENSITIVITY_ISO_80_INVALID_GUIDE"
+				ConfigClass="com.sony.imaging.app.base.shooting.camera.ISOSensitivityController"
+				
+			>
+			</Layer2>
+
+			<Layer2
+				ItemId="Iso_100"
+				Value="100"
+				TextRes="android:string/STRID_AMC_STR_01046"
+				GuideRes="android:string/STRID_AMC_STR_05131"
+				IconRes="android:drawable/p_icon_n_100"
+				FnIconRes="android:drawable/p_iso_n_015"
+				SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_iso_100"
+				ExecType="SET_VALUE"
+				CautionID="CAUTION_GRP_ID_ISO_SENSITIVITY_ISO_100_INVALID_GUIDE"
+				ConfigClass="com.sony.imaging.app.base.shooting.camera.ISOSensitivityController"
+				
+			>
+			</Layer2>
+
+			<Layer2
+				ItemId="Iso_125"
+				Value="125"
+				TextRes="android:string/STRID_AMC_STR_06003"
+				GuideRes="android:string/STRID_AMC_STR_05131"
+				IconRes="android:drawable/p_icon_n_125"
+				FnIconRes="android:drawable/p_iso_n_016"
+				SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_iso_125"
+				ExecType="SET_VALUE"
+				CautionID="CAUTION_GRP_ID_ISO_SENSITIVITY_ISO_125_INVALID_GUIDE"
+				ConfigClass="com.sony.imaging.app.base.shooting.camera.ISOSensitivityController"
+				
+			>
+			</Layer2>
+
+			<Layer2
+				ItemId="Iso_160"
+				Value="160"
+				TextRes="android:string/STRID_AMC_STR_06004"
+				GuideRes="android:string/STRID_AMC_STR_05131"
+				IconRes="android:drawable/p_icon_n_160"
+				FnIconRes="android:drawable/p_iso_n_017"
+				SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_iso_160"
+				ExecType="SET_VALUE"
+				CautionID="CAUTION_GRP_ID_ISO_SENSITIVITY_ISO_160_INVALID_GUIDE"
+				ConfigClass="com.sony.imaging.app.base.shooting.camera.ISOSensitivityController"
+				
+			>
+			</Layer2>
+
+			<Layer2
+				ItemId="Iso_200"
+				Value="200"
+				TextRes="android:string/STRID_AMC_STR_02186"
+				GuideRes="android:string/STRID_AMC_STR_05131"
+				IconRes="android:drawable/p_icon_n_200"
+				FnIconRes="android:drawable/p_iso_n_018"
+				SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_iso_200"
+				ExecType="SET_VALUE"
+				CautionID="CAUTION_GRP_ID_ISO_SENSITIVITY_ISO_200_INVALID_GUIDE"
+				ConfigClass="com.sony.imaging.app.base.shooting.camera.ISOSensitivityController"
+				
+			>
+			</Layer2>
+
+			<Layer2
+				ItemId="Iso_250"
+				Value="250"
+				TextRes="android:string/STRID_AMC_STR_06005"
+				GuideRes="android:string/STRID_AMC_STR_05131"
+				IconRes="android:drawable/p_icon_n_250"
+				FnIconRes="android:drawable/p_iso_n_019"
+				SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_iso_250"
+				ExecType="SET_VALUE"
+				CautionID="CAUTION_GRP_ID_ISO_SENSITIVITY_ISO_250_INVALID_GUIDE"
+				ConfigClass="com.sony.imaging.app.base.shooting.camera.ISOSensitivityController"
+				
+			>
+			</Layer2>
+
+			<Layer2
+				ItemId="Iso_320"
+				Value="320"
+				TextRes="android:string/STRID_AMC_STR_06006"
+				GuideRes="android:string/STRID_AMC_STR_05132"
+				IconRes="android:drawable/p_icon_n_320"
+				FnIconRes="android:drawable/p_iso_n_020"
+				SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_iso_320"
+				ExecType="SET_VALUE"
+				CautionID="CAUTION_GRP_ID_ISO_SENSITIVITY_ISO_320_INVALID_GUIDE"
+				ConfigClass="com.sony.imaging.app.base.shooting.camera.ISOSensitivityController"
+				
+			>
+			</Layer2>
+
+			<Layer2
+				ItemId="Iso_400"
+				Value="400"
+				TextRes="android:string/STRID_AMC_STR_02187"
+				GuideRes="android:string/STRID_AMC_STR_05132"
+				IconRes="android:drawable/p_icon_n_400"
+				FnIconRes="android:drawable/p_iso_n_021"
+				SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_iso_400"
+				ExecType="SET_VALUE"
+				CautionID="CAUTION_GRP_ID_ISO_SENSITIVITY_ISO_400_INVALID_GUIDE"
+				ConfigClass="com.sony.imaging.app.base.shooting.camera.ISOSensitivityController"
+				
+			>
+			</Layer2>
+
+			<Layer2
+				ItemId="Iso_500"
+				Value="500"
+				TextRes="android:string/STRID_AMC_STR_06007"
+				GuideRes="android:string/STRID_AMC_STR_05132"
+				IconRes="android:drawable/p_icon_n_500"
+				FnIconRes="android:drawable/p_iso_n_022"
+				SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_iso_500"
+				ExecType="SET_VALUE"
+				CautionID="CAUTION_GRP_ID_ISO_SENSITIVITY_ISO_500_INVALID_GUIDE"
+				ConfigClass="com.sony.imaging.app.base.shooting.camera.ISOSensitivityController"
+				
+			>
+			</Layer2>
+
+			<Layer2
+				ItemId="Iso_640"
+				Value="640"
+				TextRes="android:string/STRID_AMC_STR_06008"
+				GuideRes="android:string/STRID_AMC_STR_05132"
+				IconRes="android:drawable/p_icon_n_640"
+				FnIconRes="android:drawable/p_iso_n_023"
+				SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_iso_640"
+				ExecType="SET_VALUE"
+				CautionID="CAUTION_GRP_ID_ISO_SENSITIVITY_ISO_640_INVALID_GUIDE"
+				ConfigClass="com.sony.imaging.app.base.shooting.camera.ISOSensitivityController"
+				
+			>
+			</Layer2>
+
+			<Layer2
+				ItemId="Iso_800"
+				Value="800"
+				TextRes="android:string/STRID_AMC_STR_02188"
+				GuideRes="android:string/STRID_AMC_STR_05133"
+				IconRes="android:drawable/p_icon_n_800"
+				FnIconRes="android:drawable/p_iso_n_024"
+				SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_iso_800"
+				ExecType="SET_VALUE"
+				CautionID="CAUTION_GRP_ID_ISO_SENSITIVITY_ISO_800_INVALID_GUIDE"
+				ConfigClass="com.sony.imaging.app.base.shooting.camera.ISOSensitivityController"
+				
+			>
+			</Layer2>
+
+			<Layer2
+				ItemId="Iso_1000"
+				Value="1000"
+				TextRes="android:string/STRID_AMC_STR_06009"
+				GuideRes="android:string/STRID_AMC_STR_05133"
+				IconRes="android:drawable/p_icon_n_1000"
+				FnIconRes="android:drawable/p_iso_n_025"
+				SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_iso_1000"
+				ExecType="SET_VALUE"
+				CautionID="CAUTION_GRP_ID_ISO_SENSITIVITY_ISO_1000_INVALID_GUIDE"
+				ConfigClass="com.sony.imaging.app.base.shooting.camera.ISOSensitivityController"
+				
+			>
+			</Layer2>
+
+			<Layer2
+				ItemId="Iso_1250"
+				Value="1250"
+				TextRes="android:string/STRID_AMC_STR_06010"
+				GuideRes="android:string/STRID_AMC_STR_05133"
+				IconRes="android:drawable/p_icon_n_1250"
+				FnIconRes="android:drawable/p_iso_n_026"
+				SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_iso_1250"
+				ExecType="SET_VALUE"
+				CautionID="CAUTION_GRP_ID_ISO_SENSITIVITY_ISO_1250_INVALID_GUIDE"
+				ConfigClass="com.sony.imaging.app.base.shooting.camera.ISOSensitivityController"
+				
+			>
+			</Layer2>
+
+			<Layer2
+				ItemId="Iso_1600"
+				Value="1600"
+				TextRes="android:string/STRID_AMC_STR_02189"
+				GuideRes="android:string/STRID_AMC_STR_05134"
+				IconRes="android:drawable/p_icon_n_1600"
+				FnIconRes="android:drawable/p_iso_n_027"
+				SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_iso_1600"
+				ExecType="SET_VALUE"
+				CautionID="CAUTION_GRP_ID_ISO_SENSITIVITY_ISO_1600_INVALID_GUIDE"
+				ConfigClass="com.sony.imaging.app.base.shooting.camera.ISOSensitivityController"
+				
+			>
+			</Layer2>
+
+			<Layer2
+				ItemId="Iso_2000"
+				Value="2000"
+				TextRes="android:string/STRID_AMC_STR_06011"
+				GuideRes="android:string/STRID_AMC_STR_05134"
+				IconRes="android:drawable/p_icon_n_2000"
+				FnIconRes="android:drawable/p_iso_n_028"
+				SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_iso_2000"
+				ExecType="SET_VALUE"
+				CautionID="CAUTION_GRP_ID_ISO_SENSITIVITY_ISO_2000_INVALID_GUIDE"
+				ConfigClass="com.sony.imaging.app.base.shooting.camera.ISOSensitivityController"
+				
+			>
+			</Layer2>
+
+			<Layer2
+				ItemId="Iso_2500"
+				Value="2500"
+				TextRes="android:string/STRID_AMC_STR_06012"
+				GuideRes="android:string/STRID_AMC_STR_05134"
+				IconRes="android:drawable/p_icon_n_2500"
+				FnIconRes="android:drawable/p_iso_n_029"
+				SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_iso_2500"
+				ExecType="SET_VALUE"
+				CautionID="CAUTION_GRP_ID_ISO_SENSITIVITY_ISO_2500_INVALID_GUIDE"
+				ConfigClass="com.sony.imaging.app.base.shooting.camera.ISOSensitivityController"
+				
+			>
+			</Layer2>
+
+			<Layer2
+				ItemId="Iso_3200"
+				Value="3200"
+				TextRes="android:string/STRID_AMC_STR_02190"
+				GuideRes="android:string/STRID_AMC_STR_05135"
+				IconRes="android:drawable/p_icon_n_3200"
+				FnIconRes="android:drawable/p_iso_n_030"
+				SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_iso_3200"
+				ExecType="SET_VALUE"
+				CautionID="CAUTION_GRP_ID_ISO_SENSITIVITY_ISO_3200_INVALID_GUIDE"
+				ConfigClass="com.sony.imaging.app.base.shooting.camera.ISOSensitivityController"
+				
+			>
+			</Layer2>
+
+			<Layer2
+				ItemId="Iso_4000"
+				Value="4000"
+				TextRes="android:string/STRID_AMC_STR_06013"
+				GuideRes="android:string/STRID_AMC_STR_05135"
+				IconRes="android:drawable/p_icon_n_4000"
+				FnIconRes="android:drawable/p_iso_n_031"
+				SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_iso_4000"
+				ExecType="SET_VALUE"
+				CautionID="CAUTION_GRP_ID_ISO_SENSITIVITY_ISO_4000_INVALID_GUIDE"
+				ConfigClass="com.sony.imaging.app.base.shooting.camera.ISOSensitivityController"
+				
+			>
+			</Layer2>
+
+			<Layer2
+				ItemId="Iso_5000"
+				Value="5000"
+				TextRes="android:string/STRID_AMC_STR_06014"
+				GuideRes="android:string/STRID_AMC_STR_05136"
+				IconRes="android:drawable/p_icon_n_5000"
+				FnIconRes="android:drawable/p_iso_n_032"
+				SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_iso_5000"
+				ExecType="SET_VALUE"
+				CautionID="CAUTION_GRP_ID_ISO_SENSITIVITY_ISO_5000_INVALID_GUIDE"
+				ConfigClass="com.sony.imaging.app.base.shooting.camera.ISOSensitivityController"
+				
+			>
+			</Layer2>
+
+			<Layer2
+				ItemId="Iso_6400"
+				Value="6400"
+				TextRes="android:string/STRID_AMC_STR_02191"
+				GuideRes="android:string/STRID_AMC_STR_05136"
+				IconRes="android:drawable/p_icon_n_6400"
+				FnIconRes="android:drawable/p_iso_n_033"
+				SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_iso_6400"
+				ExecType="SET_VALUE"
+				CautionID="CAUTION_GRP_ID_ISO_SENSITIVITY_ISO_6400_INVALID_GUIDE"
+				ConfigClass="com.sony.imaging.app.base.shooting.camera.ISOSensitivityController"
+				
+			>
+			</Layer2>
+
+			<Layer2
+				ItemId="Iso_8000"
+				Value="8000"
+				TextRes="android:string/STRID_AMC_STR_06015"
+				GuideRes="android:string/STRID_AMC_STR_05137"
+				IconRes="android:drawable/p_icon_n_8000"
+				FnIconRes="android:drawable/p_iso_n_034"
+				SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_iso_8000"
+				ExecType="SET_VALUE"
+				CautionID="CAUTION_GRP_ID_ISO_SENSITIVITY_ISO_8000_INVALID_GUIDE"
+				ConfigClass="com.sony.imaging.app.base.shooting.camera.ISOSensitivityController"
+				
+			>
+			</Layer2>
+
+			<Layer2
+				ItemId="Iso_10000"
+				Value="10000"
+				TextRes="android:string/STRID_AMC_STR_06016"
+				GuideRes="android:string/STRID_AMC_STR_05137"
+				IconRes="android:drawable/p_icon_n_10000"
+				FnIconRes="android:drawable/p_iso_n_035"
+				SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_iso_10000"
+				ExecType="SET_VALUE"
+				CautionID="CAUTION_GRP_ID_ISO_SENSITIVITY_ISO_10000_INVALID_GUIDE"
+				ConfigClass="com.sony.imaging.app.base.shooting.camera.ISOSensitivityController"
+				
+			>
+			</Layer2>
+
+			<Layer2
+				ItemId="Iso_12800"
+				Value="12800"
+				TextRes="android:string/STRID_AMC_STR_02192"
+				GuideRes="android:string/STRID_AMC_STR_05137"
+				IconRes="android:drawable/p_icon_n_12800"
+				FnIconRes="android:drawable/p_iso_n_036"
+				SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_iso_12800"
+				ExecType="SET_VALUE"
+				CautionID="CAUTION_GRP_ID_ISO_SENSITIVITY_ISO_12800_INVALID_GUIDE"
+				ConfigClass="com.sony.imaging.app.base.shooting.camera.ISOSensitivityController"
+				
+			>
+			</Layer2>
+
+			<Layer2
+				ItemId="Iso_16000"
+				Value="16000"
+				TextRes="android:string/STRID_AMC_STR_06017"
+				GuideRes="android:string/STRID_AMC_STR_05137"
+				IconRes="android:drawable/p_icon_n_16000"
+				FnIconRes="android:drawable/p_iso_n_037"
+				SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_iso_16000"
+				ExecType="SET_VALUE"
+				CautionID="CAUTION_GRP_ID_ISO_SENSITIVITY_ISO_16000_INVALID_GUIDE"
+				ConfigClass="com.sony.imaging.app.base.shooting.camera.ISOSensitivityController"
+				
+			>
+			</Layer2>
+
+			<Layer2
+				ItemId="Iso_20000"
+				Value="20000"
+				TextRes="android:string/STRID_AMC_STR_06018"
+				GuideRes="android:string/STRID_AMC_STR_05137"
+				IconRes="android:drawable/p_icon_n_20000"
+				FnIconRes="android:drawable/p_iso_n_038"
+				SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_iso_20000"
+				ExecType="SET_VALUE"
+				CautionID="CAUTION_GRP_ID_ISO_SENSITIVITY_ISO_20000_INVALID_GUIDE"
+				ConfigClass="com.sony.imaging.app.base.shooting.camera.ISOSensitivityController"
+				
+			>
+			</Layer2>
+
+			<Layer2
+				ItemId="Iso_25600"
+				Value="25600"
+				TextRes="android:string/STRID_AMC_STR_06019"
+				GuideRes="android:string/STRID_AMC_STR_05137"
+				IconRes="android:drawable/p_icon_n_25600"
+				FnIconRes="android:drawable/p_iso_n_039"
+				SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_iso_25600"
+				ExecType="SET_VALUE"
+				CautionID="CAUTION_GRP_ID_ISO_SENSITIVITY_ISO_25600_INVALID_GUIDE"
+				ConfigClass="com.sony.imaging.app.base.shooting.camera.ISOSensitivityController"
+				
+			>
+			</Layer2>
+
+			<Layer2
+				ItemId="Iso_32000"
+				Value="32000"
+				TextRes="android:string/STRID_ISO_32000"
+				GuideRes="android:string/STRID_AMC_STR_05137"
+				IconRes="android:drawable/p_16_dd_parts_set_ISO32000"
+				FnIconRes="android:drawable/p_iso_n_036"
+				SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_iso_32000"
+				ExecType="SET_VALUE"
+				CautionID="CAUTION_GRP_ID_ISO_SENSITIVITY_ISO_32000_INVALID_GUIDE"
+				ConfigClass="com.sony.imaging.app.base.shooting.camera.ISOSensitivityController"
+				
+			>
+			</Layer2>
+
+			<Layer2
+				ItemId="Iso_40000"
+				Value="40000"
+				TextRes="android:string/STRID_ISO_40000"
+				GuideRes="android:string/STRID_AMC_STR_05137"
+				IconRes="android:drawable/p_16_dd_parts_set_ISO40000"
+				FnIconRes="android:drawable/p_16_dd_parts_iso40000"
+				SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_iso_40000"
+				ExecType="SET_VALUE"
+				CautionID="CAUTION_GRP_ID_ISO_SENSITIVITY_ISO_40000_INVALID_GUIDE"
+				ConfigClass="com.sony.imaging.app.base.shooting.camera.ISOSensitivityController"
+				
+			>
+			</Layer2>
+
+			<Layer2
+				ItemId="Iso_51200"
+				Value="51200"
+				TextRes="android:string/STRID_ISO_51200"
+				GuideRes="android:string/STRID_AMC_STR_05137"
+				IconRes="android:drawable/p_16_dd_parts_set_ISO51200"
+				FnIconRes="android:drawable/p_16_dd_parts_iso51200"
+				SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_iso_51200"
+				ExecType="SET_VALUE"
+				CautionID="CAUTION_GRP_ID_ISO_SENSITIVITY_ISO_51200_INVALID_GUIDE"
+				ConfigClass="com.sony.imaging.app.base.shooting.camera.ISOSensitivityController"
+				
+			>
+			</Layer2>
+
+		</Layer1>
+    </Global>
+
+    <Global
+        CautionID="0"
+        ExecType="NEXT_LAYOUT_WITHOUT_SET"
+        IconRes="android:drawable/p_16_dd_parts_43_set_indicator_pageposition_4"
+        ItemId="Page4"
+        NextMenuID="ID_PAGEMENULAYOUT"
+        SelectedIconRes="android:drawable/p_16_dd_parts_43_set_indicator_pageposition_4_selected" >
+
+        <!-- TODO 露出補正のアイコンが見当たらなかったので仮 -->
+
+        <Layer1
+            CautionID="CAUTION_GRP_ID_METERING_MODE_INVALID_GUIDE"
+            ConfigClass="com.sony.imaging.app.base.shooting.camera.MeteringController"
+            CustomStartLayoutID="ID_SPECIALSCREENMENULAYOUT"
+            ExecType="NEXT_LAYOUT_WITHOUT_SET"
+            FnActiveIcon="layout/icon_meteringmode"
+            FnNextMenuID="ID_FN15LAYERMENULAYOUT"
+            GuideRes="android:string/STRID_AMC_STR_01313"
+            ItemId="MeteringMode"
+            NextMenuID="ID_SPECIALSCREENMENULAYOUT"
+            TextRes="android:string/STRID_AMC_STR_05446"
+            UpdateTag="MeteringMode"
+            Value="MeteringMode" >
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_METERING_MODE_MULTI_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.base.shooting.camera.MeteringController"
+                ExecType="SET_VALUE"
+                FnActiveIcon="layout/icon_meteringmode"
+                GuideRes="android:string/STRID_AMC_STR_01314"
+                IconRes="android:drawable/p_metermode_n_001"
+                ItemId="MeteringMode_multi"
+                SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_meteringmode_multi_segment"
+                TextRes="android:string/STRID_AMC_STR_00427"
+                Value="multi" >
+            </Layer2>
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_METERING_MODE_CENTER_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.base.shooting.camera.MeteringController"
+                ExecType="SET_VALUE"
+                FnActiveIcon="layout/icon_meteringmode"
+                GuideRes="android:string/STRID_AMC_STR_01315"
+                IconRes="android:drawable/p_metermode_n_002"
+                ItemId="MeteringMode_center-weighted"
+                SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_meteringmode_center_weighted"
+                TextRes="android:string/STRID_AMC_STR_00428"
+                Value="center-weighted" >
+            </Layer2>
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_METERING_MODE_SPOT_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.base.shooting.camera.MeteringController"
+                ExecType="SET_VALUE"
+                FnActiveIcon="layout/icon_meteringmode"
+                GuideRes="android:string/STRID_AMC_STR_05095"
+                IconRes="android:drawable/p_metermode_n_003"
+                ItemId="MeteringMode_center-spot"
+                SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_meteringmode_spot"
+                TextRes="android:string/STRID_AMC_STR_01043"
+                Value="center-spot" >
+            </Layer2>
+        </Layer1>
+
+        <Layer1
+            CautionID="CAUTION_GRP_ID_WHITE_BALANCE_INVALID_GUIDE"
+            ConfigClass="com.sony.imaging.app.base.shooting.camera.WhiteBalanceController"
+            CustomStartLayoutID="ID_WHITEBALANCEMENULAYOUT"
+            ExecType="NEXT_LAYOUT_WITHOUT_SET"
+            FnActiveIcon="layout/icon_whitebalance"
+            FnNextMenuID="ID_FN15LAYERWHITEBALANCELAYOUT"
+            FnValue="WhiteBalanceFn"
+            GuideRes="android:string/STRID_AMC_STR_01288"
+            ItemId="WhiteBalance"
+            NextMenuID="ID_WHITEBALANCEMENULAYOUT"
+            TextRes="android:string/STRID_AMC_STR_05440"
+            UpdateTag="WhiteBalanceModeChange"
+            Value="WhiteBalance" >
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_WHITE_BALANCE_AUTO_WB_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.base.shooting.camera.WhiteBalanceController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_01289"
+                IconRes="android:drawable/p_wb_set_n_001"
+                ItemId="WhiteBalance_auto"
+                NextMenuID="ID_WHITEBALANCEADJUSTMENTMENULAYOUT"
+                SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_wb_auto"
+                TextRes="android:string/STRID_AMC_STR_05255"
+                Value="auto" >
+            </Layer2>
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_WHITE_BALANCE_DAYLIGHT_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.base.shooting.camera.WhiteBalanceController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_01290"
+                IconRes="android:drawable/p_wb_set_n_002"
+                ItemId="WhiteBalance_daylight"
+                NextMenuID="ID_WHITEBALANCEADJUSTMENTMENULAYOUT"
+                SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_wb_daylight"
+                TextRes="android:string/STRID_AMC_STR_01028"
+                Value="daylight" >
+            </Layer2>
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_WHITE_BALANCE_SHADE_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.base.shooting.camera.WhiteBalanceController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_01291"
+                IconRes="android:drawable/p_wb_set_n_003"
+                ItemId="WhiteBalance_shade"
+                NextMenuID="ID_WHITEBALANCEADJUSTMENTMENULAYOUT"
+                SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_wb_shade"
+                TextRes="android:string/STRID_AMC_STR_01029"
+                Value="shade" >
+            </Layer2>
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_WHITE_BALANCE_CLOUDY_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.base.shooting.camera.WhiteBalanceController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_01292"
+                IconRes="android:drawable/p_wb_set_n_004"
+                ItemId="WhiteBalance_cloudy-daylight"
+                NextMenuID="ID_WHITEBALANCEADJUSTMENTMENULAYOUT"
+                SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_wb_cloudy"
+                TextRes="android:string/STRID_AMC_STR_01030"
+                Value="cloudy-daylight" >
+            </Layer2>
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_WHITE_BALANCE_INCANDESCENT_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.base.shooting.camera.WhiteBalanceController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_01293"
+                IconRes="android:drawable/p_wb_set_n_005"
+                ItemId="WhiteBalance_incandescent"
+                NextMenuID="ID_WHITEBALANCEADJUSTMENTMENULAYOUT"
+                SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_wb_incandescent"
+                TextRes="android:string/STRID_AMC_STR_01031"
+                Value="incandescent" >
+            </Layer2>
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_WHITE_BALANCE_FLUORESCENT_MINUS_1_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.base.shooting.camera.WhiteBalanceController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_01294"
+                IconRes="android:drawable/p_wb_set_n_006"
+                ItemId="WhiteBalance_warm-fluorescent"
+                NextMenuID="ID_WHITEBALANCEADJUSTMENTMENULAYOUT"
+                SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_wb_fluorescent_warm_white"
+                TextRes="android:string/STRID_AMC_STR_06026"
+                Value="warm-fluorescent" >
+            </Layer2>
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_WHITE_BALANCE_FLUORESCENT_0_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.base.shooting.camera.WhiteBalanceController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_01295"
+                IconRes="android:drawable/p_wb_set_n_007"
+                ItemId="WhiteBalance_fluorescent-coolwhite"
+                NextMenuID="ID_WHITEBALANCEADJUSTMENTMENULAYOUT"
+                SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_wb_fluorescent_white"
+                TextRes="android:string/STRID_AMC_STR_06027"
+                Value="fluorescent-coolwhite" >
+            </Layer2>
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_WHITE_BALANCE_FLUORESCENT_PLUS_1_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.base.shooting.camera.WhiteBalanceController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_01296"
+                IconRes="android:drawable/p_wb_set_n_008"
+                ItemId="WhiteBalance_fluorescent-daywhite"
+                NextMenuID="ID_WHITEBALANCEADJUSTMENTMENULAYOUT"
+                SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_wb_fluorescent_natural_white"
+                TextRes="android:string/STRID_AMC_STR_06028"
+                Value="fluorescent-daywhite" >
+            </Layer2>
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_WHITE_BALANCE_FLUORESCENT_PLUS_2_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.base.shooting.camera.WhiteBalanceController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_01297"
+                IconRes="android:drawable/p_wb_set_n_009"
+                ItemId="WhiteBalance_fluorescent-daylight"
+                NextMenuID="ID_WHITEBALANCEADJUSTMENTMENULAYOUT"
+                SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_wb_fluorescent_daylight"
+                TextRes="android:string/STRID_AMC_STR_06029"
+                Value="fluorescent-daylight" >
+            </Layer2>
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_WHITE_BALANCE_FLASH_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.base.shooting.camera.WhiteBalanceController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_01298"
+                IconRes="android:drawable/p_wb_set_n_010"
+                ItemId="WhiteBalance_flash"
+                NextMenuID="ID_WHITEBALANCEADJUSTMENTMENULAYOUT"
+                SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_wb_flash"
+                TextRes="android:string/STRID_AMC_STR_01033"
+                Value="flash" >
+            </Layer2>
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_WHITE_BALANCE_UNDERWATER_AUTO_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.base.shooting.camera.WhiteBalanceController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_FUNC_WHITE_BALANCE_GUIDE_UNDERWATER"
+                IconRes="android:drawable/p_16_dd_parts_5w_shoot_icon_info_underwater_auto"
+                ItemId="WhiteBalance_underwater-auto"
+                NextMenuID="ID_WHITEBALANCEADJUSTMENTMENULAYOUT"
+                SelectedIconRes="android:drawable/p_16_dd_parts_5w_shoot_icon_setting_underwater_auto_selected"
+                TextRes="android:string/STRID_FUNC_WHITE_BALANCE_SET_UNDERWATER"
+                Value="underwater-auto" >
+            </Layer2>
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_WHITE_BALANCE_COLOR_TEMP_AND_COLOR_FILTER_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.base.shooting.camera.WhiteBalanceController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_01299"
+                IconRes="android:drawable/p_wb_set_n_011"
+                ItemId="WhiteBalance_color-temp"
+                NextMenuID="ID_WHITEBALANCEADJUSTMENTMENULAYOUT"
+                SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_wb_color_temp_color_filter"
+                TextRes="android:string/STRID_AMC_STR_02114"
+                Value="color-temp" >
+            </Layer2>
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_WHITE_BALANCE_CUSTOM_WHITE_BALANCE_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.base.shooting.camera.WhiteBalanceController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_01305"
+                IconRes="android:drawable/p_wb_set_n_012"
+                ItemId="WhiteBalance_custom"
+                NextMenuID="ID_WHITEBALANCEADJUSTMENTMENULAYOUT"
+                SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_wb_custom"
+                TextRes="android:string/STRID_AMC_STR_01036"
+                Value="custom" >
+            </Layer2>
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_WHITE_BALANCE_CUSTOM_WHITE_BALANCE_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.base.shooting.camera.WhiteBalanceController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_01305"
+                IconRes="android:drawable/p_wb_set_n_013"
+                ItemId="WhiteBalance_custom1"
+                NextMenuID="ID_WHITEBALANCEADJUSTMENTMENULAYOUT"
+                SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_wb_custom_reg1"
+                TextRes="android:string/STRID_AMC_STR_00193"
+                Value="custom1" >
+            </Layer2>
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_WHITE_BALANCE_CUSTOM_WHITE_BALANCE_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.base.shooting.camera.WhiteBalanceController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_01305"
+                IconRes="android:drawable/p_wb_set_n_014"
+                ItemId="WhiteBalance_custom2"
+                NextMenuID="ID_WHITEBALANCEADJUSTMENTMENULAYOUT"
+                SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_wb_custom_reg2"
+                TextRes="android:string/STRID_AMC_STR_00194"
+                Value="custom2" >
+            </Layer2>
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_WHITE_BALANCE_CUSTOM_WHITE_BALANCE_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.base.shooting.camera.WhiteBalanceController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_01305"
+                IconRes="android:drawable/p_wb_set_n_015"
+                ItemId="WhiteBalance_custom3"
+                NextMenuID="ID_WHITEBALANCEADJUSTMENTMENULAYOUT"
+                SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_wb_custom_reg3"
+                TextRes="android:string/STRID_AMC_STR_00195"
+                Value="custom3" >
+            </Layer2>
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_WHITE_BALANCE_CUSTOM_WHITE_BALANCE_SET_STANDBY_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.base.shooting.camera.WhiteBalanceController"
+                ExecType="NEXT_STATE"
+                GuideRes="android:string/STRID_AMC_STR_01306"
+                IconRes="android:drawable/p_wb_set_n_016"
+                ItemId="WhiteBalance_custom-set"
+                NextMenuID="CustomWhiteBalance"
+                SelectedIconRes="android:drawable/p_wb_set_n_016"
+                TextRes="android:string/STRID_AMC_STR_01037"
+                Value="custom-set" >
+            </Layer2>
+        </Layer1>
+    </Global>
+
+    <Global
+        CautionID="0"
+        ExecType="NEXT_LAYOUT_WITHOUT_SET"
+        IconRes="android:drawable/p_16_dd_parts_43_set_indicator_pageposition_5"
+        ItemId="Page5"
+        NextMenuID="ID_PAGEMENULAYOUT"
+        SelectedIconRes="android:drawable/p_16_dd_parts_43_set_indicator_pageposition_5_selected"
+        TextRes="android:string/STRID_AMC_STR_00934" >
+
+        <Layer1
+            CautionID="CAUTION_GRP_ID_ZOOM_INVALID_GUIDE"
+            ConfigClass="com.sony.imaging.app.base.shooting.camera.DigitalZoomController"
+            CustomStartLayoutID="ID_DIGITALZOOMSETTINGLAYOUT"
+            ExecType="NEXT_LAYOUT_WITHOUT_SET"
+            GuideRes="android:string/STRID_FUNC_ZOOM_GUIDE_DSLR"
+            IconRes=""
+            ItemId="DigitalZoom"
+            NextMenuID="ID_DIGITALZOOMSETTINGLAYOUT"
+            SelectedIconRes=""
+            TextRes="android:string/STRID_AMC_STR_FUNC_ZOOM"
+            UpdateTag="DigitalZoomMode"
+            Value="DigitalZoom" >
+        </Layer1>
+
+        <Layer1
+            CautionID="CAUTION_GRP_ID_FOCUS_MAGNIFIER_IMAGER_INVALID_GUIDE"
+            ConfigClass="com.sony.imaging.app.base.shooting.camera.FocusMagnificationController"
+            ExecType="NEXT_STATE"
+            GuideRes="android:string/STRID_FUNC_FOCUS_MAGNIFIER_GUIDE"
+            IconRes="android:drawable/p_wb_set_n_016"
+            ItemId="FocusMagnifier"
+            NextMenuID="MfAssist"
+            SelectedIconRes="android:drawable/p_wb_set_n_016"
+            TextRes="android:string/STRID_AMC_STR_06214"
+            Value="FocusMagnifier" >
+        </Layer1>
+
+        <Layer1
+            CautionID="CAUTION_GRP_ID_FACE_DETECTION_AND_SMILE_SHUTTER_ON_NO_PRIORITY_INVALID_GUIDE"
+            ConfigClass="com.sony.imaging.app.base.shooting.camera.FaceDetectionController"
+            CustomStartLayoutID="ID_SPECIALSCREENMENULAYOUT"
+            ExecType="NEXT_LAYOUT_WITHOUT_SET"
+            FnActiveIcon="layout/icon_facedetection"
+            FnNextMenuID="ID_FN15LAYERMENULAYOUT"
+            GuideRes="android:string/STRID_AMC_STR_01346"
+            IconRes="s_16_dd_parts_specialscreen_custom_icon_facedetection_normal"
+            ItemId="FaceDetection"
+            NextMenuID="ID_SPECIALSCREENMENULAYOUT"
+            SelectedIconRes="s_16_dd_parts_specialscreen_custom_icon_facedetection_selected"
+            TextRes="android:string/STRID_AMC_STR_00986"
+            UpdateTag="FaceDetectionMode"
+            Value="FaceDetection" >
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_FACE_DETECTION_AND_SMILE_SHUTTER_ON_NO_PRIORITY_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.base.shooting.camera.FaceDetectionController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_06284"
+                IconRes="android:drawable/p_facedetect_n_003"
+                ItemId="FaceDetection_auto"
+                SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_facedetection_on"
+                TextRes="android:string/STRID_AMC_STR_06160"
+                TextRes2="android:string/STRID_AMC_STR_05449"
+                Value="auto" />
+
+            <Layer2
+                CautionID="CAUTION_GRP_ID_FACE_DETECTION_AND_SMILE_SHUTTER_OFF_INVALID_GUIDE"
+                ConfigClass="com.sony.imaging.app.base.shooting.camera.FaceDetectionController"
+                ExecType="SET_VALUE"
+                GuideRes="android:string/STRID_AMC_STR_01347"
+                IconRes="android:drawable/p_facedetect_n_001"
+                ItemId="FaceDetection_off"
+                SelectedIconRes="android:drawable/p_16_dd_parts_fn_1_5_layer_sel_facedetection_off"
+                TextRes="android:string/STRID_AMC_STR_00987"
+                TextRes2="android:string/STRID_AMC_STR_05449"
+                Value="off" />
+        </Layer1>
+    </Global>
+
+</Root>

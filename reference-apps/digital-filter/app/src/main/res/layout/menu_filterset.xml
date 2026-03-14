@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:base="http://schemas.android.com/apk/res-auto"
+    android:background="0x10809c3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.sony.imaging.app.digitalfilter.shooting.widget.EachImageView
+        android:id="@+id/guide_image"
+        android:layout_width="527px"
+        android:layout_height="240px"
+        android:layout_marginLeft="113px"
+        android:layout_marginTop="186px"/>
+    <include
+        android:id="@+id/menu_sub_screen"
+        layout="@layout/menu_sub_screen"/>
+    <TextView
+        android:textColor="@color/RESID_FONTSTYLE_STD_NORMAL"
+        android:gravity="left"
+        android:id="@+id/menu_screen_title"
+        android:layout_width="604px"
+        android:layout_height="46px"
+        android:layout_marginLeft="18px"
+        android:layout_marginTop="4px"
+        style="@style/RESID_FONTSIZE_BIG_L_EDGE_ON"/>
+    <TextView
+        android:textColor="@color/RESID_FONTSTYLE_STD_NORMAL"
+        android:gravity="top|left"
+        android:id="@+id/guide_view"
+        android:layout_width="484px"
+        android:layout_height="272px"
+        android:layout_marginLeft="132px"
+        android:layout_marginTop="136px"
+        style="@style/RESID_FONTSIZE_STD_M_EDGE_ON"/>
+    <com.sony.imaging.app.base.common.widget.FooterGuide
+        android:id="@+id/footer_guide"
+        android:background="0x1080a15"
+        android:layout_width="640px"
+        android:layout_height="60px"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="420px"
+        base:guide_text_style="@attr/menu_footer_guide"
+        base:guide_text_marginLeft="8px"
+        base:guide_text_marginTop="12px"
+        base:guide_text_width="624px"
+        base:guide_text_height="40px"
+        base:guide_text_p1="@string/STRID_FUNC_DF_FILTERSETS_FOOTER"
+        base:guide_text_emt="@string/STRID_FUNC_DF_FILTERSETS_FOOTER"/>
+</RelativeLayout>

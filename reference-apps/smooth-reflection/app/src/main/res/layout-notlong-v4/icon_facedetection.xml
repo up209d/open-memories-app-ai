@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sony.imaging.app.base.shooting.widget.FaceDetectionIcon xmlns:android="http://schemas.android.com/apk/res/android" xmlns:base="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/FaceDetectionIcon"
+    android:layout_width="70px"
+    android:layout_height="60px"
+    android:layout_marginLeft="-10px"
+    android:layout_marginTop="307px"
+    base:face_detection_on="0x1080f46"
+    base:face_detection_off="0x1080f44"/>

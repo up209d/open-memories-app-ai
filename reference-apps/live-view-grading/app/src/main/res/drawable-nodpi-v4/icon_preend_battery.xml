@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="0x1080d4e"
+        android:minLevel="0"
+        android:maxLevel="0"/>
+    <item
+        android:drawable="@android:drawable/jog_dial_arrow_short_left_and_right"
+        android:minLevel="0x10"
+        android:maxLevel="0x10"/>
+</level-list>

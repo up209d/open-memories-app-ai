@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pb_parts_cmn_toucharea"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.sony.imaging.app.base.playback.widget.TouchArea
+        android:id="@+id/touchArea"
+        android:layout_width="610px"
+        android:layout_height="480px"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="0px"/>
+</RelativeLayout>

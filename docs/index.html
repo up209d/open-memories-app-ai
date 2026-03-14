@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sony Scalar API Documentation</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#1a1a2e;--sidebar-bg:#16213e;--card-bg:#1f2940;--text:#e0e0e0;--text-muted:#8892a0;--accent:#4fc3f7;--accent2:#7c4dff;--border:#2d3a52;--code-bg:#121929;--hover:#253050;--success:#66bb6a;--warn:#ffa726}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);display:flex;height:100vh;overflow:hidden;font-size:14px;line-height:1.6}
+#sidebar{width:280px;min-width:280px;background:var(--sidebar-bg);border-right:1px solid var(--border);display:flex;flex-direction:column;overflow:hidden}
+#sidebar-header{padding:16px;border-bottom:1px solid var(--border)}
+#sidebar-header h1{font-size:16px;color:var(--accent);margin-bottom:4px}
+#sidebar-header .subtitle{font-size:11px;color:var(--text-muted);line-height:1.4}
+#search{width:100%;padding:8px 12px;margin-top:10px;background:var(--code-bg);border:1px solid var(--border);border-radius:6px;color:var(--text);font-size:13px;outline:none}
+#search:focus{border-color:var(--accent)}
+#nav{overflow-y:auto;flex:1;padding:8px 0}
+.nav-group{margin:4px 0}
+.nav-group-title{padding:8px 16px;font-size:12px;font-weight:700;color:var(--accent2);text-transform:uppercase;letter-spacing:0.5px;cursor:pointer;display:flex;align-items:center;justify-content:space-between;user-select:none}
+.nav-group-title:hover{background:var(--hover)}
+.nav-group-title::after{content:'▾';font-size:10px;transition:transform .2s}
+.nav-group.collapsed .nav-group-title::after{transform:rotate(-90deg)}
+.nav-group.collapsed .nav-items{display:none}
+.nav-item{display:block;padding:6px 16px 6px 28px;font-size:13px;color:var(--text-muted);cursor:pointer;text-decoration:none;border-left:2px solid transparent;transition:all .15s}
+.nav-item:hover{background:var(--hover);color:var(--text)}
+.nav-item.active{color:var(--accent);border-left-color:var(--accent);background:var(--hover)}
+#content{flex:1;overflow-y:auto;padding:32px 48px}
+#content-inner{max-width:960px}
+section{margin-bottom:16px}
+h2.major{font-size:22px;color:var(--accent);margin:40px 0 16px;padding-bottom:8px;border-bottom:2px solid var(--border)}
+h2.major:first-child{margin-top:0}
+h3.sub{font-size:17px;color:var(--accent2);margin:28px 0 12px}
+h4{font-size:14px;color:#fff;margin:16px 0 8px}
+p{margin:8px 0;color:var(--text)}
+strong{color:#fff}
+code{background:var(--code-bg);padding:2px 6px;border-radius:3px;font-size:12.5px;font-family:'Consolas','Monaco','Courier New',monospace;color:var(--accent)}
+pre{background:var(--code-bg);padding:16px;border-radius:8px;overflow-x:auto;margin:12px 0;border:1px solid var(--border)}
+pre code{background:none;padding:0;font-size:12.5px;line-height:1.5;color:#c5d0dc}
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:13px}
+th{background:var(--code-bg);padding:8px 12px;text-align:left;font-weight:600;color:var(--accent);border:1px solid var(--border)}
+td{padding:8px 12px;border:1px solid var(--border);vertical-align:top}
+tr:hover td{background:var(--hover)}
+td code, th code{font-size:12px}
+.badge{display:inline-block;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;margin-left:6px}
+.badge-all{background:#1b5e20;color:#a5d6a7}
+.badge-some{background:#4a148c;color:#ce93d8}
+.pkg{font-size:12px;color:var(--text-muted);font-family:monospace;margin-bottom:12px}
+hr{border:none;border-top:1px solid var(--border);margin:24px 0}
+blockquote{border-left:3px solid var(--accent2);padding:8px 16px;margin:12px 0;background:rgba(124,77,255,.08);border-radius:0 6px 6px 0}
+blockquote p{color:var(--text-muted);margin:0}
+ul,ol{margin:8px 0 8px 24px}
+li{margin:4px 0}
+.kw{color:#c792ea}.str{color:#c3e88d}.cmt{color:#546e7a}.typ{color:#f78c6c}.fn{color:#82aaff}.num{color:#f78c6c}
+.overview-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin:16px 0}
+.overview-card{background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:16px;cursor:pointer;transition:all .2s}
+.overview-card:hover{border-color:var(--accent);transform:translateY(-2px)}
+.overview-card h4{margin:0 0 4px;font-size:14px;color:var(--accent)}
+.overview-card p{font-size:12px;color:var(--text-muted);margin:0}
+mark{background:#5c4400;color:#ffd740;padding:1px 2px;border-radius:2px}
+.search-hidden{display:none!important}
+.pipeline{counter-reset:step}
+.pipeline li{counter-increment:step;list-style:none;position:relative;padding-left:28px;margin:6px 0}
+.pipeline li::before{content:counter(step);position:absolute;left:0;width:20px;height:20px;background:var(--accent2);color:#fff;border-radius:50%;font-size:11px;text-align:center;line-height:20px}
+</style>
+</head>
+<body>
+<div id="sidebar">
+<div id="sidebar-header">
+<h1>Sony Scalar API</h1>
+<div class="subtitle">Reverse-Engineered Native APIs<br>Sony Camera Android (ILCE-6500)</div>
+<input type="text" id="search" placeholder="Search APIs, methods, classes...">
+</div>
+<div id="nav">
+
+<div class="nav-group">
+<div class="nav-group-title">Hardware APIs</div>
+<div class="nav-items">
+<a class="nav-item" href="#sec-cameraex">CameraEx</a>
+<a class="nav-item" href="#sec-paramsmod">ParametersModifier</a>
+<a class="nav-item" href="#sec-cameraseq">CameraSequence</a>
+<a class="nav-item" href="#sec-dsp">DSP</a>
+<a class="nav-item" href="#sec-devbuf">DeviceBuffer / Memory</a>
+<a class="nav-item" href="#sec-display">DisplayManager</a>
+<a class="nav-item" href="#sec-indicators">Indicators</a>
+</div></div>
+
+<div class="nav-group">
+<div class="nav-group-title">Graphics APIs</div>
+<div class="nav-items">
+<a class="nav-item" href="#sec-optimage">OptimizedImage</a>
+<a class="nav-item" href="#sec-optfactory">OptimizedImageFactory</a>
+<a class="nav-item" href="#sec-analyzer">ImageAnalyzer</a>
+<a class="nav-item" href="#sec-jpegexport">JpegExporter</a>
+<a class="nav-item" href="#sec-filters">Image Filters</a>
+<a class="nav-item" href="#sec-optview">OptimizedImageView</a>
+</div></div>
+
+<div class="nav-group">
+<div class="nav-group-title">Media &amp; Provider APIs</div>
+<div class="nav-items">
+<a class="nav-item" href="#sec-audio">Audio (Record/Track)</a>
+<a class="nav-item" href="#sec-mediarecorder">MediaRecorder / Player</a>
+<a class="nav-item" href="#sec-avindex">AvindexStore</a>
+<a class="nav-item" href="#sec-avcontentinfo">AvindexContentInfo</a>
+<a class="nav-item" href="#sec-highlight">HighlightMovieMaker</a>
+</div></div>
+
+<div class="nav-group">
+<div class="nav-group-title">Metadata APIs</div>
+<div class="nav-items">
+<a class="nav-item" href="#sec-photoinfo">TakenPhotoInfo</a>
+<a class="nav-item" href="#sec-faceinfo">FaceInfo</a>
+<a class="nav-item" href="#sec-histogram">Histogram</a>
+</div></div>
+
+<div class="nav-group">
+<div class="nav-group-title">System Utilities</div>
+<div class="nav-items">
+<a class="nav-item" href="#sec-scalarinput">ScalarInput</a>
+<a class="nav-item" href="#sec-scalarprops">ScalarProperties</a>
+<a class="nav-item" href="#sec-timeutil">TimeUtil</a>
+</div></div>
+
+<div class="nav-group">
+<div class="nav-group-title">Didep APIs</div>
+<div class="nav-items">
+<a class="nav-item" href="#sec-settings">Settings</a>
+<a class="nav-item" href="#sec-sysmgr">ScalarSystemManager</a>
+<a class="nav-item" href="#sec-power">Power / Temperature</a>
+<a class="nav-item" href="#sec-gps">GPS / Bluetooth / NFC</a>
+<a class="nav-item" href="#sec-caution">Caution</a>
+<a class="nav-item" href="#sec-gpelibrary">Gpelibrary</a>
+</div></div>
+
+<div class="nav-group">
+<div class="nav-group-title">Networking</div>
+<div class="nav-items">
+<a class="nav-item" href="#sec-wifi">WiFi / SSDP</a>
+</div></div>
+
+<div class="nav-group">
+<div class="nav-group-title">Architecture</div>
+<div class="nav-items">
+<a class="nav-item" href="#sec-daconn">DAConnectionManager</a>
+<a class="nav-item" href="#sec-baseapp">Base App Framework</a>
+<a class="nav-item" href="#sec-dualdevice">Dual-Device Pattern</a>
+</div></div>
+
+<div class="nav-group">
+<div class="nav-group-title">Reference Apps</div>
+<div class="nav-items">
+<a class="nav-item" href="#sec-app-smooth">Smooth Reflection</a>
+<a class="nav-item" href="#sec-app-digital">Digital Filter</a>
+<a class="nav-item" href="#sec-app-double">Double Exposure</a>
+<a class="nav-item" href="#sec-app-retouch">Photo Retouch</a>
+<a class="nav-item" href="#sec-app-effect">Picture Effect Plus</a>
+<a class="nav-item" href="#sec-app-portrait">Portrait Beauty</a>
+<a class="nav-item" href="#sec-app-grading">Live View Grading</a>
+<a class="nav-item" href="#sec-refapps">Comparison Table</a>
+</div></div>
+
+</div></div>
+
+<div id="content">
+<div id="content-inner">
+
+<!-- ==================== OVERVIEW ==================== -->
+<section id="sec-overview">
+<h2 class="major">Sony Scalar Native API Reference</h2>
+<blockquote><p>Complete reference for <code>com.sony.scalar.*</code> native APIs discovered through reverse-engineering Sony's PlayMemories Camera Apps (7 decompiled apps) and OpenMemories-Framework stubs (323 Jasmin files). These APIs are undocumented and proprietary, running on Sony cameras with custom Android 4.1-4.4.</p></blockquote>
+<p><strong>Sources</strong>: 7 decompiled Sony apps + OpenMemories-Framework stubs (~323 .j files)</p>
+<div class="overview-grid">
+<div class="overview-card" onclick="document.getElementById('sec-cameraex').scrollIntoView({behavior:'smooth'})"><h4>CameraEx</h4><p>Core camera control, 39 listeners, capture/AF/exposure, gamma tables, color select</p></div>
+<div class="overview-card" onclick="document.getElementById('sec-paramsmod').scrollIntoView({behavior:'smooth'})"><h4>ParametersModifier</h4><p>100+ getter/setters: ISO, shutter, aperture, WB, RGB matrix, color depth, effects</p></div>
+<div class="overview-card" onclick="document.getElementById('sec-cameraseq').scrollIntoView({behavior:'smooth'})"><h4>CameraSequence</h4><p>Shot pipeline, raw data access, DSP preview plugins, DefaultDevelopFilter</p></div>
+<div class="overview-card" onclick="document.getElementById('sec-dsp').scrollIntoView({behavior:'smooth'})"><h4>DSP</h4><p>Hardware signal processor, 16+ .so programs, image compositing/blending</p></div>
+<div class="overview-card" onclick="document.getElementById('sec-filters').scrollIntoView({behavior:'smooth'})"><h4>Image Filters</h4><p>Scale, Crop, Rotate, FaceNR, Miniature, SuperResolution, ContrastPlus</p></div>
+<div class="overview-card" onclick="document.getElementById('sec-scalarinput').scrollIntoView({behavior:'smooth'})"><h4>ScalarInput</h4><p>~160 hardware button/dial key constants for physical camera controls</p></div>
+<div class="overview-card" onclick="document.getElementById('sec-avindex').scrollIntoView({behavior:'smooth'})"><h4>AvindexStore</h4><p>Sony's MediaStore replacement for SD card media access</p></div>
+<div class="overview-card" onclick="document.getElementById('sec-dualdevice').scrollIntoView({behavior:'smooth'})"><h4>Dual-Device Pattern</h4><p>Sony camera vs emulator abstraction layer</p></div>
+</div>
+</section>
+
+<!-- ==================== CAMERAEX ==================== -->
+<section id="sec-cameraex">
+<h2 class="major">CameraEx <span class="badge badge-all">ALL 7 APPS</span></h2>
+<div class="pkg">com.sony.scalar.hardware.CameraEx</div>
+<p>The primary camera control class wrapping Sony's proprietary camera hardware. Extends <code>android.hardware.Camera</code> with burst capture, direct shutter, gamma table LUTs, color select for partial color effects, and hardware-accelerated focus/aperture/shutter control.</p>
+
+<h4>Opening the Camera</h4>
+<pre><code><span class="cmt">// Standard camera open pattern (used by ALL 7 reference apps)</span>
+<span class="typ">CameraEx.OpenOptions</span> opts = <span class="kw">new</span> <span class="typ">CameraEx.OpenOptions</span>();
+opts.<span class="fn">setPreview</span>(<span class="kw">true</span>);              <span class="cmt">// Enable live preview on LCD/EVF</span>
+opts.<span class="fn">setInheritSetting</span>(<span class="kw">true</span>);       <span class="cmt">// Inherit user's current camera settings</span>
+opts.<span class="fn">setRecordingMode</span>(<span class="num">0</span>);           <span class="cmt">// 0 = still photo, 1 = movie</span>
+opts.<span class="fn">setTargetMedia</span>(<span class="typ">AvindexStore</span>.<span class="fn">getExternalMediaIds</span>()[<span class="num">0</span>]);
+<span class="typ">CameraEx</span> cameraEx = <span class="typ">CameraEx</span>.<span class="fn">open</span>(<span class="num">0</span>, opts);
+
+<span class="cmt">// Get underlying Android Camera for compatibility</span>
+<span class="typ">Camera</span> normalCamera = cameraEx.<span class="fn">getNormalCamera</span>();
+
+<span class="cmt">// Reopen with different settings (e.g., switch to movie mode)</span>
+<span class="typ">CameraEx.OpenOptions</span> newOpts = <span class="kw">new</span> <span class="typ">CameraEx.OpenOptions</span>();
+newOpts.<span class="fn">setRecordingMode</span>(<span class="num">1</span>);
+cameraEx.<span class="fn">reopen</span>(newOpts, <span class="kw">new</span> <span class="typ">CameraEx.OpenCallback</span>() {
+    <span class="kw">public void</span> <span class="fn">onReopened</span>(<span class="typ">CameraEx</span> camera) {
+        <span class="cmt">// Camera is now in movie mode</span>
+    }
+});</code></pre>
+
+<h4>Core Methods</h4>
+<table>
+<thead><tr><th>Method</th><th>Return</th><th>Description</th></tr></thead>
+<tbody>
+<tr><td><code>open(int, OpenOptions)</code></td><td><code>CameraEx</code></td><td>Opens camera hardware. ID always 0 on Sony cameras. Must call from main thread.</td></tr>
+<tr><td><code>getNormalCamera()</code></td><td><code>Camera</code></td><td>Returns underlying <code>android.hardware.Camera</code> for standard operations.</td></tr>
+<tr><td><code>release()</code></td><td><code>void</code></td><td><strong>MUST</strong> call in onPause(). Failure locks the camera hardware.</td></tr>
+<tr><td><code>reopen(OpenOptions, OpenCallback)</code></td><td><code>void</code></td><td>Reopens with new settings without full release/open cycle.</td></tr>
+<tr><td><code>burstableTakePicture()</code></td><td><code>void</code></td><td>Captures photo in burst-capable mode. Non-blocking; result via ShutterListener.</td></tr>
+<tr><td><code>cancelTakePicture()</code></td><td><code>void</code></td><td>Cancels in-progress capture.</td></tr>
+<tr><td><code>startDirectShutter()</code> / <code>stopDirectShutter(cb)</code></td><td><code>void</code></td><td>Direct shutter mode for immediate capture. Used by picture-effect-plus.</td></tr>
+<tr><td><code>startOneShotFocusDrive()</code></td><td><code>void</code></td><td>Triggers single autofocus operation.</td></tr>
+<tr><td><code>startFocusHold()</code> / <code>stopFocusHold()</code></td><td><code>void</code></td><td>Locks/unlocks current focus position for recomposing.</td></tr>
+<tr><td><code>incrementShutterSpeed()</code> / <code>decrementShutterSpeed()</code></td><td><code>void</code></td><td>Steps shutter speed up/down by one stop.</td></tr>
+<tr><td><code>incrementAperture()</code> / <code>decrementAperture()</code></td><td><code>void</code></td><td>Steps aperture up/down by one stop.</td></tr>
+<tr><td><code>adjustAperture(int steps)</code></td><td><code>void</code></td><td>Adjusts aperture by relative steps. Used by smooth-reflection for ND simulation.</td></tr>
+<tr><td><code>startSelfTimerShutter()</code> / <code>cancelSelfTimerShutter()</code></td><td><code>void</code></td><td>Self-timer capture with duration from camera settings.</td></tr>
+<tr><td><code>setPreviewMagnification(factor, x, y)</code> / <code>stopPreviewMagnification()</code></td><td><code>void</code></td><td>Focus zoom for manual focus assistance.</td></tr>
+<tr><td><code>getLensInfo()</code></td><td><code>LensInfo</code></td><td>Current lens info (model, focal length, type).</td></tr>
+<tr><td><code>getFocusAreaInfos()</code></td><td><code>FocusAreaInfos</code></td><td>AF area configuration and positions.</td></tr>
+<tr><td><code>getExternalFlashInfo()</code></td><td><code>ExternalFlashInfo</code></td><td>Flash status (HSS, red-eye, wireless, AF light).</td></tr>
+<tr><td><code>startMovieRec()</code> / <code>stopMovieRec()</code></td><td><code>void</code></td><td>Movie recording (requires recordingMode=1).</td></tr>
+</tbody></table>
+
+<h4>Color Select API <span class="badge badge-some">picture-effect-plus</span></h4>
+<p>Hardware partial color extraction — keeps selected colors while desaturating everything else.</p>
+<pre><code><span class="cmt">// Sample color from live preview at screen coordinates</span>
+<span class="typ">CameraEx.SelectedColor</span> color = cameraEx.<span class="fn">getPreviewDisplayColor</span>(<span class="num">320</span>, <span class="num">240</span>);
+
+<span class="cmt">// Assign to channel 0 (supports 2 independent channels)</span>
+cameraEx.<span class="fn">setColorSelectToChannel</span>(<span class="num">0</span>, color);
+
+<span class="cmt">// Enable extraction: bitmask 1=ch0, 2=ch1, 3=both</span>
+modifier.<span class="fn">setColorSelectMode</span>(<span class="str">"extract"</span>, <span class="num">1</span>);</code></pre>
+
+<h4>Gamma Table API <span class="badge badge-some">live-view-grading, smooth-reflection</span></h4>
+<p>Custom gamma tables for complete tone curve control. Used for color grading presets and ND filter simulation.</p>
+<pre><code><span class="cmt">// Create and apply custom gamma table from CSV</span>
+<span class="typ">CameraEx.GammaTable</span> table = cameraEx.<span class="fn">createGammaTable</span>();
+table.<span class="fn">setPictureEffectGammaForceOff</span>(<span class="kw">true</span>);  <span class="cmt">// Override built-in gamma</span>
+
+<span class="typ">InputStream</span> csv = getAssets().<span class="fn">open</span>(<span class="str">"std_vivid.csv"</span>);
+table.<span class="fn">write</span>(csv);  <span class="cmt">// 1024 x 16-bit tone curve values</span>
+csv.<span class="fn">close</span>();
+
+cameraEx.<span class="fn">setExtendedGammaTable</span>(table);  <span class="cmt">// Apply to live view + capture</span>
+table.<span class="fn">release</span>();
+
+<span class="cmt">// Restore default: pass null</span>
+cameraEx.<span class="fn">setExtendedGammaTable</span>(<span class="kw">null</span>);</code></pre>
+
+<h4>Inner Data Classes</h4>
+<table>
+<thead><tr><th>Class</th><th>Fields</th><th>Description</th></tr></thead>
+<tbody>
+<tr><td><code>LensInfo</code></td><td><code>currentFocalLength int</code>, <code>model String</code>, <code>type int</code></td><td>Lens identification. Focal length in mm.</td></tr>
+<tr><td><code>ZoomInfo</code></td><td><code>currentPosition int</code>, <code>maxPosition int</code></td><td>Power zoom lens position (0 to max).</td></tr>
+<tr><td><code>ApertureInfo</code></td><td><code>currentAperture int</code></td><td>Aperture as f-number x100 (f/2.8 = 280).</td></tr>
+<tr><td><code>ShutterSpeedInfo</code></td><td><code>currentShutterSpeed int</code>, <code>currentShutterSpeed_n float</code>, <code>currentShutterSpeed_d float</code></td><td>Shutter speed. n/d form = fraction (n=1, d=60 = 1/60s).</td></tr>
+<tr><td><code>FocusPosition</code></td><td><code>currentPosition int</code>, <code>maxPosition int</code></td><td>Manual focus position (0 to max).</td></tr>
+<tr><td><code>SelectedColor</code></td><td><code>Cb</code>, <code>Cr</code>, <code>Phase</code>, <code>Range</code>, <code>Saturation</code>, <code>Y</code> (all int)</td><td>Color from preview in YCbCr. Used with setColorSelectToChannel().</td></tr>
+<tr><td><code>GammaTable</code></td><td>extends DeviceBuffer</td><td>1024x16-bit tone curve. Methods: <code>write(InputStream)</code>, <code>setPictureEffectGammaForceOff(boolean)</code>, <code>release()</code>.</td></tr>
+<tr><td><code>ReviewInfo</code></td><td><code>hist Histogram</code>, <code>photo TakenPhotoInfo</code></td><td>Post-capture review data.</td></tr>
+<tr><td><code>ExternalFlashInfo</code></td><td><code>afLightAutoStatus</code>, <code>hssStatus</code>, <code>redEyeReductionStatus</code>, <code>wirelessStatus</code></td><td>External flash status flags.</td></tr>
+<tr><td><code>StoreImageInfo</code></td><td><code>capturedDate int[]</code>, <code>directoryName</code>, <code>fileName</code>, <code>fileId</code>, <code>mediaId</code></td><td>Info about stored image after capture.</td></tr>
+<tr><td><code>FocusAreaRectInfo</code></td><td><code>left</code>, <code>top</code>, <code>right</code>, <code>bottom</code>, <code>state</code></td><td>Single focus area rectangle with state.</td></tr>
+<tr><td><code>CustomWhiteBalanceInfo</code></td><td><code>colorCompensation</code>, <code>colorTemperature</code>, <code>lightBalance</code></td><td>Custom WB settings.</td></tr>
+<tr><td><code>TrackingFocusInfo</code></td><td>Constants: <code>DETECTED</code>, <code>SCANNING</code>, <code>OFF</code>, <code>TRACK_ON/OFF</code></td><td>Tracking AF status.</td></tr>
+<tr><td><code>MeteringModeInfo</code></td><td><code>spotX int</code>, <code>spotY int</code></td><td>Spot metering position.</td></tr>
+</tbody></table>
+
+<h4>Listener Interfaces (~39)</h4>
+<pre><code><span class="cmt">// Example: Listen for capture completion</span>
+cameraEx.<span class="fn">setOnCaptureStatusListener</span>(<span class="kw">new</span> <span class="typ">CameraEx.OnCaptureStatusListener</span>() {
+    <span class="kw">public void</span> <span class="fn">onChanged</span>(<span class="kw">int</span> status, <span class="typ">CameraEx</span> camera) {
+        <span class="kw">if</span> (status == <span class="num">0</span>) { <span class="cmt">/* COMPLETE */</span> }
+        <span class="kw">else if</span> (status == <span class="num">1</span>) { <span class="cmt">/* ERROR */</span> }
+        <span class="kw">else if</span> (status == <span class="num">2</span>) { <span class="cmt">/* CANCEL */</span> }
+    }
+});</code></pre>
+<table>
+<thead><tr><th>Interface</th><th>Signature</th><th>Description</th></tr></thead>
+<tbody>
+<tr><td><code>ShutterListener</code></td><td><code>onShutter(int, CameraEx)</code></td><td>Shutter actuated.</td></tr>
+<tr><td><code>FocusDriveListener</code></td><td><code>onChanged(FocusPosition, CameraEx)</code></td><td>AF position changed.</td></tr>
+<tr><td><code>OnCaptureStatusListener</code></td><td><code>onChanged(int, CameraEx)</code></td><td>Capture status: COMPLETE=0, ERROR=1, CANCEL=2.</td></tr>
+<tr><td><code>FocusAreaListener</code></td><td><code>onChanged(FocusAreaInfos, CameraEx)</code></td><td>Focus area config changed.</td></tr>
+<tr><td><code>PreviewAnalizeListener</code></td><td><code>onChanged(AnalizedData, CameraEx)</code></td><td>Preview analysis data.</td></tr>
+<tr><td><code>SettingChangedListener</code></td><td><code>onChanged(CameraEx)</code></td><td>Any camera setting modified.</td></tr>
+<tr><td><code>FaceDetectionListener</code></td><td><code>onChanged(FaceInfo[], CameraEx)</code></td><td>Real-time face detection results.</td></tr>
+<tr><td><code>StoreImageCompleteListener</code></td><td><code>onChanged(StoreImageInfo, CameraEx)</code></td><td>Image stored to SD card.</td></tr>
+<tr><td><code>PictureReviewInfoListener</code></td><td><code>onChanged(ReviewInfo, CameraEx)</code></td><td>Post-capture review data available.</td></tr>
+<tr><td><code>ApertureChangeListener</code></td><td><code>onChanged(ApertureInfo, CameraEx)</code></td><td>Aperture value changed.</td></tr>
+<tr><td><code>ShutterSpeedChangeListener</code></td><td><code>onChanged(ShutterSpeedInfo, CameraEx)</code></td><td>Shutter speed changed.</td></tr>
+<tr><td><code>AutoISOSensitivityListener</code></td><td><code>onChanged(int, CameraEx)</code></td><td>Auto ISO value changed.</td></tr>
+<tr><td><code>ZoomChangeListener</code></td><td><code>onChanged(ZoomInfo, CameraEx)</code></td><td>Zoom position changed.</td></tr>
+<tr><td><code>TrackingFocusListener</code></td><td><code>onChanged(TrackingFocusInfo, CameraEx)</code></td><td>Tracking AF status changed.</td></tr>
+<tr><td><code>FlashChargingStateListener</code></td><td><code>onChanged(boolean, CameraEx)</code></td><td>Flash charging (true = charging).</td></tr>
+<tr><td><code>JpegListener</code></td><td><code>onJpeg(byte[], CameraEx)</code></td><td>Raw JPEG data from capture.</td></tr>
+</tbody></table>
+<p>... and ~22 more (Equipment, Error, Preview, IntervalRec, NDFilter, MotionShot, ProgramLine, FlashEmitting, FocalLength, PowerZoom, etc.)</p>
+</section>
+
+<!-- ==================== PARAMETERSMODIFIER ==================== -->
+<section id="sec-paramsmod">
+<h3 class="sub">ParametersModifier <span class="badge badge-all">ALL 7 APPS</span></h3>
+<div class="pkg">CameraEx.ParametersModifier — ~1727 lines, getter/setter for every camera parameter</div>
+<p>Create via <code>cameraEx.createParametersModifier()</code>. Every setter has a getter, and every parameter has <code>getSupported*()</code> returning <code>List&lt;String&gt;</code> of valid values.</p>
+
+<h4>Standard Parameters</h4>
+<table>
+<thead><tr><th>Get / Set</th><th>Type</th><th>Description</th></tr></thead>
+<tbody>
+<tr><td><code>getISOSensitivity()</code> / <code>set</code></td><td><code>int</code></td><td>ISO sensitivity (100-25600). Higher = more light but more noise.</td></tr>
+<tr><td><code>getShutterSpeed()</code> / <code>set</code></td><td><code>int</code></td><td>Shutter speed (encoded). Use ShutterSpeedInfo for n/d fraction.</td></tr>
+<tr><td><code>getAperture()</code> / <code>set</code></td><td><code>int</code></td><td>Aperture f-number x100 (f/2.8 = 280, f/5.6 = 560).</td></tr>
+<tr><td><code>getExposureCompensation()</code> / <code>set</code></td><td><code>int</code></td><td>EV compensation in 1/3 EV steps (-15 to +15).</td></tr>
+<tr><td><code>getWhiteBalance()</code> / <code>set</code></td><td><code>String</code></td><td>WB mode: "auto", "daylight", "cloudy", "tungsten", "fluorescent".</td></tr>
+<tr><td><code>getFocusMode()</code> / <code>set</code></td><td><code>String</code></td><td>AF: "auto", "continuous-picture", "dmf", "manual".</td></tr>
+<tr><td><code>getFlashMode()</code> / <code>set</code></td><td><code>String</code></td><td>Flash: "auto", "off", "on", "slow-sync", "rear-sync".</td></tr>
+<tr><td><code>getDriveMode()</code> / <code>set</code></td><td><code>String</code></td><td>Drive mode (single, continuous, bracket).</td></tr>
+<tr><td><code>getPictureEffect()</code> / <code>set</code></td><td><code>String</code></td><td>"off", "toy_camera", "pop_color", "part_color", "miniature", etc.</td></tr>
+<tr><td><code>getCreativeStyle()</code> / <code>set</code></td><td><code>String</code></td><td>Creative style (Standard, Vivid, Portrait, Landscape).</td></tr>
+<tr><td><code>getImageQuality()</code> / <code>set</code></td><td><code>String</code></td><td>JPEG quality level.</td></tr>
+<tr><td><code>getImageSize()</code> / <code>set</code></td><td><code>String</code></td><td>Image resolution.</td></tr>
+<tr><td><code>getAspectRatio()</code> / <code>set</code></td><td><code>String</code></td><td>Aspect ratio: "3:2", "16:9", "4:3", "1:1".</td></tr>
+<tr><td><code>isSilentShutterMode()</code> / <code>set</code></td><td><code>boolean</code></td><td>Electronic shutter (no mechanical sound).</td></tr>
+<tr><td><code>getMeteringMode()</code> / <code>set</code></td><td><code>String</code></td><td>Metering: "multi", "center", "spot".</td></tr>
+<tr><td><code>getSteadyShot()</code> / <code>set</code></td><td><code>String</code></td><td>IBIS (in-body image stabilization) mode.</td></tr>
+<tr><td><code>getFaceDetection()</code> / <code>set</code></td><td><code>String</code></td><td>Face detection for AF and AE.</td></tr>
+<tr><td><code>getAutoHDR()</code> / <code>set</code></td><td><code>String</code></td><td>Auto HDR mode.</td></tr>
+<tr><td><code>getDROMode()</code> / <code>set</code></td><td><code>String</code></td><td>Dynamic Range Optimizer.</td></tr>
+</tbody></table>
+
+<h4>Advanced Parameters <span class="badge badge-some">from reference apps</span></h4>
+<table>
+<thead><tr><th>Method</th><th>Type</th><th>Used By</th><th>Description</th></tr></thead>
+<tbody>
+<tr><td><code>setRemoteControlMode(boolean)</code></td><td><code>boolean</code></td><td>smooth-reflection</td><td><strong>Suppresses shutter sound and review screen</strong> between burst frames for seamless multi-frame capture.</td></tr>
+<tr><td><code>setAutoWhiteBalanceLock(boolean)</code></td><td><code>boolean</code></td><td>smooth-reflection</td><td>Locks AWB across all frames in a sequence for consistent color.</td></tr>
+<tr><td><code>setAntiHandBlurMode(String)</code></td><td><code>String</code></td><td>smooth-reflection, digital-filter</td><td>OIS control. Set <code>"off"</code> for tripod-mounted multi-frame capture.</td></tr>
+<tr><td><code>setRGBMatrix(int[])</code></td><td><code>int[9]</code></td><td>smooth-reflection, live-view-grading</td><td>3x3 RGB color transformation matrix. Pass <code>null</code> to clear. Row-major order.</td></tr>
+<tr><td><code>isRGBMatrixSupported()</code></td><td><code>boolean</code></td><td>live-view-grading</td><td>Check if RGB matrix is available on this camera.</td></tr>
+<tr><td><code>getLongExposureNR()</code></td><td><code>boolean</code></td><td>smooth-reflection</td><td>Long exposure noise reduction state. Affects raw data memory layout.</td></tr>
+<tr><td><code>setColorSelectMode(String, int)</code></td><td><code>String, int</code></td><td>picture-effect-plus</td><td>Hardware color extraction. Mode: <code>"extract"</code>/<code>"off"</code>. Bitmask: 1=ch0, 2=ch1, 3=both.</td></tr>
+<tr><td><code>setContrast(int)</code> / <code>setSaturation(int)</code></td><td><code>int</code></td><td>live-view-grading</td><td>Direct contrast/saturation control for color grading.</td></tr>
+<tr><td><code>setSharpnessGainMode(boolean)</code></td><td><code>boolean</code></td><td>live-view-grading</td><td>Enables fine sharpness gain control (more precise than standard).</td></tr>
+<tr><td><code>setSharpnessGain(int)</code></td><td><code>int</code></td><td>live-view-grading</td><td>Sharpness gain level when gain mode enabled.</td></tr>
+<tr><td><code>setWhiteBalanceShiftMode(boolean)</code></td><td><code>boolean</code></td><td>live-view-grading</td><td>Enables fine WB shift for color temp/tint control.</td></tr>
+<tr><td><code>setWhiteBalanceShiftLB(int)</code></td><td><code>int</code></td><td>live-view-grading</td><td>WB shift amber-blue axis (color temperature).</td></tr>
+<tr><td><code>setWhiteBalanceShiftCC(int)</code></td><td><code>int</code></td><td>live-view-grading</td><td>WB shift green-magenta axis (color tint).</td></tr>
+<tr><td><code>getSupportedColorDepthTypes()</code></td><td><code>List&lt;String&gt;</code></td><td>live-view-grading</td><td>Available channels: "red", "green", "blue", "cyan", "magenta", "yellow".</td></tr>
+<tr><td><code>setColorDepth(String, int)</code></td><td><code>String, int</code></td><td>live-view-grading</td><td>Per-channel color depth. Six independent channels.</td></tr>
+<tr><td><code>isExtendedGammaTableSupported()</code></td><td><code>boolean</code></td><td>live-view-grading</td><td>Check if custom gamma table API is available.</td></tr>
+<tr><td><code>setPictureControlExposureShift(int)</code></td><td><code>int</code></td><td>live-view-grading</td><td>Exposure brightness adjustment in color grading pipeline.</td></tr>
+<tr><td><code>getFocusAreaMode()</code></td><td><code>String</code></td><td>portrait-beauty</td><td>Current focus area mode ("flex", "local", "wide").</td></tr>
+<tr><td><code>getFocusPointIndex()</code></td><td><code>int</code></td><td>portrait-beauty</td><td>Selected focus point index for local focus area.</td></tr>
+</tbody></table>
+
+<h4>Capability Query Example</h4>
+<pre><code><span class="typ">ParametersModifier</span> mod = cameraEx.<span class="fn">createParametersModifier</span>();
+
+<span class="cmt">// Check available focus modes</span>
+<span class="typ">List</span>&lt;<span class="typ">String</span>&gt; modes = mod.<span class="fn">getSupportedFocusModes</span>();
+
+<span class="cmt">// Check RGB matrix support before using</span>
+<span class="kw">if</span> (mod.<span class="fn">isRGBMatrixSupported</span>()) {
+    <span class="kw">int</span>[] identity = {<span class="num">256</span>, <span class="num">0</span>, <span class="num">0</span>, <span class="num">0</span>, <span class="num">256</span>, <span class="num">0</span>, <span class="num">0</span>, <span class="num">0</span>, <span class="num">256</span>};
+    mod.<span class="fn">setRGBMatrix</span>(identity);
+}</code></pre>
+</section>
+
+<!-- ==================== CAMERASEQ ==================== -->
+<section id="sec-cameraseq">
+<h3 class="sub">CameraSequence <span class="badge badge-all">ALL 7 APPS</span></h3>
+<div class="pkg">com.sony.scalar.hardware.CameraSequence</div>
+<p>Shot pipeline managing capture &rarr; develop &rarr; store. Handles raw data access, image development, DSP preview plugins, and storage.</p>
+
+<h4>Core Methods</h4>
+<table>
+<thead><tr><th>Method</th><th>Description</th></tr></thead>
+<tbody>
+<tr><td><code>open(CameraEx, OpenOptions)</code></td><td>Opens a capture sequence bound to the camera.</td></tr>
+<tr><td><code>storeImage(OptimizedImage, boolean)</code></td><td>Stores image to SD card. Boolean = release image after store.</td></tr>
+<tr><td><code>getCaptureCount()</code></td><td>Number of frames captured in this sequence.</td></tr>
+<tr><td><code>release()</code></td><td>Release resources. <strong>MUST</strong> call when done.</td></tr>
+</tbody></table>
+
+<h4>Preview Plugin API <span class="badge badge-some">digital-filter, double-exposure</span></h4>
+<p>Allows DSP processor to process live view frames in real-time for effects like graduated ND preview and double-exposure overlay.</p>
+<pre><code><span class="typ">CameraSequence</span> seq = <span class="typ">CameraSequence</span>.<span class="fn">open</span>(cameraEx);
+<span class="typ">CameraSequence.Options</span> opts = <span class="kw">new</span> <span class="typ">CameraSequence.Options</span>();
+opts.<span class="fn">setOption</span>(<span class="str">"PREVIEW_FRAME_RATE"</span>, <span class="num">30000</span>);
+opts.<span class="fn">setOption</span>(<span class="str">"PREVIEW_FRAME_WIDTH"</span>, <span class="num">1024</span>);
+opts.<span class="fn">setOption</span>(<span class="str">"PREVIEW_FRAME_HEIGHT"</span>, <span class="num">0</span>);  <span class="cmt">// Auto</span>
+opts.<span class="fn">setOption</span>(<span class="str">"PREVIEW_PLUGIN_OUTPUT_ENABLED"</span>, <span class="kw">true</span>);
+
+seq.<span class="fn">setPreviewPlugin</span>(dsp);
+seq.<span class="fn">startPreviewSequence</span>(opts);
+<span class="cmt">// ... user sees DSP-processed live view ...</span>
+seq.<span class="fn">stopPreviewSequence</span>();
+seq.<span class="fn">setPreviewPlugin</span>(<span class="kw">null</span>);
+seq.<span class="fn">release</span>();</code></pre>
+
+<h4>CameraSequence.Options</h4>
+<table>
+<thead><tr><th>Key</th><th>Type</th><th>Description</th></tr></thead>
+<tbody>
+<tr><td><code>"MEMORY_MAP_FILE"</code></td><td>String</td><td>Path to memory map .so for buffer allocation.</td></tr>
+<tr><td><code>"EXPOSURE_COUNT"</code></td><td>int</td><td>Number of exposures per capture.</td></tr>
+<tr><td><code>"RECORD_COUNT"</code></td><td>int</td><td>Number of images to record.</td></tr>
+<tr><td><code>"PREVIEW_FRAME_RATE"</code></td><td>int</td><td>Preview fps for DSP plugin (30000 = 30fps).</td></tr>
+<tr><td><code>"PREVIEW_FRAME_WIDTH"</code></td><td>int</td><td>Preview width (640 or 1024).</td></tr>
+<tr><td><code>"PREVIEW_FRAME_HEIGHT"</code></td><td>int</td><td>Preview height (0 = auto).</td></tr>
+<tr><td><code>"PREVIEW_PLUGIN_OUTPUT_ENABLED"</code></td><td>boolean</td><td>Enable DSP plugin output to display.</td></tr>
+</tbody></table>
+
+<h4>DefaultDevelopFilter</h4>
+<p>Converts raw sensor data to processed RGB OptimizedImage. Camera settings (picture effect, creative style) applied during development.</p>
+<pre><code><span class="typ">CameraSequence.DefaultDevelopFilter</span> dev = <span class="kw">new</span> <span class="typ">CameraSequence.DefaultDevelopFilter</span>();
+<span class="kw">if</span> (dev.<span class="fn">isSupported</span>()) {
+    dev.<span class="fn">setSource</span>(rawData, <span class="kw">false</span>);
+    <span class="kw">if</span> (dev.<span class="fn">execute</span>()) {
+        <span class="typ">OptimizedImage</span> img = dev.<span class="fn">getOutput</span>();
+    }
+}
+dev.<span class="fn">release</span>();</code></pre>
+
+<h4>RawData / RawDataInfo <span class="badge badge-some">smooth-reflection, digital-filter</span></h4>
+<p>Raw sensor data from capture callbacks. RawDataInfo contains ~40 fields of sensor metadata.</p>
+<table>
+<thead><tr><th>Field</th><th>Description</th></tr></thead>
+<tbody>
+<tr><td><code>canvasSizeX/Y</code></td><td>Raw sensor canvas dimensions (includes margins).</td></tr>
+<tr><td><code>validSizeX/Y</code></td><td>Valid image data dimensions.</td></tr>
+<tr><td><code>validOffsetX/Y</code></td><td>Offset to valid data within canvas.</td></tr>
+<tr><td><code>marginOffsetX/Y</code>, <code>marginSizeX/Y</code></td><td>Margin area within canvas.</td></tr>
+<tr><td><code>firstColor</code></td><td>First color in Bayer pattern.</td></tr>
+<tr><td><code>wbR</code>, <code>wbB</code></td><td>White balance R/B coefficients.</td></tr>
+<tr><td><code>clpR/clpGr/clpGb/clpB</code></td><td>Clipping levels per channel.</td></tr>
+<tr><td><code>expBit</code></td><td>Exposure bit depth.</td></tr>
+<tr><td><code>decompMode</code>, <code>compMode</code></td><td>Raw de/compression modes.</td></tr>
+</tbody></table>
+</section>
+
+<!-- ==================== DSP ==================== -->
+<section id="sec-dsp">
+<h3 class="sub">DSP <span class="badge badge-some">5 APPS</span></h3>
+<div class="pkg">com.sony.scalar.hardware.DSP</div>
+<p>Hardware Digital Signal Processor for image compositing, blending, color conversion, and effects. Operates on raw data or OptimizedImage buffers in dedicated image processing hardware.</p>
+
+<pre><code><span class="cmt">// DSP usage pattern</span>
+<span class="typ">DSP</span> dsp = <span class="typ">DSP</span>.<span class="fn">createProcessor</span>(<span class="str">"sony-di-dsp"</span>);
+dsp.<span class="fn">setProgram</span>(<span class="str">"libsa_smoothphotography.so"</span>);
+
+<span class="typ">DeviceBuffer</span> boot = dsp.<span class="fn">createBuffer</span>(<span class="num">60</span>);
+<span class="typ">DeviceBuffer</span> params = dsp.<span class="fn">createBuffer</span>(<span class="num">256</span>);
+
+<span class="kw">int</span> desc = dsp.<span class="fn">getPropertyAsInt</span>(<span class="str">"program-descriptor"</span>);
+<span class="kw">int</span> addr = dsp.<span class="fn">getPropertyAsInt</span>(image, <span class="str">"memory-address"</span>);
+
+dsp.<span class="fn">setArg</span>(<span class="num">0</span>, boot);
+dsp.<span class="fn">setArg</span>(<span class="num">1</span>, params);
+<span class="kw">boolean</span> ok = dsp.<span class="fn">execute</span>();
+
+dsp.<span class="fn">clearProgram</span>();
+dsp.<span class="fn">release</span>();</code></pre>
+
+<h4>Methods</h4>
+<table>
+<thead><tr><th>Method</th><th>Return</th><th>Description</th></tr></thead>
+<tbody>
+<tr><td><code>createProcessor(String)</code></td><td><code>DSP</code></td><td>Create processor. Always <code>"sony-di-dsp"</code>.</td></tr>
+<tr><td><code>setProgram(String)</code></td><td><code>void</code></td><td>Load .so program.</td></tr>
+<tr><td><code>clearProgram()</code></td><td><code>void</code></td><td>Clear program. Call before release.</td></tr>
+<tr><td><code>createBuffer(int)</code></td><td><code>DeviceBuffer</code></td><td>Allocate hardware buffer for parameters.</td></tr>
+<tr><td><code>createImage(int w, int h)</code></td><td><code>OptimizedImage</code></td><td>Create DSP-backed output image.</td></tr>
+<tr><td><code>getPropertyAsInt(String)</code></td><td><code>int</code></td><td>DSP property. Key: <code>"program-descriptor"</code>.</td></tr>
+<tr><td><code>getPropertyAsInt(Object, String)</code></td><td><code>int</code></td><td>Object property. Keys: <code>"memory-address"</code>, <code>"image-data-offset"</code>, <code>"image-canvas-width"</code>.</td></tr>
+<tr><td><code>setArg(int, DeviceBuffer/Memory/Image)</code></td><td><code>void</code></td><td>Set execution argument by index.</td></tr>
+<tr><td><code>execute()</code></td><td><code>boolean</code></td><td>Execute loaded program.</td></tr>
+<tr><td><code>release()</code></td><td><code>void</code></td><td>Release processor.</td></tr>
+</tbody></table>
+
+<h4>Known DSP Programs</h4>
+<table>
+<thead><tr><th>Program</th><th>App</th><th>Description</th></tr></thead>
+<tbody>
+<tr><td><code>libsa_smoothphotography.so</code></td><td>smooth-reflection</td><td>Multi-frame raw averaging (2-256 frames). Cmd 6=init, 4=accumulate.</td></tr>
+<tr><td><code>libsa_ndsa.so</code></td><td>digital-filter</td><td>Graduated ND compositing with gamma tables.</td></tr>
+<tr><td><code>libsa_mle.so</code></td><td>double-exposure</td><td>Multi-layer blending: Add/Mean/Lighten/Darken/Screen/Multiply/WeightedMean.</td></tr>
+<tr><td><code>libsa_pre_mle.so</code></td><td>double-exposure</td><td>Pre-blend transforms (flip/rotate).</td></tr>
+<tr><td><code>libsa_lce.so</code></td><td>photo-retouch</td><td>Luminance/Contrast/Saturation Enhancement.</td></tr>
+<tr><td><code>libsa_pack_yuv2rgb.so</code></td><td>photo-retouch</td><td>YUV to RGB color conversion.</td></tr>
+<tr><td><code>libDiDspImxCompose.so</code></td><td>(stubs)</td><td>Image compositing.</td></tr>
+<tr><td><code>libDiDspImxAlphaBlend.so</code></td><td>(stubs)</td><td>Alpha blending.</td></tr>
+<tr><td><code>libDiDspImxResize.so</code></td><td>(stubs)</td><td>Image resizing.</td></tr>
+<tr><td><code>libDiDspImxRotate.so</code></td><td>(stubs)</td><td>Image rotation.</td></tr>
+</tbody></table>
+<p><strong>Note:</strong> Most programs have a <code>_mushashi.so</code> variant for newer hardware. Detect via <code>ScalarProperties.getString("version.platform")</code>.</p>
+
+<h4>AXI Address Masking</h4>
+<p>DSP uses AXI bus addresses. ARM addresses must be masked per hardware generation:</p>
+<table>
+<thead><tr><th>Generation</th><th>Mask</th></tr></thead>
+<tbody>
+<tr><td>AVIP (older)</td><td><code>addr &amp; 0x7FFFFFFF</code></td></tr>
+<tr><td>Musashi (newer)</td><td><code>addr &amp; 0x3FFFFFFF</code></td></tr>
+</tbody></table>
+</section>
+
+<!-- ==================== DEVBUF ==================== -->
+<section id="sec-devbuf">
+<h3 class="sub">DeviceBuffer / DeviceMemory / MemoryMapConfig</h3>
+<div class="pkg">com.sony.scalar.hardware</div>
+<p>Low-level hardware memory for DSP operations.</p>
+<table>
+<thead><tr><th>Class</th><th>Methods</th><th>Description</th></tr></thead>
+<tbody>
+<tr><td><code>DeviceBuffer</code></td><td><code>getSize()</code>, <code>write(ByteBuffer)</code>, <code>release()</code></td><td>Small buffer for DSP parameters. Created via <code>dsp.createBuffer()</code>.</td></tr>
+<tr><td><code>DeviceMemory</code></td><td><code>allocate(int)</code>, <code>allocateFromMemoryMapConfig()</code>, <code>read()</code>, <code>write()</code>, <code>release()</code></td><td>Large memory for image data.</td></tr>
+<tr><td><code>MemoryMapConfig</code></td><td><code>create("ScalarJpgCache")</code>, <code>getBeginAdress()</code>, <code>getEndAdress()</code></td><td>Named shared memory regions. (Note: "Adress" is Sony's spelling.)</td></tr>
+<tr><td><code>YUVPlaneExtractor</code></td><td><code>extract(DeviceBuffer, DeviceBuffer, Options)</code></td><td>Y/U/V plane extraction. Options: input/output W/H.</td></tr>
+</tbody></table>
+</section>
+
+<!-- ==================== DISPLAY ==================== -->
+<section id="sec-display">
+<h3 class="sub">DisplayManager <span class="badge badge-all">ALL 7 APPS</span></h3>
+<div class="pkg">com.sony.scalar.hardware.avio.DisplayManager</div>
+<p>Manages camera display outputs: rear LCD (640x480), EVF, and HDMI.</p>
+<pre><code><span class="typ">String</span> active = <span class="typ">DisplayManager</span>.<span class="fn">getActiveDevice</span>();  <span class="cmt">// "panel", "finder", "hdmi"</span>
+<span class="typ">DisplayManager.DeviceInfo</span> info = <span class="typ">DisplayManager</span>.<span class="fn">getDeviceInfo</span>(<span class="str">"panel"</span>);
+<span class="kw">int</span> w = info.res_w;  <span class="cmt">// 640</span>
+<span class="kw">int</span> h = info.res_h;  <span class="cmt">// 480</span></code></pre>
+<table>
+<thead><tr><th>Constant</th><th>Value</th><th>Description</th></tr></thead>
+<tbody>
+<tr><td><code>DEVICE_ID_PANEL</code></td><td><code>"panel"</code></td><td>Rear LCD (3.0", 640x480).</td></tr>
+<tr><td><code>DEVICE_ID_FINDER</code></td><td><code>"finder"</code></td><td>Electronic viewfinder.</td></tr>
+<tr><td><code>DEVICE_ID_HDMI</code></td><td><code>"hdmi"</code></td><td>HDMI output.</td></tr>
+</tbody></table>
+</section>
+
+<!-- ==================== INDICATORS ==================== -->
+<section id="sec-indicators">
+<h3 class="sub">Indicators (Light, SubLCD, Cec)</h3>
+<div class="pkg">com.sony.scalar.hardware.indicator.* / avio.Cec</div>
+<pre><code><span class="typ">Light</span>.<span class="fn">initialize</span>();
+<span class="typ">Light</span>.<span class="fn">setState</span>(<span class="str">"MEDIA"</span>, <span class="str">"ON"</span>, <span class="kw">true</span>);   <span class="cmt">// LEDs: ANSWER_BACK, MEDIA, POWER, RECORD, WIFI</span>
+<span class="typ">Light</span>.<span class="fn">setState</span>(<span class="str">"WIFI"</span>, <span class="str">"SLOW"</span>, <span class="kw">true</span>); <span class="cmt">// Patterns: ON, OFF, FAST, SLOW, MIDDLE</span>
+<span class="typ">Light</span>.<span class="fn">release</span>();</code></pre>
+<p><strong>SubLCD</strong>: <code>initialize()</code>, <code>setState()</code>, <code>setString()</code>, <code>release()</code></p>
+<p><strong>Cec</strong>: HDMI CEC. <code>ONETOUCH_PLAY=1</code>, <code>issueMessage(int)</code></p>
+</section>
+
+<!-- ==================== GRAPHICS ==================== -->
+<section id="sec-optimage">
+<h2 class="major">OptimizedImage</h2>
+<div class="pkg">com.sony.scalar.graphics.OptimizedImage</div>
+<p>Sony's proprietary image container in hardware-accessible memory (YUV422, 2 bytes/pixel). Never constructed directly. <strong>MUST always call <code>release()</code></strong> to free hardware memory.</p>
+<pre><code><span class="kw">if</span> (image != <span class="kw">null</span> &amp;&amp; image.<span class="fn">isValid</span>()) {
+    <span class="kw">int</span> w = image.<span class="fn">getWidth</span>();
+    <span class="kw">int</span> h = image.<span class="fn">getHeight</span>();
+    <span class="cmt">// ... use image ...</span>
+    image.<span class="fn">release</span>();  <span class="cmt">// CRITICAL: always release</span>
+}</code></pre>
+<blockquote><p>Canvas dimensions may differ from image (stride padding). Use <code>DSP.getPropertyAsInt(image, "image-data-offset")</code> for offset.</p></blockquote>
+</section>
+
+<section id="sec-optfactory">
+<h3 class="sub">OptimizedImageFactory</h3>
+<div class="pkg">com.sony.scalar.graphics.OptimizedImageFactory</div>
+<pre><code><span class="typ">OptimizedImageFactory.Options</span> opts = <span class="kw">new</span> <span class="typ">OptimizedImageFactory.Options</span>();
+opts.imageType = <span class="num">3</span>;      <span class="cmt">// 2=thumbnail, 3=full-size</span>
+opts.bBasicInfo = <span class="kw">true</span>;   <span class="cmt">// Decode EXIF</span>
+opts.bCamInfo = <span class="kw">true</span>;     <span class="cmt">// Camera EXIF</span>
+opts.bExtCamInfo = <span class="kw">true</span>;  <span class="cmt">// MakerNote</span>
+opts.bGpsInfo = <span class="kw">true</span>;     <span class="cmt">// GPS data</span>
+
+<span class="typ">OptimizedImage</span> img = <span class="typ">OptimizedImageFactory</span>.<span class="fn">decodeImage</span>(<span class="str">"/path/to/image.jpg"</span>, opts);
+<span class="typ">AvindexContentInfo</span> meta = opts.outContentInfo;  <span class="cmt">// Populated after decode</span></code></pre>
+</section>
+
+<section id="sec-analyzer">
+<h3 class="sub">ImageAnalyzer <span class="badge badge-some">portrait-beauty</span></h3>
+<div class="pkg">com.sony.scalar.graphics.ImageAnalyzer</div>
+<p>Hardware-accelerated face detection. Detects up to 8 faces with bounding rects and facial landmarks.</p>
+<pre><code><span class="typ">ImageAnalyzer</span> analyzer = <span class="kw">new</span> <span class="typ">ImageAnalyzer</span>();
+<span class="typ">ImageAnalyzer.AnalyzedFace</span>[] faces = <span class="kw">new</span> <span class="typ">ImageAnalyzer.AnalyzedFace</span>[<span class="num">8</span>];
+<span class="kw">int</span> count = analyzer.<span class="fn">findFaces</span>(image, faces);
+
+<span class="kw">for</span> (<span class="kw">int</span> i = <span class="num">0</span>; i &lt; count; i++) {
+    <span class="typ">Rect</span> r = faces[i].rect;  <span class="cmt">// -1000 to +1000 coordinate space</span>
+    <span class="kw">int</span> px = (r.left + <span class="num">1000</span>) * image.<span class="fn">getWidth</span>() / <span class="num">2000</span>;
+}
+analyzer.<span class="fn">release</span>();</code></pre>
+</section>
+
+<section id="sec-jpegexport">
+<h3 class="sub">JpegExporter <span class="badge badge-some">photo-retouch</span></h3>
+<div class="pkg">com.sony.scalar.graphics.JpegExporter</div>
+<pre><code><span class="typ">JpegExporter</span> exp = <span class="kw">new</span> <span class="typ">JpegExporter</span>();
+<span class="typ">JpegExporter.Options</span> opts = <span class="kw">new</span> <span class="typ">JpegExporter.Options</span>();
+opts.quality = <span class="num">2</span>;  <span class="cmt">// 1=Standard, 2=Fine, 3=Extra Fine</span>
+
+<span class="typ">String</span> mediaId = <span class="typ">AvindexStore</span>.<span class="fn">getExternalMediaIds</span>()[<span class="num">0</span>];
+exp.<span class="fn">encode</span>(image, mediaId, opts);
+exp.<span class="fn">release</span>();
+
+<span class="cmt">// Refresh database so new image appears</span>
+<span class="typ">AvindexStore.Images</span>.<span class="fn">waitAndUpdateDatabase</span>(getContentResolver(), mediaId);</code></pre>
+</section>
+
+<section id="sec-filters">
+<h3 class="sub">Image Filters</h3>
+<div class="pkg">com.sony.scalar.graphics.imagefilter.*</div>
+<p>All share: <code>new</code> &rarr; <code>setSource(img, release)</code> &rarr; configure &rarr; <code>execute()</code> &rarr; <code>getOutput()</code> &rarr; <code>clearSources()</code> &rarr; <code>release()</code></p>
+
+<h4>ScaleImageFilter</h4>
+<pre><code><span class="typ">ScaleImageFilter</span> f = <span class="kw">new</span> <span class="typ">ScaleImageFilter</span>();
+f.<span class="fn">setSource</span>(image, <span class="kw">false</span>);
+<span class="kw">int</span> w = <span class="num">1024</span> &amp; (-<span class="num">4</span>);  <span class="cmt">// Align width to 4 bytes</span>
+<span class="kw">int</span> h = <span class="num">768</span> &amp; (-<span class="num">2</span>);   <span class="cmt">// Align height to 2 bytes</span>
+f.<span class="fn">setDestSize</span>(w, h);
+<span class="kw">if</span> (f.<span class="fn">execute</span>()) { <span class="typ">OptimizedImage</span> out = f.<span class="fn">getOutput</span>(); }
+f.<span class="fn">clearSources</span>(); f.<span class="fn">release</span>();</code></pre>
+
+<h4>CropImageFilter</h4>
+<pre><code><span class="typ">CropImageFilter</span> f = <span class="kw">new</span> <span class="typ">CropImageFilter</span>();
+f.<span class="fn">setSource</span>(image, <span class="kw">false</span>);
+f.<span class="fn">setSrcRect</span>(<span class="kw">new</span> <span class="typ">Rect</span>(<span class="num">100</span>, <span class="num">50</span>, <span class="num">900</span>, <span class="num">650</span>));
+<span class="kw">if</span> (f.<span class="fn">execute</span>()) { <span class="typ">OptimizedImage</span> out = f.<span class="fn">getOutput</span>(); }
+f.<span class="fn">clearSources</span>(); f.<span class="fn">release</span>();</code></pre>
+
+<h4>RotateImageFilter</h4>
+<pre><code><span class="cmt">// 90-degree rotation</span>
+<span class="typ">RotateImageFilter</span> f = <span class="kw">new</span> <span class="typ">RotateImageFilter</span>();
+f.<span class="fn">setSource</span>(image, <span class="kw">false</span>);
+f.<span class="fn">setTrimMode</span>(<span class="num">3</span>);  <span class="cmt">// Auto-trim to fit</span>
+f.<span class="fn">setRotation</span>(<span class="typ">RotateImageFilter</span>.DEGREE_90);
+f.<span class="fn">execute</span>();
+
+<span class="cmt">// Arbitrary angle (photo-retouch: horizon correction)</span>
+f.<span class="fn">setRotation</span>(<span class="num">2.5</span>);  <span class="cmt">// 2.5 degrees</span></code></pre>
+
+<h4>FaceNRImageFilter <span class="badge badge-some">photo-retouch, portrait-beauty</span></h4>
+<pre><code><span class="typ">FaceNRImageFilter</span> f = <span class="kw">new</span> <span class="typ">FaceNRImageFilter</span>();
+f.<span class="fn">setSource</span>(image, <span class="kw">false</span>);
+<span class="typ">Vector</span>&lt;<span class="typ">Rect</span>&gt; rects = <span class="kw">new</span> <span class="typ">Vector</span>&lt;<span class="typ">Rect</span>&gt;();
+rects.<span class="fn">add</span>(<span class="kw">new</span> <span class="typ">Rect</span>(-<span class="num">200</span>, -<span class="num">300</span>, <span class="num">200</span>, <span class="num">100</span>));  <span class="cmt">// -1000..1000 space</span>
+f.<span class="fn">setFaceList</span>(rects);
+f.<span class="fn">setISOValue</span>(<span class="num">800</span>);   <span class="cmt">// Higher ISO = stronger base NR</span>
+f.<span class="fn">setNRLevel</span>(<span class="num">3</span>);      <span class="cmt">// 1=strongest, 5=lightest</span>
+f.<span class="fn">execute</span>();</code></pre>
+
+<h4>MiniatureImageFilter <span class="badge badge-some">picture-effect-plus</span></h4>
+<pre><code><span class="typ">MiniatureImageFilter</span> f = <span class="kw">new</span> <span class="typ">MiniatureImageFilter</span>();
+f.<span class="fn">setSource</span>(image, <span class="kw">false</span>);
+f.<span class="fn">setMiniatureArea</span>(<span class="num">1</span>);  <span class="cmt">// 1=HCenter 2=VCenter 3=Left 4=Right 5=Upper 6=Lower</span>
+f.<span class="fn">execute</span>();</code></pre>
+
+<h4>Other Filters</h4>
+<table>
+<thead><tr><th>Filter</th><th>Description</th></tr></thead>
+<tbody>
+<tr><td><code>ContrastPlusImageFilter</code></td><td>Automatic contrast enhancement.</td></tr>
+<tr><td><code>RedEyeImageFilter</code></td><td>Automatic red-eye removal.</td></tr>
+<tr><td><code>SoftFocusImageFilter</code></td><td>Soft focus/glow effect.</td></tr>
+<tr><td><code>SuperResolutionImageFilter</code></td><td>Super resolution upscale.</td></tr>
+</tbody></table>
+</section>
+
+<section id="sec-optview">
+<h3 class="sub">OptimizedImageView</h3>
+<div class="pkg">com.sony.scalar.widget.OptimizedImageView</div>
+<p>Hardware-accelerated display for OptimizedImage (640x480 LCD).</p>
+<pre><code><span class="typ">OptimizedImageView</span> iv = (<span class="typ">OptimizedImageView</span>) findViewById(R.id.view);
+iv.<span class="fn">setOptimizedImage</span>(image);
+iv.<span class="fn">setDisplayType</span>(<span class="typ">OptimizedImageView</span>.DISPLAY_TYPE_CENTER_INNER);
+iv.<span class="fn">setScale</span>(<span class="num">2.0f</span>, <span class="typ">OptimizedImageView</span>.BOUND_TYPE_LONG_EDGE);
+iv.<span class="fn">translate</span>(<span class="kw">new</span> <span class="typ">Point</span>(<span class="num">50</span>, <span class="num">30</span>), <span class="typ">OptimizedImageView</span>.TRANS_TYPE_INNER_CENTER);
+iv.<span class="fn">redraw</span>();
+<span class="cmt">// getLayoutInfo() → .clipSize/.drawSize/.imageSize/.viewSize Rects</span>
+<span class="cmt">// getTranslatability() → .top/.bottom/.left/.right booleans</span>
+iv.<span class="fn">setOptimizedImage</span>(<span class="kw">null</span>);
+iv.<span class="fn">release</span>();</code></pre>
+</section>
+
+<!-- ==================== MEDIA ==================== -->
+<section id="sec-audio">
+<h2 class="major">Audio APIs</h2>
+<div class="pkg">com.sony.scalar.media.AudioManager / AudioRecord / AudioTrack</div>
+<p><strong>AudioManager</strong>: <code>getParameters()</code>, <code>setParameters()</code>, <code>setSettingChangedListener()</code>, <code>setMicrophoneChangedListener()</code></p>
+<p><strong>AudioRecord</strong>: <code>startRecording()</code>, <code>stopRecording()</code>, <code>read(DeviceBuffer)</code></p>
+<p><strong>AudioTrack</strong>: <code>play()</code>, <code>pause()</code>, <code>stop()</code>, <code>write(DeviceBuffer)</code></p>
+</section>
+
+<section id="sec-mediarecorder">
+<h3 class="sub">MediaRecorder / MediaPlayer</h3>
+<div class="pkg">com.sony.scalar.media</div>
+<h4>MediaRecorder</h4>
+<pre><code><span class="typ">MediaRecorder</span> rec = <span class="kw">new</span> <span class="typ">MediaRecorder</span>();
+rec.<span class="fn">setCamera</span>(cameraEx);
+rec.<span class="fn">setOutputMedia</span>(<span class="typ">AvindexStore</span>.<span class="fn">getExternalMediaIds</span>()[<span class="num">0</span>]);
+rec.<span class="fn">prepare</span>(); rec.<span class="fn">start</span>();
+<span class="cmt">// ... recording ...</span>
+rec.<span class="fn">stop</span>(); rec.<span class="fn">release</span>();</code></pre>
+<p>Listeners: RecordListener, ErrorListener, TimeListener, RemainListener, StreamWriteListener.</p>
+
+<h4>MediaPlayer</h4>
+<pre><code><span class="typ">MediaPlayer</span> player = <span class="kw">new</span> <span class="typ">MediaPlayer</span>();
+player.<span class="fn">setDataSource</span>(path);
+player.<span class="fn">prepare</span>(); player.<span class="fn">start</span>();
+player.<span class="fn">stepForward</span>();  <span class="cmt">// Frame-by-frame</span>
+player.<span class="fn">setPlaybackSpeed</span>(<span class="typ">MediaPlayer</span>.FAST_FORWARD_2);
+player.<span class="fn">setDisplayMode</span>(<span class="num">0</span>);  <span class="cmt">// 0=full, 1=histogram overlay</span></code></pre>
+<p><strong>MediaInfo</strong>: <code>MEDIA_TYPE_SD=1</code>, <code>MEDIA_TYPE_MS=2</code>. <code>getMediaType()</code>, <code>isEyeFi()</code></p>
+</section>
+
+<section id="sec-avindex">
+<h3 class="sub">AvindexStore <span class="badge badge-all">ALL 7 APPS</span></h3>
+<div class="pkg">com.sony.scalar.provider.AvindexStore — replaces MediaStore</div>
+<pre><code><span class="cmt">// Get SD card and query images</span>
+<span class="typ">String</span>[] ids = <span class="typ">AvindexStore</span>.<span class="fn">getExternalMediaIds</span>();
+<span class="typ">String</span> sd = ids[<span class="num">0</span>];
+<span class="kw">long</span> avail = <span class="typ">AvindexStore</span>.<span class="fn">getAvailableSize</span>(sd);
+
+<span class="typ">Uri</span> uri = <span class="typ">AvindexStore.Images.Media</span>.<span class="fn">getContentUri</span>(sd);
+<span class="typ">Cursor</span> c = getContentResolver().<span class="fn">query</span>(uri, <span class="kw">null</span>, <span class="kw">null</span>, <span class="kw">null</span>, <span class="kw">null</span>);
+
+<span class="cmt">// After saving: refresh database</span>
+<span class="typ">AvindexStore.Images</span>.<span class="fn">waitAndUpdateDatabase</span>(getContentResolver(), sd);
+
+<span class="cmt">// Update EXIF orientation</span>
+<span class="typ">AvindexStore.Images.Media</span>.<span class="fn">rotateImage</span>(resolver, imgUri, imgId, orientation);</code></pre>
+<table>
+<thead><tr><th>Constant</th><th>Value</th></tr></thead>
+<tbody>
+<tr><td><code>MEDIA_TYPE_EXTERNAL</code></td><td>1</td></tr>
+<tr><td><code>CONTENT_TYPE_LOAD_STILL</code></td><td>1</td></tr>
+<tr><td><code>CONTENT_TYPE_LOAD_MP4</code></td><td>5</td></tr>
+<tr><td><code>CONTENT_TYPE_LOAD_XAVC</code></td><td>7</td></tr>
+</tbody></table>
+<p>Sub-classes: <code>Images.Media</code>, <code>Video.Media</code>, <code>Files.Media</code> — each with <code>getContentUri(mediaId)</code></p>
+<p>Observers: <code>AvindexUpdateObserver</code>, <code>AvindexDeleteObserver</code> — <code>COMPLETE_RESULT_OK=0</code></p>
+</section>
+
+<section id="sec-avcontentinfo">
+<h3 class="sub">AvindexContentInfo</h3>
+<div class="pkg">com.sony.scalar.media.AvindexContentInfo</div>
+<p>~140+ TAG_ constants for metadata. Methods: <code>getAttribute(String)</code>, <code>getAttributeInt()</code>, <code>getAttributeDouble()</code>, <code>getFaceInfo()</code>, <code>getThumbnail()</code></p>
+<p>Key tags: <code>TAG_DCF_TBL_FILE_NAME</code>, <code>TAG_DATETIME</code>, <code>TAG_IMAGE_WIDTH</code>, <code>TAG_APERTURE</code>, <code>TAG_EXPOSURE_TIME</code>, <code>TAG_FOCAL_LENGTH</code>, <code>TAG_ISO</code>, <code>TAG_ORIENTATION</code></p>
+</section>
+
+<section id="sec-highlight">
+<h3 class="sub">HighlightMovieMaker</h3>
+<div class="pkg">com.sony.scalar.media.HighlightMovieMaker</div>
+<p>Auto highlight video: <code>prepare()</code>, <code>execute()</code>, <code>setMovieBgm(MUSIC1..8)</code>, <code>setMovieLength(15SEC/30SEC/1MIN/2MIN)</code></p>
+</section>
+
+<!-- ==================== METADATA ==================== -->
+<section id="sec-photoinfo">
+<h2 class="major">TakenPhotoInfo</h2>
+<div class="pkg">com.sony.scalar.meta.TakenPhotoInfo — ~90 EXIF/MakerNote fields</div>
+<table>
+<thead><tr><th>Field</th><th>Type</th><th>Description</th></tr></thead>
+<tbody>
+<tr><td><code>FNumber</code></td><td><code>short</code></td><td>Aperture f-number x100 (280 = f/2.8).</td></tr>
+<tr><td><code>ISOSpeedRatings</code></td><td><code>int</code></td><td>ISO (100, 200, 400, ...).</td></tr>
+<tr><td><code>ExposureTime_num/_den</code></td><td><code>int</code></td><td>Shutter speed fraction (1/60 = num=1, den=60).</td></tr>
+<tr><td><code>Flash</code></td><td><code>short</code></td><td>EXIF flash status flags.</td></tr>
+<tr><td><code>FocalLength_num/_den</code></td><td><code>int</code></td><td>Focal length in mm as fraction.</td></tr>
+<tr><td><code>WhiteBalance</code></td><td><code>short</code></td><td>0=auto, 1=manual.</td></tr>
+<tr><td><code>ExposureProgram</code></td><td><code>short</code></td><td>1=Manual, 2=Program, 3=Aperture, 4=Shutter.</td></tr>
+<tr><td><code>MeteringMode</code></td><td><code>short</code></td><td>1=avg, 2=center, 3=spot, 5=multi.</td></tr>
+<tr><td><code>ImageWidth/Length</code></td><td><code>int</code></td><td>Dimensions in pixels.</td></tr>
+<tr><td><code>Orientation</code></td><td><code>short</code></td><td>EXIF: 1=normal, 3=180&deg;, 6=90&deg;CW, 8=90&deg;CCW.</td></tr>
+<tr><td><code>DateTimeOriginal</code></td><td><code>String</code></td><td>Capture timestamp.</td></tr>
+<tr><td><code>ExposureBiasValue</code></td><td><code>float</code></td><td>Exposure compensation in EV.</td></tr>
+<tr><td><code>MakerNoteCreativeStyle</code></td><td><code>short</code></td><td>Sony creative style used.</td></tr>
+<tr><td><code>MakerNotePictureEffect</code></td><td><code>short</code></td><td>Sony picture effect applied.</td></tr>
+<tr><td><code>faceInfo</code></td><td><code>FaceInfo[]</code></td><td>Detected faces at capture time.</td></tr>
+<tr><td><code>faceNumber</code></td><td><code>int</code></td><td>Number of faces detected.</td></tr>
+</tbody></table>
+</section>
+
+<section id="sec-faceinfo">
+<h3 class="sub">FaceInfo</h3>
+<div class="pkg">com.sony.scalar.meta.FaceInfo</div>
+<table>
+<thead><tr><th>Field</th><th>Type</th><th>Description</th></tr></thead>
+<tbody>
+<tr><td><code>rect</code></td><td><code>Rect</code></td><td>Face bounding box.</td></tr>
+<tr><td><code>leftEye/rightEye/mouth</code></td><td><code>Point</code></td><td>Facial landmarks.</td></tr>
+<tr><td><code>faceAngle</code></td><td><code>FaceAngle</code></td><td>Face yaw rotation.</td></tr>
+<tr><td><code>smile</code></td><td><code>SmileStatus</code></td><td><code>boolean isSmiling</code>, <code>int score</code>.</td></tr>
+<tr><td><code>gender</code></td><td><code>GenderStatus</code></td><td><code>int gender</code>, <code>int score</code>.</td></tr>
+<tr><td><code>eyeBlink</code></td><td><code>EyeBlinkStatus</code></td><td><code>leftEyeBlink</code>, <code>rightEyeBlink</code> booleans.</td></tr>
+</tbody></table>
+</section>
+
+<section id="sec-histogram">
+<h3 class="sub">Histogram</h3>
+<div class="pkg">com.sony.scalar.meta.Histogram</div>
+<p>Channels: <code>Y short[]</code> (luminance), <code>R short[]</code>, <code>G short[]</code>, <code>B short[]</code></p>
+</section>
+
+<!-- ==================== SYSTEM ==================== -->
+<section id="sec-scalarinput">
+<h2 class="major">ScalarInput</h2>
+<div class="pkg">com.sony.scalar.sysutil.ScalarInput — ~160 ISV_KEY constants</div>
+<p>Maps all physical camera buttons, dials, and switches to key codes for <code>onKeyDown()</code>/<code>onKeyUp()</code>.</p>
+<pre><code><span class="kw">public boolean</span> <span class="fn">onKeyDown</span>(<span class="kw">int</span> keyCode, <span class="typ">KeyEvent</span> event) {
+    <span class="kw">switch</span> (keyCode) {
+        <span class="kw">case</span> <span class="typ">ScalarInput</span>.ISV_KEY_S1_1:  <span class="cmt">// Half-press shutter</span>
+            cameraEx.<span class="fn">startOneShotFocusDrive</span>();
+            <span class="kw">return true</span>;
+        <span class="kw">case</span> <span class="typ">ScalarInput</span>.ISV_KEY_S2:    <span class="cmt">// Full shutter</span>
+            cameraEx.<span class="fn">burstableTakePicture</span>();
+            <span class="kw">return true</span>;
+        <span class="kw">case</span> <span class="typ">ScalarInput</span>.ISV_KEY_DELETE: <span class="cmt">// Trash = Back</span>
+            onBackPressed();
+            <span class="kw">return true</span>;
+    }
+    <span class="kw">return super</span>.<span class="fn">onKeyDown</span>(keyCode, event);
+}</code></pre>
+<table>
+<thead><tr><th>Key</th><th>Value</th><th>Physical Button</th></tr></thead>
+<tbody>
+<tr><td><code>ISV_KEY_UP/DOWN/LEFT/RIGHT</code></td><td>103/108/105/106</td><td>D-pad navigation</td></tr>
+<tr><td><code>ISV_KEY_ENTER</code></td><td>232</td><td>OK / confirm</td></tr>
+<tr><td><code>ISV_KEY_MENU / SK1</code></td><td>514</td><td>Menu button</td></tr>
+<tr><td><code>ISV_KEY_DELETE / SK2</code></td><td>595</td><td>Trash / Back</td></tr>
+<tr><td><code>ISV_KEY_S1_1</code></td><td>516</td><td>Half-press shutter (focus)</td></tr>
+<tr><td><code>ISV_KEY_S2</code></td><td>518</td><td>Full shutter press</td></tr>
+<tr><td><code>ISV_KEY_STASTOP</code></td><td>515</td><td>Movie record</td></tr>
+<tr><td><code>ISV_KEY_FN</code></td><td>520</td><td>Function button</td></tr>
+<tr><td><code>ISV_KEY_CUSTOM1..3</code></td><td>622..659</td><td>Custom C1-C3</td></tr>
+<tr><td><code>ISV_DIAL_1_CLOCKWISE</code></td><td>525</td><td>Upper dial CW</td></tr>
+<tr><td><code>ISV_RING_CLOCKWISE</code></td><td>648</td><td>Lens ring CW</td></tr>
+</tbody></table>
+</section>
+
+<section id="sec-scalarprops">
+<h3 class="sub">ScalarProperties</h3>
+<div class="pkg">com.sony.scalar.sysutil.ScalarProperties</div>
+<pre><code><span class="typ">String</span> model = <span class="typ">ScalarProperties</span>.<span class="fn">getString</span>(<span class="str">"model.name"</span>);        <span class="cmt">// "ILCE-6500"</span>
+<span class="typ">String</span> ver = <span class="typ">ScalarProperties</span>.<span class="fn">getString</span>(<span class="str">"version.platform"</span>);    <span class="cmt">// "2.17"</span>
+<span class="kw">int</span> mp = <span class="typ">ScalarProperties</span>.<span class="fn">getInt</span>(<span class="str">"mem.rawimage.size.in.mega.pixel"</span>); <span class="cmt">// 24</span>
+
+<span class="cmt">// Get supported picture sizes (smooth-reflection: buffer allocation)</span>
+<span class="typ">List</span>&lt;<span class="typ">ScalarProperties.PictureSize</span>&gt; sizes = <span class="typ">ScalarProperties</span>.<span class="fn">getSupportedPictureSizes</span>();</code></pre>
+<p>Keys: <code>"model.name"</code>, <code>"model.serial.code"</code>, <code>"version.platform"</code>, <code>"device.wifi.supported"</code>, <code>"device.mechanical.shutter"</code>, <code>"device.memory"</code></p>
+</section>
+
+<section id="sec-timeutil">
+<h3 class="sub">TimeUtil</h3>
+<div class="pkg">com.sony.scalar.sysutil.TimeUtil</div>
+<p><code>getCurrentCalendar()</code> &rarr; PlainCalendar (year/month/day/hour/minute/second)<br>
+<code>getCurrentTimeZone()</code> &rarr; PlainTimeZone (gmtDiff, summerTimeDiff)</p>
+</section>
+
+<!-- ==================== DIDEP ==================== -->
+<section id="sec-settings">
+<h2 class="major">Didep APIs</h2>
+<div class="pkg">com.sony.scalar.sysutil.didep — "Device-Independent Device Extension Platform"</div>
+<h4>Settings</h4>
+<p><code>getAutoPowerOffTime()/set</code>, <code>getAutoRotate()</code>, <code>getDialSetting()</code>, <code>getGridLine()</code>, <code>getTargetMediaId()</code>, <code>setKeyLock()</code> — 15 inner classes</p>
+</section>
+
+<section id="sec-sysmgr">
+<h3 class="sub">ScalarSystemManager</h3>
+<div class="pkg">com.sony.scalar.sysutil.didep.ScalarSystemManager</div>
+<p><code>isSystemReady()</code>, <code>requestPowerOff(int,int,int)</code>, <code>resetAll()</code> — 32 OFF_FACTOR constants</p>
+</section>
+
+<section id="sec-power">
+<h3 class="sub">Power / Temperature</h3>
+<p><strong>Power</strong>: <code>getInstance()</code>, <code>setBatteryRemainTimeListener()</code></p>
+<p><strong>Temperature</strong>: <code>getStatus()</code>, <code>setCountDownInfoListener()</code>, <code>setStatusCallback()</code></p>
+</section>
+
+<section id="sec-gps">
+<h3 class="sub">GPS / Bluetooth / NFC</h3>
+<table>
+<thead><tr><th>Class</th><th>Methods</th></tr></thead>
+<tbody>
+<tr><td><code>Gps</code></td><td><code>getGpsPowerState()</code>, <code>setGpsInfoListener()</code> — GPS_STATE_FIX=4, OFF=1</td></tr>
+<tr><td><code>Bluetooth</code></td><td><code>getBluetoothInfo()</code>, <code>setBluetoothInfoListener()</code></td></tr>
+<tr><td><code>Nfc</code></td><td><code>isEnabled()</code>, <code>start()/stop()</code> — CONNECT_COMPLETED=1</td></tr>
+</tbody></table>
+</section>
+
+<section id="sec-caution">
+<h3 class="sub">Caution</h3>
+<div class="pkg">com.sony.scalar.sysutil.didep.Caution</div>
+<p><code>EnableCaution()</code>, <code>SetFactor()</code>, <code>SetTrigger()</code> — ~12,000 constants for every camera warning state.</p>
+</section>
+
+<section id="sec-gpelibrary">
+<h3 class="sub">Gpelibrary</h3>
+<div class="pkg">com.sony.scalar.sysutil.didep.Gpelibrary</div>
+<pre><code><span class="cmt">// 32-bit high quality rendering</span>
+<span class="typ">Gpelibrary</span>.<span class="fn">changeFrameBufferPixel</span>(<span class="typ">Gpelibrary</span>.ABGR8888);
+<span class="cmt">// 16-bit low quality (default)</span>
+<span class="typ">Gpelibrary</span>.<span class="fn">changeFrameBufferPixel</span>(<span class="typ">Gpelibrary</span>.RGBA4444);</code></pre>
+</section>
+
+<!-- ==================== NETWORKING ==================== -->
+<section id="sec-wifi">
+<h2 class="major">Networking APIs</h2>
+<div class="pkg">com.sony.scalar.sysnetutil / ssdpdevice / com.sony.wifi.*</div>
+<table>
+<thead><tr><th>Class</th><th>Methods</th></tr></thead>
+<tbody>
+<tr><td><code>ScalarWifiInfo</code></td><td><code>getProductCode()</code></td></tr>
+<tr><td><code>SsdpDevice</code></td><td><code>getInstance()</code>, <code>initialize(ServerConf, DdStatusListener)</code>, <code>enqueueStartServer()/Stop()</code></td></tr>
+<tr><td>WiFi Direct</td><td><code>com.sony.wifi.direct.*</code>, <code>com.sony.wifi.p2p.*</code></td></tr>
+</tbody></table>
+</section>
+
+<!-- ==================== ARCHITECTURE ==================== -->
+<section id="sec-daconn">
+<h2 class="major">DAConnectionManager</h2>
+<div class="pkg">android.app.DAConnectionManager (Sony extension)</div>
+<pre><code><span class="cmt">// In Activity onResume(): register with camera OS</span>
+<span class="typ">Intent</span> intent = <span class="kw">new</span> <span class="typ">Intent</span>(<span class="str">"com.android.server.DAConnectionManagerService.AppInfoReceive"</span>);
+intent.<span class="fn">putExtra</span>(<span class="str">"cycleTime"</span>, <span class="str">"APO/NO"</span>);  <span class="cmt">// Disable auto power off</span>
+sendBroadcast(intent);</code></pre>
+<table>
+<thead><tr><th>Intent</th><th>Purpose</th></tr></thead>
+<tbody>
+<tr><td><code>...BootCompleted</code></td><td>Camera boot done — app should start.</td></tr>
+<tr><td><code>...ExitCompleted</code></td><td>App exit acknowledged.</td></tr>
+<tr><td><code>...AppInfoReceive</code></td><td>Register app. <code>"cycleTime"="APO/NO"</code> disables auto power off.</td></tr>
+</tbody></table>
+</section>
+
+<section id="sec-baseapp">
+<h3 class="sub">Base App Framework</h3>
+<div class="pkg">com.sony.imaging.app.base.*</div>
+<p>Monolithic framework (~80% of each reference app):</p>
+<ol>
+<li><strong>BaseApp</strong> (Activity) — Lifecycle + state machine</li>
+<li><strong>Factory</strong> — State &rarr; Layout &rarr; KeyHandler constituent table</li>
+<li><strong>CameraSetting</strong> — Parameter management; <code>registController()</code></li>
+<li><strong>ExecutorCreator</strong> — App-specific capture pipelines</li>
+<li><strong>BaseMenuService + MenuTable</strong> — Menu system</li>
+<li><strong>AVIndexProvider</strong> — Media queries</li>
+<li><strong>TemperatureManager</strong>, <strong>SubLcdManager</strong>, <strong>BluetoothController</strong>, <strong>GpsController</strong></li>
+</ol>
+</section>
+
+<section id="sec-dualdevice">
+<h3 class="sub">Dual-Device Pattern</h3>
+<p>Every app must work on both Sony camera and Android emulator:</p>
+<pre><code><span class="kw">static boolean</span> isSonyCamera;
+<span class="kw">static</span> {
+    <span class="kw">try</span> {
+        <span class="typ">Class</span>.<span class="fn">forName</span>(<span class="str">"com.sony.scalar.sysutil.ScalarProperties"</span>);
+        isSonyCamera = <span class="kw">true</span>;
+    } <span class="kw">catch</span> (<span class="typ">ClassNotFoundException</span> e) { isSonyCamera = <span class="kw">false</span>; }
+}</code></pre>
+<table>
+<thead><tr><th>Sony API</th><th>Emulator Fallback</th></tr></thead>
+<tbody>
+<tr><td><code>CameraEx</code></td><td><code>android.hardware.Camera</code></td></tr>
+<tr><td><code>OptimizedImage</code></td><td><code>Bitmap</code></td></tr>
+<tr><td><code>OptimizedImageView</code></td><td><code>ImageView</code></td></tr>
+<tr><td><code>ScalarInput</code></td><td><code>KeyEvent</code></td></tr>
+<tr><td><code>AvindexStore</code></td><td><code>MediaStore</code></td></tr>
+<tr><td><code>DisplayManager</code></td><td>Fixed LCD info</td></tr>
+<tr><td><code>DSP</code></td><td>Skip / software</td></tr>
+<tr><td><code>Light / SubLCD</code></td><td>No-op</td></tr>
+<tr><td><code>DAConnectionManager</code></td><td>No-op</td></tr>
+</tbody></table>
+</section>
+
+<!-- ==================== REFERENCE APPS ==================== -->
+<section id="sec-app-smooth">
+<h2 class="major">Smooth Reflection</h2>
+<div class="pkg">com.sony.imaging.app.smoothreflection</div>
+<p>Simulates long-exposure photography by capturing 2-256 raw frames and averaging them via DSP hardware. Produces smooth water, light trails, and motion blur without actual long exposure.</p>
+<h4>DSP Programs</h4>
+<p><code>libsa_smoothphotography.so</code> (AVIP: <code>_avip.so</code>) — Commands: 6=initialize accumulator, 4=accumulate frame.</p>
+<h4>Processing Pipeline</h4>
+<ol class="pipeline">
+<li>Force settings: disable OIS (<code>setAntiHandBlurMode("off")</code>), disable DRO</li>
+<li>Lock AWB: <code>setAutoWhiteBalanceLock(true)</code></li>
+<li>Remote control mode: <code>setRemoteControlMode(true)</code> — suppresses shutter sound between frames</li>
+<li>Optional: <code>adjustAperture(steps)</code> + gamma table + RGB matrix for ND simulation</li>
+<li>Per-frame: <code>burstableTakePicture()</code> &rarr; raw callback &rarr; DSP accumulate</li>
+<li>DefaultDevelopFilter converts averaged raw to OptimizedImage</li>
+<li><code>sequence.storeImage()</code>, cleanup</li>
+</ol>
+<h4>Unique APIs</h4>
+<table>
+<thead><tr><th>API</th><th>Description</th></tr></thead>
+<tbody>
+<tr><td><code>setRemoteControlMode(true)</code></td><td>Suppresses shutter sound between burst frames.</td></tr>
+<tr><td><code>setAutoWhiteBalanceLock()</code></td><td>Locks AWB across all frames for consistent color.</td></tr>
+<tr><td><code>adjustAperture(int)</code></td><td>Programmatic aperture adjustment for ND simulation.</td></tr>
+<tr><td><code>getSupportedPictureSizes()</code></td><td>Maximum buffer allocation.</td></tr>
+<tr><td>Full RawDataInfo (~40 fields)</td><td>Only app using complete raw sensor metadata.</td></tr>
+<tr><td>Model-specific BFNR offsets</td><td>Raw address corrections per camera model.</td></tr>
+</tbody></table>
+</section>
+
+<section id="sec-app-digital">
+<h3 class="sub">Digital Filter</h3>
+<div class="pkg">com.sony.imaging.app.digitalfilter</div>
+<p>Graduated ND filter via multi-shot raw compositing with up to 3 simultaneous DSP processors and real-time preview.</p>
+<h4>DSP Programs</h4>
+<p><code>libsa_ndsa.so</code> (<code>_mushashi.so</code>) — ND compositing with gamma tables.</p>
+<h4>Processing Pipeline</h4>
+<ol class="pipeline">
+<li>Disable OIS for tripod stability</li>
+<li>Install DSP as <code>CameraSequence.setPreviewPlugin()</code> for real-time graduated ND preview</li>
+<li><code>burstableTakePicture()</code> for each frame in sequence</li>
+<li>Up to 3 DSP processors simultaneously via NDSA2Multi</li>
+<li>JNI memory ops: <code>MemoryCopyRaw</code>, <code>MemoryCopyDiademToApplication</code></li>
+<li>DefaultDevelopFilter &rarr; store</li>
+</ol>
+<h4>Unique APIs</h4>
+<table><thead><tr><th>API</th><th>Description</th></tr></thead>
+<tbody>
+<tr><td>3 simultaneous DSPs</td><td>Only app managing 3 DSP processors at once.</td></tr>
+<tr><td>MemoryUtil JNI</td><td>Direct ARM-to-Diadem hardware memory copies.</td></tr>
+<tr><td><code>setPreviewPlugin(DSP)</code></td><td>Real-time DSP preview pipeline.</td></tr>
+</tbody></table>
+</section>
+
+<section id="sec-app-double">
+<h3 class="sub">Double Exposure</h3>
+<div class="pkg">com.sony.imaging.app.doubleexposure</div>
+<p>Two-shot compositing with 7 blend modes and real-time live view overlay.</p>
+<h4>DSP Programs</h4>
+<p><code>libsa_mle.so</code> — blending. <code>libsa_pre_mle.so</code> — pre-transforms (flip/rotate).</p>
+<h4>Blend Modes</h4>
+<table><thead><tr><th>Mode</th><th>SA Value</th><th>Description</th></tr></thead>
+<tbody>
+<tr><td>Add</td><td>0</td><td>Additive (brighter).</td></tr>
+<tr><td>Mean</td><td>1</td><td>Simple average.</td></tr>
+<tr><td>Lighten</td><td>2</td><td>Brighter pixel wins.</td></tr>
+<tr><td>Darken</td><td>3</td><td>Darker pixel wins.</td></tr>
+<tr><td>Screen</td><td>4</td><td>Screen blend.</td></tr>
+<tr><td>Multiply</td><td>5</td><td>Multiply (darkens).</td></tr>
+<tr><td>Weighted Mean</td><td>6</td><td>Adjustable weight 0-255.</td></tr>
+</tbody></table>
+<h4>Unique APIs</h4>
+<p>Live view overlay via preview plugin (SFR_MODE_LIVEVIEW=1 vs PLAYBACK=0), DeviceMemory for first image, AXI address masking per HW generation.</p>
+</section>
+
+<section id="sec-app-retouch">
+<h3 class="sub">Photo Retouch</h3>
+<div class="pkg">com.sony.imaging.app.photoretouch</div>
+<p>Post-capture editing: crop, rotate (90&deg; and arbitrary), resize, face smoothing, BCS adjustment via DSP-based LCE.</p>
+<h4>DSP Programs</h4>
+<p><code>libsa_lce.so</code> — Luminance/Contrast/Saturation. <code>libsa_pack_yuv2rgb.so</code> — color conversion.</p>
+<h4>Unique APIs</h4>
+<table><thead><tr><th>API</th><th>Description</th></tr></thead>
+<tbody>
+<tr><td>All 4 image filters</td><td>Only app using Scale + Crop + Rotate + FaceNR together.</td></tr>
+<tr><td><code>JpegExporter.encode()</code></td><td>Saves edited images as new JPEG files.</td></tr>
+<tr><td><code>DSP.createImage(w,h)</code></td><td>Creates DSP-backed output image buffer.</td></tr>
+<tr><td><code>RotateImageFilter.setRotation(double)</code></td><td>Arbitrary angle rotation for horizon straightening.</td></tr>
+<tr><td><code>AvindexStore.Images.waitAndUpdateDatabase()</code></td><td>Blocking DB refresh after save.</td></tr>
+</tbody></table>
+</section>
+
+<section id="sec-app-effect">
+<h3 class="sub">Picture Effect Plus</h3>
+<div class="pkg">com.sony.imaging.app.pictureeffectplus</div>
+<p>Creative effects: Part Color Plus (2 color channels), Miniature Plus (tilt-shift, 6 focus areas), Toy Camera Plus.</p>
+<h4>Unique APIs</h4>
+<table><thead><tr><th>API</th><th>Description</th></tr></thead>
+<tbody>
+<tr><td><code>setColorSelectToChannel(int, SelectedColor)</code></td><td>2-channel hardware color selection.</td></tr>
+<tr><td><code>getPreviewDisplayColor(x, y)</code></td><td>Live preview color sampling.</td></tr>
+<tr><td><code>setColorSelectMode("extract", mask)</code></td><td>Hardware color extraction.</td></tr>
+<tr><td><code>MiniatureImageFilter</code></td><td>Tilt-shift with 6 focus areas.</td></tr>
+<tr><td><code>startDirectShutter()/stop</code></td><td>Immediate capture mode.</td></tr>
+<tr><td><code>DefaultDevelopFilter.isSupported()</code></td><td>Hardware capability check.</td></tr>
+</tbody></table>
+</section>
+
+<section id="sec-app-portrait">
+<h3 class="sub">Portrait Beauty</h3>
+<div class="pkg">com.sony.imaging.app.portraitbeauty</div>
+<p>Face detection + beautification: portrait lighting, soft focus, skin smoothing, catchlight editing.</p>
+<h4>DSP Wrappers</h4>
+<p><code>SA_PortraitLighting</code> — face brightening (level 0-6). <code>SA_SoftFocus</code> — face-aware blur (size: 16/20/24/36MP/XGA).</p>
+<h4>Unique APIs</h4>
+<table><thead><tr><th>API</th><th>Description</th></tr></thead>
+<tbody>
+<tr><td><code>ImageAnalyzer.findFaces()</code></td><td>HW face detection, up to 8 faces with landmarks.</td></tr>
+<tr><td><code>SA_PortraitLighting</code></td><td>Face-targeted DSP lighting, 7 levels.</td></tr>
+<tr><td><code>SA_SoftFocus</code></td><td>Resolution-aware DSP soft focus.</td></tr>
+<tr><td><code>ScalarProperties.getInt("mem.rawimage.size.in.mega.pixel")</code></td><td>Sensor MP for DSP buffer sizing.</td></tr>
+</tbody></table>
+</section>
+
+<section id="sec-app-grading">
+<h3 class="sub">Live View Grading</h3>
+<div class="pkg">com.sony.imaging.app.liveviewgrading</div>
+<p>Real-time color grading via gamma tables (CSV), RGB matrix, 6-channel color depth, WB shift. 12 presets: Standard (4), Cinema (4), Extreme (4).</p>
+<h4>12 Presets</h4>
+<table><thead><tr><th>Category</th><th>Presets</th></tr></thead>
+<tbody>
+<tr><td>Standard</td><td>Clear, Vivid, Monochrome, Bold</td></tr>
+<tr><td>Cinema</td><td>Coast, Silky, Misty, Velvety</td></tr>
+<tr><td>Extreme</td><td>180, Surf, Big Air, Snow</td></tr>
+</tbody></table>
+<h4>Unique APIs</h4>
+<table><thead><tr><th>API</th><th>Description</th></tr></thead>
+<tbody>
+<tr><td><code>GammaTable.write(InputStream)</code></td><td>CSV-based custom tone curves (1024 short values).</td></tr>
+<tr><td><code>setPictureEffectGammaForceOff(true)</code></td><td>Override built-in gamma.</td></tr>
+<tr><td><code>setRGBMatrix(int[9])</code></td><td>3x3 color transformation matrix.</td></tr>
+<tr><td><code>setColorDepth(channel, value)</code></td><td>6-channel color: R/G/B/C/M/Y.</td></tr>
+<tr><td><code>setWhiteBalanceShiftLB/CC()</code></td><td>Fine WB shift (amber-blue / green-magenta).</td></tr>
+<tr><td><code>setSharpnessGainMode/Gain()</code></td><td>Fine sharpness control.</td></tr>
+<tr><td><code>setPictureControlExposureShift()</code></td><td>Exposure in color grade pipeline.</td></tr>
+</tbody></table>
+</section>
+
+<section id="sec-refapps">
+<h3 class="sub">Reference App Comparison</h3>
+<table>
+<thead><tr><th>App</th><th>Feature</th><th>DSP</th><th>Key APIs</th></tr></thead>
+<tbody>
+<tr><td>smooth-reflection</td><td>ND simulation (2-256 frame avg)</td><td>Yes</td><td>adjustAperture, setRemoteControlMode, GammaTable, RawDataInfo</td></tr>
+<tr><td>digital-filter</td><td>Graduated ND</td><td>Yes (x3)</td><td>Preview Plugin, 3 simultaneous DSPs, MemoryUtil JNI</td></tr>
+<tr><td>double-exposure</td><td>7 blend modes</td><td>Yes</td><td>Live view overlay, SFR modes, DeviceMemory</td></tr>
+<tr><td>photo-retouch</td><td>Edit tools</td><td>Yes</td><td>All 4 filters, JpegExporter, LCE, DSP.createImage</td></tr>
+<tr><td>portrait-beauty</td><td>Face beautify</td><td>Yes</td><td>ImageAnalyzer, SA_PortraitLighting, SA_SoftFocus</td></tr>
+<tr><td>picture-effect-plus</td><td>Creative fx</td><td>No</td><td>ColorSelect, Miniature, DirectShutter, DefaultDevelop</td></tr>
+<tr><td>live-view-grading</td><td>Real-time LUT</td><td>No</td><td>GammaTable, RGBMatrix, ColorDepth, WBShift</td></tr>
+</tbody></table>
+<p><strong>Shared ~80%</strong>: Framework, camera, menus, playback, lifecycle.<br>
+<strong>App-specific ~20%</strong>: Capture pipeline, DSP programs, edit UI.</p>
+<hr>
+<p style="color:var(--text-muted);font-size:12px;margin-top:32px"><em>~5,119 Java files (7 Sony apps) + 323 Jasmin stubs (OpenMemories-Framework)</em></p>
+</section>
+
+</div></div>
+
+<script>
+document.querySelectorAll('.nav-group-title').forEach(function(el){el.addEventListener('click',function(){this.parentElement.classList.toggle('collapsed')})});
+document.querySelectorAll('.nav-item').forEach(function(el){el.addEventListener('click',function(e){e.preventDefault();document.querySelectorAll('.nav-item').forEach(function(n){n.classList.remove('active')});this.classList.add('active');var t=document.querySelector(this.getAttribute('href'));if(t)t.scrollIntoView({behavior:'smooth',block:'start'})})});
+var contentEl=document.getElementById('content'),sections=document.querySelectorAll('section[id]');
+contentEl.addEventListener('scroll',function(){var s=contentEl.scrollTop,c='';sections.forEach(function(sec){if(sec.offsetTop-contentEl.offsetTop<=s+80)c=sec.id});if(c)document.querySelectorAll('.nav-item').forEach(function(n){n.classList.toggle('active',n.getAttribute('href')==='#'+c)})});
+var searchInput=document.getElementById('search');
+searchInput.addEventListener('input',function(){var q=this.value.toLowerCase().trim();sections.forEach(function(sec){if(!q)sec.classList.remove('search-hidden');else sec.classList.toggle('search-hidden',sec.textContent.toLowerCase().indexOf(q)===-1)})});
+</script>
+</body>
+</html>
+</content>
+</invoke>

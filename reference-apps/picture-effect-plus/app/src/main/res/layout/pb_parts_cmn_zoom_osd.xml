@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:base="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.sony.imaging.app.base.playback.widget.ZoomGuideView
+        android:id="@+id/ZoomGuideView"
+        android:layout_width="120px"
+        android:layout_height="120px"
+        android:layout_marginLeft="26px"
+        android:layout_marginTop="288px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"/>
+    <ImageView
+        android:id="@+id/ArrowIconLeft"
+        android:layout_width="21px"
+        android:layout_height="38px"
+        android:layout_marginLeft="2px"
+        android:layout_marginTop="195px"
+        android:src="0x1080e38"/>
+    <ImageView
+        android:id="@+id/ArrowIconRight"
+        android:layout_width="21px"
+        android:layout_height="38px"
+        android:layout_marginLeft="617px"
+        android:layout_marginTop="195px"
+        android:src="0x1080bd8"/>
+    <ImageView
+        android:id="@+id/ArrowIconUp"
+        android:layout_width="34px"
+        android:layout_height="18px"
+        android:layout_marginLeft="303px"
+        android:layout_marginTop="2px"
+        android:src="0x1080bd0"/>
+    <ImageView
+        android:id="@+id/ArrowIconDown"
+        android:layout_width="34px"
+        android:layout_height="18px"
+        android:layout_marginLeft="303px"
+        android:layout_marginTop="410px"
+        android:src="@android:drawable/btn_toggle_bg"/>
+</RelativeLayout>

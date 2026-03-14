@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.sony.imaging.app.util.RelativeLayoutGroupOffset xmlns:fw="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pb_bottom_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        fw:group="footer"
+        fw:voffset="-58px">
+        <include
+            android:id="@+id/pb_parts_cmn_singlepb_metadata"
+            layout="@layout/pb_parts_cmn_singlepb_metadata"/>
+        <include
+            android:id="@+id/pb_parts_cmn_bottom_date"
+            layout="@layout/pb_parts_cmn_bottom_date"/>
+        <include
+            android:id="@+id/pb_parts_cmn_bottom_fileposition"
+            layout="@layout/pb_parts_cmn_bottom_fileposition"/>
+        <include
+            android:id="@+id/pb_parts_cmn_bottom_nocard"
+            layout="@layout/pb_parts_cmn_bottom_nocard"/>
+    </com.sony.imaging.app.util.RelativeLayoutGroupOffset>
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/pb_parts_cmn_singlepb_histo_yuv"
+        layout="@layout/pb_parts_cmn_singlepb_histo_yuv"/>
+    <include
+        android:id="@+id/pb_parts_cmn_singlepb_image_err"
+        layout="@layout/pb_parts_cmn_singlepb_image_err"/>
+    <include
+        android:id="@+id/pb_parts_cmn_header"
+        layout="@layout/pb_parts_cmn_header"/>
+    <include
+        android:id="@+id/pb_parts_cmn_header_contents_info"
+        layout="@layout/pb_parts_cmn_header_contents_info"/>
+    <include
+        android:id="@+id/pb_parts_cmn_layout_play_dayinfo_bottom_nocard"
+        layout="@layout/pb_parts_cmn_layout_play_dayinfo_bottom_nocard"/>
+    <include
+        android:id="@+id/pb_parts_cmn_singlepb_histo"
+        layout="@layout/pb_parts_cmn_singlepb_histo"/>
+    <include
+        android:id="@+id/pb_parts_cmn_singlepb_histo_metadata"
+        layout="@layout/pb_parts_cmn_singlepb_histo_metadata"/>
+    <include
+        android:id="@+id/pb_parts_cmn_layout_play_autoframing"
+        layout="@layout/pb_parts_cmn_layout_play_autoframing"/>
+    <include
+        android:id="@+id/pb_parts_cmn_layout_play_error"
+        layout="@layout/pb_parts_cmn_layout_play_error"/>
+</RelativeLayout>

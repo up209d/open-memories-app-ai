@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:base="http://schemas.android.com/apk/res-auto"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/cmn_parts_layout_5w_cmn_dialog_string_with_icon_two_button"/>
+    <include layout="@layout/cmn_parts_layout_other_common_footer"/>
+</RelativeLayout>

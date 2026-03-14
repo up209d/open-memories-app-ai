@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root
+	ItemId="SEGMENT_1ST_LAYER"
+	Value="SEGMENT_1ST_LAYER"
+	TextRes=""
+	GuideRes=""
+	IconRes=""
+	SelectedIconRes=""
+	CautionID="0"
+	ExecType="CmnViewMenuDataIF::DItemExecTypeExplore"
+	NextMenuID="ID_SEGMENTMENULAYOUT"
+	ConfigClass=""
+	Wifi=""
+>
+    <Layer1
+		ItemId="loop"
+		Value="loop"
+		TextRes="android:string/STR_LOOPREC_MENU_TOP"
+		GuideRes="android:string/STRID_MSG_EXIT_APPLICATION_GUIDE"
+		CautionID="0"
+		ExecType="SET_REC_MODE"
+		RecMode="loop"
+		AutoTrigger="0"
+		IsExitToWifi="true"
+		Wifi="normal"
+		Gps="true"
+		Media="true"
+		Preview="true"
+	/>
+    
+	<Layer1
+		ItemId="movie"
+		Value="movie"
+		TextRes="android:string/STR_MOVIE_MENU_TOP"
+		GuideRes="android:string/STRID_MSG_APPLICATION_TOP_GUIDE"
+		CautionID="0"
+		ExecType="SET_REC_MODE"
+		RecMode="movie"
+		AutoTrigger="0"
+		IsExitToWifi="true"
+		Wifi="normal"
+		Gps="true"				
+		Media="true"
+		Preview="true"
+	/>
+	
+	<!-- 撮影モードがavailableかどうかを見分けるための仕組み -->>
+	
+	<Layer1
+		ItemId="photo"
+		Value="photo"
+		TextRes="android:string/STR_PHOTO_MENU_TOP"
+		GuideRes="android:string/STRID_MSG_APPLICATION_TOP_GUIDE"
+		CautionID="0"
+		ExecType="SET_REC_MODE"
+		RecMode="photo"
+		AutoTrigger="0"
+		IsExitToWifi="true"
+		Wifi="normal"
+		Gps="true"		
+		Media="true"
+		Preview="true"
+	/>
+		
+	<Layer1
+		ItemId="interval"
+		Value="interval"
+		TextRes="android:string/STR_INTERVAL_MENU_TOP"
+		GuideRes="android:string/STRID_MSG_APPLICATION_TOP_GUIDE"
+		CautionID="0"
+		ExecType="SET_REC_MODE"
+		RecMode="interval"
+		AutoTrigger="0"
+		IsExitToWifi="true"
+		Wifi="normal"
+		Gps="true"
+		Media="true"
+		Preview="true"
+	/>
+
+	<Layer1
+		ItemId="live"
+		Value="live"
+		TextRes="android:string/STR_VIEW_SCALER_LIVE"
+		ExecType="SET_REC_MODE"
+		IsExitToWifi="true"
+		Wifi="live"
+		Media="true"
+		Gps="false"
+		Preview="true"
+	/>
+
+	<Layer1
+		ItemId="setup"
+		Value="setup"
+		TextRes="android:string/STR_SETTING_MENU_TOP"
+		GuideRes="android:string/STRID_AMC_STR_01370"
+		ExecType="NEXT_STATE"
+		CautionID="0"
+		NextMenuID="ExitToSetup"
+		IsExitToWifi="true"
+		Wifi="off"
+		Media="false"
+		Gps="false"
+		Preview="false"		
+		>
+	</Layer1>
+	
+	<Layer1
+		ItemId="play"
+		Value="play"
+		TextRes="android:string/STR_PLAY_MENU_TOP"
+		CautionID="0"
+		ExecType="NEXT_STATE"
+		NextMenuID="ExitToPlay"
+		IsExitToWifi="true"
+		Wifi="off"
+		Media="false"
+		Gps="false"
+		Preview="false"
+	/>
+	
+	<Layer1
+		ItemId="power_off"
+		Value="power_off"
+		TextRes="android:string/STR_POWER_OFF_MENU_TOP"
+		GuideRes="android:string/STRID_MSG_EXIT_APPLICATION_GUIDE"
+		CautionID="0"
+		ExecType="NEXT_STATE"
+		NextMenuID="ExitToPowerOff"
+		IsExitToWifi="true"
+		Wifi="off"
+		Media="false"
+		Gps="false"
+		Preview="false"
+	/>
+</Root>
+

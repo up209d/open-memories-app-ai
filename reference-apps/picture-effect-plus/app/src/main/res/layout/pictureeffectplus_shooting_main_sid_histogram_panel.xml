@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:base="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/shooting_parts_sid_other"
+        layout="@layout/pictureeffectplus_shooting_parts_sid_other_panel"/>
+    <include
+        android:id="@+id/shooting_parts_sid_error"
+        layout="@layout/shooting_parts_sid_error_panel"/>
+    <com.sony.imaging.app.base.shooting.widget.ShootingGraphView
+        android:id="@+id/ShootingGraphView"
+        android:background="0x10810bf"
+        android:layout_width="132px"
+        android:layout_height="72px"
+        android:layout_marginLeft="500px"
+        android:layout_marginTop="348px"
+        base:color="#ffdddddd"/>
+    <include
+        android:id="@+id/shooting_parts_sid_basic_info_for_info_off_hist_level"
+        layout="@layout/shooting_parts_sid_basic_info_for_info_off_hist_level_panel"/>
+</RelativeLayout>

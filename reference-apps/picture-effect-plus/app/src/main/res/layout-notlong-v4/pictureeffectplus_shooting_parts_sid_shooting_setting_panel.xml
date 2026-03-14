@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:base="http://schemas.android.com/apk/res-auto">
+    <include
+        android:id="@+id/included_icon_drivemode"
+        layout="@layout/icon_drivemode"/>
+    <include
+        android:id="@+id/included_icon_flashmode"
+        layout="@layout/icon_flashmode"/>
+    <include
+        android:id="@+id/included_icon_focusmode"
+        layout="@layout/icon_focusmode"/>
+    <include
+        android:id="@+id/included_icon_focusarea"
+        layout="@layout/icon_focusarea"/>
+    <include
+        android:id="@+id/included_icon_facedetection"
+        layout="@layout/icon_facedetection"/>
+    <include layout="@layout/icon_meteringmode"/>
+    <include
+        android:id="@+id/included_icon_flashlevel"
+        layout="@layout/icon_flashlevel"/>
+    <com.sony.imaging.app.base.shooting.widget.WhiteBalanceIcon
+        android:id="@+id/WhiteBalanceIcon"
+        android:layout_width="98px"
+        android:layout_height="60px"
+        android:layout_marginLeft="552px"
+        android:layout_marginTop="187px"/>
+    <include layout="@layout/icon_drohdr"/>
+    <include
+        android:id="@+id/included_icon_creativestyle"
+        layout="@layout/icon_creativestyle"/>
+    <com.sony.imaging.app.pictureeffectplus.shooting.widget.PictureEffectPlusIconBackground
+        android:id="@+id/PictureEffectIconBackground"
+        android:background="@drawable/p_16_dd_parts_common_button_background"
+        android:layout_width="116px"
+        android:layout_height="50px"
+        android:layout_marginLeft="73px"
+        android:layout_marginTop="341px"/>
+    <com.sony.imaging.app.pictureeffectplus.shooting.widget.PictureEffectPlusIcon
+        android:id="@+id/PictureEffectIcon"
+        android:layout_width="58px"
+        android:layout_height="50px"
+        android:layout_marginLeft="73px"
+        android:layout_marginTop="341px"
+        base:toy_mode="toy-camera-color"
+        base:miniature_mode="miniature-area"
+        base:partcolor_mode="part-color-ch0"
+        base:icon_channel="ch0"/>
+    <com.sony.imaging.app.pictureeffectplus.shooting.widget.PictureEffectPlusIcon
+        android:id="@+id/PictureEffectIcon"
+        android:layout_width="58px"
+        android:layout_height="50px"
+        android:layout_marginLeft="131px"
+        android:layout_marginTop="341px"
+        base:toy_mode="toy-camera-darkness"
+        base:miniature_mode="miniature-effect"
+        base:partcolor_mode="part-color-ch1"
+        base:icon_channel="ch1"/>
+</merge>

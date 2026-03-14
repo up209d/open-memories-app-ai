@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:background="@android:color/black"
+        android:layout_width="640px"
+        android:layout_height="480px"
+        android:layout_marginLeft="0px"/>
+    <TextView
+        android:textColor="@color/RESID_FONTSTYLE_CMN_WHITE_NO_SKIN_EVF"
+        android:gravity="center"
+        android:layout_width="484px"
+        android:layout_height="168px"
+        android:layout_marginLeft="68px"
+        android:layout_marginTop="156px"
+        android:text="0x1040a61"
+        style="@style/RESID_FONTSIZE_M"/>
+</RelativeLayout>

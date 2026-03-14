@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:base="http://schemas.android.com/apk/res/auto" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/common_optimized_image_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.sony.scalar.widget.OptimizedImageView
+        android:id="@+id/opt_img_view"
+        android:layout_width="640px"
+        android:layout_height="480px"
+        android:layout_marginLeft="0px"/>
+</RelativeLayout>

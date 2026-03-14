@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:base="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.sony.imaging.app.digitalfilter.shooting.widget.BorderView
+        android:id="@+id/border_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        base:border_mode="normal"
+        base:main_line_color="#ffdddddd"
+        base:setting="filter"/>
+    <include
+        android:id="@+id/menu_setting15_shading"
+        layout="@layout/menu_setting15_shading"/>
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="600px"
+        android:layout_height="416px"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="4px"
+        android:src="@android:drawable/textfield_search_selected"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"/>
+    <TextView
+        android:textColor="@color/RESID_FONTSTYLE_STD_NORMAL"
+        android:gravity="center"
+        android:id="@+id/processing_text"
+        android:layout_width="544px"
+        android:layout_height="272px"
+        android:layout_marginLeft="48px"
+        android:layout_marginTop="44px"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        style="@style/RESID_FONTSIZE_BIG_M_EDGE_OFF"/>
+</RelativeLayout>

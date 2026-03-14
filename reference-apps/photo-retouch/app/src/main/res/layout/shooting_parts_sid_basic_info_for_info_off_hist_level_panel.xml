@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:base="http://schemas.android.com/apk/res-auto">
+    <com.sony.imaging.app.util.RelativeLayoutGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="0px"
+        base:group="AppName">
+        <com.sony.imaging.app.base.shooting.widget.MediaInformationView
+            android:textColor="@color/RESID_FONTSTYLE_STD_NORMAL"
+            android:textColorHighlight="@color/RESID_FONTSTYLE_EXP_SETTING"
+            android:id="@+id/media_information_view"
+            android:background="@android:color/transparent"
+            android:layout_width="105px"
+            android:layout_height="32px"
+            android:layout_marginLeft="90px"
+            android:layout_marginTop="2px"
+            base:media_nocard="@android:drawable/pointer_copy_icon"
+            base:media_accessing="0x1080dfb"
+            base:media_icon_width="44px"
+            base:media_icon_height="32px"
+            style="@style/RESID_FONTSIZE_SP_REC_BASE_INFO"/>
+        <com.sony.imaging.app.base.shooting.widget.MediaInformationView_Movie
+            android:textColor="@color/RESID_FONTSTYLE_STD_NORMAL"
+            android:textColorHighlight="@color/RESID_FONTSTYLE_EXP_SETTING"
+            android:id="@+id/media_information_view_movie"
+            android:background="@android:color/transparent"
+            android:layout_width="217px"
+            android:layout_height="36px"
+            android:layout_marginLeft="90px"
+            android:layout_marginTop="0px"
+            base:media_nocard="@android:drawable/pointer_copy_icon"
+            base:media_accessing="0x1080dfb"
+            base:media_icon_width="44px"
+            base:media_icon_height="32px"
+            style="@style/RESID_FONTSIZE_SP_REC_LV_MOVIE_TIME"/>
+        <com.sony.imaging.app.base.common.widget.BatteryIcon
+            android:id="@+id/i10_2"
+            android:layout_width="49px"
+            android:layout_height="32px"
+            android:layout_marginLeft="535px"
+            android:layout_marginTop="2px"
+            android:src="@drawable/icon_preend_battery"/>
+    </com.sony.imaging.app.util.RelativeLayoutGroup>
+</merge>

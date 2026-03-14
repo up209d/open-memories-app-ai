@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root
+    AndroidResource="TRUE"
+    CautionID="0"
+    ConfigClass="NULL"
+    ExecType="CmnViewMenuDataIF::DItemExecTypeExplore"
+    GuideRes=""
+    IconRes=""
+    ItemId="Main1"
+    Layer1IconRes=""
+    NextMenuID="ID_GLOBALMENULAYOUT"
+    OptionStr="NULL"
+    SelectedIconRes=""
+    TextRes="" >
+
+    <Global
+        CautionID="0"
+        ConfigClass="com.sony.imaging.app.base.shooting.camera.ExposureModeController"
+        ExecType="NEXT_LAYOUT_WITHOUT_SET"
+        GuideRes=""
+        IconRes="drawable/s_16_dd_parts_menu_icon_top_photomode"
+        ItemId="ExposureMode"
+        Layer1IconRes="NULL"
+        NextMenuID="ID_EXPOSUREMODESUBMENULAYOUT"
+        OptionStr="NULL"
+        SelectedIconRes="drawable/s_16_dd_parts_menu_icon_top_photomode"
+        TextRes="string/STRID_AMC_STR_01860"
+        Value="ExposureMode" >
+
+        <Layer1
+            ConfigClass="NULL"
+            DispType="DItemDispTypeWithValueIcon"
+            ExecType="NEXT_LAYOUT"
+            GuideRes=""
+            IconRes="drawable/s_16_dd_parts_specialscreen_custom_icon_autofocusarea_normal"
+            ItemId="PhotoRetouchMenu"
+            NextMenuID="ID_PHOTORETOUCHSUBMENULAYOUT"
+            TextRes="string/STRID_FUNC_EZEDIT"
+            TextSubRes="PhotoRetouchMenu"
+            Value="PhotoRetouchMenu" >
+
+            <Layer2
+                ConfigClass="NULL"
+                DispType="DItemDispTypeNormal"
+                ExecType="NO_ACTION"
+                GuideRes="string/STRID_FUNC_EZEDIT_BEAUTY_SKIN_GUIDE"
+                IconRes="drawable/p_16_dd_parts_pr_menu_softskineffect"
+                ItemId="soft_skin_effect"
+                SelectedIconRes="drawable/p_16_dd_parts_pr_menu_softskineffect_selected"
+                TextRes="string/STRID_FUNC_EZEDIT_BEAUTY_SKIN"
+                TextSubRes="soft_skin_effect"
+                Value="soft_skin_effect" >
+            </Layer2>
+
+            <Layer2
+                ConfigClass="NULL"
+                DispType="DItemDispTypeNormal"
+                ExecType="NO_ACTION"
+                GuideRes="string/STRID_FUNC_EZEDIT_RESIZE_GUIDE"
+                IconRes="drawable/p_16_dd_parts_pr_menu_resize"
+                ItemId="resize"
+                SelectedIconRes="drawable/p_16_dd_parts_pr_menu_resize_selected"
+                TextRes="string/STRID_FUNC_EZEDIT_RESIZE"
+                TextSubRes="resize"
+                Value="resize" >
+            </Layer2>
+
+            <Layer2
+                ConfigClass="NULL"
+                DispType="DItemDispTypeNormal"
+                ExecType="NO_ACTION"
+                GuideRes="string/STRID_FUNC_EZEDIT_PORTRAIT_FRAMING_GUIDE"
+                IconRes="drawable/p_16_dd_parts_pr_menu_framing"
+                ItemId="framing"
+                SelectedIconRes="drawable/p_16_dd_parts_pr_menu_framing_selected"
+                TextRes="string/STRID_FUNC_EZEDIT_PORTRAIT_FRAMING"
+                TextSubRes="framing"
+                Value="framing" >
+            </Layer2>
+
+            <Layer2
+                ConfigClass="NULL"
+                DispType="DItemDispTypeNormal"
+                ExecType="NO_ACTION"
+                GuideRes="string/STRID_FUNC_EZEDIT_HORIZONTAL_COLLECTION_GUIDE"
+                IconRes="drawable/p_16_dd_parts_pr_menu_horizontaladjustment"
+                ItemId="horizontal_adjustment"
+                SelectedIconRes="drawable/p_16_dd_parts_pr_menu_horizontaladjustment_selected"
+                TextRes="string/STRID_FUNC_EZEDIT_HORIZONTAL_COLLECTION"
+                TextSubRes="horizontal_adjustment"
+                Value="horizontal_adjustment" >
+            </Layer2>
+
+            <Layer2
+                ConfigClass="NULL"
+                DispType="DItemDispTypeNormal"
+                ExecType="NO_ACTION"
+                GuideRes="string/STRID_FUNC_EZEDIT_BRIGHTNESS_CONTROL_GUIDE"
+                IconRes="drawable/p_16_dd_parts_pr_menu_brightnesscontrol"
+                ItemId="brightness_control"
+                SelectedIconRes="drawable/p_16_dd_parts_pr_menu_brightnesscontrol_selected"
+                TextRes="string/STRID_FUNC_EZEDIT_BRIGHTNESS_CONTROL"
+                TextSubRes="brightness_control"
+                Value="brightness_control" >
+            </Layer2>
+
+            <Layer2
+                ConfigClass="NULL"
+                DispType="DItemDispTypeNormal"
+                ExecType="NO_ACTION"
+                GuideRes="string/STRID_FUNC_EZEDIT_CONTRAST_CONTROL_GUIDE"
+                IconRes="drawable/p_16_dd_parts_pr_menu_contrastcontrol"
+                ItemId="contrast_control"
+                SelectedIconRes="drawable/p_16_dd_parts_pr_menu_contrastcontrol_selected"
+                TextRes="string/STRID_FUNC_EZEDIT_CONTRAST_CONTROL"
+                TextSubRes="contrast_control"
+                Value="contrast_control" >
+            </Layer2>
+
+            <Layer2
+                ConfigClass="NULL"
+                DispType="DItemDispTypeNormal"
+                ExecType="NO_ACTION"
+                GuideRes="string/STRID_FUNC_EZEDIT_SATURATION_CONTROL_GUIDE"
+                IconRes="drawable/p_16_dd_parts_pr_menu_saturationcontrol"
+                ItemId="saturation_control"
+                SelectedIconRes="drawable/p_16_dd_parts_pr_menu_saturationcontrol_selected"
+                TextRes="string/STRID_FUNC_EZEDIT_SATURATION_CONTROL"
+                TextSubRes="saturation_control"
+                Value="saturation_control" >
+            </Layer2>
+        </Layer1>
+    </Global>
+
+</Root>

@@ -1,0 +1,78 @@
+Okay, let's do it
+
+So this folder contain a lot android project, android version is very very old. 
+It is likely Android 4.4 kit kat with sdkCompile version 16, targetSdk version 10
+- Android Studio Koala Feature Drop | 2024.1.2 August 29, 2024 https://developer.android.com/studio/archive 
+- Configure Android Studio > Gradle JDK as Temurin `1.8` - Java 8 `1.8.0_422`
+- Using SDK 16 (Android 4.1) - compileSdkVersion 16
+- Using NDK `21.4.7075529`
+- Using Cmake `3.10.2`
+- Using BuildTools `30.0.2`
+- Test Device:
+  - Run on Android 7.1.1 x86 API 25
+  - Landscape - 3.0 inch - 640 x 480
+All android projects here are legacy coding so first thing to keep in mind is that we are dealing with legacy coding.
+So everything we do, we need to seek for 3rd party old tool and library that can be well support this android version.
+And being able to compile and run and use that app on real device.
+
+Context for the hardware that we are running the android apps on, which is not ordinary android phone or tablet.
+They are sony cameras, specific models, that can run android app kitkat 4.1 - 4.4.
+Please seek into content of this source: https://openmemories.readthedocs.io/devices.html
+This source contain all models that support to run android apps.
+But for the context of this project we only focus on the Sony A6500 camera (ILCE-6500	CXD90014	✔ (2.17))
+Which is already proven to be running android apps with sdk version I mentioned above.
+
+Since this is a sony camera, and all native api is not documented publicly, that mean we are pretty much blind
+We dont know what native api that the camera support. We dont have sdk either, everything we know is that if we import
+the right module, calling the right method, then it might work, otherwise, app gonna crash.
+However, fortunately, sony have been developed bunch of android apps for the cameras, they are apk, so I did decompile the apk
+and I got back the source codes for all the apps. All the 1st party apps is located in ./reference-apps directory.
+You need to seek in each apps to findout what native api we have, how do we use them, understand them deeply, and report all of them into sort of documentation files, so later on you can cache that into your memory for you to not needing to research and learn again, when everytime I ask you to do things. You can create both your Bible.md file for all of those content, and also make me an UI documentation website for presenting all of those native apis, native classes you have learned from all projects in ./reference-apps. Also do mind creating all your config file like .claude claude.md also suggest me which skill I can use to help you work better in this case.
+
+After you have done with that, so from now on, whenever I ask something, you need to have all of that knowledge in your memory already, you don't need to read, and learn again. While you are doing this report and making your bible, please ask me any question so to get my confirm, you also need to leave me option to do batch answer on serie of similar questions, and an option that I can let you decide.
+
+In addition, the project in ./open-memories-app is the working projects that I have been able to build and run the app on my Sony A6500, please do learn about that project deeply as well, later on I will ask you to create another project based on the skeleton, project structure and all dependencies, tools version based on ./open-memories-app project. The project is based on this project on github you can read the source to understand more: https://github.com/ma1co/PMCADemo and https://github.com/ma1co/OpenMemories-Framework. This is a wrapper framework around Sony specific classes. For every Sony feature, an additional dummy implementation is provided. This allows you to test your app on any Android device / emulator. So for whatever native api you found, you also do this, in order for us to test on virtual android device. Testing directly on A6500 is possible but it is very inconvenient, the installing process is tricky, so we need to test our app on normal device first, let's make the app work on both android normal phone (nullify those functions or return fixed data so app wont crash) and with sony a6500 camera.
+
+About all the apps directory information:
+- ./open-memories-app: A working app that I have working on, inside the app it has draw a lot of screen that show device information, open camera lens, take photos, do apply lut on photo, playback photo gallery on sd card, wifi information, button detection, web view, etc... You could understand them from their class names
+
+- ./reference-apps: All 1st party apps from sony decompiled to source code, these are for search and seek all native api we can have, how do we use them. You can get the app functionality from the name, more information from internet here, you can do you own internet search:
+
+-- REFERENCES APP INFO --
+
+Sony’s PlayMemories Camera Apps (PMCA) platform allowed users to install specialized Android-based applications directly onto their cameras to expand their hardware's capabilities.
+
+As of August 31, 2025, Sony has officially terminated the download service for all apps (both paid and free). While they can no longer be officially downloaded, many users with compatible cameras (like your a6000) still use them or look for archived versions via community tools like PMCA-RE.
+
+Below is a comprehensive list of the apps released on the platform and their core functionalities.
+
+App Name,Functionality
+Smart Remote Control,"Allows you to control the camera via a smartphone (shutter, exposure, and live view). Essential for long exposures and group shots."
+Sync to Smartphone,Automatically transfers photos to a registered mobile device when the camera is powered off.
+Direct Upload,Allows the camera to connect to Wi-Fi and upload photos directly to Facebook or Sony's PlayMemories Online service.
+Lens Compensation,"Manually adjust peripheral shading (vignetting), chromatic aberration, and distortion. Useful for vintage or non-native lenses."
+Touchless Shutter,Uses the EVF (viewfinder) eye sensor as a trigger. You can fire the shutter by waving your hand in front of the viewfinder to avoid camera shake.
+
+App Name,Functionality
+Time-lapse,Automatically captures a series of photos at set intervals and compiles them into a movie file in-camera.
+Smooth Reflection,"Mimics a long exposure (smooth water/clouds) by averaging multiple shots into one, eliminating the need for ND filters."
+Digital Filter,Replaces physical graduated ND filters by allowing you to set different exposure/white balance for two or three zones in a single frame.
+Star Trail,Automates the capture and merging of photos to create star trail videos or stills.
+Multiple Exposure,"Allows you to overlay multiple images into one frame with various blending modes (Add, Bright, Dark, Screen)."
+Bracket Pro,"Advanced bracketing for focus, aperture, shutter speed, or flash, beyond the camera's built-in options."
+Motion Shot,"Superimposes a sequence of moving subjects into a single photo (e.g., a skateboarder performing a trick)."
+Light Shaft,Adds artificial sun rays or light beams to photos in-camera based on light sources in the frame.
+Light Graffiti,"Optimizes settings for ""light painting"" and provides a real-time preview of the light trail as you draw it."
+
+App Name,Functionality
+My Best Portrait,"Applies skin softening, brightening, and ""catch-light"" (sparkle) to eyes during or after the shot."
+Portrait Beauty,"Specialized retouching for faces, focusing on skin tones and removing blemishes."
+Photo Retouch,"Basic in-camera editing: brightness, saturation, contrast adjustment, and cropping."
+Picture Effect+,Adds extra creative filters like Partial Color (keeping 1-2 colors in a B&W shot) or Soft High-Key.
+Sound Photo,"Records a few seconds of audio before and after the shutter press to add ""ambience"" to a still image."
+
+-- REFERENCES APP INFO --
+
+By the way, those apps from human perspective, they seem to be developed in pretty similar way, with common library that all app having the same, and each app extend from that common library. So please compare them deeply.
+
+Before you do this task, list every tasks you gonna do and let me confirm them, then polish my input into a complete input (that doesn't require you to ask you listing every tasks anymore)

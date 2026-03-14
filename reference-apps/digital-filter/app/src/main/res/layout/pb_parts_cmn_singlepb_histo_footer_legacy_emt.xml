@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:base="http://schemas.android.com/apk/res-auto">
+    <com.sony.imaging.app.base.common.widget.FooterGuide
+        android:id="@+id/footer_guide"
+        android:layout_width="148px"
+        android:layout_height="36px"
+        android:layout_marginLeft="484px"
+        android:layout_marginTop="434px"
+        base:guide_text_style="@attr/play_histo_legacy_emt_footer_guide"
+        base:guide_text_marginLeft="0px"
+        base:guide_text_marginTop="0px"
+        base:guide_text_width="148px"
+        base:guide_text_height="36px"/>
+</merge>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:base="http://schemas.android.com/apk/res-auto">
+    <com.sony.imaging.app.base.playback.widget.MediaStatusIcon
+        android:id="@+id/pbicon_nocard"
+        android:layout_width="100px"
+        android:layout_height="32px"
+        android:layout_marginLeft="534px"
+        android:layout_marginTop="446px"
+        base:nocard="@android:drawable/pointer_copy_icon"/>
+</merge>

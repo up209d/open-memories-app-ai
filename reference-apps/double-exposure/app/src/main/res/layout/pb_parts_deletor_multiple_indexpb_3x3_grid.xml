@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:base="http://schemas.android.com/apk/res-auto">
+    <com.sony.imaging.app.base.playback.widget.IndexGrid
+        android:id="@+id/indexGrid"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_width="607px"
+        android:layout_height="372px"
+        android:layout_marginLeft="5px"
+        android:layout_marginTop="48px"
+        base:grid_marginLeft="56px"
+        base:grid_marginTop="0px"
+        base:grid_width="552px"
+        base:grid_height="372px"
+        base:groupBar_marginLeft="0px"
+        base:groupBar_marginTop="0px"
+        base:groupBar_width="44px"
+        base:groupBar_height="372px"
+        base:groupBar_center_height="84px"
+        base:groupBar_beep_timing="1"
+        base:groupBar_upper_beep_id="BEEP_ID_WHEEL_UP"
+        base:groupBar_lower_beep_id="BEEP_ID_WHEEL_DOWN"
+        base:columnCount="3"
+        base:rowCount="3"
+        base:line_gap="6px"
+        base:column_gap="6px"/>
+    <com.sony.imaging.app.base.playback.widget.IndexScrollBar
+        android:id="@+id/indexScrollBar"
+        android:layout_width="8px"
+        android:layout_height="372px"
+        android:layout_marginTop="48px"
+        android:layout_marginRight="8px"
+        android:layout_alignParentRight="true"/>
+    <CheckBox
+        android:id="@+id/groupCheckBox"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+        android:layout_width="36px"
+        android:layout_height="48px"
+        android:layout_marginLeft="12px"
+        android:layout_marginTop="216px"
+        android:button="@drawable/index_groupbar_checkbox"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"/>
+</merge>

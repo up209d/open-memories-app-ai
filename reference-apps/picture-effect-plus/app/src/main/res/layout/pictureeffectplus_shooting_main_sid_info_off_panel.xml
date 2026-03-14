@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/shooting_parts_sid_other"
+        layout="@layout/pictureeffectplus_shooting_parts_sid_other_panel"/>
+    <include
+        android:id="@+id/shooting_parts_sid_error"
+        layout="@layout/shooting_parts_sid_error_panel"/>
+    <com.sony.imaging.app.util.RelativeLayoutGroup xmlns:fw="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="0px"
+        fw:group="AppName">
+        <com.sony.imaging.app.base.common.widget.BatteryIcon
+            android:id="@+id/i10_2"
+            android:layout_width="36px"
+            android:layout_height="32px"
+            android:layout_marginLeft="438px"
+            android:layout_marginTop="5px"
+            android:src="@drawable/icon_preend_battery"/>
+    </com.sony.imaging.app.util.RelativeLayoutGroup>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/resize_selected_background"
+        android:drawable="0x10811ae"/>
+    <item
+        android:id="@+id/resize_s_icon"
+        android:drawable="@drawable/p_16_dd_parts_pr_resizes_normal"/>
+</layer-list>

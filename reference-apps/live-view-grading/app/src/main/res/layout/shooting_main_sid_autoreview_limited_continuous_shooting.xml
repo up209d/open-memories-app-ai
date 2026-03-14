@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textColor="@color/RESID_FONTSTYLE_STD_NORMAL"
+        android:gravity="center"
+        android:id="@+id/progress"
+        android:layout_width="544px"
+        android:layout_height="42px"
+        android:layout_marginLeft="48px"
+        android:layout_marginTop="339px"
+        android:text="@android:string/deleteText"
+        style="@style/RESID_FONTSIZE_SP_REC_BASE_INFO"/>
+</RelativeLayout>

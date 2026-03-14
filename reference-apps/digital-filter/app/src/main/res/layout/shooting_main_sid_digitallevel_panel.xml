@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/shooting_parts_sid_other"
+        layout="@layout/shooting_parts_sid_other_panel"/>
+    <com.sony.imaging.app.base.shooting.widget.SimulatingEERelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.sony.imaging.app.digitalfilter.shooting.widget.DigitalLevelView xmlns:base="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/digitalLevelIcon"
+            android:layout_width="346px"
+            android:layout_height="346px"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            base:DISPLAY_MODE="PANEL"
+            base:ROLLBASE_H="@drawable/p_16_dd_parts_digitallevel_h_rollbase"
+            base:ROLLBASE_H_F="@drawable/p_16_dd_parts_digitallevel_h_rollcenter_f"
+            base:ROLLBASE_H_N="@drawable/p_16_dd_parts_digitallevel_h_rollcenter_n"
+            base:PITCHIND_H_F="@array/DIGITAL_LEVEL_PANEL_PITCHIND_H_F"
+            base:PITCHIND_H_N="@array/DIGITAL_LEVEL_PANEL_PITCHIND_H_N"
+            base:ROLLIND_H="@array/DIGITAL_LEVEL_PANEL_ROLLIND_H"
+            base:ONLYROLL_ROLLIND_H="@array/DIGITAL_LEVEL_ONLYROLL_PANEL_ROLLIND_H"
+            base:ROLLBASE_V="@drawable/p_16_dd_parts_digitallevel_v_rollbase"
+            base:ROLLBASE_V_F="@drawable/p_16_dd_parts_digitallevel_v_rollcenter_f"
+            base:ROLLBASE_V_N="@drawable/p_16_dd_parts_digitallevel_v_rollcenter_n"
+            base:PITCHIND_V_F="@array/DIGITAL_LEVEL_PANEL_PITCHIND_V_F"
+            base:PITCHIND_V_N="@array/DIGITAL_LEVEL_PANEL_PITCHIND_V_N"
+            base:ROLLIND_V="@array/DIGITAL_LEVEL_PANEL_ROLLIND_V"
+            base:ONLYROLL_ROLLIND_V="@array/DIGITAL_LEVEL_ONLYROLL_PANEL_ROLLIND_V"/>
+    </com.sony.imaging.app.base.shooting.widget.SimulatingEERelativeLayout>
+    <include
+        android:id="@+id/shooting_parts_sid_error"
+        layout="@layout/shooting_parts_sid_error_panel"/>
+    <include
+        android:id="@+id/shooting_parts_sid_basic_info_for_info_off_hist_level"
+        layout="@layout/shooting_parts_sid_basic_info_for_info_off_hist_level_panel"/>
+    <com.sony.imaging.app.base.shooting.widget.TouchOffIcon
+        android:id="@+id/touch_off_icon"
+        android:layout_width="96px"
+        android:layout_height="48px"
+        android:layout_marginLeft="459px"
+        android:layout_marginTop="120px"
+        android:src="0x1080f05"/>
+</RelativeLayout>

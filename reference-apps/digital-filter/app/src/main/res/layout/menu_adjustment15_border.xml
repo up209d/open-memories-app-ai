@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:base="http://schemas.android.com/apk/res-auto" xmlns:ls="http://schemas.android.com/apk/res/com.sony.imaging.app.digitalfilter"
+    android:id="@+id/pb_parts_cmn_skarea"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.sony.imaging.app.digitalfilter.shooting.widget.BorderView
+        android:id="@+id/border_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        base:border_mode="normal"
+        base:main_line_color="#ffff8800"
+        base:setting="filter"/>
+    <include
+        android:id="@+id/menu_setting15_border"
+        layout="@layout/menu_setting15_border"/>
+</RelativeLayout>
