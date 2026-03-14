@@ -1,0 +1,83 @@
+plugins {
+    id 'com.android.library'
+    id 'maven-publish'
+}
+android {
+    compileSdk 34
+    //ndkVersion "22.1.7171670"
+    //Required for __fp16 support
+    //ndkVersion "23.0.7599858"
+    //Required for ANDROID_WEAK_API_DEFS
+    ndkVersion "26.3.11579264"
+    defaultConfig {
+        //Has to be 24 for 64-bit functions
+        minSdk 24
+        targetSdk 34
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+        externalNativeBuild {
+            cmake {
+                arguments "-DLIBRAW_PATH=${projectDir}/src/main/cpp/LibRaw/",
+                        "-DANDROID_WEAK_API_DEFS=ON",
+                        "-Werror=unguarded-availability",
+                        // You can manually include openMP by renaming jniLibsBak to jniLibs and commenting the entry below.
+                        // I noticed no performance increase, so I disabled it to reduce APK size
+                        // Also, the openMP build is broken, so it seems like it's fate.
+                        "-DENABLE_OPENMP=OFF",
+                        //Disable Jasper (JPEG 2000)
+                        "-DENABLE_JASPER=OFF"
+            }
+        }
+    }
+    packagingOptions {
+        jniLibs {
+            excludes += ['lib/**/libraw_r.so']
+        }
+    }
+
+    //Exclude the thread safe version - TODO figure out how not to compile them
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    externalNativeBuild {
+        cmake {
+            path "src/main/cpp/CMakeLists.txt"
+            //version '3.18.1'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    namespace 'com.homesoft.photo.libraw'
+
+    publishing {
+        singleVariant("release")
+    }
+}
+
+//Install to local maven repo
+//gradlew libraw:publishToMavenLocal
+publishing {
+    publications {
+        media3avi(MavenPublication) {
+            setGroupId "${rootProject.ext.groupId}"
+            setArtifactId "${rootProject.ext.artifactId}"
+            version "${rootProject.ext.artifactVersion}"
+
+            afterEvaluate {
+                from components.release
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation 'androidx.annotation:annotation:1.7.1'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+}
