@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STRID_AMC_STR_01176">ประมวลผล...</string>
+    <string name="STRID_AMC_STR_06084">กำลังเชื่อมต่อ...</string>
+    <string name="STRID_AMC_STR_06546">ตกลง </string>
+    <string name="STRID_CAU_CANT_DISPLAY_EE_DURING_MOVIE_REC">ไม่สามารถแสดง Live View บนหน้าจอ\nขณะถ่ายภาพเคลื่อนไหว</string>
+    <string name="STRID_CAU_FUNC_INVALID_FOR_THIS_APP_AND_CAMERA">อุปกรณ์นี้ไม่สนับสนุนฟังก์ชั่นในโปรแกรมนี้</string>
+    <string name="STRID_CAU_FUNC_INVALID_FOR_THIS_CAMERA">อุปกรณ์นี้ไม่สนับสนุนฟังก์ชั่นนี้</string>
+    <string name="STRID_CAU_MOVIE_INVALID_FOR_THIS_APP_AND_CAMERA">อุปกรณ์นี้ไม่สนับสนุนโหมดถ่ายภาพ\nเคลื่อนไหวของโปรแกรมนี้</string>
+    <string name="STRID_CAU_PREV_MS_ERROR_ML">ใส่แผ่นบันทึกข้อมูลที่ใช้ก่อนหน้านี้อีกครั้ง</string>
+    <string name="STRID_CMN_MSG_UNFORESEEN_ERROR">เกิดข้อผิดพลาดที่คาดไม่ถึง</string>
+    <string name="STRID_CMN_PASSWORD">รหัสลับ</string>
+    <string name="STRID_CMN_SSID">SSID</string>
+    <string name="STRID_CMN_WIFI_DEVICENAME_DSLR">ชื่ออุปกรณ์</string>
+    <string name="STRID_FUNC_EZREMOTE">รีโมทควบคุมอัจฉริยะ</string>
+    <string name="STRID_FUNC_EZREMOTE_2L">รีโมทควบคุม\nอัจฉริยะ</string>
+    <string name="STRID_FUNC_EZREMOTE_EMBEDDED">รีโมทอัจฉริยะฝังตัว</string>
+    <string name="STRID_FUNC_EZREMOTE_EMBEDDED_2L">รีโมทอัจฉริยะ\nฝังตัว</string>
+    <string name="STRID_FUNC_EZREMOTE_GETTING_PICTURE">กำลังเรียกข้อมูลถ่ายภาพ...</string>
+    <string name="STRID_FUNC_EZREMOTE_GET_PICTURE_ERROR">เรียกข้อมูลถ่ายภาพล้มเหลว</string>
+    <string name="STRID_FUNC_EZREMOTE_GUIDE">ท่านสามารถถ่ายภาพนิ่งโดยควบคุมอุปกรณ์แบบ\nรีโมทด้วยสมาร์ทโฟนที่ใช้ร่วมกันได้ ฯลฯ</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_ENTER_HELP">ตกลง　ช่วยเหลือ</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_HELP_FOR_SK">ช่วยเหลือ</string>
+    <string name="STRID_FUNC_NETWORK_SETTINGS_MSG_WIFI_STANDBY">เตรียมพร้อมสำหรับ Wi-Fi...</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_ERROR_SWKEY_PIN_DSLR">โปรดใส่ตัวเลข 8 หรือ 4 ตัว</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_CHANGEPW_ONE_DSLR">เชื่อมต่ออุปกรณ์ได้เพียง 1 ชิ้นต่อครั้ง\nท่านต้องการยุติการเชื่อมต่อในขณะนี้\nและเริ่มการเชื่อมต่อใหม่หรือไม่?</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_INPUT_DSLR">โปรดใส่รหัส PIN ของอุปกรณ์\nที่เชื่อมต่อด้วยที่อุปกรณ์</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_PBCREQ_DSLR">ยินยอมให้เชื่อมต่อกับอุปกรณ์นี้?</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_PBC_ERROR_DSLR">การตรวจสอบและเชื่อมต่อ\nWi-Fi Direct ล้มเหลว</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_PIN_OUTPUT_DSLR">โปรดใส่รหัส PIN ลงในอุปกรณ์\nที่เชื่อมต่อด้วยภายใน 2 นาที</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_TIMEOUT_DSLR">ไม่สามารถเชื่อมต่อเพราะรอนานเกินไป</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_WAITING2">ใช้งานสมาร์ทโฟนเพื่อเชื่อมต่อ\nกับอุปกรณ์นี้ผ่าน Wi-Fi</string>
+    <string name="STRID_FUNC_SRPLUS_GUIDE">สมาร์ทโฟนหรือแท็บเล็ตสามารถใช้เป็นรีโมท\nควบคุมได้\nท่านสามารถเปลี่ยนการตั้งค่าเช่นค่ารูรับแสง\nและความเร็วชัตเตอร์ได้ตามต้องการ</string>
+    <string name="STRID_FUNC_SRPLUS_INVALID_OPERATION">ไม่สามารถใช้งานได้</string>
+    <string name="STRID_FUNC_SRPLUS_IN_TOUCH_AF_MODE">ขณะนี้อยู่ระหว่างการใช้งานรีโมทและโหมด\nAF สัมผัส\nกดชัตเตอร์ลงครึ่งหนึ่งและปล่อยชัตเตอร์\nเพื่อยกเลิก</string>
+    <string name="STRID_FUNC_SRPLUS_UNDER_REMOTE_CONTROL">ขณะนี้อยู่ระหว่างการใช้งานรีโมท</string>
+    <string name="STRID_FUNC_SRPLUS_UNDER_REMOTE_CONTROL2">ขณะนี้อยู่ระหว่างการใช้งานรีโมท\nไม่สามารถใช้งานด้วยอุปกรณ์นี้</string>
+    <string name="STRID_INFO_PIN_CODE">รหัส PIN</string>
+    <string name="STRID_MSG_NO_MEMCARD">ใส่แผ่นบันทึกข้อมูล</string>
+    <string name="STRID_FUNC_CONTROLWITHSMARTPHONE_MSG_CONTROLLED">กำลังควบคุมด้วยสมาร์ทโฟน…\nท่านไม่สามารถใช้งานอุปกรณ์นี้โดยตรง</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_GOTO_QRCODE">แสดง QR Code ออก</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_GOTO_PASS">เชื่อมต่อด้วยรหัสลับ ออก</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_GOTO_QRCODE_NEX">แสดง QR Code ออก</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_GOTO_PASS_NEX">เชื่อมต่อด้วยรหัสลับ ออก</string>
+    <string name="STRID_MSG_WIFI_CONNECT_QRCODE">ใช้สมาร์ทโฟนเพื่อสแกน\nQR Code โดยใช้\nPlayMemories Mobile</string>
+</resources>

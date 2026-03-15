@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STRID_FUNC_BRKMASTER">Professionell gaffling</string>
+    <string name="STRID_FUNC_BRKMASTER_2L">Professionell\ngaffling</string>
+    <string name="STRID_FUNC_BRKMASTER_GUIDE">Flera bilder med ändringar som gjorts med inställning av slutarhastighet, bländare, skärpa och blixt spelas in.</string>
+    <string name="STRID_FUNC_SSBRK">Gaffling för slutarhastighet</string>
+    <string name="STRID_FUNC_APERTUREBRK">Gaffling för bländare</string>
+    <string name="STRID_FUNC_FOCUSBRK">Gaffling för skärpa</string>
+    <string name="STRID_FUNC_FLASHBRK">Gaffling för blixt</string>
+    <string name="STRID_FUNC_SSBRK_GUIDE">Tar 3 bilder med olika slutarhastigheter.</string>
+    <string name="STRID_FUNC_APERTUREBRK_GUIDE">Tar 3 bilder med olika bländarvärden.</string>
+    <string name="STRID_FUNC_FOCUSBRK_GUIDE">Tar 3 bilder med olika skärpeinställningar.</string>
+    <string name="STRID_FUNC_FLASHBRK_GUIDE">Tar bilder med och utan blixt.</string>
+    <string name="STRID_FUNC_SHIFT_RANGE">Gafflingsvärde</string>
+    <string name="STRID_FUNC_SHIFT_RANGE_WIDE">Bred</string>
+    <string name="STRID_FUNC_SHIFT_RANGE_NARROW">Smal</string>
+    <string name="STRID_CAU_FLASH_INVALID">Blixten kan inte avfyras.\nSe till så att blixten är redo att avfyra.</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_RETURN">Guide </string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_EXIT">Guide Avsluta program</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_EXIT_SK">Guide Avsluta program</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_RETURN_SK">Guide </string>
+    <string name="STRID_FOOTERGUIDE_TV_RETURN">Tv </string>
+    <string name="STRID_FOOTERGUIDE_TV_RETURN_SK">Tv </string>
+    <string name="STRID_FOOTERGUIDE_AV_RETURN">Av </string>
+    <string name="STRID_FOOTERGUIDE_AV_RETURN_SK">Av </string>
+</resources>

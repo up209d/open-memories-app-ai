@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STRID_FUNC_BRKMASTER">Επαγγελματ. Οριοθέτηση</string>
+    <string name="STRID_FUNC_BRKMASTER_2L">Επαγγελματ.\nΟριοθέτηση</string>
+    <string name="STRID_FUNC_BRKMASTER_GUIDE">Θα εγγραφούν πολλές εικόνες με αλλαγές στις ρυθμίσεις ταχύτητας κλείστρου, διαφράγματος, εστίασης, φλας.</string>
+    <string name="STRID_FUNC_SSBRK">Οριοθέτηση ταχύτητας κλείστρου</string>
+    <string name="STRID_FUNC_APERTUREBRK">Οριοθέτηση διαφράγματος</string>
+    <string name="STRID_FUNC_FOCUSBRK">Οριοθέτηση εστίασης</string>
+    <string name="STRID_FUNC_FLASHBRK">Οριοθέτηση φλας</string>
+    <string name="STRID_FUNC_SSBRK_GUIDE">Εκτέλεση 3 λήψεων με διαφορετική ταχύτητα κλείστρου.</string>
+    <string name="STRID_FUNC_APERTUREBRK_GUIDE">Εκτέλεση 3 λήψεων με διαφορετικό διάφραγμα.</string>
+    <string name="STRID_FUNC_FOCUSBRK_GUIDE">Εκτέλεση 3 λήψεων από διαφορετικές θέσεις εστίασης.</string>
+    <string name="STRID_FUNC_FLASHBRK_GUIDE">Λήψη εικόνων με και χωρίς τη χρήση φλας.</string>
+    <string name="STRID_FUNC_SHIFT_RANGE">Τιμή οριοθέτησης</string>
+    <string name="STRID_FUNC_SHIFT_RANGE_WIDE">Ευρεία</string>
+    <string name="STRID_FUNC_SHIFT_RANGE_NARROW">Περιορισμένη</string>
+    <string name="STRID_CAU_FLASH_INVALID">Δεν είναι δυνατόν να ανάψει το φλας.\nΕπαληθεύστε εάν το φλας μπορεί\nνα ανάψει.</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_RETURN">Οδηγός </string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_EXIT">Οδηγός Έξοδος εφαρμογής</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_EXIT_SK">Οδηγός Έξοδος εφαρμογής</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_RETURN_SK">Οδηγός </string>
+    <string name="STRID_FOOTERGUIDE_TV_RETURN">Tv </string>
+    <string name="STRID_FOOTERGUIDE_TV_RETURN_SK">Tv </string>
+    <string name="STRID_FOOTERGUIDE_AV_RETURN">Av </string>
+    <string name="STRID_FOOTERGUIDE_AV_RETURN_SK">Av </string>
+</resources>

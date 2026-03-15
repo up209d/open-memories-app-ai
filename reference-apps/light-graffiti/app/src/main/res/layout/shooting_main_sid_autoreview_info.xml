@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:base="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.sony.imaging.app.base.shooting.widget.StillImageSizeIconAutoReview
+        android:id="@+id/StillImageSize"
+        android:layout_width="48px"
+        android:layout_height="32px"
+        android:layout_marginLeft="317px"
+        android:layout_marginTop="1px"
+        base:SIZE_L="0x1081175"
+        base:SIZE_M="0x1081179"
+        base:SIZE_S="0x108116d"
+        base:SIZE_VGA="0x10811eb"/>
+    <include
+        android:id="@+id/pb_layout_cmn_singlepb_image_info"
+        layout="@layout/pb_layout_cmn_singlepb_image_info"/>
+</RelativeLayout>

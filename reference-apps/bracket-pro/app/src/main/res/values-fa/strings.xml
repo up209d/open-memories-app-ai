@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STRID_FUNC_BRKMASTER">طبقه بندی حرفه ای</string>
+    <string name="STRID_FUNC_BRKMASTER_2L">طبقه بندی\nحرفه ای</string>
+    <string name="STRID_FUNC_BRKMASTER_GUIDE">تصاویر چندگانه، با تغییرات انجام شده در تنظیمات سرعت شاتر، دیافراگم، تمرکز، فلاش ضبط خواهند شد.</string>
+    <string name="STRID_FUNC_SSBRK">طبقه بندی سرعت شاتر</string>
+    <string name="STRID_FUNC_APERTUREBRK">طبقه بندی دیافراگم</string>
+    <string name="STRID_FUNC_FOCUSBRK">طبقه بندی تمرکز</string>
+    <string name="STRID_FUNC_FLASHBRK">طبقه بندی فلاش</string>
+    <string name="STRID_FUNC_SSBRK_GUIDE">3 عکس با سرعت های شاتر متفاوت می گیرد.</string>
+    <string name="STRID_FUNC_APERTUREBRK_GUIDE">3 عکس با دیافراگم های متفاوت می گیرد.</string>
+    <string name="STRID_FUNC_FOCUSBRK_GUIDE">3 عکس با تمرکزهای متفاوت می گیرد.</string>
+    <string name="STRID_FUNC_FLASHBRK_GUIDE">تصاویر را با فلاش و بدون آن می گیرد.</string>
+    <string name="STRID_FUNC_SHIFT_RANGE">مقدار طبقه بندی</string>
+    <string name="STRID_FUNC_SHIFT_RANGE_WIDE">عریض</string>
+    <string name="STRID_FUNC_SHIFT_RANGE_NARROW">باریک</string>
+    <string name="STRID_CAU_FLASH_INVALID">نمی توان فلاش را آتش کرد.\nلطفا بررسی کنید که فلاش آماده آتش کردن باشد.</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_RETURN">راهنما </string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_EXIT">راهنما خروج از برنامه</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_EXIT_SK">راهنما خروج از برنامه</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_RETURN_SK">راهنما </string>
+    <string name="STRID_FOOTERGUIDE_TV_RETURN">Tv </string>
+    <string name="STRID_FOOTERGUIDE_TV_RETURN_SK">Tv </string>
+    <string name="STRID_FOOTERGUIDE_AV_RETURN">Av </string>
+    <string name="STRID_FOOTERGUIDE_AV_RETURN_SK">Av </string>
+</resources>

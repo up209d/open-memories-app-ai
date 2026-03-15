@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STRID_FUNC_BRKMASTER">Professionelle Reihe</string>
+    <string name="STRID_FUNC_BRKMASTER_2L">Professionelle\nReihe</string>
+    <string name="STRID_FUNC_BRKMASTER_GUIDE">Mehrfache Bilder, mit vorgenommenen Änderungen bei Verschlusszeit, Blende, Fokus, Blitzeinstellungen, werden aufgenommen.</string>
+    <string name="STRID_FUNC_SSBRK">Verschlusszeit-Reihe</string>
+    <string name="STRID_FUNC_APERTUREBRK">Blendenreihe</string>
+    <string name="STRID_FUNC_FOCUSBRK">Fokus-Reihe</string>
+    <string name="STRID_FUNC_FLASHBRK">Blitz-Reihe</string>
+    <string name="STRID_FUNC_SSBRK_GUIDE">3 Aufnahmen mit verschiedenen Verschlusszeiten aufnehmen.</string>
+    <string name="STRID_FUNC_APERTUREBRK_GUIDE">3 Aufnahmen mit verschiedenen Blenden aufnehmen.</string>
+    <string name="STRID_FUNC_FOCUSBRK_GUIDE">3 Aufnahmen mit verschiedenen Fokuspositionen aufnehmen.</string>
+    <string name="STRID_FUNC_FLASHBRK_GUIDE">Bilder mit und ohne Blitz aufnehmen.</string>
+    <string name="STRID_FUNC_SHIFT_RANGE">Belichtungsreihenwert</string>
+    <string name="STRID_FUNC_SHIFT_RANGE_WIDE">Weit</string>
+    <string name="STRID_FUNC_SHIFT_RANGE_NARROW">Schmal</string>
+    <string name="STRID_CAU_FLASH_INVALID">Blitz kann nicht ausgelöst werden.\nBitte bestätigen, dass der Blitz\nbetriebsbereit ist.</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_RETURN">Anleitung </string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_EXIT">Anleitung Applikation Ende</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_EXIT_SK">Anleitung Applikation Ende</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_RETURN_SK">Anleitung </string>
+    <string name="STRID_FOOTERGUIDE_TV_RETURN">Tv </string>
+    <string name="STRID_FOOTERGUIDE_TV_RETURN_SK">Tv </string>
+    <string name="STRID_FOOTERGUIDE_AV_RETURN">Av </string>
+    <string name="STRID_FOOTERGUIDE_AV_RETURN_SK">Av </string>
+</resources>

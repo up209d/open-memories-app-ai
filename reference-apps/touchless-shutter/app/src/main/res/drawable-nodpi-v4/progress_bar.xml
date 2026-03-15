@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clip xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/progress"
+    android:clipOrientation="horizontal">
+    <color android:color="@color/RESID_COLOR_PROGRESS_BAR_CURRENT"/>
+</clip>

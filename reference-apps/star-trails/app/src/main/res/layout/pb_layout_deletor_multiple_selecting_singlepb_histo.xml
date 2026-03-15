@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:customView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/pb_parts_cmn_singlepb_histo_yuv"
+        layout="@layout/pb_parts_cmn_singlepb_histo_yuv"/>
+    <include
+        android:id="@+id/pb_parts_cmn_singlepb_histo"
+        layout="@layout/pb_parts_cmn_singlepb_histo"/>
+    <include
+        android:id="@+id/pb_parts_cmn_singlepb_histo_metadata"
+        layout="@layout/pb_parts_cmn_singlepb_histo_metadata"/>
+    <include
+        android:id="@+id/pb_parts_cmn_singlepb_image_err"
+        layout="@layout/pb_parts_cmn_singlepb_image_err"/>
+    <include
+        android:id="@+id/pb_parts_cmn_selector_histo_osd"
+        layout="@layout/pb_parts_cmn_selector_histo_osd"/>
+    <include
+        android:id="@+id/pb_parts_cmn_header"
+        layout="@layout/st_pb_parts_cmn_header"/>
+    <include
+        android:id="@+id/pb_parts_cmn_header_contents_info"
+        layout="@layout/pb_parts_cmn_header_contents_info"/>
+    <include
+        android:id="@+id/pb_parts_cmn_deletor_multiple_footer_guide_count"
+        layout="@layout/pb_parts_cmn_deletor_multiple_footer_guide_count"/>
+    <include
+        android:id="@+id/pb_parts_cmn_layout_play_error"
+        layout="@layout/pb_parts_cmn_layout_play_error"/>
+    <include
+        android:id="@+id/pb_parts_cmn_toucharea"
+        layout="@layout/pb_parts_cmn_toucharea"/>
+</RelativeLayout>

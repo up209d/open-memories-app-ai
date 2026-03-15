@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/pb_parts_cmn_singlepb_yuv"
+        layout="@layout/pb_parts_cmn_singlepb_yuv"/>
+    <include
+        android:id="@+id/pb_parts_cmn_singlepb_image_err"
+        layout="@layout/pb_parts_cmn_singlepb_image_err"/>
+    <include
+        android:id="@+id/pb_parts_cmn_header_noinfo"
+        layout="@layout/pb_parts_cmn_header_noinfo"/>
+    <include
+        android:id="@+id/pb_parts_cmn_selector_osd"
+        layout="@layout/pb_parts_cmn_selector_osd"/>
+    <include
+        android:id="@+id/pb_parts_cmn_deletor_multiple_count"
+        layout="@layout/pb_parts_cmn_deletor_multiple_count"/>
+    <include
+        android:id="@+id/pb_parts_cmn_toucharea"
+        layout="@layout/pb_parts_cmn_toucharea"/>
+</RelativeLayout>

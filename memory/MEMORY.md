@@ -11,9 +11,9 @@
 
 ## Directory Map (all paths relative to project root `sony-apps/`)
 - `./open-memories-app/` - Working template app (base for new projects)
-- `./reference-apps/` - 7 decompiled Sony 1st-party apps (read-only): digital-filter, double-exposure, live-view-grading, photo-retouch, picture-effect-plus, portrait-beauty, smooth-reflection
+- `./reference-apps/` - 19 decompiled Sony 1st-party apps (read-only): bracket-pro, digital-filter, double-exposure, graduated-filter, light-graffiti, light-shaft, live-view-grading, manual-lens-compensation, photo-retouch, picture-effect-plus, portrait-beauty, smooth-reflection, smooth-reflection-2, sound-photo, srctrl, star-trails, sync-to-smart-phone, time-lapse, touchless-shutter
 - `./docs/index.html` - Generated API documentation website (searchable, dark theme)
-- `./Bible.md` - Complete Sony native API reference (~500 lines)
+- `./Bible.md` - Complete Sony native API reference (~1,900+ lines)
 - `./CLAUDE.md` - Project build rules and conventions
 - `./memory/` - Project knowledge base (this directory)
   - `README.md` - Self-instruction file for Claude (how to use these files)
@@ -51,7 +51,7 @@
 - **Color depth**: Gpelibrary.changeFrameBufferPixel(ABGR8888) for quality, RGBA4444 for performance
 - **Camera intents**: DAConnectionManagerService.BootCompleted/ExitCompleted/AppInfoReceive/apo
 - **APO disable**: sendBroadcast("apo", "APO/NO") to prevent auto power off
-- **Base library**: com.sony.imaging.app.base.* shared across all 7 reference apps (BaseApp Activity, State machine, Menu system, Caution system)
+- **Base library**: com.sony.imaging.app.base.* shared across all 19 reference apps (BaseApp Activity, State machine, Menu system, Caution system)
 
 ## User Preferences
 - Batch questions for similar decisions

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STRID_SCALARA_DLSYS_AIRPLAIN_MODE_ERROR">La aplicación no puede arrancar ya que\nel modo avión está ajustado.</string>
+    <string name="STRID_AMC_STR_01176">Procesando...</string>
+    <string name="STRID_AMC_STR_06084">Conectando...</string>
+    <string name="STRID_AMC_STR_06546">Intro </string>
+    <string name="STRID_CAU_CANT_DISPLAY_EE_DURING_MOVIE_REC">No se puede mostrar la visualización en directo en el monitor al grabar películas.</string>
+    <string name="STRID_CAU_FUNC_INVALID_FOR_THIS_APP_AND_CAMERA">La función en esta aplicación no se admite en este dispositivo.</string>
+    <string name="STRID_CAU_FUNC_INVALID_FOR_THIS_CAMERA">La función no se admite en este dispositivo.</string>
+    <string name="STRID_CAU_MOVIE_INVALID_FOR_THIS_APP_AND_CAMERA">El modo de toma de películas de esta aplicación no se admite en este dispositivo.</string>
+    <string name="STRID_CAU_PREV_MS_ERROR_ML">Reinserte la tarjeta memoria que estaba\nusando.</string>
+    <string name="STRID_CMN_MSG_UNFORESEEN_ERROR">Se ha producido un error inesperado.</string>
+    <string name="STRID_CMN_PASSWORD">Cntraseña</string>
+    <string name="STRID_CMN_SSID">SSID</string>
+    <string name="STRID_CMN_WIFI_DEVICENAME_DSLR">Nombre Disposit.</string>
+    <string name="STRID_FUNC_EZREMOTE">Mando a dist. inteligente</string>
+    <string name="STRID_FUNC_EZREMOTE_2L">Mando a dist.\ninteligente</string>
+    <string name="STRID_FUNC_EZREMOTE_EMBEDDED">Mando a distanc. intelig. incrustad.</string>
+    <string name="STRID_FUNC_EZREMOTE_EMBEDDED_2L">Mando a distanc.\nintelig. incrustad.</string>
+    <string name="STRID_FUNC_EZREMOTE_GETTING_PICTURE">Obtención de datos de toma...</string>
+    <string name="STRID_FUNC_EZREMOTE_GET_PICTURE_ERROR">Fallo al obtener los datos de toma.</string>
+    <string name="STRID_FUNC_EZREMOTE_GUIDE">Puede disparar imágenes fijas controlando el dispositivo a distancia usando un smartphone compatible, etc.</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_ENTER_HELP">Intro Ayuda</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_HELP_FOR_SK">Ayuda</string>
+    <string name="STRID_FUNC_NETWORK_SETTINGS_MSG_WIFI_STANDBY">Wi-Fi en suspenso...</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_ERROR_SWKEY_PIN_DSLR">Por favor, introduzca un número de 8\n o 4 dígitos.</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_CHANGEPW_ONE_DSLR">Sólo conecte 1 dispositivo a la vez.\n¿Desea terminar la conexión actual y\nempezar una nueva?</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_INPUT_DSLR">Introduzca el código PIN del\ndispositivo que se conecta en el\ndispositivo.</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_PBCREQ_DSLR">¿Autorizar conexión desde dispositivo?</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_PBC_ERROR_DSLR">Error de autenticación y de conexión\nde Wi-Fi Direct.</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_PIN_OUTPUT_DSLR">Introduzca el código PIN en el\ndispositivo que se conecta en los 2\nminutos siguientes.</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_TIMEOUT_DSLR">No se pudo conectar debido al tiempo\nde espera.</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_WAITING2">Maneje el smartphone para que se conecte\na este dispositivo por Wi-Fi.</string>
+    <string name="STRID_FUNC_SRPLUS_GUIDE">Puede utilizar un smartphone o una tableta como mando a distancia.\nPuede establecer ajustes como la abertura o la velocidad obturador como desee.</string>
+    <string name="STRID_FUNC_SRPLUS_INVALID_OPERATION">Operación no válida.</string>
+    <string name="STRID_FUNC_SRPLUS_IN_TOUCH_AF_MODE">Actualmente en operación remota con modo AF táctil.\nPulse el botón del obturador hasta la mitad y suéltelo para cancelar.</string>
+    <string name="STRID_FUNC_SRPLUS_UNDER_REMOTE_CONTROL">Actualmente en operación remota.</string>
+    <string name="STRID_FUNC_SRPLUS_UNDER_REMOTE_CONTROL2">Actualmente en operación remota.\nNo se puede operar con este\ndispositivo.</string>
+    <string name="STRID_INFO_PIN_CODE">Código PIN</string>
+    <string name="STRID_MSG_NO_MEMCARD">Inserte tarjeta de memoria</string>
+    <string name="STRID_FUNC_CONTROLWITHSMARTPHONE_MSG_CONTROLLED">Controlando con smartphone…\nNo se puede utilizar direct. este dispositivo.</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_GOTO_QRCODE">Mostrar el QR Code Salir</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_GOTO_PASS">Conectar con contraseña Salir</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_GOTO_QRCODE_NEX">Mostrar el QR Code Salir</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_GOTO_PASS_NEX">Conectar con contraseña Salir</string>
+    <string name="STRID_MSG_WIFI_CONNECT_QRCODE">Utilice el smartphone para\nescanear el QR Code con\nPlayMemories Mobile.</string>
+</resources>

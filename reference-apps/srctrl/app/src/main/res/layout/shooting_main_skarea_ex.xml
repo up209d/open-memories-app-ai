@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:base="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.sony.imaging.app.srctrl.shooting.widget.ShootingSoftKeyAreaEx
+        android:id="@+id/softkeyareaex"
+        android:layout_width="120px"
+        android:layout_height="516px"
+        android:layout_marginLeft="520px"
+        android:layout_marginTop="-18px"
+        android:layout_marginBottom="-18px"/>
+</RelativeLayout>

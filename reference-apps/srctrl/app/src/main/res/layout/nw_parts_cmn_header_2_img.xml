@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/nw_parts_cmn_header_2_img"
+        android:layout_width="70px"
+        android:layout_height="55px"
+        android:layout_marginLeft="6px"
+        android:layout_marginTop="0px"
+        android:src="@drawable/p_16_dd_parts_sr_appicon"/>
+</RelativeLayout>

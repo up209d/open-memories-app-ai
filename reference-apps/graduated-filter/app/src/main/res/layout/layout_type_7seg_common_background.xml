@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:base="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/caution_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.sony.imaging.app.base.common.widget.SubLcdMute
+        android:id="@+id/caution_mute2"
+        android:tag="mute"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        base:sublcd_pattern="PTN_ON"/>
+    <include
+        android:id="@+id/layout_type_7seg_common"
+        layout="@layout/layout_type_7seg_common"/>
+</RelativeLayout>

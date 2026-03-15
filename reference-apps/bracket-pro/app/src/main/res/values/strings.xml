@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STRID_FUNC_BRKMASTER">Bracket Pro</string>
+    <string name="STRID_FUNC_BRKMASTER_2L">Bracket Pro</string>
+    <string name="STRID_FUNC_BRKMASTER_GUIDE">Multiple images, with changes made in the shutter speed, aperture, focus, flash settings, will be recorded.</string>
+    <string name="STRID_FUNC_SSBRK">Shutter Speed Bracket</string>
+    <string name="STRID_FUNC_APERTUREBRK">Aperture Bracket</string>
+    <string name="STRID_FUNC_FOCUSBRK">Focus Bracket</string>
+    <string name="STRID_FUNC_FLASHBRK">Flash Bracket</string>
+    <string name="STRID_FUNC_SSBRK_GUIDE">Shoots 3 shots with varying shutter speeds.</string>
+    <string name="STRID_FUNC_APERTUREBRK_GUIDE">Shoots 3 shots with varying apertures.</string>
+    <string name="STRID_FUNC_FOCUSBRK_GUIDE">Shoots 3 shots with varying focus positions.</string>
+    <string name="STRID_FUNC_FLASHBRK_GUIDE">Shoots images with and without flash.</string>
+    <string name="STRID_FUNC_SHIFT_RANGE">Bracketing Value</string>
+    <string name="STRID_FUNC_SHIFT_RANGE_WIDE">Wide</string>
+    <string name="STRID_FUNC_SHIFT_RANGE_NARROW">Narrow</string>
+    <string name="STRID_CAU_FLASH_INVALID">Cannot fire flash.\nPlease verify flash is ready to fire.</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_RETURN">Guide </string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_EXIT">Guide Exit App.</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_EXIT_SK">Guide Exit App.</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_RETURN_SK">Guide </string>
+    <string name="STRID_FOOTERGUIDE_TV_RETURN">Tv </string>
+    <string name="STRID_FOOTERGUIDE_TV_RETURN_SK">Tv </string>
+    <string name="STRID_FOOTERGUIDE_AV_RETURN">Av </string>
+    <string name="STRID_FOOTERGUIDE_AV_RETURN_SK">Av </string>
+    <string name="stringTRIGGER_ID_DLAPP_Lens_Detached_Caution">Invalid because lens not attached. Attach the lens correctly.</string>
+</resources>

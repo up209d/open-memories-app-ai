@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STRID_FUNC_BRKMASTER">Profesionalni skup eksp.</string>
+    <string name="STRID_FUNC_BRKMASTER_2L">Profesionalni\nskup eksp.</string>
+    <string name="STRID_FUNC_BRKMASTER_GUIDE">Snimit će se više slika, uz promjene postavki brzine zatvarača, otvora blende, izoštravanja, bljeskalice.</string>
+    <string name="STRID_FUNC_SSBRK">Skup eksp. - brzina zatvarača</string>
+    <string name="STRID_FUNC_APERTUREBRK">Skup ekspozicije - otvor blende</string>
+    <string name="STRID_FUNC_FOCUSBRK">Skup ekspozicije - izoštravanje</string>
+    <string name="STRID_FUNC_FLASHBRK">Skup ekspozicije - bljeskalica</string>
+    <string name="STRID_FUNC_SSBRK_GUIDE">Snima 3 snimke s različitim brzinama zatvarača.</string>
+    <string name="STRID_FUNC_APERTUREBRK_GUIDE">Snima 3 snimke s različitim otvorima blende.</string>
+    <string name="STRID_FUNC_FOCUSBRK_GUIDE">Snima 3 snimke s različitim položajima izoštravanja.</string>
+    <string name="STRID_FUNC_FLASHBRK_GUIDE">Snima slike s bljeskalicom i bez nje.</string>
+    <string name="STRID_FUNC_SHIFT_RANGE">Vrijednost skupa ekspozicije</string>
+    <string name="STRID_FUNC_SHIFT_RANGE_WIDE">Široko</string>
+    <string name="STRID_FUNC_SHIFT_RANGE_NARROW">Usko</string>
+    <string name="STRID_CAU_FLASH_INVALID">Nije moguće upotrijebiti bljeskalicu.\nProvjerite je li bljeskalica spremna.</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_RETURN">Vodič </string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_EXIT">Vodič Izlaz iz aplikacije</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_EXIT_SK">Vodič Izlaz iz aplikacije</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_RETURN_SK">Vodič </string>
+    <string name="STRID_FOOTERGUIDE_TV_RETURN">Tv </string>
+    <string name="STRID_FOOTERGUIDE_TV_RETURN_SK">Tv </string>
+    <string name="STRID_FOOTERGUIDE_AV_RETURN">Av </string>
+    <string name="STRID_FOOTERGUIDE_AV_RETURN_SK">Av </string>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        android:key="ID_PARAMETERS"
+        android:defaultValue="light-balance-for-white-balance=0;dro-level=1;face-detection-mode=auto;af-mode=af-s;focus-area-type=multi;color-compensation-for-white-balance=0;iso-sensitivity=0;hdr-exposure-difference-level=1;storage-fmt=jpeg;sharpness=0;contrast=0;whitebalance=auto;jpeg-quality=50;scene-mode=program-auto;metering-mode=multi;focus-mode=auto;drive-mode=single;isEmptyParameters=1;pe-soft-focus-effect-level=2;pe-hdr-art-effect-level=2;color-temperture-white-balance=5500;pe-illust-effect-level=2;custom-white-balance=1;exposure-compensation=0;dro-mode=auto;ae-lock=unlocked;pe-miniature-focus-area=auto;flash-type=front-sync;flash-mode=on;pe-posterization-effect=posterization-color;pe-toy-camera-effect=normal;face-frame-rendering=true;;saturation=0;pe-part-color-effect=red;self-timer=0;flash-compensation=0;picture-effect=off;image-aspect=3:2;aspect=3:2;color-mode=standard;hdr-mode=off;remocon=false;image-size=large"/>
+</PreferenceScreen>

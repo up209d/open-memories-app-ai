@@ -9,14 +9,26 @@ When starting any task that involves writing code, understanding APIs, or buildi
    - `./memory/sony-scalar-graphics.md` - OptimizedImage, ImageFilters, JpegExporter
    - `./memory/sony-scalar-system.md` - ScalarInput, ScalarProperties, AvindexStore, didep
    - `./memory/app-architecture.md` - Reference app architecture, dual-device pattern
-3. **`./reference-apps/*/API_REFERENCE.md`** - Per-app API usage details (7 files, one per decompiled Sony app). Read when you need deep details about a specific app's implementation:
-   - `./reference-apps/smooth-reflection/API_REFERENCE.md` - Multi-frame raw averaging, DSP raw pipeline
+3. **`./reference-apps/*/API_REFERENCE.md`** - Per-app API usage details (19 files, one per decompiled Sony app). Read when you need deep details about a specific app's implementation:
+   - `./reference-apps/bracket-pro/API_REFERENCE.md` - Multi-exposure bracketing (aperture, shutter, focus, flash)
    - `./reference-apps/digital-filter/API_REFERENCE.md` - Graduated ND, 3 simultaneous DSPs
    - `./reference-apps/double-exposure/API_REFERENCE.md` - 7 blend modes, live view overlay
+   - `./reference-apps/graduated-filter/API_REFERENCE.md` - Graduated ND filter, DSP raw compositing
+   - `./reference-apps/light-graffiti/API_REFERENCE.md` - Light painting, long exposure compositing, LED control
+   - `./reference-apps/light-shaft/API_REFERENCE.md` - Crepuscular rays (god rays) via DSP effects
+   - `./reference-apps/live-view-grading/API_REFERENCE.md` - Gamma tables, RGB matrix, color grading
+   - `./reference-apps/manual-lens-compensation/API_REFERENCE.md` - Lens vignetting/distortion correction, EXIF
    - `./reference-apps/photo-retouch/API_REFERENCE.md` - Image filters, JpegExporter, LCE
    - `./reference-apps/picture-effect-plus/API_REFERENCE.md` - Color select, Miniature, DirectShutter
    - `./reference-apps/portrait-beauty/API_REFERENCE.md` - Face detection, portrait lighting
-   - `./reference-apps/live-view-grading/API_REFERENCE.md` - Gamma tables, RGB matrix, color grading
+   - `./reference-apps/smooth-reflection/API_REFERENCE.md` - Multi-frame raw averaging, DSP raw pipeline
+   - `./reference-apps/smooth-reflection-2/API_REFERENCE.md` - Multi-frame raw averaging v2, model-specific offsets
+   - `./reference-apps/sound-photo/API_REFERENCE.md` - Audio recording + photo, DSP audio encoding
+   - `./reference-apps/srctrl/API_REFERENCE.md` - WebAPI remote control server, SSDP, live view streaming
+   - `./reference-apps/star-trails/API_REFERENCE.md` - Star trail compositing, AVI video encoding
+   - `./reference-apps/sync-to-smart-phone/API_REFERENCE.md` - Auto-sync to smartphone via Wi-Fi/WebAPI
+   - `./reference-apps/time-lapse/API_REFERENCE.md` - Interval capture to video, angle shift add-on
+   - `./reference-apps/touchless-shutter/API_REFERENCE.md` - EVF eye sensor trigger, live bulb mode
 4. **`./docs/index.html`** - Browsable HTML documentation website (same content as Bible.md in web format)
 
 **Cost-saving strategy**: For simple tasks, this CLAUDE.md has enough context. For API-heavy tasks (building apps, using Sony APIs), read Bible.md first. Only read individual API_REFERENCE.md files when you need specific app implementation details.
@@ -49,7 +61,7 @@ This workspace contains legacy Android apps targeting Sony Alpha cameras (specif
 
 ## Directory Structure
 - `./open-memories-app/` - Working app (skeleton/template for new apps)
-- `./reference-apps/` - Decompiled Sony 1st-party apps (7 apps, read-only reference)
+- `./reference-apps/` - Decompiled Sony 1st-party apps (19 apps, read-only reference)
 - `./docs/` - Generated API documentation website (index.html)
 - `./memory/` - Project knowledge base for Claude (API details, architecture, patterns)
   - `MEMORY.md` - Main index: project context, directory map, API summary, critical patterns

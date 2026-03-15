@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textColor="@color/RESID_FONTSTYLE_SMARTPHONE_CONNECTION_INFORMATION_NAME"
+        android:gravity="center"
+        android:id="@+id/nw_parts_wait_special_1_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        style="@style/RESID_FONTSIZE_BIG_L_EDGE_OFF"/>
+    <TextView
+        android:textColor="@color/RESID_FONTSTYLE_SMARTPHONE_CONNECTION_INFORMATION_NAME"
+        android:gravity="center"
+        android:id="@+id/nw_parts_wait_special_colon_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text=":"
+        android:layout_toRightOf="@+id/nw_parts_wait_special_1_txt"
+        style="@style/RESID_FONTSIZE_BIG_L_EDGE_OFF"/>
+    <TextView
+        android:textColor="@color/RESID_FONTSTYLE_STD_NORMAL"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:id="@+id/nw_parts_wait_special_2_txt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10px"
+        android:singleLine="true"
+        android:layout_toRightOf="@+id/nw_parts_wait_special_colon_txt"
+        style="@style/RESID_FONTSIZE_BIG_L_EDGE_OFF"/>
+</RelativeLayout>

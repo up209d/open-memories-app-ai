@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:base="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/shooting_parts_sid_other"
+        layout="@layout/shooting_parts_sid_other_panel"/>
+    <include
+        android:id="@+id/shooting_parts_sid_error"
+        layout="@layout/shooting_parts_sid_error_panel"/>
+    <include
+        android:id="@+id/shooting_parts_sid_shooting_setting"
+        layout="@layout/shooting_parts_sid_shooting_setting_panel"/>
+    <include
+        android:id="@+id/shooting_parts_sid_basic_info_for_info_on"
+        layout="@layout/st_capturing_shooting_parts_sid_basic_info_for_info_on_panel"/>
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:base="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/backgroundImgVw"
+        android:layout_width="280px"
+        android:layout_height="480px"
+        android:layout_marginLeft="360px"
+        android:layout_marginTop="0px"/>
+    <include
+        android:id="@+id/menu_special"
+        layout="@layout/bm_menu_special"/>
+    <ImageView
+        android:id="@+id/appicon"
+        android:background="@drawable/p_16_dd_parts_bp_appicon"
+        android:layout_width="70px"
+        android:layout_height="55px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"/>
+    <TextView
+        android:textColor="@color/RESID_FONTSTYLE_CMN_WHITE_NO_SKIN"
+        android:gravity="top|left"
+        android:id="@+id/guide_view"
+        android:layout_width="484px"
+        android:layout_height="226px"
+        android:layout_marginLeft="132px"
+        android:layout_marginTop="136px"
+        style="@style/RESID_FONTSIZE_M_EDGE"/>
+    <ImageView
+        android:id="@+id/BracketTypeInfo"
+        android:layout_width="160px"
+        android:layout_height="64px"
+        android:layout_marginLeft="113px"
+        android:layout_marginTop="362px"
+        android:src="@drawable/p_16_dd_parts_bm_info_focusbracket"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"/>
+</RelativeLayout>

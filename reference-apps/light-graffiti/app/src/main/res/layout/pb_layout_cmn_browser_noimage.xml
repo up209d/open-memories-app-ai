@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/pb_parts_cmn_header"
+        layout="@layout/pb_parts_cmn_header"/>
+    <include
+        android:id="@+id/pb_parts_cmn_noimage_text"
+        layout="@layout/pb_parts_cmn_noimage_text"/>
+    <include
+        android:id="@+id/pb_parts_cmn_layout_play_error"
+        layout="@layout/pb_parts_cmn_layout_play_error"/>
+</RelativeLayout>

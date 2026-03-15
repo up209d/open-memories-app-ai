@@ -61,10 +61,19 @@ Replaces android.provider.MediaStore for Sony cameras.
 - **Caution**: EnableCaution(), SetFactor(), SetTrigger() -- ~12,000 constant fields
 - **Kikilog**: setUserLog(int, Options)
 
+## KeyStatus (com.sony.scalar.sysutil.KeyStatus)
+- Hardware key state queries for detecting physical button states
+- Used by touchless-shutter for key-level trigger detection
+
 ## Networking APIs
 - ScalarWifiInfo (com.sony.scalar.sysnetutil): getProductCode()
 - SsdpDevice (com.sony.scalar.lib.ssdpdevice.v1_1): getInstance(), initialize(ServerConf), enqueueStartServer/Stop
 - WiFi Direct/P2P: com.sony.wifi.direct.*, com.sony.wifi.p2p.*, com.sony.wifi.wps.WpsError
+- **WebAPI** (com.sony.scalar.webapi.*): Camera-hosted HTTP API for smartphone remote control (used by srctrl, sync-to-smart-phone)
+  - Leza HTTP Server (com.sony.scalar.lib.leza.*): ServerBuilder, HttpProcessBuilder, servlet routing
+  - AuthLibManager (com.sony.scalar.webapi.lib.authlib): Device authentication/pairing
+  - DdController (com.sony.scalar.lib.ddserver): Device Description server for UPnP
+  - Services: camera control v1.0-v1.4, content sync v1.0, access control
 
 ## Media APIs (com.sony.scalar.media)
 - AudioManager: getParameters/setParameters, setSettingChangedListener, setMicrophoneChangedListener

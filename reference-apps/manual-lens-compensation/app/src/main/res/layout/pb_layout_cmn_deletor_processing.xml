@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:base="http://schemas.android.com/apk/res/auto" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="600px"
+        android:layout_height="416px"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="4px"
+        android:src="@android:drawable/textfield_search_selected"
+        android:scaleType="fitXY"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"/>
+    <TextView
+        android:textColor="@color/RESID_FONTSTYLE_STD_NORMAL"
+        android:gravity="center"
+        android:id="@+id/deleteprocess"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_width="544px"
+        android:layout_height="180px"
+        android:layout_marginLeft="48px"
+        android:layout_marginTop="80px"
+        style="@style/RESID_FONTSIZE_BIG_M_EDGE_OFF"/>
+    <View
+        android:background="@color/RESID_COLOR_PROGRESS_BAR_BASE"
+        android:layout_width="431px"
+        android:layout_height="24px"
+        android:layout_marginLeft="104px"
+        android:layout_marginTop="293px"/>
+    <ProgressBar
+        android:id="@+id/executing_progress"
+        android:layout_width="427px"
+        android:layout_height="20px"
+        android:layout_marginLeft="106px"
+        android:layout_marginTop="295px"
+        android:progressDrawable="@drawable/progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"/>
+</RelativeLayout>

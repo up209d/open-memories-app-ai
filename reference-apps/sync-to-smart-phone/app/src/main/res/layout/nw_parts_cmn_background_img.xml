@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#000000"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/nw_parts_cmn_background_shadow_img"
+        android:layout_width="640px"
+        android:layout_height="480px"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="0px"
+        android:src="0x10809c3"
+        android:scaleType="fitXY"/>
+</RelativeLayout>

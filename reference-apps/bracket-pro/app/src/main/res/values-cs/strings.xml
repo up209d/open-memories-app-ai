@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STRID_FUNC_BRKMASTER">Profes. orig. expozice</string>
+    <string name="STRID_FUNC_BRKMASTER_2L">Profes. orig.\nexpozice</string>
+    <string name="STRID_FUNC_BRKMASTER_GUIDE">Zaznamená se více snímků s různým časem závěrky, clonou, ostřením, nastavením blesku.</string>
+    <string name="STRID_FUNC_SSBRK">Originální expozice času závěrky</string>
+    <string name="STRID_FUNC_APERTUREBRK">Originální expozice clony</string>
+    <string name="STRID_FUNC_FOCUSBRK">Originální expozice ostření</string>
+    <string name="STRID_FUNC_FLASHBRK">Originální expozice blesku</string>
+    <string name="STRID_FUNC_SSBRK_GUIDE">Pořídí 3 snímky s různým časem závěrky.</string>
+    <string name="STRID_FUNC_APERTUREBRK_GUIDE">Pořídí 3 snímky s různou clonou.</string>
+    <string name="STRID_FUNC_FOCUSBRK_GUIDE">Pořídí 3 snímky s různými polohami ostření.</string>
+    <string name="STRID_FUNC_FLASHBRK_GUIDE">Pořídí snímky s bleskem a bez blesku.</string>
+    <string name="STRID_FUNC_SHIFT_RANGE">Hodnota stupňované expozice</string>
+    <string name="STRID_FUNC_SHIFT_RANGE_WIDE">Široká</string>
+    <string name="STRID_FUNC_SHIFT_RANGE_NARROW">Úzká</string>
+    <string name="STRID_CAU_FLASH_INVALID">Nelze použít blesk.\nUjistěte se, že je blesk připraven k\npoužití.</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_RETURN">Průvodce </string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_EXIT">Průvodce Ukončit aplikaci</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_EXIT_SK">Průvodce Ukončit aplikaci</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_RETURN_SK">Průvodce </string>
+    <string name="STRID_FOOTERGUIDE_TV_RETURN">Tv </string>
+    <string name="STRID_FOOTERGUIDE_TV_RETURN_SK">Tv </string>
+    <string name="STRID_FOOTERGUIDE_AV_RETURN">Av </string>
+    <string name="STRID_FOOTERGUIDE_AV_RETURN_SK">Av </string>
+</resources>

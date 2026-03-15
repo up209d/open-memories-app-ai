@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:base="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.sony.imaging.app.base.common.widget.SwitchLayoutGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        base:min="13">
+        <com.sony.imaging.app.srctrl.menu.widget.NfcIcon
+            android:id="@+id/srctrl_parts_cmn_evf_nfc_img"
+            android:layout_width="36px"
+            android:layout_height="30px"
+            android:layout_marginLeft="415px"
+            android:layout_marginTop="29px"
+            android:src="@drawable/p_16_aa_parts_43_cmn_nfc_enable_small"
+            android:scaleType="fitXY"/>
+    </com.sony.imaging.app.base.common.widget.SwitchLayoutGroup>
+    <com.sony.imaging.app.base.common.widget.SwitchLayoutGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        base:min="1"
+        base:max="12">
+        <com.sony.imaging.app.srctrl.menu.widget.NfcIcon
+            android:id="@+id/srctrl_parts_cmn_evf_nfc_img"
+            android:layout_width="24px"
+            android:layout_height="22px"
+            android:layout_marginLeft="613px"
+            android:layout_marginTop="1px"
+            android:src="@drawable/p_16_aa_parts_43_cmn_nfc_enable_small"
+            android:scaleType="fitXY"/>
+    </com.sony.imaging.app.base.common.widget.SwitchLayoutGroup>
+</RelativeLayout>

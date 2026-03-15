@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        android:key="ID_PARAMETERS"
+        android:defaultValue="silent-shutter-mode=false;whitebalance=auto;light-balance-for-white-balance=0;flash-mode=off;color-compensation-for-white-balance=0;exposure-compensation=0;iso-sensitivity=0;color-mode=standard;sharpness=0;contrast=0;saturation=0;picture-effect=off;image-aspect=3:2;image-size=large;aspect=3:2;picture-size=4912x3264;image-size=large;storage-fmt=jpeg;jpeg-quality=50;focus-mode=auto;af-mode=af-s;focus-area-type=multi;drive-mode=single"/>
+    <ListPreference
+        android:key="ID_RECORDING_MODE"
+        android:defaultValue="MODE_STILL"/>
+</PreferenceScreen>

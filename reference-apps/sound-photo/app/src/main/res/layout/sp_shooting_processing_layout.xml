@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:visibility="gone"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:background="@drawable/p_16_dd_parts_common_button_background"
+        android:layout_width="350px"
+        android:layout_height="62px"
+        android:layout_marginLeft="145px"
+        android:layout_marginTop="316px"/>
+    <TextView
+        android:textColor="@color/RESID_FONTSTYLE_STD_NORMAL"
+        android:gravity="center"
+        android:layout_width="330px"
+        android:layout_height="42px"
+        android:layout_marginLeft="155px"
+        android:layout_marginTop="326px"
+        android:text="@android:string/deleteText"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        style="@style/RESID_FONTSIZE_BIG_M_EDGE_ON"/>
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STRID_FUNC_BRKMASTER">Nivåtrinn Pro</string>
+    <string name="STRID_FUNC_BRKMASTER_2L">Nivåtrinn Pro</string>
+    <string name="STRID_FUNC_BRKMASTER_GUIDE">Det vil tas flere bilder, med endringer gjort i innstillingene for lukkerhastighet, blender, fokus og blits.</string>
+    <string name="STRID_FUNC_SSBRK">Lukkerhastighet-nivåtrinn</string>
+    <string name="STRID_FUNC_APERTUREBRK">Blender-nivåtrinn</string>
+    <string name="STRID_FUNC_FOCUSBRK">Fokus-nivåtrinn</string>
+    <string name="STRID_FUNC_FLASHBRK">Blits-nivåtrinn</string>
+    <string name="STRID_FUNC_SSBRK_GUIDE">Tar 3 bilder med ulik lukkerhastighet.</string>
+    <string name="STRID_FUNC_APERTUREBRK_GUIDE">Tar 3 bilder med ulik blender.</string>
+    <string name="STRID_FUNC_FOCUSBRK_GUIDE">Tar 3 bilder med ulik fokusposisjon.</string>
+    <string name="STRID_FUNC_FLASHBRK_GUIDE">Tar bilder med og uten blits.</string>
+    <string name="STRID_FUNC_SHIFT_RANGE">Nivåtrinnverdi</string>
+    <string name="STRID_FUNC_SHIFT_RANGE_WIDE">Bred</string>
+    <string name="STRID_FUNC_SHIFT_RANGE_NARROW">Smal</string>
+    <string name="STRID_CAU_FLASH_INVALID">Kan ikke utløse blits.\nKontroller at blitsen er klar til å utløses.</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_RETURN">Guide </string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_EXIT">Guide Avslutt applikasjon</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_EXIT_SK">Guide Avslutt applikasjon</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_RETURN_SK">Guide </string>
+    <string name="STRID_FOOTERGUIDE_TV_RETURN">Tv </string>
+    <string name="STRID_FOOTERGUIDE_TV_RETURN_SK">Tv </string>
+    <string name="STRID_FOOTERGUIDE_AV_RETURN">Av </string>
+    <string name="STRID_FOOTERGUIDE_AV_RETURN_SK">Av </string>
+</resources>

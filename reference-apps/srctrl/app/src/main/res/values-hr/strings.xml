@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STRID_AMC_STR_01176">Obrada...</string>
+    <string name="STRID_AMC_STR_06084">Spajanje...</string>
+    <string name="STRID_AMC_STR_06546">Unos </string>
+    <string name="STRID_CAU_CANT_DISPLAY_EE_DURING_MOVIE_REC">Nije moguć Prikaz uživo na monitoru uređaja dok snimate videozapise.</string>
+    <string name="STRID_CAU_FUNC_INVALID_FOR_THIS_APP_AND_CAMERA">Funkcija ove aplikacije nije podržana na ovom uređaju.</string>
+    <string name="STRID_CAU_FUNC_INVALID_FOR_THIS_CAMERA">Funkcija nije podržana na ovom uređaju.</string>
+    <string name="STRID_CAU_MOVIE_INVALID_FOR_THIS_APP_AND_CAMERA">Režim snimanja videozapisa ove aplikacije nije podržan na ovom uređaju.</string>
+    <string name="STRID_CAU_PREV_MS_ERROR_ML">Ponovo umetnite memorijsku karticu\nkoju ste bili koristili.</string>
+    <string name="STRID_CMN_MSG_UNFORESEEN_ERROR">Došlo je do neočekivane pogreške.</string>
+    <string name="STRID_CMN_PASSWORD">Lozinka</string>
+    <string name="STRID_CMN_SSID">SSID</string>
+    <string name="STRID_CMN_WIFI_DEVICENAME_DSLR">Naziv uređaja</string>
+    <string name="STRID_FUNC_EZREMOTE">Daljinsko upravljanje</string>
+    <string name="STRID_FUNC_EZREMOTE_2L">Daljinsko\nupravljanje</string>
+    <string name="STRID_FUNC_EZREMOTE_EMBEDDED">Dalj. upravljanje ugrađ.</string>
+    <string name="STRID_FUNC_EZREMOTE_EMBEDDED_2L">Dalj. upravljanje\nugrađ.</string>
+    <string name="STRID_FUNC_EZREMOTE_GETTING_PICTURE">Prikljupljanje podataka za snimanje...</string>
+    <string name="STRID_FUNC_EZREMOTE_GET_PICTURE_ERROR">Prikljupljanje podataka za snimanje nije uspjelo.</string>
+    <string name="STRID_FUNC_EZREMOTE_GUIDE">Fotografije možete snimiti uređajem s daljinskim upravljanjem, pomoću kompatibilnog smartphonea, i sl.</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_ENTER_HELP">Unos Pomoć</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_HELP_FOR_SK">Pomoć</string>
+    <string name="STRID_FUNC_NETWORK_SETTINGS_MSG_WIFI_STANDBY">Wi-Fi na čekanju...</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_ERROR_SWKEY_PIN_DSLR" />
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_CHANGEPW_ONE_DSLR">Samo 1 uređaj može biti spojen\nodjednom. Želite li okončati\ntrenutačnu vezu i spojiti novu?</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_INPUT_DSLR">Unesite PIN kôd uređaja s kojim se\npovezujete u svoj uređaj.</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_PBCREQ_DSLR">Dozvoli konekciju sa uređajem?</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_PBC_ERROR_DSLR">Provjera autentičnosti i veza značajke\nWi-Fi Direct nije uspjela.</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_PIN_OUTPUT_DSLR">Unesite PIN kod u uređaj za povezivanje\nu okviru 2 minute.</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_TIMEOUT_DSLR">Povezivanje nije uspelo zbog isteka\nvremena.</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_WAITING2">Smartphoneom povežite ovaj uređaj\n putem Wi-Fi veze.</string>
+    <string name="STRID_FUNC_SRPLUS_GUIDE">Za daljinsku kontrolu možete koristiti smartphone ili tablet.\nPostavke poput otvora blende i brzine zatvarača možete mijenjati kako želite.</string>
+    <string name="STRID_FUNC_SRPLUS_INVALID_OPERATION">Ova radnja je nevažeća.</string>
+    <string name="STRID_FUNC_SRPLUS_IN_TOUCH_AF_MODE">Radi na daljinsko upravljanje putem AF načina na dodir.\nPritisnite okidač do pola i zatim pustite kako biste poništili radnju.</string>
+    <string name="STRID_FUNC_SRPLUS_UNDER_REMOTE_CONTROL">Radi na daljinsko upravljanje.</string>
+    <string name="STRID_FUNC_SRPLUS_UNDER_REMOTE_CONTROL2">Radi na daljinsko upravljanje.\nNe može se upravljati ovim uređajem.</string>
+    <string name="STRID_INFO_PIN_CODE">PIN kod</string>
+    <string name="STRID_MSG_NO_MEMCARD">Umetnite memorijsku karticu</string>
+    <string name="STRID_FUNC_CONTROLWITHSMARTPHONE_MSG_CONTROLLED">Upravljanje putem smartphonea...\nNe možete izravno upravljati tim uređajem.</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_GOTO_QRCODE">Prikaži QR Code Izlaz</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_GOTO_PASS">Poveži se s lozinkom Izlaz</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_GOTO_QRCODE_NEX">Prikaži QR Code Izlaz</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_GOTO_PASS_NEX">Poveži se s lozinkom Izlaz</string>
+    <string name="STRID_MSG_WIFI_CONNECT_QRCODE">Otvorite smartphone da\nskenirate QR Code s aplik.\nPlayMemories Mobile.</string>
+</resources>

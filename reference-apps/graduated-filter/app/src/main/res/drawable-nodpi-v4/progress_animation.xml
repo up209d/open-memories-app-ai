@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="false">
+    <item
+        android:duration="125"
+        android:drawable="@drawable/p_16_dd_parts_hgf_progress_icon_level1"/>
+    <item
+        android:duration="125"
+        android:drawable="@drawable/p_16_dd_parts_hgf_progress_icon_level2"/>
+    <item
+        android:duration="125"
+        android:drawable="@drawable/p_16_dd_parts_hgf_progress_icon_level3"/>
+    <item
+        android:duration="125"
+        android:drawable="@drawable/p_16_dd_parts_hgf_progress_icon_level4"/>
+    <item
+        android:duration="125"
+        android:drawable="@drawable/p_16_dd_parts_hgf_progress_icon_level5"/>
+    <item
+        android:duration="125"
+        android:drawable="@drawable/p_16_dd_parts_hgf_progress_icon_level6"/>
+    <item
+        android:duration="125"
+        android:drawable="@drawable/p_16_dd_parts_hgf_progress_icon_level7"/>
+    <item
+        android:duration="125"
+        android:drawable="@drawable/p_16_dd_parts_hgf_progress_icon_level8"/>
+</animation-list>

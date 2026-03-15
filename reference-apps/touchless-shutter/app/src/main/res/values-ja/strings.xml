@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STRID_FUNC_MYAPP_NAME">タッチレスシャッター</string>
+    <string name="STRID_FUNC_MYAPP_NAME_2L">タッチレス\nシャッター</string>
+    <string name="STRID_FUNC_LIVEBULB_MENU_EYESENSOR_SHUTTER_ON_CAUTION">タッチレスシャッターを利用する場合には、アプリを起動する前に[FINDER/MONITOR]もしくは[FINDER/LCD切換設定]がオートに設定されているか確認してください。</string>
+    <string name="STRID_FUNC_TOUCHLESSSHUTTER_MENU_TLS_CONFIRM_AT_BOOT">利用ガイド</string>
+    <string name="STRID_FUNC_TOUCHLESSSHUTTER_MENU_TLS_CONFIRM_AT_BOOT_GUIDE">利用時のガイドを表示します</string>
+    <string name="STRID_FUNC_TOUCHLESSSHUTTER_MENU_TLS_CONFIRM_AT_BOOT_ON_GUIDE">起動時にガイドを表示します</string>
+    <string name="STRID_FUNC_TOUCHLESSSHUTTER_MENU_TLS_CONFIRM_AT_BOOT_OFF_GUIDE">起動時にガイドを表示しません</string>
+    <string name="STRID_CAU_TIMELAPSE_LENS_STEADYSHOT">このアプリケーションは、レンズの手ブレ補正を切にしてお使いください</string>
+</resources>

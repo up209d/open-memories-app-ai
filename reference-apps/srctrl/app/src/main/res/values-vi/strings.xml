@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STRID_AMC_STR_01176">Đang xử lý...</string>
+    <string name="STRID_AMC_STR_06084">Đang kết nối...</string>
+    <string name="STRID_AMC_STR_06546">Enter </string>
+    <string name="STRID_CAU_CANT_DISPLAY_EE_DURING_MOVIE_REC">Không thể Hiển thị Xem Trực tiếp trên màn hình khi đang quay phim.</string>
+    <string name="STRID_CAU_FUNC_INVALID_FOR_THIS_APP_AND_CAMERA">Chức năng trong ứng dụng này không được hỗ trợ trên thiết bị này.</string>
+    <string name="STRID_CAU_FUNC_INVALID_FOR_THIS_CAMERA">Chức năng không được hỗ trợ trên thiết bị này.</string>
+    <string name="STRID_CAU_MOVIE_INVALID_FOR_THIS_APP_AND_CAMERA">Chế độ quay phim của ứng dụng này không được hỗ trợ trên thiết bị này.</string>
+    <string name="STRID_CAU_PREV_MS_ERROR_ML">Hãy gắn lại thẻ nhớ mà bạn đang sử\ndụng.</string>
+    <string name="STRID_CMN_MSG_UNFORESEEN_ERROR">Xảy ra lỗi không mong đợi.</string>
+    <string name="STRID_CMN_PASSWORD">Mật khẩu</string>
+    <string name="STRID_CMN_SSID">SSID</string>
+    <string name="STRID_CMN_WIFI_DEVICENAME_DSLR">Tên Thiết bị</string>
+    <string name="STRID_FUNC_EZREMOTE">Điều khiển Từ xa th.minh</string>
+    <string name="STRID_FUNC_EZREMOTE_2L">Điều khiển\nTừ xa th.minh</string>
+    <string name="STRID_FUNC_EZREMOTE_EMBEDDED">Tích hợp Đ.khiển từ xa thông minh</string>
+    <string name="STRID_FUNC_EZREMOTE_EMBEDDED_2L">Tích hợp Đ.khiển\ntừ xa thông minh</string>
+    <string name="STRID_FUNC_EZREMOTE_GETTING_PICTURE">Đang lấy dữ liệu chụp...</string>
+    <string name="STRID_FUNC_EZREMOTE_GET_PICTURE_ERROR">Lấy dữ liệu chụp đã thất bại.</string>
+    <string name="STRID_FUNC_EZREMOTE_GUIDE">Bạn có thể chụp ảnh tĩnh bằng chế độ điều khiển thiết bị từ xa khi sử dụng smartphone tương thích, v.v...</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_ENTER_HELP">Enter Trợ giúp</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_HELP_FOR_SK">Trợ giúp</string>
+    <string name="STRID_FUNC_NETWORK_SETTINGS_MSG_WIFI_STANDBY">Chờ tín hiệu Wi-Fi...</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_ERROR_SWKEY_PIN_DSLR" />
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_CHANGEPW_ONE_DSLR">Cùng một lúc chỉ kết nối được với\n1 thiết bị.\nBạn có muốn ngắt kết nối hiện tại\nvà bắt đầu kết nối mới?</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_INPUT_DSLR">Vui lòng nhập mã PIN\ncủa thiết bị kết nối vào thiết bị.</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_PBCREQ_DSLR">Cho phép kết nối từ thiết bị?</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_PBC_ERROR_DSLR">Xác nhận và kết nối Wi-Fi Direct đã bị\nthất bại.</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_PIN_OUTPUT_DSLR">Vui lòng nhập mã PIN vào thiết bị\nkết nối trong vòng 2 phút.</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_TIMEOUT_DSLR">Không thể kết nối vì hết thời gian chờ.</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_WAITING2">Vận hành smartphone để kết nối với \nthiết bị này qua Wi-Fi.</string>
+    <string name="STRID_FUNC_SRPLUS_GUIDE">Smartphone hoặc máy tính bảng có thể được sử dụng như thiết bị điều khiển từ xa.\nCài đặt khẩu độ và tốc độ cửa trập, v.v...có thể được thay đổi tùy ý.</string>
+    <string name="STRID_FUNC_SRPLUS_INVALID_OPERATION">Không thể thực hiện thao tác này.</string>
+    <string name="STRID_FUNC_SRPLUS_IN_TOUCH_AF_MODE">Đang thực hiện thao tác từ xa với chế độ chạm AF.\nNhấn nút chụp xuống một nửa và sau đó nhả nút ra để hủy.</string>
+    <string name="STRID_FUNC_SRPLUS_UNDER_REMOTE_CONTROL">Đang thực hiện thao tác từ xa.</string>
+    <string name="STRID_FUNC_SRPLUS_UNDER_REMOTE_CONTROL2">Đang thực hiện thao tác từ xa.\nKhông thể thao tác bằng thiết bị này.</string>
+    <string name="STRID_INFO_PIN_CODE">Mã PIN</string>
+    <string name="STRID_MSG_NO_MEMCARD">Gắn thẻ nhớ vào</string>
+    <string name="STRID_FUNC_CONTROLWITHSMARTPHONE_MSG_CONTROLLED">Đang điều khiển bằng smartphone... Bạn\nkhông thể trực tiếp vận hành thiết bị này.</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_GOTO_QRCODE">Hiển thị QR Code Thoát</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_GOTO_PASS">Kết nối bằng Mật khẩu Thoát</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_GOTO_QRCODE_NEX">Hiển thị QR Code Thoát</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_GOTO_PASS_NEX">Kết nối bằng Mật khẩu Thoát</string>
+    <string name="STRID_MSG_WIFI_CONNECT_QRCODE">Vận hành smartphone\nđể quét QR Code bằng\nPlayMemories Mobile.</string>
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/state_list_view"
+    android:layout_width="356px"
+    android:layout_height="112px">
+    <TextView
+        android:textColor="@color/RESID_FONTSTYLE_CMN_WHITE_NO_SKIN"
+        android:ellipsize="end"
+        android:id="@+id/LensName"
+        android:layout_width="344px"
+        android:layout_height="46px"
+        android:layout_marginLeft="8px"
+        android:layout_marginTop="5px"
+        android:text="LensName"
+        android:singleLine="true"
+        style="@style/RESID_FONTSIZE_BIG_L_EDGE_ON"/>
+    <TextView
+        android:typeface="4"
+        android:textColor="@color/RESID_FONTSTYLE_CMN_WHITE_NO_SKIN"
+        android:gravity="right"
+        android:id="@+id/FileName"
+        android:layout_width="344px"
+        android:layout_height="46px"
+        android:layout_marginLeft="8px"
+        android:layout_marginTop="0px"
+        android:layout_below="@+id/LensName"
+        android:layout_centerVertical="true"
+        style="@style/RESID_FONTSIZE_STD_L_EDGE_ON"/>
+</RelativeLayout>

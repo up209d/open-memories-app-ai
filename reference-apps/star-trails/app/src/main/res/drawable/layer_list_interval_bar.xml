@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@android:id/background"
+        android:drawable="@drawable/p_16_dd_parts_tm_bar_for_indicator_background"/>
+    <item android:id="@android:id/secondaryProgress">
+        <clip android:drawable="@drawable/p_16_dd_parts_tm_bar_for_indicator_background"/>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip android:drawable="@drawable/p_16_dd_parts_tm_bar_for_indicator_focused"/>
+    </item>
+</layer-list>

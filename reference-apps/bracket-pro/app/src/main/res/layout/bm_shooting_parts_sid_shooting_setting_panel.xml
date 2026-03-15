@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:base="http://schemas.android.com/apk/res/auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sony.imaging.app.base.shooting.widget.FlashLevelIcon
+        android:id="@+id/FlashLevelIcon"
+        android:layout_width="66px"
+        android:layout_height="52px"
+        android:layout_marginLeft="54px"
+        android:layout_marginTop="70px"/>
+    <com.sony.imaging.app.base.shooting.widget.CreativeStyleIcon
+        android:id="@+id/CreativeStyleIcon"
+        android:layout_width="66px"
+        android:layout_height="52px"
+        android:layout_marginLeft="54px"
+        android:layout_marginTop="330px"/>
+    <com.sony.imaging.app.base.shooting.widget.PictureEffectIcon
+        android:id="@+id/PictureEffectIcon"
+        android:layout_width="42px"
+        android:layout_height="52px"
+        android:layout_marginLeft="54px"
+        android:layout_marginTop="382px"/>
+    <com.sony.imaging.app.base.shooting.widget.WhiteBalanceIcon
+        android:id="@+id/WhiteBalanceIcon"
+        android:layout_width="83px"
+        android:layout_height="52px"
+        android:layout_marginLeft="54px"
+        android:layout_marginTop="226px"/>
+    <com.sony.imaging.app.base.shooting.widget.FlashModeIcon
+        android:id="@+id/FlashModeIcon"
+        android:layout_width="42px"
+        android:layout_height="52px"
+        android:layout_marginLeft="6px"
+        android:layout_marginTop="70px"/>
+    <ImageView
+        android:id="@+id/BM_DriveModeView"
+        android:layout_width="48px"
+        android:layout_height="52px"
+        android:layout_marginLeft="3px"
+        android:layout_marginTop="122px"
+        android:src="@drawable/p_16_dd_parts_bm_osd_icon_setting_drivemode_brk"/>
+</merge>

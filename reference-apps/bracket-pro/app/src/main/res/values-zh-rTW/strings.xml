@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STRID_FUNC_BRKMASTER">階段Pro</string>
+    <string name="STRID_FUNC_BRKMASTER_2L">階段Pro</string>
+    <string name="STRID_FUNC_BRKMASTER_GUIDE">多張影像，包含快門速度、光圈、對焦、閃光燈設定的變化都將被記錄。</string>
+    <string name="STRID_FUNC_SSBRK">階段快門速度</string>
+    <string name="STRID_FUNC_APERTUREBRK">階段光圈</string>
+    <string name="STRID_FUNC_FOCUSBRK">階段對焦</string>
+    <string name="STRID_FUNC_FLASHBRK">階段閃光燈</string>
+    <string name="STRID_FUNC_SSBRK_GUIDE">使用不同的快門速度拍攝3張。</string>
+    <string name="STRID_FUNC_APERTUREBRK_GUIDE">使用不同的光圈拍攝3張。</string>
+    <string name="STRID_FUNC_FOCUSBRK_GUIDE">使用不同的對焦位置拍攝3張。</string>
+    <string name="STRID_FUNC_FLASHBRK_GUIDE">使用及不使用閃光燈來拍攝影像。</string>
+    <string name="STRID_FUNC_SHIFT_RANGE">階段值</string>
+    <string name="STRID_FUNC_SHIFT_RANGE_WIDE">寬</string>
+    <string name="STRID_FUNC_SHIFT_RANGE_NARROW">窄</string>
+    <string name="STRID_CAU_FLASH_INVALID">無法擊發閃光燈。\n請檢查閃光燈已經備妥可擊發。</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_RETURN">指南 </string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_EXIT">指南 退出應用程式</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_EXIT_SK">指南 退出應用程式</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_RETURN_SK">指南 </string>
+    <string name="STRID_FOOTERGUIDE_TV_RETURN">Tv </string>
+    <string name="STRID_FOOTERGUIDE_TV_RETURN_SK">Tv </string>
+    <string name="STRID_FOOTERGUIDE_AV_RETURN">Av </string>
+    <string name="STRID_FOOTERGUIDE_AV_RETURN_SK">Av </string>
+</resources>

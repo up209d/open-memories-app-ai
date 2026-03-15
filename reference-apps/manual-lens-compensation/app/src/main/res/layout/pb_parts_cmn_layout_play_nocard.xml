@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:base="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.sony.imaging.app.util.RelativeLayoutGroupOffset
+        android:id="@+id/pb_bottom_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        base:group="footer"
+        base:voffset="-58px">
+        <include
+            android:id="@+id/pb_parts_cmn_bottom_nocard"
+            layout="@layout/pb_parts_cmn_bottom_nocard"/>
+    </com.sony.imaging.app.util.RelativeLayoutGroupOffset>
+</RelativeLayout>

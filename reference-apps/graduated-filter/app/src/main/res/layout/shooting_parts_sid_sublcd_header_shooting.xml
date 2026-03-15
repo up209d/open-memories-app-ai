@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:base="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.sony.imaging.app.base.shooting.widget.SteadyShotSubLCDIcon
+        android:id="@+id/steadyshot_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        base:sublcd_lid="LID_SUBLCD_STEADY_SHOT"
+        base:sublcd_pattern="PTN_ON"
+        base:sublcd_lkid="LKID_SUBLCD_STEADY_SHOT"/>
+    <com.sony.imaging.app.base.shooting.widget.MovieFormatSubLcdIcon
+        android:id="@+id/xavcs_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        base:sublcd_lid="LID_SUBLCD_XAVCS"
+        base:sublcd_pattern="PTN_ON"
+        base:sublcd_lkid="LKID_SUBLCD_XAVCS"/>
+    <com.sony.imaging.app.base.shooting.widget.FourkSubLcdIcon
+        android:id="@+id/fourk_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        base:sublcd_lid="LID_SUBLCD_4K"
+        base:sublcd_pattern="PTN_ON"
+        base:sublcd_lkid="LKID_SUBLCD_4K"/>
+    <com.sony.imaging.app.base.shooting.widget.AudioRecordingSubLCDIcon
+        android:id="@+id/audiorecording_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        base:sublcd_lid="LID_SUBLCD_MIC_OFF"
+        base:sublcd_pattern="PTN_ON"
+        base:sublcd_lkid="LKID_SUBLCD_MIC_OFF"/>
+</RelativeLayout>

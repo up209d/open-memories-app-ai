@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/srctrl_parts_cmn_evf_wifi_img"
+        android:layout_width="44px"
+        android:layout_height="22px"
+        android:layout_marginLeft="566px"
+        android:layout_marginTop="1px"
+        android:src="@drawable/p_16_aa_parts_smartremote_wifi_evf"
+        android:scaleType="fitXY"/>
+</RelativeLayout>

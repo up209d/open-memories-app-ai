@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STRID_SCALARA_DLSYS_AIRPLAIN_MODE_ERROR">因為已設定飛航模式，所以無法啟動\n應用程式。</string>
+    <string name="STRID_AMC_STR_01176">處理中...</string>
+    <string name="STRID_AMC_STR_06084">連接中...</string>
+    <string name="STRID_AMC_STR_06546">進入 </string>
+    <string name="STRID_CAU_CANT_DISPLAY_EE_DURING_MOVIE_REC">拍攝影片時，無法在螢幕上顯示Live View。</string>
+    <string name="STRID_CAU_FUNC_INVALID_FOR_THIS_APP_AND_CAMERA">本裝置不支援此應用程式的功能。</string>
+    <string name="STRID_CAU_FUNC_INVALID_FOR_THIS_CAMERA">本裝置不支援此功能。</string>
+    <string name="STRID_CAU_MOVIE_INVALID_FOR_THIS_APP_AND_CAMERA">本裝置不支援此應用程式的影片拍攝模式。</string>
+    <string name="STRID_CAU_PREV_MS_ERROR_ML">重新插入您曾使用的記憶卡。</string>
+    <string name="STRID_CMN_MSG_UNFORESEEN_ERROR">發生非預期的錯誤。</string>
+    <string name="STRID_CMN_PASSWORD">密碼</string>
+    <string name="STRID_CMN_SSID">SSID</string>
+    <string name="STRID_CMN_WIFI_DEVICENAME_DSLR">裝置名稱</string>
+    <string name="STRID_FUNC_EZREMOTE">智慧遙控</string>
+    <string name="STRID_FUNC_EZREMOTE_2L">智慧\n遙控</string>
+    <string name="STRID_FUNC_EZREMOTE_EMBEDDED">內嵌智慧遙控</string>
+    <string name="STRID_FUNC_EZREMOTE_EMBEDDED_2L">內嵌智慧遙控</string>
+    <string name="STRID_FUNC_EZREMOTE_GETTING_PICTURE">取得拍攝資料中...</string>
+    <string name="STRID_FUNC_EZREMOTE_GET_PICTURE_ERROR">無法取得拍攝資料。</string>
+    <string name="STRID_FUNC_EZREMOTE_GUIDE">可以使用相容的智慧型手機等，以遙控方式控制裝置來拍攝靜態影像。</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_ENTER_HELP">進入 說明</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_HELP_FOR_SK">說明</string>
+    <string name="STRID_FUNC_NETWORK_SETTINGS_MSG_WIFI_STANDBY">Wi-Fi待命...</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_ERROR_SWKEY_PIN_DSLR">請輸入一個8位或4位數字。</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_CHANGEPW_ONE_DSLR">一次只能連接1個裝置。\n您想要結束目前連接並開始\n新的連接嗎?</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_INPUT_DSLR">請輸入相連裝置的PIN代碼至本裝置。</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_PBCREQ_DSLR">允許來自裝置的連接嗎?</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_PBC_ERROR_DSLR">驗證與連接Wi-Fi Direct時失敗。</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_PIN_OUTPUT_DSLR">請在2分鐘內輸入PIN代碼到\n連接裝置。</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_TIMEOUT_DSLR">由於逾時，無法連接。</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_WAITING2">操作智慧型手機的Wi-Fi功能與本裝置連接。</string>
+    <string name="STRID_FUNC_SRPLUS_GUIDE">智慧型手機或平板電腦可用來作為遙控器。\n可以視需要變更光圈及快門速度等設定。</string>
+    <string name="STRID_FUNC_SRPLUS_INVALID_OPERATION">此操作無效。</string>
+    <string name="STRID_FUNC_SRPLUS_IN_TOUCH_AF_MODE">目前為使用觸控AF模式的遙控操作。\n半按快門按鈕，然後釋放以取消。</string>
+    <string name="STRID_FUNC_SRPLUS_UNDER_REMOTE_CONTROL">目前為遙控操作。</string>
+    <string name="STRID_FUNC_SRPLUS_UNDER_REMOTE_CONTROL2">目前為遙控操作。\n無法操作此裝置。</string>
+    <string name="STRID_INFO_PIN_CODE">PIN代碼</string>
+    <string name="STRID_MSG_NO_MEMCARD">請插入記憶卡。</string>
+    <string name="STRID_FUNC_CONTROLWITHSMARTPHONE_MSG_CONTROLLED">使用智慧型手機控制中…\n您不能直接操作此裝置。</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_GOTO_QRCODE">顯示QR Code 退出</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_GOTO_PASS">使用密碼連線 退出</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_GOTO_QRCODE_NEX">顯示QR Code 退出</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_GOTO_PASS_NEX">使用密碼連線 退出</string>
+    <string name="STRID_MSG_WIFI_CONNECT_QRCODE">操作智慧型手機以使用\nPlayMemories Mobile掃描\nQR Code。</string>
+</resources>

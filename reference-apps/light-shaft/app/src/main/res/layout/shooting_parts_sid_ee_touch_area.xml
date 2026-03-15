@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:base="http://schemas.android.com/apk/res-auto">
+    <com.sony.imaging.app.base.shooting.widget.SimulatingEERelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.sony.imaging.app.base.playback.widget.TouchArea
+            android:id="@+id/touchArea"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            base:toucharea_ignore_up_after_scoll="true"/>
+    </com.sony.imaging.app.base.shooting.widget.SimulatingEERelativeLayout>
+</merge>

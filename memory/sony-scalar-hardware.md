@@ -1,10 +1,11 @@
 # Sony Scalar Hardware API - Detailed Reference
 
 ## CameraEx (com.sony.scalar.hardware.CameraEx)
-- Core class for all camera operations, used by ALL 7 reference apps
+- Core class for all camera operations, used by ALL 19 reference apps
 - Static: open(int cameraId, OpenOptions), createParametersModifier(Camera.Parameters)
 - Instance: getNormalCamera(), release(), reopen(), createEmptyParameters()
-- Capture: burstableTakePicture(), startDirectShutter/stopDirectShutter, startSelfTimerShutter/cancelSelfTimerShutter
+- Capture: burstableTakePicture(), startDirectShutter/stopDirectShutter, startSelfTimerShutter/cancelSelfTimerShutter, cancelExposure()
+- Lens: adjustAperture(int), adjustShutterSpeed(int), shiftFocusPosition(int)
 - Focus: startOneShotFocusDrive(), startFocusHold/stopFocusHold
 - Exposure: incrementShutterSpeed/decrementShutterSpeed, incrementAperture/decrementAperture
 - Zoom: setPreviewMagnification/stopPreviewMagnification, getPreviewMagnificationRatio
@@ -62,7 +63,7 @@
 - Methods: getActiveDevice(), switchDisplayOutputTo(), getDeviceInfo()
 - OSD: setOSDOutput(device, "OSD_OUTPUT_ON"/"OSD_OUTPUT_OFF")
 - Gain: getSupportedScreenGainControlTypes(), setScreenGainControlType()
-- Listeners: DisplayEventListener (EVENT_SWITCH_DEVICE), OnScreenDisplayListener (OLED burn-in)
+- Listeners: DisplayEventListener (EVENT_SWITCH_DEVICE, event ID 4096 = EVF proximity sensor), OnScreenDisplayListener (OLED burn-in)
 
 ## Light (com.sony.scalar.hardware.indicator.Light)
 - setState(ledId, on, pattern) / setState(ledId, on)

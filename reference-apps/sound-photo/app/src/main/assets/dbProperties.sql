@@ -1,0 +1,1 @@
+CREATE TABLE [tblSoundPhoto]( [content_id] [INTEGER] NOT NULL,[file_path] [text](50) NOT NULL,[folder_number] [int] NOT NULL,[file_number] [int] NOT NULL,[update_status] [int] NOT NULL );

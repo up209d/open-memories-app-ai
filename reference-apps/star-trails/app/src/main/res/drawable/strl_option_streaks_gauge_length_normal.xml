@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@android:id/background"
+        android:drawable="@drawable/p_16_dd_parts_tm_bar_for_indicator_background"/>
+    <item android:id="@android:id/progress">
+        <clip android:drawable="@drawable/p_16_dd_parts_strl_option_streaks_gauge_length_2_normal_icon"/>
+    </item>
+</layer-list>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="1.30"
+    package="com.sony.imaging.app.synctosmartphone">
+    <uses-sdk android:minSdkVersion="10"/>
+    <application
+        android:label="@string/STRID_FUNC_AUTOSYNC"
+        android:icon="@drawable/p_16_dd_parts_sync_launchericon"
+        android:name="com.sony.imaging.app.synctosmartphone.commonUtil.AppContext"
+        android:description="@string/STRID_FUNC_AUTOSYNC_GUIDE">
+        <activity
+            android:theme="@style/Theme.Transparent"
+            android:label="@string/STRID_FUNC_AUTOSYNC_2L"
+            android:name="com.sony.imaging.app.synctosmartphone.AutoSyncSettingApp"
+            android:launchMode="singleInstance"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.android.server.DAConnectionManagerService.action.LAUNCH_ACTIVITY_ON_SUSPEND"/>
+                <category android:name="com.android.server.DAConnectionManagerService.category.LAUNCH_ACTIVITY_ON_SUSPEND"/>
+            </intent-filter>
+        </activity>
+        <service android:name="com.sony.imaging.app.synctosmartphone.webapi.service.OrbAndroidServiceEx"/>
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_SURFACE_FLINGER"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-feature android:name="android.hardware.camera.flash"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+</manifest>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STRID_SCALARA_DLSYS_AIRPLAIN_MODE_ERROR">Nepodařilo se načíst aplikaci,\nprotože je nastaven režim letadlo.</string>
+    <string name="STRID_AMC_STR_01176">Zpracování...</string>
+    <string name="STRID_AMC_STR_06084">Připojuji...</string>
+    <string name="STRID_AMC_STR_06546">Zadat </string>
+    <string name="STRID_CAU_CANT_DISPLAY_EE_DURING_MOVIE_REC">Při nahrávání filmů nelze zobrazit živý náhled na displeji.</string>
+    <string name="STRID_CAU_FUNC_INVALID_FOR_THIS_APP_AND_CAMERA">Tato funkce není na tomto zařízení v této aplikaci podporována.</string>
+    <string name="STRID_CAU_FUNC_INVALID_FOR_THIS_CAMERA">Funkce není na tomto zařízení podporována.</string>
+    <string name="STRID_CAU_MOVIE_INVALID_FOR_THIS_APP_AND_CAMERA">Tato aplikace není na tomto zařízení podporována v režimu snímání filmů.</string>
+    <string name="STRID_CAU_PREV_MS_ERROR_ML">Opět vložte paměťovou kartu,\nkterou jste použili.</string>
+    <string name="STRID_CMN_MSG_UNFORESEEN_ERROR">Došlo k neočekávané chybě.</string>
+    <string name="STRID_CMN_PASSWORD">Heslo</string>
+    <string name="STRID_CMN_SSID">SSID</string>
+    <string name="STRID_CMN_WIFI_DEVICENAME_DSLR">Název zařízení</string>
+    <string name="STRID_FUNC_EZREMOTE">Chytré dálk. ovládání</string>
+    <string name="STRID_FUNC_EZREMOTE_2L">Chytré dálk.\novládání</string>
+    <string name="STRID_FUNC_EZREMOTE_EMBEDDED">Zabudov. chytré dálkové ovládání</string>
+    <string name="STRID_FUNC_EZREMOTE_EMBEDDED_2L">Zabudov. chytré\ndálkové ovládání</string>
+    <string name="STRID_FUNC_EZREMOTE_GETTING_PICTURE">Získávám data snímání...</string>
+    <string name="STRID_FUNC_EZREMOTE_GET_PICTURE_ERROR">Nepodařilo se získat data snímání.</string>
+    <string name="STRID_FUNC_EZREMOTE_GUIDE">Můžete pořizovat statické snímky tak, že budete zařízení ovládat dálkově pomocí kompatibilního smartphonu apod.</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_ENTER_HELP">Zadat Nápověda</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_HELP_FOR_SK">Nápověda</string>
+    <string name="STRID_FUNC_NETWORK_SETTINGS_MSG_WIFI_STANDBY">Pohotovostní režim Wi-Fi...</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_ERROR_SWKEY_PIN_DSLR">Zadejte číslo s 8 nebo 4 číslicemi.</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_CHANGEPW_ONE_DSLR">Najednou může být připojit\npouze 1 zařízení.\nPřejete si ukončit stávající\npřipojení a vytvořit nové?</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_INPUT_DSLR">Zadejte prosím v zařízení kód PIN\npřipojovaného zařízení.</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_PBCREQ_DSLR">Povolit připojení ze zařízení?</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_PBC_ERROR_DSLR">Autentizace a připojení k Wi-Fi Direct\nbyly neúspěšné.</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_PIN_OUTPUT_DSLR">Do 2 minut\nzadejte kód PIN\nv připojovaném zařízení.</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_TIMEOUT_DSLR">Připojení se nezdařilo, čas vypršel.</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_WAITING2">Použijte smartphone pro připojení\nk tomuto zařízení pomocí Wi-Fi.</string>
+    <string name="STRID_FUNC_SRPLUS_GUIDE">Jako dálkové ovládání můžete použít smartphone nebo tablet.\nV případě potřeby můžete změnit nastavení, jako je clona nebo čas závěrky.</string>
+    <string name="STRID_FUNC_SRPLUS_INVALID_OPERATION">Tato operace je neplatná.</string>
+    <string name="STRID_FUNC_SRPLUS_IN_TOUCH_AF_MODE">Právě probíhá dálkové ovládání s režimem dotykového AF.\nPro zrušení namáčkněte tlačítko spouště a uvolněte je.</string>
+    <string name="STRID_FUNC_SRPLUS_UNDER_REMOTE_CONTROL">Právě probíhá dálkové ovládání.</string>
+    <string name="STRID_FUNC_SRPLUS_UNDER_REMOTE_CONTROL2">Právě probíhá dálkové ovládání.\nNelze použít s tímto zařízením.</string>
+    <string name="STRID_INFO_PIN_CODE">Kód PIN</string>
+    <string name="STRID_MSG_NO_MEMCARD">Vložte paměťovou kartu</string>
+    <string name="STRID_FUNC_CONTROLWITHSMARTPHONE_MSG_CONTROLLED">Ovládání smartphonem…\nNelze přímo ovládat toto zařízení.</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_GOTO_QRCODE">Zobrazit kód QR Code Ukončit</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_GOTO_PASS">Připojit pomocí hesla Ukončit</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_GOTO_QRCODE_NEX">Zobrazit kód QR Code Ukončit</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_GOTO_PASS_NEX">Připojit pomocí hesla Ukončit</string>
+    <string name="STRID_MSG_WIFI_CONNECT_QRCODE">Pomocí smartphonu načtěte\ndo aplikace PlayMemories\nMobile kód QR Code.</string>
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STRID_SCALARA_DLSYS_AIRPLAIN_MODE_ERROR">Sovellusta ei voida käynnistää,\nkoska lentokonetila on käytössä.</string>
+    <string name="STRID_AMC_STR_01176">Käsittelee...</string>
+    <string name="STRID_AMC_STR_06084">Liittää...</string>
+    <string name="STRID_AMC_STR_06546">Syötä </string>
+    <string name="STRID_CAU_CANT_DISPLAY_EE_DURING_MOVIE_REC">Ei voi näyttää Live View -näyttöä laitteen näytössä videoita kuvattaessa.</string>
+    <string name="STRID_CAU_FUNC_INVALID_FOR_THIS_APP_AND_CAMERA">Tämä laite ei tue tämän sovelluksen toimintoa.</string>
+    <string name="STRID_CAU_FUNC_INVALID_FOR_THIS_CAMERA">Tämä laite ei tue toimintoa.</string>
+    <string name="STRID_CAU_MOVIE_INVALID_FOR_THIS_APP_AND_CAMERA">Tämä laite ei tue tämän sovelluksen videokuvaustilaa.</string>
+    <string name="STRID_CAU_PREV_MS_ERROR_ML">Aseta takaisin muistikortti,\njota käytit.</string>
+    <string name="STRID_CMN_MSG_UNFORESEEN_ERROR">Odottamaton virhe.</string>
+    <string name="STRID_CMN_PASSWORD">Salasana</string>
+    <string name="STRID_CMN_SSID">SSID</string>
+    <string name="STRID_CMN_WIFI_DEVICENAME_DSLR">Laitteen nimi</string>
+    <string name="STRID_FUNC_EZREMOTE">Älykäs kaukosäädin</string>
+    <string name="STRID_FUNC_EZREMOTE_2L">Älykäs\nkaukosäädin</string>
+    <string name="STRID_FUNC_EZREMOTE_EMBEDDED">Älykäs kaukotoiminto mukana</string>
+    <string name="STRID_FUNC_EZREMOTE_EMBEDDED_2L">Älykäs kauko-\ntoiminto mukana</string>
+    <string name="STRID_FUNC_EZREMOTE_GETTING_PICTURE">Noudetaan kuvaustietoja...</string>
+    <string name="STRID_FUNC_EZREMOTE_GET_PICTURE_ERROR">Kuvaustietojen nouto epäonnistui.</string>
+    <string name="STRID_FUNC_EZREMOTE_GUIDE">Voit ottaa valokuvia kauko-ohjaamalla laitetta yhteensopivalla älypuhelimella tms.</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_ENTER_HELP">Syötä Ohje</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_HELP_FOR_SK">Ohje</string>
+    <string name="STRID_FUNC_NETWORK_SETTINGS_MSG_WIFI_STANDBY">Wi-Fi-valmius...</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_ERROR_SWKEY_PIN_DSLR">Näppäile 8- tai 4-numeroinen luku.</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_CHANGEPW_ONE_DSLR">Vain 1 laite voidaan liittää kerralla.\nHaluatko lopettaa nykyisen yhteyden\nja aloittaa uuden?</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_INPUT_DSLR">Anna yhteyslaitteen PIN-koodi\nlaitteeseen.</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_PBCREQ_DSLR">Sallitaanko yhteys laitteesta?</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_PBC_ERROR_DSLR">Todennus ja Wi-Fi Direct\n-yhteys epäonnistui.</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_PIN_OUTPUT_DSLR">Anna PIN-koodi yhteyslaitteeseen\n2 minuutin kuluessa.</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_TIMEOUT_DSLR">Yhteys ei onnistunut\naikakatkaisun vuoksi.</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_WAITING2">Käytä älypuhelinta tämän laitteen\nliittämiseen Wi-Fi-yhteyden avulla.</string>
+    <string name="STRID_FUNC_SRPLUS_GUIDE">Älypuhelinta tai taulutietokonetta voidaan käyttää kaukosäätimenä.\nAsetuksia, kuten aukkoa ja suljinnopeutta, voidaan muuttaa vapaasti.</string>
+    <string name="STRID_FUNC_SRPLUS_INVALID_OPERATION">Tämä toiminto ei ole käytettävissä.</string>
+    <string name="STRID_FUNC_SRPLUS_IN_TOUCH_AF_MODE">Etäkäytössä kosketus-AF-tilassa.\nPaina suljinpainike puoliväliin ja vapauta se peruttaaksesi.</string>
+    <string name="STRID_FUNC_SRPLUS_UNDER_REMOTE_CONTROL">Etäkäytössä.</string>
+    <string name="STRID_FUNC_SRPLUS_UNDER_REMOTE_CONTROL2">Etäkäytössä.\nEi voi käyttää tällä laitteella.</string>
+    <string name="STRID_INFO_PIN_CODE">PIN-koodi</string>
+    <string name="STRID_MSG_NO_MEMCARD">Aseta muistikortti</string>
+    <string name="STRID_FUNC_CONTROLWITHSMARTPHONE_MSG_CONTROLLED">Ohjataan älypuhelimella…\nEt voi käyttää tätä laitetta suoraan.</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_GOTO_QRCODE">Näytä QR Code -koodi Poistu</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_GOTO_PASS">Yhdistä salasanalla Poistu</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_GOTO_QRCODE_NEX">Näytä QR Code -koodi Poistu</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_GOTO_PASS_NEX">Yhdistä salasanalla Poistu</string>
+    <string name="STRID_MSG_WIFI_CONNECT_QRCODE">Skannaa QR Code -koodi\nälypuhelimen PlayMemories\nMobilen avulla.</string>
+</resources>

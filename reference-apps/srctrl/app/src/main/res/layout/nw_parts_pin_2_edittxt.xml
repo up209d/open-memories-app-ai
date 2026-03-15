@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:typeface="4"
+        android:textColor="@color/RESID_FONTSTYLE_STD_NORMAL"
+        android:gravity="bottom"
+        android:id="@+id/nw_parts_pin_2_edittxt"
+        android:background="@drawable/edittext_background_selector"
+        android:paddingLeft="10px"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_width="366px"
+        android:layout_height="50px"
+        android:layout_marginLeft="237px"
+        android:layout_marginTop="283px"
+        android:cursorVisible="true"
+        android:maxLines="1"
+        android:maxLength="8"
+        android:inputType="number"
+        style="@style/RESID_FONTSIZE_BIG_L_EDGE_OFF"/>
+</RelativeLayout>

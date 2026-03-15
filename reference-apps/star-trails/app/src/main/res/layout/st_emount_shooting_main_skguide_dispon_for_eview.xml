@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:base="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="96px"
+        android:layout_height="48px"
+        android:layout_marginLeft="439px"
+        android:layout_marginTop="277px"
+        android:src="@drawable/p_16_dd_parts_ee_option_main_key_osd_icon_ey"/>
+    <ImageView
+        android:layout_width="96px"
+        android:layout_height="48px"
+        android:layout_marginLeft="439px"
+        android:layout_marginTop="277px"
+        android:src="@drawable/p_16_dd_parts_guide_menu_ey"/>
+    <ImageView
+        android:layout_width="96px"
+        android:layout_height="48px"
+        android:layout_marginLeft="439px"
+        android:layout_marginTop="329px"
+        android:src="@drawable/p_16_dd_parts_ee_option_center_key_osd_icon"/>
+    <ImageView
+        android:layout_width="96px"
+        android:layout_height="48px"
+        android:layout_marginLeft="439px"
+        android:layout_marginTop="329px"
+        android:src="@drawable/p_16_dd_parts_strl_option_center_key_focus_magnifier_osd_icon"/>
+    <ImageView
+        android:layout_width="96px"
+        android:layout_height="48px"
+        android:layout_marginLeft="439px"
+        android:layout_marginTop="381px"
+        android:src="@drawable/p_16_dd_parts_ee_option_main_key_osd_icon_ey"/>
+    <ImageView
+        android:id="@+id/mst2"
+        android:background="@drawable/p_16_dd_parts_strl_option_delete_key_test_shot_osd_icon"
+        android:layout_width="96px"
+        android:layout_height="48px"
+        android:layout_marginLeft="439px"
+        android:layout_marginTop="381px"/>
+</RelativeLayout>

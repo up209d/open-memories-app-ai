@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STRID_FUNC_BRKMASTER">Esp. a forcella Professionale</string>
+    <string name="STRID_FUNC_BRKMASTER_2L">Esp. a forcella\nProfessionale</string>
+    <string name="STRID_FUNC_BRKMASTER_GUIDE">Verranno registrate più immagini, con cambiamenti effettuati nelle impostazioni di velocità dell\'otturatore, diaframma, messa a fuoco, flash.</string>
+    <string name="STRID_FUNC_SSBRK">Espos. forcella velocità otturatore</string>
+    <string name="STRID_FUNC_APERTUREBRK">Esposiz. forcella con diaframma</string>
+    <string name="STRID_FUNC_FOCUSBRK">Espos. a forcella con messa fuoco</string>
+    <string name="STRID_FUNC_FLASHBRK">Esposizione a forcella con flash</string>
+    <string name="STRID_FUNC_SSBRK_GUIDE">Esegue 3 scatti con variazione di velocità dell\'otturatore.</string>
+    <string name="STRID_FUNC_APERTUREBRK_GUIDE">Esegue 3 scatti con variazione di diaframma.</string>
+    <string name="STRID_FUNC_FOCUSBRK_GUIDE">Esegue 3 scatti con variazione di posizioni di messa a fuoco.</string>
+    <string name="STRID_FUNC_FLASHBRK_GUIDE">Riprende immagini con e senza flash.</string>
+    <string name="STRID_FUNC_SHIFT_RANGE">Valore di esposizione a forcella</string>
+    <string name="STRID_FUNC_SHIFT_RANGE_WIDE">Ampio</string>
+    <string name="STRID_FUNC_SHIFT_RANGE_NARROW">Stretto</string>
+    <string name="STRID_CAU_FLASH_INVALID">Non è possibile azionare il flash.\nVerificare che il flash sia pronto ad\nazionarsi.</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_RETURN">Guida </string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_EXIT">Guida Uscita Applicazione</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_EXIT_SK">Guida Uscita Applicazione</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_RETURN_SK">Guida </string>
+    <string name="STRID_FOOTERGUIDE_TV_RETURN">Tv </string>
+    <string name="STRID_FOOTERGUIDE_TV_RETURN_SK">Tv </string>
+    <string name="STRID_FOOTERGUIDE_AV_RETURN">Av </string>
+    <string name="STRID_FOOTERGUIDE_AV_RETURN_SK">Av </string>
+</resources>

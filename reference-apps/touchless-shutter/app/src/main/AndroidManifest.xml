@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="1.00"
+    package="com.sony.imaging.app.touchlessshutter">
+    <uses-sdk android:minSdkVersion="10"/>
+    <application
+        android:label="@string/STRID_FUNC_MYAPP_NAME"
+        android:icon="@drawable/p_16_dd_parts_xxxxxxxx_launchericon">
+        <activity
+            android:theme="@style/Theme.Transparent"
+            android:label="@string/STRID_FUNC_MYAPP_NAME_2L"
+            android:name="com.sony.imaging.app.each.EachApp"
+            android:launchMode="singleInstance"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_SURFACE_FLINGER"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-feature android:name="android.hardware.camera.flash"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+</manifest>

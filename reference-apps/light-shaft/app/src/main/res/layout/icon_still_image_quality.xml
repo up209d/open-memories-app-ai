@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sony.imaging.app.base.shooting.widget.StillImageQualityIcon xmlns:android="http://schemas.android.com/apk/res/android" xmlns:base="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/still_image_quality_icon"
+    android:layout_width="70px"
+    android:layout_height="60px"
+    base:RAW="@android:drawable/dropdown_focused_holo_light"
+    base:RAW_JPEG="@android:drawable/dropdown_ic_arrow_disabled_holo_dark"
+    base:Fine="@android:drawable/dropdown_ic_arrow_normal_holo_dark"
+    base:Standard="@android:drawable/dropdown_ic_arrow_normal_holo_light"
+    base:ExtraFine="@android:drawable/dropdown_ic_arrow_pressed_holo_dark"/>

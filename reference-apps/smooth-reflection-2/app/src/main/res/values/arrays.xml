@@ -1,0 +1,814 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="OSD_IMAGE_SIZE">
+        <item>?unknown_ref: 10811b1</item>
+        <item>?unknown_ref: 10811be</item>
+        <item>?unknown_ref: 10811c2</item>
+        <item>?unknown_ref: 10811c5</item>
+        <item>?unknown_ref: 10811c7</item>
+        <item>?unknown_ref: 10811ca</item>
+        <item>?unknown_ref: 10811cc</item>
+        <item>?unknown_ref: 10811d0</item>
+        <item>?unknown_ref: 10811d4</item>
+        <item>?unknown_ref: 10811d7</item>
+        <item>?unknown_ref: 10811cf</item>
+        <item>?unknown_ref: 10811df</item>
+        <item>?unknown_ref: 10811eb</item>
+    </array>
+    <array name="OSD_REC_SETTING_WBNUMBER_K">
+        <item>?unknown_ref: 1081776</item>
+        <item>?unknown_ref: 108177c</item>
+        <item>?unknown_ref: 108177f</item>
+        <item>?unknown_ref: 1081782</item>
+        <item>?unknown_ref: 1081784</item>
+        <item>?unknown_ref: 1081787</item>
+        <item>?unknown_ref: 108178c</item>
+        <item>?unknown_ref: 1081791</item>
+        <item>?unknown_ref: 1081794</item>
+        <item>?unknown_ref: 1081789</item>
+        <item>?unknown_ref: 10817aa</item>
+    </array>
+    <array name="EVF_REC_SETTING_WBNUMBER_K">
+        <item>?unknown_ref: 1081275</item>
+        <item>?unknown_ref: 1081285</item>
+        <item>?unknown_ref: 108127f</item>
+        <item>?unknown_ref: 1081272</item>
+        <item>?unknown_ref: 1081287</item>
+        <item>?unknown_ref: 108126a</item>
+        <item>?unknown_ref: 1081290</item>
+        <item>?unknown_ref: 1081282</item>
+        <item>?unknown_ref: 1081269</item>
+        <item>?unknown_ref: 108127b</item>
+        <item>?unknown_ref: 1081268</item>
+    </array>
+    <array name="OSD_REC_SETTING_WBNUMBER_K_ORANGE">
+        <item>?unknown_ref: 108178f</item>
+        <item>?unknown_ref: 108178b</item>
+        <item>?unknown_ref: 1081790</item>
+        <item>?unknown_ref: 108179c</item>
+        <item>?unknown_ref: 1081781</item>
+        <item>?unknown_ref: 10817a1</item>
+        <item>?unknown_ref: 1081777</item>
+        <item>?unknown_ref: 108179f</item>
+        <item>?unknown_ref: 10817ab</item>
+        <item>?unknown_ref: 1081795</item>
+        <item>?unknown_ref: 10817a2</item>
+    </array>
+    <array name="EVF_REC_SETTING_WBNUMBER_K_ORANGE">
+        <item>?unknown_ref: 1081276</item>
+        <item>?unknown_ref: 108126c</item>
+        <item>?unknown_ref: 108126f</item>
+        <item>?unknown_ref: 1081284</item>
+        <item>?unknown_ref: 1081274</item>
+        <item>?unknown_ref: 1081289</item>
+        <item>?unknown_ref: 1081280</item>
+        <item>?unknown_ref: 108126b</item>
+        <item>?unknown_ref: 1081266</item>
+        <item>?unknown_ref: 108128a</item>
+        <item>?unknown_ref: 108127a</item>
+    </array>
+    <array name="OSD_REC_SETTING_WBNUMBER_AG">
+        <item>?unknown_ref: 108179a</item>
+        <item>?unknown_ref: 10817a0</item>
+        <item>?unknown_ref: 10817a4</item>
+        <item>?unknown_ref: 10817a5</item>
+        <item>?unknown_ref: 10817a8</item>
+        <item>?unknown_ref: 10817ac</item>
+        <item>?unknown_ref: 1081775</item>
+        <item>?unknown_ref: 1081778</item>
+        <item>?unknown_ref: 1081786</item>
+        <item>?unknown_ref: 1081793</item>
+        <item>?unknown_ref: 108178a</item>
+        <item>?unknown_ref: 1081798</item>
+    </array>
+    <array name="EVF_REC_SETTING_WBNUMBER_AG">
+        <item>@android:drawable/sym_keyboard_feedback_space</item>
+        <item>?unknown_ref: 10810ba</item>
+        <item>@android:drawable/sym_keyboard_feedback_return</item>
+        <item>?unknown_ref: 1081094</item>
+        <item>@android:drawable/stat_sys_r_signal_0_cdma</item>
+        <item>?unknown_ref: 1081092</item>
+        <item>@android:drawable/spinner_ab_pressed_holo_light</item>
+        <item>@android:drawable/menu_panel_holo_dark</item>
+        <item>@android:drawable/progress_large_material</item>
+        <item>?unknown_ref: 1080d35</item>
+        <item>?unknown_ref: 1080db6</item>
+        <item>@android:drawable/fastscroll_track_default_holo_dark</item>
+    </array>
+    <array name="OSD_REC_SETTING_WBNUMBER_AG_ORANGE">
+        <item>?unknown_ref: 10817ad</item>
+        <item>?unknown_ref: 108179e</item>
+        <item>?unknown_ref: 108178d</item>
+        <item>?unknown_ref: 1081799</item>
+        <item>?unknown_ref: 108179d</item>
+        <item>?unknown_ref: 10817a9</item>
+        <item>?unknown_ref: 108177b</item>
+        <item>?unknown_ref: 108177d</item>
+        <item>?unknown_ref: 108179b</item>
+        <item>?unknown_ref: 10817a7</item>
+        <item>?unknown_ref: 1081797</item>
+        <item>?unknown_ref: 108177a</item>
+    </array>
+    <array name="EVF_REC_SETTING_WBNUMBER_AG_ORANGE">
+        <item>?unknown_ref: 1080e9b</item>
+        <item>?unknown_ref: 1080a6e</item>
+        <item>?unknown_ref: 108100a</item>
+        <item>?unknown_ref: 1080d73</item>
+        <item>?unknown_ref: 1080976</item>
+        <item>?unknown_ref: 1081098</item>
+        <item>?unknown_ref: 1080e55</item>
+        <item>@android:drawable/gallery_selected_pressed</item>
+        <item>?unknown_ref: 1080970</item>
+        <item>?unknown_ref: 108107a</item>
+        <item>@android:drawable/pointer_help_icon</item>
+        <item>?unknown_ref: 1080e19</item>
+    </array>
+    <array name="DIGITAL_LEVEL_PANEL_PITCHIND_H_F">
+        <item>@android:drawable/ft_avd_toarrow</item>
+        <item>?unknown_ref: 1080b86</item>
+        <item>?unknown_ref: 1080b85</item>
+        <item>?unknown_ref: 1080b83</item>
+        <item>?unknown_ref: 1080b7f</item>
+        <item>?unknown_ref: 1080b7b</item>
+        <item>?unknown_ref: 1080b77</item>
+        <item>?unknown_ref: 1080b73</item>
+        <item>?unknown_ref: 1080b66</item>
+        <item>?unknown_ref: 1080b64</item>
+        <item>?unknown_ref: 1080b48</item>
+        <item>@android:drawable/fastscroll_label_right_holo_light</item>
+        <item>@android:drawable/fastscroll_label_left_holo_light</item>
+        <item>@android:drawable/fastscroll_label_left_holo_dark</item>
+        <item>@android:drawable/expander_ic_minimized</item>
+        <item>@android:drawable/expander_group_holo_light</item>
+        <item>@android:drawable/expander_close_mtrl_alpha</item>
+        <item>@android:drawable/expander_close_holo_dark</item>
+        <item>@android:drawable/emo_im_wtf</item>
+        <item>@android:drawable/emo_im_surprised</item>
+        <item>?unknown_ref: 1080e67</item>
+        <item>?unknown_ref: 1080ef0</item>
+        <item>?unknown_ref: 1080ef1</item>
+        <item>?unknown_ref: 1080ef2</item>
+        <item>?unknown_ref: 1080ef3</item>
+        <item>?unknown_ref: 1080ef4</item>
+        <item>?unknown_ref: 1080ef6</item>
+        <item>?unknown_ref: 1080ef7</item>
+        <item>?unknown_ref: 1080ef8</item>
+        <item>?unknown_ref: 1080ef9</item>
+        <item>@android:drawable/reticle</item>
+        <item>@android:drawable/safe_mode_background</item>
+        <item>@android:drawable/screen_background_holo_dark</item>
+        <item>@android:drawable/screen_background_holo_light</item>
+        <item>@android:drawable/screen_background_selector_dark</item>
+        <item>@android:drawable/screen_background_selector_light</item>
+        <item>@android:drawable/scroll_indicator_material</item>
+        <item>@android:drawable/scrollbar_handle_accelerated_anim2</item>
+        <item>@android:drawable/scrollbar_handle_holo_dark</item>
+        <item>@android:drawable/scrollbar_handle_holo_light</item>
+        <item>?unknown_ref: 1080f0b</item>
+    </array>
+    <array name="DIGITAL_LEVEL_PANEL_PITCHIND_H_N">
+        <item>@android:drawable/ic_perm_group_status_bar</item>
+        <item>?unknown_ref: 1080cf0</item>
+        <item>?unknown_ref: 1080ced</item>
+        <item>?unknown_ref: 1080cec</item>
+        <item>?unknown_ref: 1080cea</item>
+        <item>?unknown_ref: 1080ce9</item>
+        <item>?unknown_ref: 1080ce8</item>
+        <item>?unknown_ref: 1080ce6</item>
+        <item>?unknown_ref: 1080ce5</item>
+        <item>?unknown_ref: 1080ce4</item>
+        <item>?unknown_ref: 1080ce2</item>
+        <item>@android:drawable/ic_perm_group_display</item>
+        <item>@android:drawable/ic_perm_group_device_alarms</item>
+        <item>@android:drawable/ic_perm_group_calendar</item>
+        <item>@android:drawable/ic_perm_group_bluetooth</item>
+        <item>@android:drawable/ic_notification_alert</item>
+        <item>@android:drawable/ic_more_items</item>
+        <item>@android:drawable/ic_minus</item>
+        <item>@android:drawable/ic_menu_stop</item>
+        <item>@android:drawable/ic_menu_star</item>
+        <item>?unknown_ref: 1080a70</item>
+        <item>@android:drawable/gallery_unselected_pressed</item>
+        <item>@android:drawable/global_action_icon_background</item>
+        <item>@android:drawable/grid_selector_background_focus</item>
+        <item>@android:drawable/highlight_disabled</item>
+        <item>@android:drawable/highlight_pressed</item>
+        <item>@android:drawable/highlight_selected</item>
+        <item>@android:drawable/ic_ab_back_holo_dark</item>
+        <item>@android:drawable/ic_ab_back_holo_dark_am</item>
+        <item>@android:drawable/ic_ab_back_holo_light_am</item>
+        <item>?unknown_ref: 1080b9d</item>
+        <item>?unknown_ref: 1080b9f</item>
+        <item>?unknown_ref: 1080ba3</item>
+        <item>?unknown_ref: 1080ba5</item>
+        <item>?unknown_ref: 1080ba7</item>
+        <item>?unknown_ref: 1080bad</item>
+        <item>?unknown_ref: 1080baf</item>
+        <item>?unknown_ref: 1080bb0</item>
+        <item>?unknown_ref: 1080bb4</item>
+        <item>?unknown_ref: 1080bb5</item>
+        <item>@android:drawable/ic_bluetooth_transient_animation_drawable</item>
+    </array>
+    <array name="DIGITAL_LEVEL_PANEL_ROLLIND_H">
+        <item>?unknown_ref: 1080f49</item>
+        <item>@android:drawable/spinner_ab_disabled_holo_light</item>
+        <item>@android:drawable/spinner_ab_default_holo_light_am</item>
+        <item>@android:drawable/spinner_ab_default_holo_dark</item>
+        <item>@android:drawable/spinner_ab_activated_holo_light</item>
+        <item>@android:drawable/spinner_ab_activated_holo_dark</item>
+        <item>@android:drawable/spinner_76_outer_holo</item>
+        <item>@android:drawable/spinner_76_inner_holo</item>
+        <item>@android:drawable/spinner_48_inner_holo</item>
+        <item>@android:drawable/spinner_16_outer_holo</item>
+        <item>@android:drawable/slice_ripple_drawable</item>
+        <item>?unknown_ref: 1080f34</item>
+        <item>?unknown_ref: 1080f32</item>
+        <item>?unknown_ref: 1080f31</item>
+        <item>?unknown_ref: 1080f30</item>
+        <item>?unknown_ref: 1080f2e</item>
+        <item>?unknown_ref: 1080f2b</item>
+        <item>?unknown_ref: 1080f29</item>
+        <item>?unknown_ref: 1080f28</item>
+        <item>?unknown_ref: 1080f27</item>
+        <item>@android:drawable/seek_thumb</item>
+        <item>?unknown_ref: 1080ff2</item>
+        <item>?unknown_ref: 1080ff4</item>
+        <item>?unknown_ref: 1080ff6</item>
+        <item>?unknown_ref: 1080ff8</item>
+        <item>?unknown_ref: 1080ffa</item>
+        <item>?unknown_ref: 1080ffc</item>
+        <item>?unknown_ref: 1080fff</item>
+        <item>?unknown_ref: 1081000</item>
+        <item>?unknown_ref: 1081001</item>
+        <item>@android:drawable/tab_indicator_ab_holo</item>
+        <item>@android:drawable/tab_indicator_mtrl_alpha</item>
+        <item>@android:drawable/tab_indicator_v4</item>
+        <item>@android:drawable/tab_press_bar_right</item>
+        <item>@android:drawable/tab_selected</item>
+        <item>@android:drawable/tab_selected_bar_left_v4</item>
+        <item>@android:drawable/tab_selected_holo</item>
+        <item>@android:drawable/tab_selected_v4</item>
+        <item>@android:drawable/tab_unselected</item>
+        <item>@android:drawable/tab_unselected_focused_holo</item>
+        <item>?unknown_ref: 1081007</item>
+    </array>
+    <array name="DIGITAL_LEVEL_PANEL_PITCHIND_V_F">
+        <item>@android:drawable/stat_sys_r_signal_1_cdma</item>
+        <item>?unknown_ref: 1080f91</item>
+        <item>?unknown_ref: 1080f8f</item>
+        <item>?unknown_ref: 1080f8e</item>
+        <item>?unknown_ref: 1080f8c</item>
+        <item>?unknown_ref: 1080f8b</item>
+        <item>?unknown_ref: 1080f8a</item>
+        <item>?unknown_ref: 1080f85</item>
+        <item>?unknown_ref: 1080f82</item>
+        <item>?unknown_ref: 1080f80</item>
+        <item>?unknown_ref: 1080f7f</item>
+        <item>@android:drawable/stat_sys_battery_charge_anim4</item>
+        <item>@android:drawable/stat_sys_battery_charge_anim28</item>
+        <item>@android:drawable/stat_sys_battery_charge_anim1</item>
+        <item>@android:drawable/stat_sys_battery_charge_anim0</item>
+        <item>@android:drawable/stat_sys_battery_71</item>
+        <item>@android:drawable/stat_sys_battery_57</item>
+        <item>@android:drawable/stat_sys_battery_28</item>
+        <item>@android:drawable/stat_sys_battery_10</item>
+        <item>@android:drawable/stat_sys_battery</item>
+        <item>?unknown_ref: 1080efa</item>
+        <item>?unknown_ref: 1081117</item>
+        <item>?unknown_ref: 108111a</item>
+        <item>?unknown_ref: 108111c</item>
+        <item>?unknown_ref: 108111f</item>
+        <item>?unknown_ref: 1081122</item>
+        <item>?unknown_ref: 1081124</item>
+        <item>?unknown_ref: 1081126</item>
+        <item>?unknown_ref: 1081127</item>
+        <item>?unknown_ref: 1081128</item>
+        <item>?unknown_ref: 10809e0</item>
+        <item>?unknown_ref: 10809e2</item>
+        <item>?unknown_ref: 10809e5</item>
+        <item>?unknown_ref: 10809e7</item>
+        <item>?unknown_ref: 10809e9</item>
+        <item>?unknown_ref: 10809ed</item>
+        <item>?unknown_ref: 10809ef</item>
+        <item>?unknown_ref: 10809f2</item>
+        <item>?unknown_ref: 10809f3</item>
+        <item>?unknown_ref: 10809f5</item>
+        <item>?unknown_ref: 108113a</item>
+    </array>
+    <array name="DIGITAL_LEVEL_PANEL_PITCHIND_V_N">
+        <item>@android:drawable/textfield_searchview_holo_dark</item>
+        <item>?unknown_ref: 108103d</item>
+        <item>?unknown_ref: 108103b</item>
+        <item>?unknown_ref: 108103a</item>
+        <item>?unknown_ref: 1081039</item>
+        <item>?unknown_ref: 1081038</item>
+        <item>?unknown_ref: 1081037</item>
+        <item>?unknown_ref: 1081033</item>
+        <item>?unknown_ref: 1081031</item>
+        <item>?unknown_ref: 108102f</item>
+        <item>?unknown_ref: 108102d</item>
+        <item>@android:drawable/textfield_pressed_holo</item>
+        <item>@android:drawable/textfield_multiline_focused_holo_dark</item>
+        <item>@android:drawable/textfield_multiline_disabled_focused_holo_light</item>
+        <item>@android:drawable/textfield_multiline_default_holo_light</item>
+        <item>@android:drawable/textfield_multiline_activated_holo_dark</item>
+        <item>@android:drawable/textfield_focused_holo_light</item>
+        <item>@android:drawable/textfield_focused_holo_dark</item>
+        <item>@android:drawable/textfield_disabled_selected</item>
+        <item>@android:drawable/textfield_disabled_holo_light</item>
+        <item>?unknown_ref: 1080cda</item>
+        <item>@android:drawable/ratingbar_holo_light</item>
+        <item>@android:drawable/ratingbar_indicator_material</item>
+        <item>@android:drawable/ratingbar_material</item>
+        <item>@android:drawable/ratingbar_small_holo_dark</item>
+        <item>@android:drawable/ratingbar_small_holo_light</item>
+        <item>@android:drawable/ratingbar_small_material</item>
+        <item>@android:drawable/recent_dialog_background</item>
+        <item>@android:drawable/red_shield</item>
+        <item>@android:drawable/resolver_icon_placeholder</item>
+        <item>?unknown_ref: 1080efc</item>
+        <item>?unknown_ref: 1080efe</item>
+        <item>?unknown_ref: 1080eff</item>
+        <item>?unknown_ref: 1080f00</item>
+        <item>?unknown_ref: 1080f02</item>
+        <item>?unknown_ref: 1080f03</item>
+        <item>?unknown_ref: 1080f04</item>
+        <item>?unknown_ref: 1080f06</item>
+        <item>?unknown_ref: 1080f07</item>
+        <item>?unknown_ref: 1080f08</item>
+        <item>@android:drawable/scrollbar_handle_horizontal</item>
+    </array>
+    <array name="DIGITAL_LEVEL_PANEL_ROLLIND_V">
+        <item>?unknown_ref: 1080d17</item>
+        <item>@android:drawable/ic_reply_notification</item>
+        <item>@android:drawable/ic_refresh</item>
+        <item>@android:drawable/ic_qs_ui_mode_night</item>
+        <item>@android:drawable/ic_qs_night_display_on</item>
+        <item>@android:drawable/ic_qs_flashlight</item>
+        <item>@android:drawable/ic_qs_bluetooth</item>
+        <item>@android:drawable/ic_qs_auto_rotate</item>
+        <item>@android:drawable/ic_qs_airplane</item>
+        <item>@android:drawable/ic_print_error</item>
+        <item>@android:drawable/ic_print</item>
+        <item>?unknown_ref: 1080d10</item>
+        <item>?unknown_ref: 1080d0e</item>
+        <item>?unknown_ref: 1080d0d</item>
+        <item>?unknown_ref: 1080d0b</item>
+        <item>?unknown_ref: 1080d0a</item>
+        <item>?unknown_ref: 1080d09</item>
+        <item>?unknown_ref: 1080d06</item>
+        <item>?unknown_ref: 1080d05</item>
+        <item>?unknown_ref: 1080d03</item>
+        <item>?unknown_ref: 1080a1d</item>
+        <item>@android:drawable/spinner_ab_default_holo_dark_am</item>
+        <item>@android:drawable/spinner_ab_disabled_holo_dark</item>
+        <item>@android:drawable/spinner_ab_disabled_holo_light_am</item>
+        <item>@android:drawable/spinner_ab_focused_holo_dark_am</item>
+        <item>@android:drawable/spinner_ab_holo_dark</item>
+        <item>@android:drawable/spinner_ab_pressed_holo_dark</item>
+        <item>@android:drawable/spinner_activated_holo_dark</item>
+        <item>@android:drawable/spinner_background_holo_light</item>
+        <item>@android:drawable/spinner_black_16</item>
+        <item>?unknown_ref: 1080f4a</item>
+        <item>?unknown_ref: 1080f4b</item>
+        <item>?unknown_ref: 1080f4f</item>
+        <item>?unknown_ref: 1080f50</item>
+        <item>?unknown_ref: 1080f53</item>
+        <item>?unknown_ref: 1080f54</item>
+        <item>?unknown_ref: 1080f56</item>
+        <item>?unknown_ref: 1080f57</item>
+        <item>?unknown_ref: 1080f58</item>
+        <item>?unknown_ref: 1080f5b</item>
+        <item>@android:drawable/spinner_focused_holo_light</item>
+    </array>
+    <array name="DIGITAL_LEVEL_EVF_PITCHIND_H_F">
+        <item>@android:drawable/list_pressed_holo_light</item>
+        <item>?unknown_ref: 1080d9b</item>
+        <item>?unknown_ref: 1080d9a</item>
+        <item>?unknown_ref: 1080d99</item>
+        <item>?unknown_ref: 1080d98</item>
+        <item>?unknown_ref: 1080d97</item>
+        <item>?unknown_ref: 1080d96</item>
+        <item>?unknown_ref: 1080d94</item>
+        <item>?unknown_ref: 1080d93</item>
+        <item>?unknown_ref: 1080d92</item>
+        <item>?unknown_ref: 1080d91</item>
+        <item>@android:drawable/list_divider_holo_light</item>
+        <item>@android:drawable/list_choice_background_material</item>
+        <item>@android:drawable/list_activated_holo</item>
+        <item>@android:drawable/light_header_dither</item>
+        <item>@android:drawable/keyboard_popup_panel_background</item>
+        <item>@android:drawable/keyboard_key_feedback_more_background</item>
+        <item>@android:drawable/keyboard_key_feedback</item>
+        <item>@android:drawable/keyboard_background</item>
+        <item>@android:drawable/jog_tab_target_yellow</item>
+        <item>?unknown_ref: 1080b90</item>
+        <item>?unknown_ref: 1080faa</item>
+        <item>?unknown_ref: 1080fac</item>
+        <item>?unknown_ref: 1080fae</item>
+        <item>?unknown_ref: 1080fb0</item>
+        <item>?unknown_ref: 1080fb1</item>
+        <item>?unknown_ref: 1080fb3</item>
+        <item>?unknown_ref: 1080fb4</item>
+        <item>?unknown_ref: 1080fb5</item>
+        <item>?unknown_ref: 1080fb7</item>
+        <item>@android:drawable/switch_bg_focused_holo_light</item>
+        <item>@android:drawable/switch_bg_holo_dark</item>
+        <item>@android:drawable/switch_inner_holo_dark</item>
+        <item>@android:drawable/switch_thumb_activated_holo_dark</item>
+        <item>@android:drawable/switch_thumb_activated_holo_light</item>
+        <item>@android:drawable/switch_thumb_disabled_holo_dark</item>
+        <item>@android:drawable/switch_thumb_disabled_holo_light</item>
+        <item>@android:drawable/switch_thumb_holo_light</item>
+        <item>@android:drawable/switch_thumb_material_anim</item>
+        <item>@android:drawable/switch_thumb_pressed_holo_dark</item>
+        <item>?unknown_ref: 1080fd2</item>
+    </array>
+    <array name="DIGITAL_LEVEL_EVF_PITCHIND_H_N">
+        <item>@android:drawable/pointer_wait_26</item>
+        <item>?unknown_ref: 1080e66</item>
+        <item>?unknown_ref: 1080e64</item>
+        <item>?unknown_ref: 1080e63</item>
+        <item>?unknown_ref: 1080e61</item>
+        <item>?unknown_ref: 1080e60</item>
+        <item>?unknown_ref: 1080e5f</item>
+        <item>?unknown_ref: 1080e5d</item>
+        <item>?unknown_ref: 1080e5c</item>
+        <item>?unknown_ref: 1080e5a</item>
+        <item>?unknown_ref: 1080e58</item>
+        <item>@android:drawable/pointer_vertical_text_large_icon</item>
+        <item>@android:drawable/pointer_vertical_double_arrow_large_icon</item>
+        <item>@android:drawable/pointer_top_right_diagonal_double_arrow_large_icon</item>
+        <item>@android:drawable/pointer_top_right_diagonal_double_arrow</item>
+        <item>@android:drawable/pointer_top_left_diagonal_double_arrow_large_icon</item>
+        <item>@android:drawable/pointer_top_left_diagonal_double_arrow_large</item>
+        <item>@android:drawable/pointer_top_left_diagonal_double_arrow</item>
+        <item>@android:drawable/pointer_text_large</item>
+        <item>@android:drawable/pointer_text_icon</item>
+        <item>@android:drawable/tab_unselected_holo</item>
+        <item>@android:drawable/ic_search</item>
+        <item>@android:drawable/ic_search_api_material</item>
+        <item>@android:drawable/ic_settings_24dp</item>
+        <item>@android:drawable/ic_settings_language</item>
+        <item>@android:drawable/ic_signal_cellular</item>
+        <item>@android:drawable/ic_text_dot</item>
+        <item>@android:drawable/ic_user_secure</item>
+        <item>@android:drawable/ic_vibrate_small</item>
+        <item>@android:drawable/ic_voice_search</item>
+        <item>?unknown_ref: 1080d1f</item>
+        <item>?unknown_ref: 1080d21</item>
+        <item>?unknown_ref: 1080d23</item>
+        <item>?unknown_ref: 1080d25</item>
+        <item>?unknown_ref: 1080d27</item>
+        <item>?unknown_ref: 1080d29</item>
+        <item>?unknown_ref: 1080d2b</item>
+        <item>?unknown_ref: 1080d2e</item>
+        <item>?unknown_ref: 1080d30</item>
+        <item>?unknown_ref: 1080d33</item>
+        <item>@android:drawable/indicator_check_mark_light</item>
+    </array>
+    <array name="DIGITAL_LEVEL_EVF_ROLLIND_H">
+        <item>?unknown_ref: 1080a8b</item>
+        <item>@android:drawable/dialog_divider_horizontal_holo_dark</item>
+        <item>@android:drawable/dialog_bottom_holo_light</item>
+        <item>@android:drawable/dialog_background_material</item>
+        <item>@android:drawable/default_lock_wallpaper</item>
+        <item>@android:drawable/decor_maximize_button_light</item>
+        <item>@android:drawable/decor_close_button_light</item>
+        <item>@android:drawable/config_scrollbarTrackVertical</item>
+        <item>@android:drawable/config_scrollbarThumbVertical</item>
+        <item>@android:drawable/combobox_disabled</item>
+        <item>@android:drawable/clock_hand_minute</item>
+        <item>?unknown_ref: 1080a81</item>
+        <item>?unknown_ref: 1080a80</item>
+        <item>?unknown_ref: 1080a7f</item>
+        <item>?unknown_ref: 1080a7e</item>
+        <item>?unknown_ref: 1080a7c</item>
+        <item>?unknown_ref: 1080a7a</item>
+        <item>?unknown_ref: 1080a79</item>
+        <item>?unknown_ref: 1080a77</item>
+        <item>?unknown_ref: 1080a76</item>
+        <item>@android:drawable/sym_keyboard_num9</item>
+        <item>?unknown_ref: 1080de0</item>
+        <item>?unknown_ref: 1080de1</item>
+        <item>?unknown_ref: 1080de2</item>
+        <item>?unknown_ref: 1080de3</item>
+        <item>?unknown_ref: 1080de4</item>
+        <item>?unknown_ref: 1080de5</item>
+        <item>?unknown_ref: 1080de6</item>
+        <item>?unknown_ref: 1080de8</item>
+        <item>?unknown_ref: 1080de9</item>
+        <item>@android:drawable/notification_material_action_background</item>
+        <item>@android:drawable/notification_material_media_action_background</item>
+        <item>@android:drawable/notification_template_divider</item>
+        <item>@android:drawable/notification_template_divider_media</item>
+        <item>@android:drawable/notification_template_icon_low_bg</item>
+        <item>@android:drawable/numberpicker_down_disabled_focused</item>
+        <item>@android:drawable/numberpicker_down_disabled_focused_holo_light</item>
+        <item>@android:drawable/numberpicker_down_disabled_holo_light</item>
+        <item>@android:drawable/numberpicker_down_focused_holo_light</item>
+        <item>@android:drawable/numberpicker_down_normal_holo_dark</item>
+        <item>?unknown_ref: 1080dfe</item>
+    </array>
+    <array name="DIGITAL_LEVEL_EVF_PITCHIND_V_F">
+        <item>@android:drawable/btn_toggle_on_disabled_focused_holo_dark</item>
+        <item>?unknown_ref: 1080a65</item>
+        <item>?unknown_ref: 1080a64</item>
+        <item>?unknown_ref: 1080a61</item>
+        <item>?unknown_ref: 1080a5f</item>
+        <item>?unknown_ref: 1080a5c</item>
+        <item>?unknown_ref: 1080a5a</item>
+        <item>?unknown_ref: 1080a58</item>
+        <item>?unknown_ref: 1080a56</item>
+        <item>?unknown_ref: 1080a55</item>
+        <item>?unknown_ref: 1080a53</item>
+        <item>@android:drawable/btn_toggle_holo_dark</item>
+        <item>@android:drawable/btn_toggle</item>
+        <item>@android:drawable/btn_switch_to_on_mtrl_00011</item>
+        <item>@android:drawable/btn_switch_to_on_mtrl_00010</item>
+        <item>@android:drawable/btn_switch_to_on_mtrl_00008</item>
+        <item>@android:drawable/btn_switch_to_on_mtrl_00007</item>
+        <item>@android:drawable/btn_switch_to_on_mtrl_00005</item>
+        <item>@android:drawable/btn_switch_to_on_mtrl_00003</item>
+        <item>@android:drawable/btn_switch_to_on_mtrl_00001</item>
+        <item>?unknown_ref: 10809f0</item>
+        <item>@android:drawable/edit_query_background_selected</item>
+        <item>@android:drawable/edit_text_holo_dark</item>
+        <item>@android:drawable/emergency_icon</item>
+        <item>@android:drawable/emo_im_undecided</item>
+        <item>@android:drawable/emo_im_yelling</item>
+        <item>@android:drawable/expander_close_holo_light</item>
+        <item>@android:drawable/expander_group</item>
+        <item>@android:drawable/expander_ic_maximized</item>
+        <item>@android:drawable/expander_open_holo_light</item>
+        <item>?unknown_ref: 1080b2b</item>
+        <item>?unknown_ref: 1080b3f</item>
+        <item>?unknown_ref: 1080b40</item>
+        <item>?unknown_ref: 1080b4a</item>
+        <item>?unknown_ref: 1080b65</item>
+        <item>?unknown_ref: 1080b67</item>
+        <item>?unknown_ref: 1080b75</item>
+        <item>?unknown_ref: 1080b79</item>
+        <item>?unknown_ref: 1080b7d</item>
+        <item>?unknown_ref: 1080b81</item>
+        <item>@android:drawable/floating_popup_background_dark</item>
+    </array>
+    <array name="DIGITAL_LEVEL_EVF_PITCHIND_V_N">
+        <item>?unknown_ref: 1080a0a</item>
+        <item>?unknown_ref: 1081148</item>
+        <item>?unknown_ref: 1081146</item>
+        <item>?unknown_ref: 1081145</item>
+        <item>?unknown_ref: 1081143</item>
+        <item>?unknown_ref: 1081142</item>
+        <item>?unknown_ref: 1081140</item>
+        <item>?unknown_ref: 108113f</item>
+        <item>?unknown_ref: 108113e</item>
+        <item>?unknown_ref: 108113d</item>
+        <item>?unknown_ref: 108113b</item>
+        <item>?unknown_ref: 10809f8</item>
+        <item>?unknown_ref: 10809f7</item>
+        <item>?unknown_ref: 10809f6</item>
+        <item>?unknown_ref: 10809f4</item>
+        <item>?unknown_ref: 10809f1</item>
+        <item>?unknown_ref: 10809ee</item>
+        <item>?unknown_ref: 10809ec</item>
+        <item>?unknown_ref: 10809ea</item>
+        <item>?unknown_ref: 10809e8</item>
+        <item>@android:drawable/settings_header</item>
+        <item>@android:drawable/status_bar_closed_default_background</item>
+        <item>@android:drawable/status_bar_header_background</item>
+        <item>@android:drawable/status_bar_item_background_focus</item>
+        <item>@android:drawable/status_bar_item_background_normal</item>
+        <item>@android:drawable/status_bar_item_background_pressed</item>
+        <item>@android:drawable/status_bar_opened_default_background</item>
+        <item>@android:drawable/statusbar_background</item>
+        <item>@android:drawable/submenu_arrow</item>
+        <item>@android:drawable/switch_bg_disabled_holo_dark</item>
+        <item>?unknown_ref: 1080fbb</item>
+        <item>?unknown_ref: 1080fbd</item>
+        <item>?unknown_ref: 1080fbe</item>
+        <item>?unknown_ref: 1080fbf</item>
+        <item>?unknown_ref: 1080fc0</item>
+        <item>?unknown_ref: 1080fc2</item>
+        <item>?unknown_ref: 1080fc4</item>
+        <item>?unknown_ref: 1080fc9</item>
+        <item>?unknown_ref: 1080fcb</item>
+        <item>?unknown_ref: 1080fcc</item>
+        <item>@android:drawable/switch_thumb_watch_default_dark_anim</item>
+    </array>
+    <array name="DIGITAL_LEVEL_EVF_ROLLIND_V">
+        <item>?unknown_ref: 1080d6b</item>
+        <item>@android:drawable/jog_tab_bar_right_end_confirm_red</item>
+        <item>@android:drawable/jog_tab_bar_right_end_confirm_green</item>
+        <item>@android:drawable/jog_tab_bar_right_end_confirm_gray</item>
+        <item>@android:drawable/jog_tab_bar_left_unlock</item>
+        <item>@android:drawable/jog_tab_bar_left_end_pressed</item>
+        <item>@android:drawable/jog_tab_bar_left_end_normal</item>
+        <item>@android:drawable/jog_tab_bar_left_end_confirm_yellow</item>
+        <item>@android:drawable/jog_tab_bar_left_end_confirm_red</item>
+        <item>@android:drawable/jog_tab_bar_left_end_confirm_gray</item>
+        <item>@android:drawable/jog_dial_dimple</item>
+        <item>?unknown_ref: 1080d48</item>
+        <item>?unknown_ref: 1080d46</item>
+        <item>?unknown_ref: 1080d45</item>
+        <item>?unknown_ref: 1080d44</item>
+        <item>?unknown_ref: 1080d43</item>
+        <item>?unknown_ref: 1080d42</item>
+        <item>?unknown_ref: 1080d40</item>
+        <item>?unknown_ref: 1080d3f</item>
+        <item>?unknown_ref: 1080d3d</item>
+        <item>?unknown_ref: 1080bb8</item>
+        <item>@android:drawable/unlock_default</item>
+        <item>@android:drawable/unlock_halo</item>
+        <item>@android:drawable/unlock_wave</item>
+        <item>@android:drawable/vector_drawable_progress_bar_large</item>
+        <item>@android:drawable/vector_drawable_progress_bar_medium</item>
+        <item>@android:drawable/vpn_connected</item>
+        <item>@android:drawable/watch_switch_thumb_mtrl_14w</item>
+        <item>@android:drawable/watch_switch_thumb_mtrl_15w</item>
+        <item>@android:drawable/watch_switch_thumb_mtrl_16w</item>
+        <item>?unknown_ref: 108105f</item>
+        <item>?unknown_ref: 1081061</item>
+        <item>?unknown_ref: 1081063</item>
+        <item>?unknown_ref: 1081064</item>
+        <item>?unknown_ref: 1081065</item>
+        <item>?unknown_ref: 1081068</item>
+        <item>?unknown_ref: 108106a</item>
+        <item>?unknown_ref: 108106c</item>
+        <item>?unknown_ref: 108106e</item>
+        <item>?unknown_ref: 1081070</item>
+        <item>?unknown_ref: 1080928</item>
+    </array>
+    <array name="DIGITAL_LEVEL_ONLYROLL_PANEL_ROLLIND_H">
+        <item>?unknown_ref: 1081846</item>
+        <item>?unknown_ref: 1081866</item>
+        <item>?unknown_ref: 108185a</item>
+        <item>?unknown_ref: 1081850</item>
+        <item>?unknown_ref: 1081844</item>
+        <item>?unknown_ref: 1081838</item>
+        <item>?unknown_ref: 108182d</item>
+        <item>?unknown_ref: 1081820</item>
+        <item>?unknown_ref: 10818b9</item>
+        <item>?unknown_ref: 10818af</item>
+        <item>?unknown_ref: 10818a7</item>
+        <item>?unknown_ref: 108181e</item>
+        <item>?unknown_ref: 10818b7</item>
+        <item>?unknown_ref: 10818ad</item>
+        <item>?unknown_ref: 10818a5</item>
+        <item>?unknown_ref: 108189c</item>
+        <item>?unknown_ref: 1081893</item>
+        <item>?unknown_ref: 108188a</item>
+        <item>?unknown_ref: 1081881</item>
+        <item>?unknown_ref: 1081879</item>
+        <item>?unknown_ref: 1081847</item>
+        <item>?unknown_ref: 10818ac</item>
+        <item>?unknown_ref: 10818b5</item>
+        <item>?unknown_ref: 108181b</item>
+        <item>?unknown_ref: 1081827</item>
+        <item>?unknown_ref: 1081833</item>
+        <item>?unknown_ref: 108183e</item>
+        <item>?unknown_ref: 108184a</item>
+        <item>?unknown_ref: 1081854</item>
+        <item>?unknown_ref: 108185f</item>
+        <item>?unknown_ref: 1081842</item>
+        <item>?unknown_ref: 108184e</item>
+        <item>?unknown_ref: 1081858</item>
+        <item>?unknown_ref: 1081863</item>
+        <item>?unknown_ref: 108186d</item>
+        <item>?unknown_ref: 1081876</item>
+        <item>?unknown_ref: 108187e</item>
+        <item>?unknown_ref: 1081887</item>
+        <item>?unknown_ref: 1081890</item>
+        <item>?unknown_ref: 1081898</item>
+        <item>?unknown_ref: 1081883</item>
+    </array>
+    <array name="DIGITAL_LEVEL_ONLYROLL_PANEL_ROLLIND_V">
+        <item>?unknown_ref: 1081874</item>
+        <item>?unknown_ref: 108188e</item>
+        <item>?unknown_ref: 1081885</item>
+        <item>?unknown_ref: 108187b</item>
+        <item>?unknown_ref: 1081872</item>
+        <item>?unknown_ref: 1081869</item>
+        <item>?unknown_ref: 108185e</item>
+        <item>?unknown_ref: 1081853</item>
+        <item>?unknown_ref: 1081848</item>
+        <item>?unknown_ref: 108183c</item>
+        <item>?unknown_ref: 1081831</item>
+        <item>?unknown_ref: 1081852</item>
+        <item>?unknown_ref: 1081845</item>
+        <item>?unknown_ref: 108183a</item>
+        <item>?unknown_ref: 108182f</item>
+        <item>?unknown_ref: 1081823</item>
+        <item>?unknown_ref: 10818bb</item>
+        <item>?unknown_ref: 10818b1</item>
+        <item>?unknown_ref: 10818a9</item>
+        <item>?unknown_ref: 10818a0</item>
+        <item>?unknown_ref: 1081822</item>
+        <item>?unknown_ref: 108189a</item>
+        <item>?unknown_ref: 10818a3</item>
+        <item>?unknown_ref: 10818ab</item>
+        <item>?unknown_ref: 10818b4</item>
+        <item>?unknown_ref: 108181a</item>
+        <item>?unknown_ref: 1081826</item>
+        <item>?unknown_ref: 1081832</item>
+        <item>?unknown_ref: 108183d</item>
+        <item>?unknown_ref: 1081849</item>
+        <item>?unknown_ref: 108182a</item>
+        <item>?unknown_ref: 1081836</item>
+        <item>?unknown_ref: 1081841</item>
+        <item>?unknown_ref: 108184d</item>
+        <item>?unknown_ref: 1081857</item>
+        <item>?unknown_ref: 1081862</item>
+        <item>?unknown_ref: 108186c</item>
+        <item>?unknown_ref: 1081875</item>
+        <item>?unknown_ref: 108187d</item>
+        <item>?unknown_ref: 1081886</item>
+        <item>?unknown_ref: 1081871</item>
+    </array>
+    <array name="DIGITAL_LEVEL_ONLYROLL_EVF_ROLLIND_H">
+        <item>?unknown_ref: 1081864</item>
+        <item>?unknown_ref: 108187c</item>
+        <item>?unknown_ref: 1081873</item>
+        <item>?unknown_ref: 108186a</item>
+        <item>?unknown_ref: 1081860</item>
+        <item>?unknown_ref: 1081855</item>
+        <item>?unknown_ref: 108184b</item>
+        <item>?unknown_ref: 108183f</item>
+        <item>?unknown_ref: 1081834</item>
+        <item>?unknown_ref: 1081828</item>
+        <item>?unknown_ref: 108181c</item>
+        <item>?unknown_ref: 108183b</item>
+        <item>?unknown_ref: 1081830</item>
+        <item>?unknown_ref: 1081825</item>
+        <item>?unknown_ref: 1081819</item>
+        <item>?unknown_ref: 10818b3</item>
+        <item>?unknown_ref: 10818aa</item>
+        <item>?unknown_ref: 10818a1</item>
+        <item>?unknown_ref: 1081897</item>
+        <item>?unknown_ref: 108188f</item>
+        <item>?unknown_ref: 108185d</item>
+        <item>?unknown_ref: 108185b</item>
+        <item>?unknown_ref: 1081867</item>
+        <item>?unknown_ref: 108186f</item>
+        <item>?unknown_ref: 1081878</item>
+        <item>?unknown_ref: 1081880</item>
+        <item>?unknown_ref: 1081889</item>
+        <item>?unknown_ref: 1081892</item>
+        <item>?unknown_ref: 108189b</item>
+        <item>?unknown_ref: 10818a4</item>
+        <item>?unknown_ref: 108188c</item>
+        <item>?unknown_ref: 1081895</item>
+        <item>?unknown_ref: 108189e</item>
+        <item>?unknown_ref: 10818a6</item>
+        <item>?unknown_ref: 10818ae</item>
+        <item>?unknown_ref: 10818b8</item>
+        <item>?unknown_ref: 108181f</item>
+        <item>?unknown_ref: 108182c</item>
+        <item>?unknown_ref: 1081837</item>
+        <item>?unknown_ref: 1081843</item>
+        <item>?unknown_ref: 1081824</item>
+    </array>
+    <array name="DIGITAL_LEVEL_ONLYROLL_EVF_ROLLIND_V">
+        <item>?unknown_ref: 1081818</item>
+        <item>?unknown_ref: 1081839</item>
+        <item>?unknown_ref: 108182e</item>
+        <item>?unknown_ref: 1081821</item>
+        <item>?unknown_ref: 10818ba</item>
+        <item>?unknown_ref: 10818b0</item>
+        <item>?unknown_ref: 10818a8</item>
+        <item>?unknown_ref: 108189f</item>
+        <item>?unknown_ref: 1081896</item>
+        <item>?unknown_ref: 108188d</item>
+        <item>?unknown_ref: 1081884</item>
+        <item>?unknown_ref: 108189d</item>
+        <item>?unknown_ref: 1081894</item>
+        <item>?unknown_ref: 108188b</item>
+        <item>?unknown_ref: 1081882</item>
+        <item>?unknown_ref: 108187a</item>
+        <item>?unknown_ref: 1081870</item>
+        <item>?unknown_ref: 1081868</item>
+        <item>?unknown_ref: 108185c</item>
+        <item>?unknown_ref: 1081851</item>
+        <item>?unknown_ref: 10818b2</item>
+        <item>?unknown_ref: 10818b6</item>
+        <item>?unknown_ref: 108181d</item>
+        <item>?unknown_ref: 1081829</item>
+        <item>?unknown_ref: 1081835</item>
+        <item>?unknown_ref: 1081840</item>
+        <item>?unknown_ref: 108184c</item>
+        <item>?unknown_ref: 1081856</item>
+        <item>?unknown_ref: 1081861</item>
+        <item>?unknown_ref: 108186b</item>
+        <item>?unknown_ref: 108184f</item>
+        <item>?unknown_ref: 1081859</item>
+        <item>?unknown_ref: 1081865</item>
+        <item>?unknown_ref: 108186e</item>
+        <item>?unknown_ref: 1081877</item>
+        <item>?unknown_ref: 108187f</item>
+        <item>?unknown_ref: 1081888</item>
+        <item>?unknown_ref: 1081888</item>
+        <item>?unknown_ref: 1081899</item>
+        <item>?unknown_ref: 10818a2</item>
+        <item>?unknown_ref: 108182b</item>
+    </array>
+</resources>

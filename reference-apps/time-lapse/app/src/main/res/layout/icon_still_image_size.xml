@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sony.imaging.app.base.shooting.widget.StillImageSizeIcon xmlns:android="http://schemas.android.com/apk/res/android" xmlns:base="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/still_image_size_icon"
+    android:layout_width="70px"
+    android:layout_height="60px"
+    base:SIZE_L="0x108116b"
+    base:SIZE_M="0x1081178"
+    base:SIZE_S="0x1081171"
+    base:SIZE_VGA="0x1081201"/>

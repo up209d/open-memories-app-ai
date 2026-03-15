@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.sony.imaging.app.srctrl.menu.widget.NfcIcon
+        android:id="@+id/nw_parts_cmn_nfc_img"
+        android:layout_width="32px"
+        android:layout_height="32px"
+        android:layout_marginLeft="468px"
+        android:layout_marginTop="10px"
+        android:src="0x10810aa"/>
+</RelativeLayout>

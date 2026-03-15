@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/exposing_count_num"
+        android:layout_width="120px"
+        android:layout_height="120px"
+        android:layout_marginLeft="260px"
+        android:layout_marginTop="80px"
+        android:src="@drawable/p_16_dd_parts_lightgraffiti_countdown_30_icon"/>
+    <TextView
+        android:gravity="center"
+        android:id="@+id/exposing_guide"
+        android:layout_width="492px"
+        android:layout_height="76px"
+        android:layout_marginLeft="74px"
+        android:layout_marginTop="299px"
+        android:text="@string/STRID_FUNC_LIGHTGRAFFITI_EASYGUIDE_CREATIVE_SHOOTING_1ST"
+        style="@style/RESID_FONTSIZE_M_EDGE"/>
+    <View
+        android:id="@+id/exposing_progress_base"
+        android:background="@color/RESID_COLOR_PROGRESS_BAR_BASE"
+        android:layout_width="431px"
+        android:layout_height="24px"
+        android:layout_marginLeft="104px"
+        android:layout_marginTop="216px"/>
+    <ProgressBar
+        android:id="@+id/exposing_progress"
+        android:layout_width="427px"
+        android:layout_height="20px"
+        android:layout_marginLeft="106px"
+        android:layout_marginTop="218px"
+        android:progressDrawable="@drawable/progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"/>
+</RelativeLayout>

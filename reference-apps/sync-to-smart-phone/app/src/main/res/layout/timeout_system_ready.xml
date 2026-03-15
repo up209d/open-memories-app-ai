@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:base="http://schemas.android.com/apk/res-auto"
+    android:background="#ff000000"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/hedder"
+        android:background="0x10811c9"
+        android:layout_width="640px"
+        android:layout_height="66px"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="0px"/>
+    <com.sony.imaging.app.base.shooting.widget.AppIconView
+        android:id="@+id/app_icon"
+        android:layout_width="70px"
+        android:layout_height="55px"
+        android:layout_marginLeft="6px"
+        android:layout_marginTop="5px"/>
+    <com.sony.imaging.app.base.shooting.widget.AppNameConstantView
+        android:gravity="center"
+        android:id="@+id/menu_screen_title"
+        android:layout_width="556px"
+        android:layout_height="46px"
+        android:layout_marginLeft="2px"
+        android:layout_marginTop="10px"
+        android:layout_toRightOf="@+id/app_icon"
+        style="@style/RESID_FONTSIZE_BIG_L_EDGE_OFF"/>
+    <TextView
+        android:textColor="@color/RESID_FONTSTYLE_STD_NORMAL"
+        android:gravity="center"
+        android:id="@+id/message_text"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_width="544px"
+        android:layout_height="226px"
+        android:layout_marginLeft="48px"
+        android:layout_marginTop="68px"
+        android:text="@string/STRID_FUNC_AUTOSYNC_ERROR_NOT_CONNECT"
+        style="@style/RESID_FONTSIZE_BIG_M_EDGE_OFF"/>
+</RelativeLayout>

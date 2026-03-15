@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STRID_FUNC_BRKMASTER">Haarukka Pro</string>
+    <string name="STRID_FUNC_BRKMASTER_2L">Haarukka\nPro</string>
+    <string name="STRID_FUNC_BRKMASTER_GUIDE">Tallentaa useita kuvia suljinaika-, aukko-, tarkennus- ja salama-asetuksiin tehdyin muutoksin.</string>
+    <string name="STRID_FUNC_SSBRK">Suljinnopeuden haarukka</string>
+    <string name="STRID_FUNC_APERTUREBRK">Aukon haarukka</string>
+    <string name="STRID_FUNC_FOCUSBRK">Tarkennuksen haarukka</string>
+    <string name="STRID_FUNC_FLASHBRK">Salaman haarukka</string>
+    <string name="STRID_FUNC_SSBRK_GUIDE">Ottaa 3 kuvaa eri suljinaika-asetuksilla.</string>
+    <string name="STRID_FUNC_APERTUREBRK_GUIDE">Ottaa 3 kuvaa eri aukkoasetuksilla.</string>
+    <string name="STRID_FUNC_FOCUSBRK_GUIDE">Ottaa 3 kuvaa eri tarkennusasetuksilla.</string>
+    <string name="STRID_FUNC_FLASHBRK_GUIDE">Ottaa kuvia salamaa käyttäen ja ilman salamaa.</string>
+    <string name="STRID_FUNC_SHIFT_RANGE">Haarukointiarvo</string>
+    <string name="STRID_FUNC_SHIFT_RANGE_WIDE">Laaja</string>
+    <string name="STRID_FUNC_SHIFT_RANGE_NARROW">Suppea</string>
+    <string name="STRID_CAU_FLASH_INVALID">Salamaa ei voi laukaista.\nVarmista, että salama on valmis.</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_RETURN">Opas </string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_EXIT">Opas Poistu sovelluksesta</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_EXIT_SK">Opas Poistu sovelluksesta</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_RETURN_SK">Opas </string>
+    <string name="STRID_FOOTERGUIDE_TV_RETURN">Tv </string>
+    <string name="STRID_FOOTERGUIDE_TV_RETURN_SK">Tv </string>
+    <string name="STRID_FOOTERGUIDE_AV_RETURN">Av </string>
+    <string name="STRID_FOOTERGUIDE_AV_RETURN_SK">Av </string>
+</resources>

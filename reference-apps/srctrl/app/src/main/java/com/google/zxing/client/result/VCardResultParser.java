@@ -1,0 +1,226 @@
+package com.google.zxing.client.result;
+
+import com.google.zxing.Result;
+import com.sony.imaging.app.base.shooting.camera.MovieFormatController;
+import com.sony.imaging.app.base.shooting.camera.moviesetting.DatabaseManager;
+import java.io.ByteArrayOutputStream;
+import java.io.UnsupportedEncodingException;
+import java.nio.charset.Charset;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+/* loaded from: classes.dex */
+public final class VCardResultParser extends ResultParser {
+    private static final Pattern BEGIN_VCARD = Pattern.compile("BEGIN:VCARD", 2);
+    private static final Pattern VCARD_LIKE_DATE = Pattern.compile("\\d{4}-?\\d{2}-?\\d{2}");
+    private static final Pattern CR_LF_SPACE_TAB = Pattern.compile("\r\n[ \t]");
+    private static final Pattern NEWLINE_ESCAPE = Pattern.compile("\\\\[nN]");
+    private static final Pattern VCARD_ESCAPES = Pattern.compile("\\\\([,;\\\\])");
+    private static final Pattern EQUALS = Pattern.compile(MovieFormatController.Settings.EQUAL);
+    private static final Pattern SEMICOLON = Pattern.compile(MovieFormatController.Settings.SEMI_COLON);
+    private static final Pattern UNESCAPED_SEMICOLONS = Pattern.compile("(?<!\\\\);+");
+    private static final Pattern COMMA = Pattern.compile(",");
+    private static final Pattern SEMICOLON_OR_COMMA = Pattern.compile("[;,]");
+
+    @Override // com.google.zxing.client.result.ResultParser
+    public AddressBookParsedResult parse(Result result) {
+        String rawText = getMassagedText(result);
+        Matcher m = BEGIN_VCARD.matcher(rawText);
+        if (!m.find() || m.start() != 0) {
+            return null;
+        }
+        List<List<String>> names = matchVCardPrefixedField("FN", rawText, true, false);
+        if (names == null) {
+            names = matchVCardPrefixedField(DatabaseManager.VAL_NTSC, rawText, true, false);
+            formatNames(names);
+        }
+        List<String> nicknameString = matchSingleVCardPrefixedField("NICKNAME", rawText, true, false);
+        String[] nicknames = nicknameString == null ? null : COMMA.split(nicknameString.get(0));
+        List<List<String>> phoneNumbers = matchVCardPrefixedField("TEL", rawText, true, false);
+        List<List<String>> emails = matchVCardPrefixedField("EMAIL", rawText, true, false);
+        List<String> note = matchSingleVCardPrefixedField("NOTE", rawText, false, false);
+        List<List<String>> addresses = matchVCardPrefixedField("ADR", rawText, true, true);
+        List<String> org = matchSingleVCardPrefixedField("ORG", rawText, true, true);
+        List<String> birthday = matchSingleVCardPrefixedField("BDAY", rawText, true, false);
+        if (birthday != null && !isLikeVCardDate(birthday.get(0))) {
+            birthday = null;
+        }
+        List<String> title = matchSingleVCardPrefixedField("TITLE", rawText, true, false);
+        List<List<String>> urls = matchVCardPrefixedField("URL", rawText, true, false);
+        List<String> instantMessenger = matchSingleVCardPrefixedField("IMPP", rawText, true, false);
+        List<String> geoString = matchSingleVCardPrefixedField("GEO", rawText, true, false);
+        String[] geo = geoString == null ? null : SEMICOLON_OR_COMMA.split(geoString.get(0));
+        if (geo != null && geo.length != 2) {
+            geo = null;
+        }
+        return new AddressBookParsedResult(toPrimaryValues(names), nicknames, null, toPrimaryValues(phoneNumbers), toTypes(phoneNumbers), toPrimaryValues(emails), toTypes(emails), toPrimaryValue(instantMessenger), toPrimaryValue(note), toPrimaryValues(addresses), toTypes(addresses), toPrimaryValue(org), toPrimaryValue(birthday), toPrimaryValue(title), toPrimaryValues(urls), geo);
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    /* JADX WARN: Code restructure failed: missing block: B:85:0x012f, code lost:            r4 = r12;     */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct code enable 'Show inconsistent code' option in preferences
+    */
+    public static java.util.List<java.util.List<java.lang.String>> matchVCardPrefixedField(java.lang.CharSequence r22, java.lang.String r23, boolean r24, boolean r25) {
+        /*
+            Method dump skipped, instructions count: 484
+            To view this dump change 'Code comments level' option to 'DEBUG'
+        */
+        throw new UnsupportedOperationException("Method not decompiled: com.google.zxing.client.result.VCardResultParser.matchVCardPrefixedField(java.lang.CharSequence, java.lang.String, boolean, boolean):java.util.List");
+    }
+
+    private static String decodeQuotedPrintable(CharSequence value, String charset) {
+        char nextChar;
+        int length = value.length();
+        StringBuilder result = new StringBuilder(length);
+        ByteArrayOutputStream fragmentBuffer = new ByteArrayOutputStream();
+        int i = 0;
+        while (i < length) {
+            char c = value.charAt(i);
+            switch (c) {
+                case '\n':
+                case '\r':
+                    break;
+                case '=':
+                    if (i < length - 2 && (nextChar = value.charAt(i + 1)) != '\r' && nextChar != '\n') {
+                        char nextNextChar = value.charAt(i + 2);
+                        int firstDigit = parseHexDigit(nextChar);
+                        int secondDigit = parseHexDigit(nextNextChar);
+                        if (firstDigit >= 0 && secondDigit >= 0) {
+                            fragmentBuffer.write((firstDigit << 4) + secondDigit);
+                        }
+                        i += 2;
+                        break;
+                    }
+                    break;
+                default:
+                    maybeAppendFragment(fragmentBuffer, charset, result);
+                    result.append(c);
+                    break;
+            }
+            i++;
+        }
+        maybeAppendFragment(fragmentBuffer, charset, result);
+        return result.toString();
+    }
+
+    private static void maybeAppendFragment(ByteArrayOutputStream fragmentBuffer, String charset, StringBuilder result) {
+        String fragment;
+        if (fragmentBuffer.size() > 0) {
+            byte[] fragmentBytes = fragmentBuffer.toByteArray();
+            if (charset == null) {
+                fragment = new String(fragmentBytes, Charset.forName("UTF-8"));
+            } else {
+                try {
+                    fragment = new String(fragmentBytes, charset);
+                } catch (UnsupportedEncodingException e) {
+                    fragment = new String(fragmentBytes, Charset.forName("UTF-8"));
+                }
+            }
+            fragmentBuffer.reset();
+            result.append(fragment);
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static List<String> matchSingleVCardPrefixedField(CharSequence prefix, String rawText, boolean trim, boolean parseFieldDivider) {
+        List<List<String>> values = matchVCardPrefixedField(prefix, rawText, trim, parseFieldDivider);
+        if (values == null || values.isEmpty()) {
+            return null;
+        }
+        return values.get(0);
+    }
+
+    private static String toPrimaryValue(List<String> list) {
+        if (list == null || list.isEmpty()) {
+            return null;
+        }
+        return list.get(0);
+    }
+
+    private static String[] toPrimaryValues(Collection<List<String>> lists) {
+        if (lists == null || lists.isEmpty()) {
+            return null;
+        }
+        List<String> result = new ArrayList<>(lists.size());
+        for (List<String> list : lists) {
+            String value = list.get(0);
+            if (value != null && !value.isEmpty()) {
+                result.add(value);
+            }
+        }
+        return (String[]) result.toArray(new String[lists.size()]);
+    }
+
+    private static String[] toTypes(Collection<List<String>> lists) {
+        if (lists == null || lists.isEmpty()) {
+            return null;
+        }
+        List<String> result = new ArrayList<>(lists.size());
+        for (List<String> list : lists) {
+            String type = null;
+            int i = 1;
+            while (true) {
+                if (i >= list.size()) {
+                    break;
+                }
+                String metadatum = list.get(i);
+                int equals = metadatum.indexOf(61);
+                if (equals < 0) {
+                    type = metadatum;
+                    break;
+                }
+                if (!"TYPE".equalsIgnoreCase(metadatum.substring(0, equals))) {
+                    i++;
+                } else {
+                    type = metadatum.substring(equals + 1);
+                    break;
+                }
+            }
+            result.add(type);
+        }
+        return (String[]) result.toArray(new String[lists.size()]);
+    }
+
+    private static boolean isLikeVCardDate(CharSequence value) {
+        return value == null || VCARD_LIKE_DATE.matcher(value).matches();
+    }
+
+    private static void formatNames(Iterable<List<String>> names) {
+        int end;
+        if (names != null) {
+            for (List<String> list : names) {
+                String name = list.get(0);
+                String[] components = new String[5];
+                int start = 0;
+                int componentIndex = 0;
+                while (componentIndex < components.length - 1 && (end = name.indexOf(59, start)) >= 0) {
+                    components[componentIndex] = name.substring(start, end);
+                    componentIndex++;
+                    start = end + 1;
+                }
+                components[componentIndex] = name.substring(start);
+                StringBuilder newName = new StringBuilder(100);
+                maybeAppendComponent(components, 3, newName);
+                maybeAppendComponent(components, 1, newName);
+                maybeAppendComponent(components, 2, newName);
+                maybeAppendComponent(components, 0, newName);
+                maybeAppendComponent(components, 4, newName);
+                list.set(0, newName.toString().trim());
+            }
+        }
+    }
+
+    private static void maybeAppendComponent(String[] components, int i, StringBuilder newName) {
+        if (components[i] != null && !components[i].isEmpty()) {
+            if (newName.length() > 0) {
+                newName.append(' ');
+            }
+            newName.append(components[i]);
+        }
+    }
+}

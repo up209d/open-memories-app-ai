@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/state_list_create_btn"
+    android:layout_width="356px"
+    android:layout_height="56px">
+    <TextView
+        android:textColor="@color/RESID_FONTSTYLE_CMN_WHITE_NO_SKIN"
+        android:gravity="center"
+        android:id="@+id/footer"
+        android:layout_width="344px"
+        android:layout_height="46px"
+        android:layout_marginLeft="62px"
+        android:layout_marginTop="7px"
+        android:text="@string/STRID_FUNC_OPTICAL_COMPENSATION_PROFILE_CREATE"
+        style="@style/RESID_FONTSIZE_BIG_L_EDGE_ON"/>
+</LinearLayout>

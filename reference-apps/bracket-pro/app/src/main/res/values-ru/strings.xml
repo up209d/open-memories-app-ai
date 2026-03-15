@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STRID_FUNC_BRKMASTER">Профессион. брекетинг</string>
+    <string name="STRID_FUNC_BRKMASTER_2L">Профессион.\nбрекетинг</string>
+    <string name="STRID_FUNC_BRKMASTER_GUIDE">Будут записаны несколько изображений с изменениями в выдержке затвора, диафрагме, фокусе, настройках вспышки.</string>
+    <string name="STRID_FUNC_SSBRK">Брекетинг Выдержка затвора</string>
+    <string name="STRID_FUNC_APERTUREBRK">Брекетинг Диафрагма</string>
+    <string name="STRID_FUNC_FOCUSBRK">Брекетинг Фокус</string>
+    <string name="STRID_FUNC_FLASHBRK">Брекетинг Вспышка</string>
+    <string name="STRID_FUNC_SSBRK_GUIDE">Снимает 3 кадра с разной выдержкой затвора.</string>
+    <string name="STRID_FUNC_APERTUREBRK_GUIDE">Снимает 3 кадра с разными диафрагмами.</string>
+    <string name="STRID_FUNC_FOCUSBRK_GUIDE">Снимает 3 кадра с разным расположением фокуса.</string>
+    <string name="STRID_FUNC_FLASHBRK_GUIDE">Снимает изображения с вспышкой и без нее.</string>
+    <string name="STRID_FUNC_SHIFT_RANGE">Значение Брекетинга</string>
+    <string name="STRID_FUNC_SHIFT_RANGE_WIDE">Широкий</string>
+    <string name="STRID_FUNC_SHIFT_RANGE_NARROW">Узкий</string>
+    <string name="STRID_CAU_FLASH_INVALID">Вспышка не может сработать.\nУбедитесь, что вспышка готова\nк срабатыванию.</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_RETURN">Справочник </string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_EXIT">Справочник Выход из приложения</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_EXIT_SK">Справочник Выход из приложения</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_RETURN_SK">Справочник </string>
+    <string name="STRID_FOOTERGUIDE_TV_RETURN">Tv </string>
+    <string name="STRID_FOOTERGUIDE_TV_RETURN_SK">Tv </string>
+    <string name="STRID_FOOTERGUIDE_AV_RETURN">Av </string>
+    <string name="STRID_FOOTERGUIDE_AV_RETURN_SK">Av </string>
+</resources>

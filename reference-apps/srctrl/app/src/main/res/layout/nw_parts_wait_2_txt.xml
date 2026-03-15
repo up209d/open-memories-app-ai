@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:textColor="@color/RESID_FONTSTYLE_RHG_CONTENTS"
+        android:id="@+id/nw_parts_wait_2_txt"
+        android:layout_width="600px"
+        android:layout_height="46px"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="188px"
+        layout="@layout/nw_parts_wait_special"/>
+</RelativeLayout>

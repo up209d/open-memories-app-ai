@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STRID_AMC_STR_01176">Sedang memproses...</string>
+    <string name="STRID_AMC_STR_06084">Sedang menyambungkan...</string>
+    <string name="STRID_AMC_STR_06546">Masuk </string>
+    <string name="STRID_CAU_CANT_DISPLAY_EE_DURING_MOVIE_REC">Tidak dapat menampilkan Lihat Hidup pada monitor ketika syuting film.</string>
+    <string name="STRID_CAU_FUNC_INVALID_FOR_THIS_APP_AND_CAMERA">Fungsi dalam aplikasi ini tidak didukung di perangkat ini.</string>
+    <string name="STRID_CAU_FUNC_INVALID_FOR_THIS_CAMERA">Fungsi tidak didukung di perangkat ini.</string>
+    <string name="STRID_CAU_MOVIE_INVALID_FOR_THIS_APP_AND_CAMERA">Mode memotret film dari aplikasi ini tidak didukung di perangkat ini.</string>
+    <string name="STRID_CAU_PREV_MS_ERROR_ML">Masukkan ulang kartu memori\nyang digunakan.</string>
+    <string name="STRID_CMN_MSG_UNFORESEEN_ERROR">Galat yang takterduga telah terjadi.</string>
+    <string name="STRID_CMN_PASSWORD">Password</string>
+    <string name="STRID_CMN_SSID">SSID</string>
+    <string name="STRID_CMN_WIFI_DEVICENAME_DSLR">Nama Perangkat</string>
+    <string name="STRID_FUNC_EZREMOTE">Kontrol Jarak Jauh Pintar</string>
+    <string name="STRID_FUNC_EZREMOTE_2L">Kontrol Jarak\nJauh Pintar</string>
+    <string name="STRID_FUNC_EZREMOTE_EMBEDDED">Jarak Jauh Pintar Tertanam</string>
+    <string name="STRID_FUNC_EZREMOTE_EMBEDDED_2L">Jarak Jauh Pintar\nTertanam</string>
+    <string name="STRID_FUNC_EZREMOTE_GETTING_PICTURE">Sedang mendapatkan data pemotretan...</string>
+    <string name="STRID_FUNC_EZREMOTE_GET_PICTURE_ERROR">Gagal untuk mendapatkan data pemotretan.</string>
+    <string name="STRID_FUNC_EZREMOTE_GUIDE">Anda dapat memotret gambar diam dengan mengendalikan perangkat secara jarak jauh menggunakan smartphone kompatibel, dll.</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_ENTER_HELP">Masuk Bantuan</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_HELP_FOR_SK">Bantuan</string>
+    <string name="STRID_FUNC_NETWORK_SETTINGS_MSG_WIFI_STANDBY">Wi-Fi Siaga...</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_ERROR_SWKEY_PIN_DSLR" />
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_CHANGEPW_ONE_DSLR">Hanya 1 perangkat dapat disambung\nsekaligus. Apakah Anda ingin\nmengakhiri sambungan saat ini\ndan memulai yang baru?</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_INPUT_DSLR">Silahkan masukkan kode PIN yang\nmenghubungkan perangkat\nke perangkat.</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_PBCREQ_DSLR">Mmperbolehkn smbungn dr perangkt?</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_PBC_ERROR_DSLR">Otentikasi dan sambungan\nWi-Fi Direct gagal.</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_PIN_OUTPUT_DSLR">Silahkan masukkan kode PIN\ndalam perangkat sambungan\ndalam waktu 2 menit.</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_TIMEOUT_DSLR">Tidak dapat tersambung karena terhenti.</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_WAITING2">Operasikan smartphone utk mnymbungkn\nke perangkat ini melalui Wi-Fi.</string>
+    <string name="STRID_FUNC_SRPLUS_GUIDE">Smartphone atau tablet dapat digunakan sebagai kontrol jarak jauh.\nPengaturan seperti tingkap dan kecepatan rana dapat diubah sesuai keinginan Anda.</string>
+    <string name="STRID_FUNC_SRPLUS_INVALID_OPERATION">Operasi ini tidak valid.</string>
+    <string name="STRID_FUNC_SRPLUS_IN_TOUCH_AF_MODE">Sekarang di operasi jarak jauh dengan mode AF sentuh.\nTekan tombol rana setengah kemudian melepaskannya untuk membatalkan.</string>
+    <string name="STRID_FUNC_SRPLUS_UNDER_REMOTE_CONTROL">Sekarang di operasi jarak jauh.</string>
+    <string name="STRID_FUNC_SRPLUS_UNDER_REMOTE_CONTROL2">Sekarang di operasi jarak jauh.\nTidak dapat beroperasi dengan\nperangkat ini.</string>
+    <string name="STRID_INFO_PIN_CODE">Kode PIN</string>
+    <string name="STRID_MSG_NO_MEMCARD">Masukkan kartu memori.</string>
+    <string name="STRID_FUNC_CONTROLWITHSMARTPHONE_MSG_CONTROLLED">Pengendalian dengan smartphone...\nAnda tdk dpt mngprskn prangkt ini scr lgsg.</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_GOTO_QRCODE">Tampilkan QR Code Keluar</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_GOTO_PASS">Sambung dengan password Keluar</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_GOTO_QRCODE_NEX">Tampilkan QR Code Keluar</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_GOTO_PASS_NEX">Sambung dengan password Keluar</string>
+    <string name="STRID_MSG_WIFI_CONNECT_QRCODE">Operasikan smartphone\nuntuk memindai QR Code\ndg PlayMemories Mobile.</string>
+</resources>

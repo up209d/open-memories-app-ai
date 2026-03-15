@@ -1,0 +1,1199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="group" format="string">
+    </attr>
+    <attr name="watch_target" format="reference">
+    </attr>
+    <attr name="voffset" format="dimension">
+    </attr>
+    <attr name="hoffset" format="dimension">
+    </attr>
+    <attr name="priority_id" format="reference">
+    </attr>
+    <attr name="style" format="reference">
+    </attr>
+    <attr name="RESID_FONTSIZE_S" format="reference">
+    </attr>
+    <attr name="RESID_FONTSIZE_S_EDGE" format="reference">
+    </attr>
+    <attr name="RESID_FONTSIZE_M" format="reference">
+    </attr>
+    <attr name="RESID_FONTSIZE_M_EDGE" format="reference">
+    </attr>
+    <attr name="RESID_FONTSIZE_L" format="reference">
+    </attr>
+    <attr name="RESID_FONTSIZE_L_EDGE" format="reference">
+    </attr>
+    <attr name="RESID_FONTSIZE_REC_BASIC_PANEL_EDGE" format="reference">
+    </attr>
+    <attr name="RESID_FONTSIZE_REC_EXP_PANEL_EDGE" format="reference">
+    </attr>
+    <attr name="RESID_FONTSIZE_MOVIE_RECTIME_EXP_PANEL_EDGE" format="reference">
+    </attr>
+    <attr name="RESID_FONTSIZE_REC_BASIC_EVF_EDGE" format="reference">
+    </attr>
+    <attr name="RESID_FONTSIZE_REC_EXP_EVF_EDGE" format="reference">
+    </attr>
+    <attr name="RESID_FONTSIZE_MOVIE_RECTIME_EVF_EDGE" format="reference">
+    </attr>
+    <attr name="RESID_FONTSIZE_REC_BASIC_PANEL_BIG_CHAR" format="reference">
+    </attr>
+    <attr name="RESID_FONTSIZE_REC_EXP_PANEL_BIG_CHAR_EDGE" format="reference">
+    </attr>
+    <attr name="RESID_FONTSIZE_REC_CLASSIC_EDGE" format="reference">
+    </attr>
+    <attr name="RESID_FONTSIZE_PLAY_VIEW_INFO_EDGE" format="reference">
+    </attr>
+    <attr name="RESID_FONTSIZE_PLAY_BASIC_EDGE" format="reference">
+    </attr>
+    <attr name="RESID_FONTSIZE_PLAY_IMG_NUM" format="reference">
+    </attr>
+    <attr name="RESID_FONTSIZE_PLAY_HISTOGRAM_EDGE" format="reference">
+    </attr>
+    <attr name="RESID_FONTSIZE_REC_GRAPHICAL_PANEL_EDGE" format="reference">
+    </attr>
+    <attr name="RESID_FONTSIZE_PLAY_VIEW_INFO_FILENAME_EDGE" format="reference">
+    </attr>
+    <attr name="RESID_FONTSIZE_STD_L_EDGE_ON" format="reference">
+    </attr>
+    <attr name="RESID_FONTSIZE_STD_M_EDGE_ON" format="reference">
+    </attr>
+    <attr name="RESID_FONTSIZE_STD_S_EDGE_ON" format="reference">
+    </attr>
+    <attr name="RESID_FONTSIZE_STD_L_EDGE_OFF" format="reference">
+    </attr>
+    <attr name="RESID_FONTSIZE_STD_M_EDGE_OFF" format="reference">
+    </attr>
+    <attr name="RESID_FONTSIZE_STD_S_EDGE_OFF" format="reference">
+    </attr>
+    <attr name="RESID_FONTSIZE_SP_PLAY_INFO" format="reference">
+    </attr>
+    <attr name="RESID_FONTSIZE_SP_REC_BASE_INFO" format="reference">
+    </attr>
+    <attr name="RESID_FONTSIZE_SP_REC_LV_MOVIE_TIME" format="reference">
+    </attr>
+    <attr name="RESID_FONTSIZE_SP_REC_LV_AV_TV" format="reference">
+    </attr>
+    <attr name="RESID_FONTSIZE_SP_REC_LV_ISO" format="reference">
+    </attr>
+    <attr name="RESID_FONTSIZE_SP_REC_LV_EV" format="reference">
+    </attr>
+    <attr name="RESID_FONTSIZE_SP_REC_BASE_INFO_EVF" format="reference">
+    </attr>
+    <attr name="RESID_FONTSIZE_SP_REC_LV_MOVIE_TIME_EVF" format="reference">
+    </attr>
+    <attr name="RESID_FONTSIZE_SP_REC_LV_AV_TV_EVF" format="reference">
+    </attr>
+    <attr name="RESID_FONTSIZE_SP_REC_LV_ISO_EVF" format="reference">
+    </attr>
+    <attr name="RESID_FONTSIZE_SP_REC_CL_AVTV" format="reference">
+    </attr>
+    <attr name="RESID_FONTSIZE_SP_REC_CL_ISO" format="reference">
+    </attr>
+    <attr name="RESID_FONTSIZE_SP_REC_MR_INFO" format="reference">
+    </attr>
+    <attr name="RESID_FONTSIZE_SP_REC_QN_UPPER" format="reference">
+    </attr>
+    <attr name="RESID_FONTSIZE_SP_REC_QN_ISO" format="reference">
+    </attr>
+    <attr name="RESID_FONTSIZE_SP_REC_QN_EV" format="reference">
+    </attr>
+    <attr name="RESID_FONTSIZE_U_L" format="reference">
+    </attr>
+    <attr name="RESID_FONTSIZE_U_M" format="reference">
+    </attr>
+    <attr name="RESID_FONTSIZE_U_S" format="reference">
+    </attr>
+    <attr name="RESID_FONTSIZE_BIG_L_EDGE_OFF" format="reference">
+    </attr>
+    <attr name="RESID_FONTSIZE_BIG_M_EDGE_OFF" format="reference">
+    </attr>
+    <attr name="RESID_FONTSIZE_BIG_S_EDGE_OFF" format="reference">
+    </attr>
+    <attr name="RESID_FONTSIZE_BIG_L_EDGE_ON" format="reference">
+    </attr>
+    <attr name="RESID_FONTSIZE_BIG_M_EDGE_ON" format="reference">
+    </attr>
+    <attr name="RESID_FONTSIZE_BIG_S_EDGE_ON" format="reference">
+    </attr>
+    <attr name="RESID_FONTSIZE_SP_PLAY_CALENDAR_YEAR" format="reference">
+    </attr>
+    <attr name="RESID_FONTSIZE_SP_GPS_DATE" format="reference">
+    </attr>
+    <attr name="footer_guide" format="reference">
+    </attr>
+    <attr name="play_footer_guide" format="reference">
+    </attr>
+    <attr name="play_histo_legacy_emt_footer_guide" format="reference">
+    </attr>
+    <attr name="menu_footer_guide" format="reference">
+    </attr>
+    <attr name="transparent_footer_guide" format="reference">
+    </attr>
+    <attr name="focus_adjustment_footer_guide" format="reference">
+    </attr>
+    <attr name="guide_text_style" format="reference">
+    </attr>
+    <attr name="guide_text_marginLeft" format="dimension">
+    </attr>
+    <attr name="guide_text_marginTop" format="dimension">
+    </attr>
+    <attr name="guide_text_width" format="dimension">
+    </attr>
+    <attr name="guide_text_height" format="dimension">
+    </attr>
+    <attr name="guide_text_string" format="reference">
+    </attr>
+    <attr name="guide_text_p1" format="reference">
+    </attr>
+    <attr name="guide_text_emt" format="reference">
+    </attr>
+    <attr name="color" format="color">
+    </attr>
+    <attr name="insensitiveHeight" format="dimension">
+    </attr>
+    <attr name="beep_timing" format="integer">
+    </attr>
+    <attr name="center_beep_id" format="string">
+    </attr>
+    <attr name="upper_beep_id" format="string">
+    </attr>
+    <attr name="lower_beep_id" format="string">
+    </attr>
+    <attr name="imagewindow_item_width" format="dimension">
+    </attr>
+    <attr name="imagewindow_item_height" format="dimension">
+    </attr>
+    <attr name="imagewindow_item_marginLeft" format="dimension">
+    </attr>
+    <attr name="imagewindow_item_marginTop" format="dimension">
+    </attr>
+    <attr name="imagewindow_frame_width" format="dimension">
+    </attr>
+    <attr name="imagewindow_frame_height" format="dimension">
+    </attr>
+    <attr name="imagewindow_frame_marginLeft" format="dimension">
+    </attr>
+    <attr name="imagewindow_frame_marginTop" format="dimension">
+    </attr>
+    <attr name="dWidth" format="dimension">
+    </attr>
+    <attr name="dHeight" format="dimension">
+    </attr>
+    <attr name="tWidth" format="dimension">
+    </attr>
+    <attr name="tHeight" format="dimension">
+    </attr>
+    <attr name="tAlignLeft" format="dimension">
+    </attr>
+    <attr name="request_notification" format="boolean">
+    </attr>
+    <attr name="iso_text_width" format="dimension">
+    </attr>
+    <attr name="iso_text_height" format="dimension">
+    </attr>
+    <attr name="iso_text_marginLeft" format="dimension">
+    </attr>
+    <attr name="iso_text_marginTop" format="dimension">
+    </attr>
+    <attr name="iso_icon_vertical_offset" format="dimension">
+    </attr>
+    <attr name="iso_icon_vertical_top_offset" format="dimension">
+    </attr>
+    <attr name="iso_icon_vertical_bottom_offset" format="dimension">
+    </attr>
+    <attr name="iso_icon_width" format="dimension">
+    </attr>
+    <attr name="iso_icon_height" format="dimension">
+    </attr>
+    <attr name="iso_icon_marginLeft" format="dimension">
+    </attr>
+    <attr name="iso_icon_marginTop" format="dimension">
+    </attr>
+    <attr name="upper_line_x_offset" format="dimension">
+    </attr>
+    <attr name="upper_line_y_offset" format="dimension">
+    </attr>
+    <attr name="lower_line_x_offset" format="dimension">
+    </attr>
+    <attr name="lower_line_y_offset" format="dimension">
+    </attr>
+    <attr name="line_2digits_w" format="dimension">
+    </attr>
+    <attr name="line_2digits_h" format="dimension">
+    </attr>
+    <attr name="line_3digits_w" format="dimension">
+    </attr>
+    <attr name="line_3digits_h" format="dimension">
+    </attr>
+    <attr name="ec_text_marginLeft" format="dimension">
+    </attr>
+    <attr name="ec_text_marginTop" format="dimension">
+    </attr>
+    <attr name="ec_text_width" format="dimension">
+    </attr>
+    <attr name="ec_text_height" format="dimension">
+    </attr>
+    <attr name="ec_icon_marginLeft" format="dimension">
+    </attr>
+    <attr name="ec_icon_marginTop" format="dimension">
+    </attr>
+    <attr name="ec_icon_width" format="dimension">
+    </attr>
+    <attr name="ec_icon_height" format="dimension">
+    </attr>
+    <attr name="fc_text_marginLeft" format="dimension">
+    </attr>
+    <attr name="fc_text_marginTop" format="dimension">
+    </attr>
+    <attr name="fc_text_width" format="dimension">
+    </attr>
+    <attr name="fc_text_height" format="dimension">
+    </attr>
+    <attr name="fc_icon_marginLeft" format="dimension">
+    </attr>
+    <attr name="fc_icon_marginTop" format="dimension">
+    </attr>
+    <attr name="fc_icon_width" format="dimension">
+    </attr>
+    <attr name="fc_icon_height" format="dimension">
+    </attr>
+    <attr name="wb_icon_width" format="dimension">
+    </attr>
+    <attr name="wb_icon_height" format="dimension">
+    </attr>
+    <attr name="wb_icon_marginLeft" format="dimension">
+    </attr>
+    <attr name="wb_icon_marginTop" format="dimension">
+    </attr>
+    <attr name="wb_text_balance_width" format="dimension">
+    </attr>
+    <attr name="wb_text_balance_height" format="dimension">
+    </attr>
+    <attr name="wb_text_balance_marginLeft" format="dimension">
+    </attr>
+    <attr name="wb_text_balance_marginTop" format="dimension">
+    </attr>
+    <attr name="wb_text_color_width" format="dimension">
+    </attr>
+    <attr name="wb_text_color_height" format="dimension">
+    </attr>
+    <attr name="wb_text_color_marginLeft" format="dimension">
+    </attr>
+    <attr name="wb_text_color_marginTop" format="dimension">
+    </attr>
+    <attr name="chart" format="string">
+    </attr>
+    <attr name="knob" format="string">
+    </attr>
+    <attr name="arrow_top" format="reference">
+    </attr>
+    <attr name="arrow_bottom" format="reference">
+    </attr>
+    <attr name="arrow_left" format="reference">
+    </attr>
+    <attr name="arrow_right" format="reference">
+    </attr>
+    <attr name="folderdate_icon_width" format="dimension">
+    </attr>
+    <attr name="folderdate_icon_height" format="dimension">
+    </attr>
+    <attr name="folderdate_icon_marginLeft" format="dimension">
+    </attr>
+    <attr name="folderdate_icon_marginTop" format="dimension">
+    </attr>
+    <attr name="date_text_width" format="dimension">
+    </attr>
+    <attr name="date_text_height" format="dimension">
+    </attr>
+    <attr name="date_text_marginLeft" format="dimension">
+    </attr>
+    <attr name="date_text_marginTop" format="dimension">
+    </attr>
+    <attr name="foldername_text_width" format="dimension">
+    </attr>
+    <attr name="foldername_text_height" format="dimension">
+    </attr>
+    <attr name="foldername_text_marginLeft" format="dimension">
+    </attr>
+    <attr name="foldername_text_marginTop" format="dimension">
+    </attr>
+    <attr name="filename_text_width" format="dimension">
+    </attr>
+    <attr name="filename_text_height" format="dimension">
+    </attr>
+    <attr name="filename_text_marginLeft" format="dimension">
+    </attr>
+    <attr name="filename_text_marginTop" format="dimension">
+    </attr>
+    <attr name="dro_hdr_icon_width" format="dimension">
+    </attr>
+    <attr name="dro_hdr_icon_height" format="dimension">
+    </attr>
+    <attr name="dro_hdr_icon_marginLeft" format="dimension">
+    </attr>
+    <attr name="dro_hdr_icon_marginTop" format="dimension">
+    </attr>
+    <attr name="dro_hdr_text_width" format="dimension">
+    </attr>
+    <attr name="dro_hdr_text_height" format="dimension">
+    </attr>
+    <attr name="dro_hdr_text_marginLeft" format="dimension">
+    </attr>
+    <attr name="dro_hdr_text_marginTop" format="dimension">
+    </attr>
+    <attr name="dro_hdr_only_err_display" format="boolean">
+    </attr>
+    <attr name="dro_hdr_dr" format="reference">
+    </attr>
+    <attr name="dro_hdr_dro" format="reference">
+    </attr>
+    <attr name="dro_hdr_hdr" format="reference">
+    </attr>
+    <attr name="dro_hdr_hdr_err" format="reference">
+    </attr>
+    <attr name="pic_effect_only_err_display" format="boolean">
+    </attr>
+    <attr name="pe_err_hdr_l" format="reference">
+    </attr>
+    <attr name="pe_err_hdr_m" format="reference">
+    </attr>
+    <attr name="pe_err_hdr_h" format="reference">
+    </attr>
+    <attr name="pe_err_rich_mono" format="reference">
+    </attr>
+    <attr name="pe_pop_color" format="reference">
+    </attr>
+    <attr name="pe_pos_color" format="reference">
+    </attr>
+    <attr name="pe_pos_mono" format="reference">
+    </attr>
+    <attr name="pe_retro" format="reference">
+    </attr>
+    <attr name="pe_soft_highkey" format="reference">
+    </attr>
+    <attr name="pe_part_red" format="reference">
+    </attr>
+    <attr name="pe_part_green" format="reference">
+    </attr>
+    <attr name="pe_part_blue" format="reference">
+    </attr>
+    <attr name="pe_part_yellow" format="reference">
+    </attr>
+    <attr name="pe_high_mono" format="reference">
+    </attr>
+    <attr name="pe_toy_normal" format="reference">
+    </attr>
+    <attr name="pe_toy_cool" format="reference">
+    </attr>
+    <attr name="pe_toy_warm" format="reference">
+    </attr>
+    <attr name="pe_toy_green" format="reference">
+    </attr>
+    <attr name="pe_toy_magenta" format="reference">
+    </attr>
+    <attr name="pe_softfocus_l" format="reference">
+    </attr>
+    <attr name="pe_softfocus_m" format="reference">
+    </attr>
+    <attr name="pe_softfocus_h" format="reference">
+    </attr>
+    <attr name="pe_mini_auto" format="reference">
+    </attr>
+    <attr name="pe_mini_up" format="reference">
+    </attr>
+    <attr name="pe_mini_horizontal" format="reference">
+    </attr>
+    <attr name="pe_mini_bottom" format="reference">
+    </attr>
+    <attr name="pe_mini_left" format="reference">
+    </attr>
+    <attr name="pe_mini_vertical" format="reference">
+    </attr>
+    <attr name="pe_mini_right" format="reference">
+    </attr>
+    <attr name="pe_hdr_l" format="reference">
+    </attr>
+    <attr name="pe_hdr_m" format="reference">
+    </attr>
+    <attr name="pe_hdr_h" format="reference">
+    </attr>
+    <attr name="pe_rich_mono" format="reference">
+    </attr>
+    <attr name="pe_water_color" format="reference">
+    </attr>
+    <attr name="pe_illust_l" format="reference">
+    </attr>
+    <attr name="pe_illust_m" format="reference">
+    </attr>
+    <attr name="pe_illust_h" format="reference">
+    </attr>
+    <attr name="toucharea_ignore_up_after_scoll" format="boolean">
+    </attr>
+    <attr name="DROHDRoff" format="reference">
+    </attr>
+    <attr name="DROAuto" format="reference">
+    </attr>
+    <attr name="DROLv1" format="reference">
+    </attr>
+    <attr name="DROLv2" format="reference">
+    </attr>
+    <attr name="DROLv3" format="reference">
+    </attr>
+    <attr name="DROLv4" format="reference">
+    </attr>
+    <attr name="DROLv5" format="reference">
+    </attr>
+    <attr name="HDRAuto" format="reference">
+    </attr>
+    <attr name="HDREv1" format="reference">
+    </attr>
+    <attr name="HDREv2" format="reference">
+    </attr>
+    <attr name="HDREv3" format="reference">
+    </attr>
+    <attr name="HDREv4" format="reference">
+    </attr>
+    <attr name="HDREv5" format="reference">
+    </attr>
+    <attr name="HDREv6" format="reference">
+    </attr>
+    <attr name="icon" format="reference">
+    </attr>
+    <attr name="af_a" format="reference">
+    </attr>
+    <attr name="af_s" format="reference">
+    </attr>
+    <attr name="af_c" format="reference">
+    </attr>
+    <attr name="mf" format="reference">
+    </attr>
+    <attr name="dmf" format="reference">
+    </attr>
+    <attr name="multi" format="reference">
+    </attr>
+    <attr name="centerweighted" format="reference">
+    </attr>
+    <attr name="flexspot" format="reference">
+    </attr>
+    <attr name="wide" format="reference">
+    </attr>
+    <attr name="fixcenter_15" format="reference">
+    </attr>
+    <attr name="fixcenter_19" format="reference">
+    </attr>
+    <attr name="local_15" format="reference">
+    </attr>
+    <attr name="local_19" format="reference">
+    </attr>
+    <attr name="MULTI" format="reference">
+    </attr>
+    <attr name="CENTRAL" format="reference">
+    </attr>
+    <attr name="SPOT" format="reference">
+    </attr>
+    <attr name="scaleHeight" format="float">
+    </attr>
+    <attr name="grid_marginLeft" format="dimension">
+    </attr>
+    <attr name="grid_marginTop" format="dimension">
+    </attr>
+    <attr name="grid_width" format="dimension">
+    </attr>
+    <attr name="grid_height" format="dimension">
+    </attr>
+    <attr name="groupBar_marginLeft" format="dimension">
+    </attr>
+    <attr name="groupBar_marginTop" format="dimension">
+    </attr>
+    <attr name="groupBar_width" format="dimension">
+    </attr>
+    <attr name="groupBar_height" format="dimension">
+    </attr>
+    <attr name="groupBar_center_height" format="dimension">
+    </attr>
+    <attr name="groupBar_beep_timing" format="integer">
+    </attr>
+    <attr name="groupBar_center_beep_id" format="string">
+    </attr>
+    <attr name="groupBar_upper_beep_id" format="string">
+    </attr>
+    <attr name="groupBar_lower_beep_id" format="string">
+    </attr>
+    <attr name="columnCount" format="integer">
+    </attr>
+    <attr name="rowCount" format="integer">
+    </attr>
+    <attr name="line_gap" format="dimension">
+    </attr>
+    <attr name="column_gap" format="dimension">
+    </attr>
+    <attr name="selectorAsset" format="reference">
+    </attr>
+    <attr name="nocard" format="reference">
+    </attr>
+    <attr name="memorycard" format="reference">
+    </attr>
+    <attr name="text_folderName_marginLeft" format="dimension">
+    </attr>
+    <attr name="text_folderName_marginTop" format="dimension">
+    </attr>
+    <attr name="text_folderName_width" format="dimension">
+    </attr>
+    <attr name="text_folderName_height" format="dimension">
+    </attr>
+    <attr name="text_fileName_marginLeft" format="dimension">
+    </attr>
+    <attr name="text_fileName_marginTop" format="dimension">
+    </attr>
+    <attr name="text_fileName_width" format="dimension">
+    </attr>
+    <attr name="text_fileName_height" format="dimension">
+    </attr>
+    <attr name="show_only_directoryNumber" format="boolean">
+    </attr>
+    <attr name="graytl" format="reference">
+    </attr>
+    <attr name="graytr" format="reference">
+    </attr>
+    <attr name="graybl" format="reference">
+    </attr>
+    <attr name="graybr" format="reference">
+    </attr>
+    <attr name="orgtl" format="reference">
+    </attr>
+    <attr name="orgtr" format="reference">
+    </attr>
+    <attr name="orgbl" format="reference">
+    </attr>
+    <attr name="orgbr" format="reference">
+    </attr>
+    <attr name="greentl" format="reference">
+    </attr>
+    <attr name="greentr" format="reference">
+    </attr>
+    <attr name="greenbl" format="reference">
+    </attr>
+    <attr name="greenbr" format="reference">
+    </attr>
+    <attr name="grayCenterTop" format="reference">
+    </attr>
+    <attr name="grayCenterLeft" format="reference">
+    </attr>
+    <attr name="grayCenterRight" format="reference">
+    </attr>
+    <attr name="grayCenterBottom" format="reference">
+    </attr>
+    <attr name="greenCenterTop" format="reference">
+    </attr>
+    <attr name="greenCenterLeft" format="reference">
+    </attr>
+    <attr name="greenCenterRight" format="reference">
+    </attr>
+    <attr name="greenCenterBottom" format="reference">
+    </attr>
+    <attr name="frameWidth" format="dimension">
+    </attr>
+    <attr name="frameHeight" format="dimension">
+    </attr>
+    <attr name="gray" format="reference">
+    </attr>
+    <attr name="gray_movie" format="reference">
+    </attr>
+    <attr name="gray_vga" format="reference">
+    </attr>
+    <attr name="black" format="reference">
+    </attr>
+    <attr name="black_no_divide" format="reference">
+    </attr>
+    <attr name="black_movie" format="reference">
+    </attr>
+    <attr name="black_vga" format="reference">
+    </attr>
+    <attr name="green" format="reference">
+    </attr>
+    <attr name="green_movie" format="reference">
+    </attr>
+    <attr name="green_vga" format="reference">
+    </attr>
+    <attr name="green_vga_divide" format="reference">
+    </attr>
+    <attr name="white" format="reference">
+    </attr>
+    <attr name="white_movie" format="reference">
+    </attr>
+    <attr name="white_vga" format="reference">
+    </attr>
+    <attr name="org" format="reference">
+    </attr>
+    <attr name="org_movie" format="reference">
+    </attr>
+    <attr name="org_vga" format="reference">
+    </attr>
+    <attr name="imagetype" format="reference">
+    </attr>
+    <attr name="string" format="string">
+    </attr>
+    <attr name="heat" format="reference">
+    </attr>
+    <attr name="heat_finder" format="reference">
+    </attr>
+    <attr name="heat_finder_down" format="reference">
+    </attr>
+    <attr name="SIZE_L" format="reference">
+    </attr>
+    <attr name="SIZE_M" format="reference">
+    </attr>
+    <attr name="SIZE_S" format="reference">
+    </attr>
+    <attr name="SIZE_VGA" format="reference">
+    </attr>
+    <attr name="ASP_3_2" format="reference">
+    </attr>
+    <attr name="ASP_16_9" format="reference">
+    </attr>
+    <attr name="ASP_4_3" format="reference">
+    </attr>
+    <attr name="ASP_1_1" format="reference">
+    </attr>
+    <attr name="panorama" format="reference">
+    </attr>
+    <attr name="RAW" format="reference">
+    </attr>
+    <attr name="RAW_JPEG" format="reference">
+    </attr>
+    <attr name="RAW_UNCOMPRESS" format="reference">
+    </attr>
+    <attr name="RAW_UNCOMPRESS_JPEG" format="reference">
+    </attr>
+    <attr name="Fine" format="reference">
+    </attr>
+    <attr name="Standard" format="reference">
+    </attr>
+    <attr name="ExtraFine" format="reference">
+    </attr>
+    <attr name="media_nocard" format="reference">
+    </attr>
+    <attr name="media_accessing" format="reference">
+    </attr>
+    <attr name="media_memorycard" format="reference">
+    </attr>
+    <attr name="media_icon_width" format="dimension">
+    </attr>
+    <attr name="media_icon_height" format="dimension">
+    </attr>
+    <attr name="DISPLAY_MODE" format="string">
+    </attr>
+    <attr name="ROLLBASE_H" format="reference">
+    </attr>
+    <attr name="ROLLBASE_H_F" format="reference">
+    </attr>
+    <attr name="ROLLBASE_H_N" format="reference">
+    </attr>
+    <attr name="PITCHIND_H_F" format="reference">
+    </attr>
+    <attr name="PITCHIND_H_N" format="reference">
+    </attr>
+    <attr name="ROLLIND_H" format="reference">
+    </attr>
+    <attr name="ONLYROLL_ROLLIND_H" format="reference">
+    </attr>
+    <attr name="ROLLBASE_V" format="reference">
+    </attr>
+    <attr name="ROLLBASE_V_F" format="reference">
+    </attr>
+    <attr name="ROLLBASE_V_N" format="reference">
+    </attr>
+    <attr name="PITCHIND_V_F" format="reference">
+    </attr>
+    <attr name="PITCHIND_V_N" format="reference">
+    </attr>
+    <attr name="ROLLIND_V" format="reference">
+    </attr>
+    <attr name="ONLYROLL_ROLLIND_V" format="reference">
+    </attr>
+    <attr name="viewtekiIcon" format="reference">
+    </attr>
+    <attr name="EXPOSURE" format="reference">
+    </attr>
+    <attr name="METEREDMANUAL" format="reference">
+    </attr>
+    <attr name="sound_timing" format="integer">
+    </attr>
+    <attr name="beep_id" format="string">
+    </attr>
+    <attr name="long_pressed_beep_id" format="string">
+    </attr>
+    <attr name="long_press_interval_time" format="integer">
+    </attr>
+    <attr name="text_offsetX" format="dimension">
+    </attr>
+    <attr name="text_offsetY" format="dimension">
+    </attr>
+    <attr name="text_width" format="dimension">
+    </attr>
+    <attr name="text_height" format="dimension">
+    </attr>
+    <attr name="face_detection_on" format="reference">
+    </attr>
+    <attr name="face_detection_off" format="reference">
+    </attr>
+    <attr name="database_error" format="reference">
+    </attr>
+    <attr name="database_full" format="reference">
+    </attr>
+    <attr name="illuminator_on" format="reference">
+    </attr>
+    <attr name="finder_error" format="reference">
+    </attr>
+    <attr name="round" format="reference">
+    </attr>
+    <attr name="arc" format="reference">
+    </attr>
+    <attr name="off" format="reference">
+    </attr>
+    <attr name="on_for_only_still" format="reference">
+    </attr>
+    <attr name="on_for_both_movie_still" format="reference">
+    </attr>
+    <attr name="on_for_only_movie" format="reference">
+    </attr>
+    <attr name="icon_and_string" format="reference">
+    </attr>
+    <attr name="all_icon" format="reference">
+    </attr>
+    <attr name="pre_end_icon" format="reference">
+    </attr>
+    <attr name="compbar5_left_n" format="reference">
+    </attr>
+    <attr name="compbar5_left_d" format="reference">
+    </attr>
+    <attr name="compbar5_center" format="reference">
+    </attr>
+    <attr name="compbar5_right_n" format="reference">
+    </attr>
+    <attr name="compbar5_right_d" format="reference">
+    </attr>
+    <attr name="compbar3_left_n" format="reference">
+    </attr>
+    <attr name="compbar3_left_d" format="reference">
+    </attr>
+    <attr name="compbar3_center" format="reference">
+    </attr>
+    <attr name="compbar3_right_n" format="reference">
+    </attr>
+    <attr name="compbar3_right_d" format="reference">
+    </attr>
+    <attr name="compbar2_left_minus" format="reference">
+    </attr>
+    <attr name="compbar2_center" format="reference">
+    </attr>
+    <attr name="compbar2_right_plus" format="reference">
+    </attr>
+    <attr name="compbar3_single" format="reference">
+    </attr>
+    <attr name="compbar2_single" format="reference">
+    </attr>
+    <attr name="compbar3_single_evf" format="reference">
+    </attr>
+    <attr name="compbar2_single_evf" format="reference">
+    </attr>
+    <attr name="compind_upper" format="reference">
+    </attr>
+    <attr name="compind_lower" format="reference">
+    </attr>
+    <attr name="digital_zoom_wheel_gauge" format="reference">
+    </attr>
+    <attr name="digital_zoom_wheel_gauge_guide_1" format="reference">
+    </attr>
+    <attr name="digital_zoom_wheel_gauge_guide_2" format="reference">
+    </attr>
+    <attr name="digital_zoom_wheel_knob" format="reference">
+    </attr>
+    <attr name="digital_zoom_wheel_knob_press" format="reference">
+    </attr>
+    <attr name="clear_image_zoom_icon" format="reference">
+    </attr>
+    <attr name="precision_zoom_icon" format="reference">
+    </attr>
+    <attr name="smart_zoom_icon" format="reference">
+    </attr>
+    <attr name="optical_zoom_icon" format="reference">
+    </attr>
+    <attr name="wide_icon" format="reference">
+    </attr>
+    <attr name="tele_icon" format="reference">
+    </attr>
+    <attr name="fs_icon_base" format="reference">
+    </attr>
+    <attr name="fs_icon_charge" format="reference">
+    </attr>
+    <attr name="charge_offset_x" format="dimension">
+    </attr>
+    <attr name="zoom_non_divided_bar" format="reference">
+    </attr>
+    <attr name="zoom_divided_bar" format="reference">
+    </attr>
+    <attr name="zoom_position" format="reference">
+    </attr>
+    <attr name="zoom_position_margin" format="dimension">
+    </attr>
+    <attr name="zoom_smart" format="reference">
+    </attr>
+    <attr name="zoom_clear" format="reference">
+    </attr>
+    <attr name="zoom_precision" format="reference">
+    </attr>
+    <attr name="center_compbar_3" format="reference">
+    </attr>
+    <attr name="center_compbar_5" format="reference">
+    </attr>
+    <attr name="left_compbar_3" format="reference">
+    </attr>
+    <attr name="left_compbar_5" format="reference">
+    </attr>
+    <attr name="left_compbar_3_grayout" format="reference">
+    </attr>
+    <attr name="left_compbar_5_grayout" format="reference">
+    </attr>
+    <attr name="left_compbar_5_ev_grayout" format="reference">
+    </attr>
+    <attr name="right_compbar_3" format="reference">
+    </attr>
+    <attr name="right_compbar_5" format="reference">
+    </attr>
+    <attr name="right_compbar_3_grayout" format="reference">
+    </attr>
+    <attr name="right_compbar_5_grayout" format="reference">
+    </attr>
+    <attr name="right_compbar_5_ev_grayout" format="reference">
+    </attr>
+    <attr name="compbar_2" format="reference">
+    </attr>
+    <attr name="triangle_left" format="reference">
+    </attr>
+    <attr name="triangle_right" format="reference">
+    </attr>
+    <attr name="triangle_upper" format="reference">
+    </attr>
+    <attr name="triangle_left_orange" format="reference">
+    </attr>
+    <attr name="triangle_right_orange" format="reference">
+    </attr>
+    <attr name="triangle_upper_orange" format="reference">
+    </attr>
+    <attr name="mChildViewWidth" format="dimension">
+    </attr>
+    <attr name="mChildViewHeight" format="dimension">
+    </attr>
+    <attr name="mHorizontalSpacing" format="dimension">
+    </attr>
+    <attr name="mBlock" format="integer">
+    </attr>
+    <attr name="circle" format="reference">
+    </attr>
+    <attr name="portrait" format="reference">
+    </attr>
+    <attr name="anti_motion_blur" format="reference">
+    </attr>
+    <attr name="sports" format="reference">
+    </attr>
+    <attr name="pet" format="reference">
+    </attr>
+    <attr name="gourmet" format="reference">
+    </attr>
+    <attr name="macro" format="reference">
+    </attr>
+    <attr name="landscape" format="reference">
+    </attr>
+    <attr name="sunset" format="reference">
+    </attr>
+    <attr name="twilight" format="reference">
+    </attr>
+    <attr name="twilight_portrait" format="reference">
+    </attr>
+    <attr name="hand_held_twilight" format="reference">
+    </attr>
+    <attr name="fireworks" format="reference">
+    </attr>
+    <attr name="high_sensitivity" format="reference">
+    </attr>
+    <attr name="soft_snap" format="reference">
+    </attr>
+    <attr name="high_speed_shutter" format="reference">
+    </attr>
+    <attr name="background_blurr" format="reference">
+    </attr>
+    <attr name="beach" format="reference">
+    </attr>
+    <attr name="snow" format="reference">
+    </attr>
+    <attr name="back_light" format="reference">
+    </attr>
+    <attr name="soft_skin" format="reference">
+    </attr>
+    <attr name="underwater" format="reference">
+    </attr>
+    <attr name="advance_sports" format="reference">
+    </attr>
+    <attr name="program_auto_mode" format="reference">
+    </attr>
+    <attr name="program_shift_mode" format="reference">
+    </attr>
+    <attr name="aperature_mode" format="reference">
+    </attr>
+    <attr name="shutter_mode" format="reference">
+    </attr>
+    <attr name="manual_mode" format="reference">
+    </attr>
+    <attr name="intelligent_auto_mode" format="reference">
+    </attr>
+    <attr name="movie_program_auto_mode" format="reference">
+    </attr>
+    <attr name="movie_aperture_mode" format="reference">
+    </attr>
+    <attr name="movie_shutter_mode" format="reference">
+    </attr>
+    <attr name="movie_manual_mode" format="reference">
+    </attr>
+    <attr name="movie_auto" format="reference">
+    </attr>
+    <attr name="program_auto_mode_for_movie_main_set" format="reference">
+    </attr>
+    <attr name="aperature_mode_for_movie_main_set" format="reference">
+    </attr>
+    <attr name="shutter_mode_for_movie_main_set" format="reference">
+    </attr>
+    <attr name="manual_mode_for_movie_main_set" format="reference">
+    </attr>
+    <attr name="movie_portrait" format="reference">
+    </attr>
+    <attr name="movie_landscape" format="reference">
+    </attr>
+    <attr name="movie_twilight" format="reference">
+    </attr>
+    <attr name="movie_beach" format="reference">
+    </attr>
+    <attr name="movie_snow" format="reference">
+    </attr>
+    <attr name="movie_fireworks" format="reference">
+    </attr>
+    <attr name="movie_high_sensitivity" format="reference">
+    </attr>
+    <attr name="optical_zoom" format="reference">
+    </attr>
+    <attr name="smart_zoom" format="reference">
+    </attr>
+    <attr name="clear_image_zoom" format="reference">
+    </attr>
+    <attr name="precision_zoom" format="reference">
+    </attr>
+    <attr name="zoom_left_arrow" format="reference">
+    </attr>
+    <attr name="zoom_right_arrow" format="reference">
+    </attr>
+    <attr name="bar_no_range" format="reference">
+    </attr>
+    <attr name="bar_1_range" format="reference">
+    </attr>
+    <attr name="bar_2_range" format="reference">
+    </attr>
+    <attr name="bar_indicator_position_margin" format="dimension">
+    </attr>
+    <attr name="bar_length" format="dimension">
+    </attr>
+    <attr name="bar_margin_top" format="dimension">
+    </attr>
+    <attr name="bar_margin_left" format="dimension">
+    </attr>
+    <attr name="indicator_margin" format="dimension">
+    </attr>
+    <attr name="selected_image" format="reference">
+    </attr>
+    <attr name="unselected_image" format="reference">
+    </attr>
+    <attr name="selected_text_color" format="reference">
+    </attr>
+    <attr name="unselected_text_color" format="reference">
+    </attr>
+    <attr name="visible_item_num" format="integer">
+    </attr>
+    <attr name="CONTRAST_OFFSET_X" format="dimension">
+    </attr>
+    <attr name="CONTRAST_OFFSET_Y" format="dimension">
+    </attr>
+    <attr name="SATURATION_OFFSET_X" format="dimension">
+    </attr>
+    <attr name="SATURATION_OFFSET_Y" format="dimension">
+    </attr>
+    <attr name="SHARPNESS_OFFSET_X" format="dimension">
+    </attr>
+    <attr name="SHARPNESS_OFFSET_Y" format="dimension">
+    </attr>
+    <attr name="STANDARD" format="reference">
+    </attr>
+    <attr name="VIVID" format="reference">
+    </attr>
+    <attr name="NEUTRAL" format="reference">
+    </attr>
+    <attr name="CLEAR" format="reference">
+    </attr>
+    <attr name="DEEP" format="reference">
+    </attr>
+    <attr name="LIGHT" format="reference">
+    </attr>
+    <attr name="PORTRAIT" format="reference">
+    </attr>
+    <attr name="LANDSCAPE" format="reference">
+    </attr>
+    <attr name="SUNSET" format="reference">
+    </attr>
+    <attr name="NIGHT" format="reference">
+    </attr>
+    <attr name="RED_LEAVES" format="reference">
+    </attr>
+    <attr name="MONO" format="reference">
+    </attr>
+    <attr name="SEPIA" format="reference">
+    </attr>
+    <attr name="PLUS_3" format="reference">
+    </attr>
+    <attr name="PLUS_2" format="reference">
+    </attr>
+    <attr name="PLUS_1" format="reference">
+    </attr>
+    <attr name="PLUS_0" format="reference">
+    </attr>
+    <attr name="MINUS_1" format="reference">
+    </attr>
+    <attr name="MINUS_2" format="reference">
+    </attr>
+    <attr name="MINUS_3" format="reference">
+    </attr>
+    <attr name="icon_cursol" format="reference">
+    </attr>
+    <attr name="icon_up_arrow" format="reference">
+    </attr>
+    <attr name="icon_bottom_arrow" format="reference">
+    </attr>
+    <attr name="icon_option" format="reference">
+    </attr>
+    <attr name="icon_option_left" format="dimension">
+    </attr>
+    <attr name="icon_option_top" format="dimension">
+    </attr>
+    <attr name="value_option_left" format="dimension">
+    </attr>
+    <attr name="value_option_top" format="dimension">
+    </attr>
+    <attr name="textColor" format="reference">
+    </attr>
+    <attr name="zoombargroup" format="string">
+    </attr>
+    <attr name="FX" format="reference">
+    </attr>
+    <attr name="FH" format="reference">
+    </attr>
+    <attr name="HQ" format="reference">
+    </attr>
+    <attr name="PS" format="reference">
+    </attr>
+    <attr name="MP4_1080" format="reference">
+    </attr>
+    <attr name="MP4_720" format="reference">
+    </attr>
+    <attr name="MP4_VGA" format="reference">
+    </attr>
+    <attr name="XAVC_50M" format="reference">
+    </attr>
+    <attr name="XAVC_60M" format="reference">
+    </attr>
+    <attr name="XAVC_100M" format="reference">
+    </attr>
+    <attr name="rate_60p" format="reference">
+    </attr>
+    <attr name="rate_60i" format="reference">
+    </attr>
+    <attr name="rate_50p" format="reference">
+    </attr>
+    <attr name="rate_50i" format="reference">
+    </attr>
+    <attr name="rate_24p" format="reference">
+    </attr>
+    <attr name="rate_25p" format="reference">
+    </attr>
+    <attr name="rate_30p" format="reference">
+    </attr>
+    <attr name="rate_120p" format="reference">
+    </attr>
+    <attr name="rate_100p" format="reference">
+    </attr>
+    <attr name="MP4" format="reference">
+    </attr>
+    <attr name="AVCHD" format="reference">
+    </attr>
+    <attr name="XAVC_S" format="reference">
+    </attr>
+    <attr name="XAVC_S_4K" format="reference">
+    </attr>
+    <attr name="text_rec" format="reference">
+    </attr>
+    <attr name="text_standby" format="reference">
+    </attr>
+    <attr name="low" format="reference">
+    </attr>
+    <attr name="cinematone_on" format="reference">
+    </attr>
+    <attr name="cinematone_off" format="reference">
+    </attr>
+    <attr name="ndfilter_auto" format="reference">
+    </attr>
+    <attr name="ndfilter_off" format="reference">
+    </attr>
+    <attr name="ndfilter_on" format="reference">
+    </attr>
+    <attr name="ndfilter_feedback" format="reference">
+    </attr>
+    <attr name="ndfilter_feedback_pb" format="reference">
+    </attr>
+    <attr name="sublcd_lid" format="string">
+    </attr>
+    <attr name="sublcd_lidid" format="reference">
+    </attr>
+    <attr name="sublcd_pattern" format="string">
+    </attr>
+    <attr name="sublcd_text" format="reference|string">
+    </attr>
+    <attr name="sublcd_lkid" format="string">
+    </attr>
+    <attr name="shootingmode_segment_photo" format="reference">
+    </attr>
+    <attr name="shootingmode_segment_movie" format="reference">
+    </attr>
+    <attr name="shootingmode_segment_interval" format="reference">
+    </attr>
+    <attr name="shootingmode_segment_loop" format="reference">
+    </attr>
+    <attr name="drivemode_single" format="reference">
+    </attr>
+    <attr name="drivemode_mothionshot" format="reference">
+    </attr>
+    <attr name="drivemode_burst" format="reference">
+    </attr>
+    <attr name="auto_start" format="string">
+    </attr>
+    <attr name="loop" format="string">
+    </attr>
+    <attr name="rotation_time" format="string">
+    </attr>
+    <attr name="intervalrecording_wait" format="reference">
+    </attr>
+    <attr name="active" format="boolean">
+    </attr>
+    <attr name="min" format="integer">
+    </attr>
+    <attr name="max" format="integer">
+    </attr>
+    <attr name="recmode" format="string">
+    </attr>
+</resources>

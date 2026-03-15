@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:base="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pb_parts_cmn_header"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.sony.imaging.app.base.playback.widget.MediaStatusIcon
+        android:id="@+id/pbicon_media"
+        android:layout_width="52px"
+        android:layout_height="32px"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="1px"
+        base:memorycard="@android:drawable/sym_keyboard_delete_holo"/>
+    <com.sony.imaging.app.base.playback.widget.ViewModeIcon
+        android:id="@+id/playview"
+        android:layout_width="76px"
+        android:layout_height="36px"
+        android:layout_marginLeft="52px"
+        android:layout_marginTop="1px"/>
+    <com.sony.imaging.app.base.common.widget.BatteryIcon
+        android:id="@+id/BatteryIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="590px"
+        android:layout_marginTop="1px"
+        android:src="@drawable/icon_battery"/>
+</RelativeLayout>

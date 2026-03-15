@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:base="http://schemas.android.com/apk/res-auto" android:id="@+id/pb_parts_cmn_bottom_date">
+    <com.sony.imaging.app.base.playback.widget.RecordedDate
+        android:id="@+id/recordedDate"
+        android:layout_width="371px"
+        android:layout_height="36px"
+        android:layout_marginLeft="6px"
+        android:layout_marginTop="385px"
+        base:dWidth="158px"
+        base:dHeight="36px"
+        base:tWidth="115px"
+        base:tHeight="36px"
+        base:tAlignLeft="256px"/>
+</merge>

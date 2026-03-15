@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sony.imaging.app.base.shooting.widget.AFFixedToIlluminatorFrame xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/afFixedToIlluminatorFrame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true">
+    <com.sony.imaging.app.base.shooting.widget.AFFrame xmlns:base="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/fixedToIlluminatorFrame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        base:graytl="@android:drawable/list_selector_background_focused_selected"
+        base:graytr="@android:drawable/ic_bt_laptop"
+        base:graybl="@android:drawable/keyboard_accessory_bg_landscape"
+        base:graybr="@android:drawable/pointer_wait_14"
+        base:orgtl="0x1080984"
+        base:orgtr="@android:drawable/stat_sys_ra_signal_2_cdma"
+        base:orgbl="0x108095f"
+        base:orgbr="0x10809c8"
+        base:greentl="@android:drawable/pointer_wait_28"
+        base:greentr="@android:drawable/rate_star_med_half_holo_dark"
+        base:greenbl="0x1080d3e"
+        base:greenbr="0x1080e11"
+        base:frameWidth="98dp"
+        base:frameHeight="98dp"/>
+</com.sony.imaging.app.base.shooting.widget.AFFixedToIlluminatorFrame>

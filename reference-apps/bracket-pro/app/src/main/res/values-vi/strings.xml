@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STRID_FUNC_BRKMASTER">Chụp b.trừság chuyênnghiệp</string>
+    <string name="STRID_FUNC_BRKMASTER_2L">Chụp b.trừság\nchuyênnghiệp</string>
+    <string name="STRID_FUNC_BRKMASTER_GUIDE">Nhiều ảnh sẽ được ghi lại, với thay đổi được thực hiện trong cài đặt tốc độ cửa trập, khẩu độ, lấy nét, đèn flash.</string>
+    <string name="STRID_FUNC_SSBRK">Chụp b.trừ sáng với t.độ cửa trập</string>
+    <string name="STRID_FUNC_APERTUREBRK">Chụp bù trừ sáng với khẩu độ</string>
+    <string name="STRID_FUNC_FOCUSBRK">Chụp bù trừ sáng với lấy nét</string>
+    <string name="STRID_FUNC_FLASHBRK">Chụp bù trừ sáng đèn flash</string>
+    <string name="STRID_FUNC_SSBRK_GUIDE">Chụp 3 ảnh với tốc độ cửa trập khác nhau.</string>
+    <string name="STRID_FUNC_APERTUREBRK_GUIDE">Chụp 3 ảnh với khẩu độ khác nhau.</string>
+    <string name="STRID_FUNC_FOCUSBRK_GUIDE">Chụp 3 ảnh với vị trí lấy nét khác nhau.</string>
+    <string name="STRID_FUNC_FLASHBRK_GUIDE">Chụp ảnh có và không có đèn flash.</string>
+    <string name="STRID_FUNC_SHIFT_RANGE">Giá trị chụp bù trừ sáng</string>
+    <string name="STRID_FUNC_SHIFT_RANGE_WIDE">Rộng</string>
+    <string name="STRID_FUNC_SHIFT_RANGE_NARROW">Hẹp</string>
+    <string name="STRID_CAU_FLASH_INVALID">Không thể chớp đèn flash.\nVui lòng kiểm tra xem đèn flash\nđã sẵn sàng để chớp hay không.</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_RETURN">Hướng dẫn </string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_EXIT">Hướng dẫn Thoát ứng dụng</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_EXIT_SK">Hướng dẫn Thoát ứng dụng</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_RETURN_SK">Hướng dẫn </string>
+    <string name="STRID_FOOTERGUIDE_TV_RETURN">Tv </string>
+    <string name="STRID_FOOTERGUIDE_TV_RETURN_SK">Tv </string>
+    <string name="STRID_FOOTERGUIDE_AV_RETURN">Av </string>
+    <string name="STRID_FOOTERGUIDE_AV_RETURN_SK">Av </string>
+</resources>

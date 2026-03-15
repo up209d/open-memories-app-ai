@@ -156,6 +156,18 @@ mark{background:#5c4400;color:#ffd740;padding:1px 2px;border-radius:2px}
 <a class="nav-item" href="#sec-app-effect">Picture Effect Plus</a>
 <a class="nav-item" href="#sec-app-portrait">Portrait Beauty</a>
 <a class="nav-item" href="#sec-app-grading">Live View Grading</a>
+<a class="nav-item" href="#sec-refapps">Bracket Pro</a>
+<a class="nav-item" href="#sec-refapps">Graduated Filter</a>
+<a class="nav-item" href="#sec-refapps">Light Graffiti</a>
+<a class="nav-item" href="#sec-refapps">Light Shaft</a>
+<a class="nav-item" href="#sec-refapps">Lens Compensation</a>
+<a class="nav-item" href="#sec-refapps">Smooth Reflection 2</a>
+<a class="nav-item" href="#sec-refapps">Sound Photo</a>
+<a class="nav-item" href="#sec-refapps">Smart Remote Control</a>
+<a class="nav-item" href="#sec-refapps">Star Trails</a>
+<a class="nav-item" href="#sec-refapps">Sync to Smartphone</a>
+<a class="nav-item" href="#sec-refapps">Time-lapse</a>
+<a class="nav-item" href="#sec-refapps">Touchless Shutter</a>
 <a class="nav-item" href="#sec-refapps">Comparison Table</a>
 </div></div>
 
@@ -167,8 +179,8 @@ mark{background:#5c4400;color:#ffd740;padding:1px 2px;border-radius:2px}
 <!-- ==================== OVERVIEW ==================== -->
 <section id="sec-overview">
 <h2 class="major">Sony Scalar Native API Reference</h2>
-<blockquote><p>Complete reference for <code>com.sony.scalar.*</code> native APIs discovered through reverse-engineering Sony's PlayMemories Camera Apps (7 decompiled apps) and OpenMemories-Framework stubs (323 Jasmin files). These APIs are undocumented and proprietary, running on Sony cameras with custom Android 4.1-4.4.</p></blockquote>
-<p><strong>Sources</strong>: 7 decompiled Sony apps + OpenMemories-Framework stubs (~323 .j files)</p>
+<blockquote><p>Complete reference for <code>com.sony.scalar.*</code> native APIs discovered through reverse-engineering Sony's PlayMemories Camera Apps (19 decompiled apps) and OpenMemories-Framework stubs (323 Jasmin files). These APIs are undocumented and proprietary, running on Sony cameras with custom Android 4.1-4.4.</p></blockquote>
+<p><strong>Sources</strong>: 19 decompiled Sony apps + OpenMemories-Framework stubs (~323 .j files)</p>
 <div class="overview-grid">
 <div class="overview-card" onclick="document.getElementById('sec-cameraex').scrollIntoView({behavior:'smooth'})"><h4>CameraEx</h4><p>Core camera control, 39 listeners, capture/AF/exposure, gamma tables, color select</p></div>
 <div class="overview-card" onclick="document.getElementById('sec-paramsmod').scrollIntoView({behavior:'smooth'})"><h4>ParametersModifier</h4><p>100+ getter/setters: ISO, shutter, aperture, WB, RGB matrix, color depth, effects</p></div>
@@ -1140,18 +1152,30 @@ sendBroadcast(intent);</code></pre>
 <table>
 <thead><tr><th>App</th><th>Feature</th><th>DSP</th><th>Key APIs</th></tr></thead>
 <tbody>
-<tr><td>smooth-reflection</td><td>ND simulation (2-256 frame avg)</td><td>Yes</td><td>adjustAperture, setRemoteControlMode, GammaTable, RawDataInfo</td></tr>
+<tr><td>bracket-pro</td><td>Multi-exposure bracketing</td><td>No</td><td>adjustAperture, adjustShutterSpeed, shiftFocusPosition, AutoPictureReviewControl</td></tr>
 <tr><td>digital-filter</td><td>Graduated ND</td><td>Yes (x3)</td><td>Preview Plugin, 3 simultaneous DSPs, MemoryUtil JNI</td></tr>
 <tr><td>double-exposure</td><td>7 blend modes</td><td>Yes</td><td>Live view overlay, SFR modes, DeviceMemory</td></tr>
-<tr><td>photo-retouch</td><td>Edit tools</td><td>Yes</td><td>All 4 filters, JpegExporter, LCE, DSP.createImage</td></tr>
-<tr><td>portrait-beauty</td><td>Face beautify</td><td>Yes</td><td>ImageAnalyzer, SA_PortraitLighting, SA_SoftFocus</td></tr>
-<tr><td>picture-effect-plus</td><td>Creative fx</td><td>No</td><td>ColorSelect, Miniature, DirectShutter, DefaultDevelop</td></tr>
+<tr><td>graduated-filter</td><td>Graduated ND filter</td><td>Yes</td><td>CameraSequence, MemoryMapConfig, NDSA program</td></tr>
+<tr><td>light-graffiti</td><td>Light painting</td><td>Yes</td><td>Preview plugin, Light indicator, LGSAMixFilter (5 modes)</td></tr>
+<tr><td>light-shaft</td><td>God rays</td><td>Yes</td><td>liblightshafts_top.so, DSP.getPropertyAsInt, DisplayManager</td></tr>
 <tr><td>live-view-grading</td><td>Real-time LUT</td><td>No</td><td>GammaTable, RGBMatrix, ColorDepth, WBShift</td></tr>
+<tr><td>manual-lens-compensation</td><td>Lens correction</td><td>No</td><td>setLensCorrectionLevel, setExifInfo, LensParameterProvider</td></tr>
+<tr><td>photo-retouch</td><td>Edit tools</td><td>Yes</td><td>All 4 filters, JpegExporter, LCE, DSP.createImage</td></tr>
+<tr><td>picture-effect-plus</td><td>Creative fx</td><td>No</td><td>ColorSelect, Miniature, DirectShutter, DefaultDevelop</td></tr>
+<tr><td>portrait-beauty</td><td>Face beautify</td><td>Yes</td><td>ImageAnalyzer, SA_PortraitLighting, SA_SoftFocus</td></tr>
+<tr><td>smooth-reflection</td><td>ND simulation (2-256 frame avg)</td><td>Yes</td><td>adjustAperture, setRemoteControlMode, GammaTable, RawDataInfo</td></tr>
+<tr><td>smooth-reflection-2</td><td>ND simulation v2</td><td>Yes</td><td>DeviceMemory AVIP, model-specific BFNR offsets</td></tr>
+<tr><td>sound-photo</td><td>Audio + photo</td><td>Yes</td><td>AudioRecord, AudioTrack, AudioManager, ComposeAudioImage JNI</td></tr>
+<tr><td>srctrl</td><td>Remote control</td><td>No</td><td>WebAPI server (Leza), SSDP, AuthLib, NFC, live view stream</td></tr>
+<tr><td>star-trails</td><td>Star trail compositing</td><td>Yes</td><td>MediaRecorder (AVI), AvindexStore, DSP compositing</td></tr>
+<tr><td>sync-to-smart-phone</td><td>Auto-sync</td><td>No</td><td>WebAPI contentsync, SSDP/DdController, AuthLib</td></tr>
+<tr><td>time-lapse</td><td>Interval to video</td><td>Yes</td><td>MediaRecorder, RotateImageFilter, ExposureController</td></tr>
+<tr><td>touchless-shutter</td><td>EVF trigger + bulb</td><td>No</td><td>DisplayManager event 4096, cancelExposure, KeyStatus</td></tr>
 </tbody></table>
 <p><strong>Shared ~80%</strong>: Framework, camera, menus, playback, lifecycle.<br>
 <strong>App-specific ~20%</strong>: Capture pipeline, DSP programs, edit UI.</p>
 <hr>
-<p style="color:var(--text-muted);font-size:12px;margin-top:32px"><em>~5,119 Java files (7 Sony apps) + 323 Jasmin stubs (OpenMemories-Framework)</em></p>
+<p style="color:var(--text-muted);font-size:12px;margin-top:32px"><em>~10,000+ Java files (19 Sony apps) + 323 Jasmin stubs (OpenMemories-Framework)</em></p>
 </section>
 
 </div></div>

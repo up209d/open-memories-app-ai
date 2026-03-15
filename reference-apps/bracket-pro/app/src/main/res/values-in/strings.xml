@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STRID_FUNC_BRKMASTER">Profesional Vrsi Diafrgma</string>
+    <string name="STRID_FUNC_BRKMASTER_2L">Profesional\nVrsi Diafrgma</string>
+    <string name="STRID_FUNC_BRKMASTER_GUIDE">Beberapa gambar, dengan perubahan yang dibuat dalam pengaturan kecepatan rana, tingkap, fokus, flash, akan disimpan.</string>
+    <string name="STRID_FUNC_SSBRK">Variasi Diafragma Kcepatan Rana</string>
+    <string name="STRID_FUNC_APERTUREBRK">Variasi Diafragma Tingkap</string>
+    <string name="STRID_FUNC_FOCUSBRK">Variasi Diafragma Fokus</string>
+    <string name="STRID_FUNC_FLASHBRK">Variasi Diafragma Flash</string>
+    <string name="STRID_FUNC_SSBRK_GUIDE">Memotret 3 potretan dengan kecepatan rana bervariasi.</string>
+    <string name="STRID_FUNC_APERTUREBRK_GUIDE">Memotret 3 potretan dengan tingkap bervariasi.</string>
+    <string name="STRID_FUNC_FOCUSBRK_GUIDE">Memotret 3 potretan dengan posisi fokus bervariasi.</string>
+    <string name="STRID_FUNC_FLASHBRK_GUIDE">Memotret gambar dengan dan tanpa flash.</string>
+    <string name="STRID_FUNC_SHIFT_RANGE">Nilai Pemvariasian Diafragma</string>
+    <string name="STRID_FUNC_SHIFT_RANGE_WIDE">Lebar</string>
+    <string name="STRID_FUNC_SHIFT_RANGE_NARROW">Sempit</string>
+    <string name="STRID_CAU_FLASH_INVALID">Tidak dapat menyalakan flash.\nSilakan verifikasi flash siap untuk\nmenyala.</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_RETURN">Panduan </string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_EXIT">Panduan Keluar Aplikasi</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_EXIT_SK">Panduan Keluar Aplikasi</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_RETURN_SK">Panduan </string>
+    <string name="STRID_FOOTERGUIDE_TV_RETURN">Tv </string>
+    <string name="STRID_FOOTERGUIDE_TV_RETURN_SK">Tv </string>
+    <string name="STRID_FOOTERGUIDE_AV_RETURN">Av </string>
+    <string name="STRID_FOOTERGUIDE_AV_RETURN_SK">Av </string>
+</resources>

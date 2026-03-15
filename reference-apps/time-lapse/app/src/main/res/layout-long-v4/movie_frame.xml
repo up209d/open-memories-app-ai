@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:base="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/movie_frame1"
+        android:layout_marginLeft="19px"
+        android:layout_marginTop="334px"
+        style="@style/MovieFrame"/>
+    <ImageView
+        android:id="@+id/movie_frame2"
+        android:layout_marginLeft="141px"
+        android:layout_marginTop="334px"
+        style="@style/MovieFrame"/>
+    <ImageView
+        android:id="@+id/movie_frame3"
+        android:layout_marginLeft="262px"
+        android:layout_marginTop="334px"
+        style="@style/MovieFrame"/>
+    <ImageView
+        android:id="@+id/movie_frame4"
+        android:layout_marginLeft="383px"
+        android:layout_marginTop="334px"
+        style="@style/MovieFrame"/>
+    <ImageView
+        android:id="@+id/movie_frame5"
+        android:layout_marginLeft="504px"
+        android:layout_marginTop="334px"
+        style="@style/MovieFrame"/>
+</RelativeLayout>

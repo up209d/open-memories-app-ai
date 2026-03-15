@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="72px"
+        android:layout_height="68px"
+        android:layout_marginLeft="209px"
+        android:layout_marginTop="84px"
+        android:src="0x10809c4"/>
+    <ImageView
+        android:id="@+id/left_arrow"
+        android:layout_width="21px"
+        android:layout_height="38px"
+        android:layout_marginLeft="291px"
+        android:layout_marginTop="99px"
+        android:src="0x1081746"/>
+    <ImageView
+        android:id="@+id/right_arrow"
+        android:layout_width="21px"
+        android:layout_height="38px"
+        android:layout_marginLeft="404px"
+        android:layout_marginTop="99px"
+        android:src="0x1081378"/>
+    <com.sony.imaging.app.base.shooting.widget.CompensationWheelAndInfoView xmlns:base="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/CompensationWheelAndInfoView"
+        android:layout_width="640px"
+        android:layout_height="165px"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="95px"
+        base:compbar5_left_n="0x1080983"
+        base:compbar5_left_d="0x108097c"
+        base:compbar5_center="0x1080d87"
+        base:compbar5_right_n="0x1080edd"
+        base:compbar5_right_d="0x1080ed7"
+        base:compbar3_left_n="@android:drawable/jog_tab_right_decline"
+        base:compbar3_left_d="@android:drawable/jog_tab_bar_right_sound_on"
+        base:compbar3_center="0x1080eef"
+        base:compbar3_right_n="@android:drawable/popup_center_dark"
+        base:compbar3_right_d="@android:drawable/popup_background_mtrl_mult"
+        base:compbar2_left_minus="0x10818be"
+        base:compbar2_center="0x1080eef"
+        base:compbar2_right_plus="0x10818c1"
+        base:compind_upper="0x10810ee"/>
+</RelativeLayout>

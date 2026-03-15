@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.sony.imaging.app.base.common.widget.BatteryIcon
+        android:id="@+id/BatteryIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="590px"
+        android:layout_marginTop="10px"
+        android:src="@drawable/icon_battery"/>
+</RelativeLayout>

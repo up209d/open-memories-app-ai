@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:base="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.sony.imaging.app.base.playback.widget.LabelFileNumber
+            android:id="@+id/fileNumber"
+            android:layout_width="152px"
+            android:layout_height="36px"
+            android:layout_marginLeft="110px"
+            android:layout_marginTop="0px"
+            base:show_only_directoryNumber="true"/>
+    </RelativeLayout>
+    <com.sony.imaging.app.base.playback.widget.LabelFileCount
+        android:textColor="@color/RESID_FONTSTYLE_CMN_WHITE_NO_SKIN"
+        android:id="@+id/fileCount"
+        android:layout_width="96px"
+        android:layout_height="32px"
+        android:layout_marginLeft="282px"
+        android:layout_marginTop="5px"
+        style="@style/RESID_FONTSIZE_PLAY_IMG_NUM"/>
+</RelativeLayout>

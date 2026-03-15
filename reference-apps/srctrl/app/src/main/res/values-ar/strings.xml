@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STRID_AMC_STR_01176">يتم الآن التنفيذ...</string>
+    <string name="STRID_AMC_STR_06084">عملية التوصيل جارية...</string>
+    <string name="STRID_AMC_STR_06546">إدخال </string>
+    <string name="STRID_CAU_CANT_DISPLAY_EE_DURING_MOVIE_REC">لا يمكن عرض Live View على الشاشة أثناء تصوير أفلام.</string>
+    <string name="STRID_CAU_FUNC_INVALID_FOR_THIS_APP_AND_CAMERA">لا يدعم هذا الجهاز وظيفة البرنامج هذه.</string>
+    <string name="STRID_CAU_FUNC_INVALID_FOR_THIS_CAMERA">هذا الجهاز لا يدعم هذه الوظيفة.</string>
+    <string name="STRID_CAU_MOVIE_INVALID_FOR_THIS_APP_AND_CAMERA">لا يدعم هذا الجهاز وضع تصوير الفيلم في هذا البرنامج.</string>
+    <string name="STRID_CAU_PREV_MS_ERROR_ML">أعد ادخال بطاقة الذاكرة التي كنت تستخدمها.</string>
+    <string name="STRID_CMN_MSG_UNFORESEEN_ERROR">حدث خطأ غير متوقع.</string>
+    <string name="STRID_CMN_PASSWORD">كلمة المرور</string>
+    <string name="STRID_CMN_SSID">‪SSID‬</string>
+    <string name="STRID_CMN_WIFI_DEVICENAME_DSLR">اسم الجهاز</string>
+    <string name="STRID_FUNC_EZREMOTE">التحكم الذكي عن بعد</string>
+    <string name="STRID_FUNC_EZREMOTE_2L">التحكم الذكي\nعن بعد</string>
+    <string name="STRID_FUNC_EZREMOTE_EMBEDDED">تحكم ذكي داخلي عن بعد</string>
+    <string name="STRID_FUNC_EZREMOTE_EMBEDDED_2L">تحكم ذكي داخلي\nعن بعد</string>
+    <string name="STRID_FUNC_EZREMOTE_GETTING_PICTURE">جاري الحصول على بيانات التصوير...</string>
+    <string name="STRID_FUNC_EZREMOTE_GET_PICTURE_ERROR">فشلت عملية الحصول على بيانات التصوير.</string>
+    <string name="STRID_FUNC_EZREMOTE_GUIDE">يمكنك التقاط صور ثابتة بالتحكم بالجهاز عن بعد باستخدام هاتف ذكي متوافق، الخ.</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_ENTER_HELP">إدخال مساعدة</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_HELP_FOR_SK">مساعدة</string>
+    <string name="STRID_FUNC_NETWORK_SETTINGS_MSG_WIFI_STANDBY">في حالة استعداد Wi-Fi...</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_ERROR_SWKEY_PIN_DSLR">يرجى إدخال أرقام مكونة من 8 أو 4 خانات.</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_CHANGEPW_ONE_DSLR">يمكن توصيل جهاز واحد فقط لكل مرة.\nهل تريد إنهاء عملية التوصيل الحالي\nوبدء عملية جديدة؟</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_INPUT_DSLR">يرجى إدخال رمز PIN الخاص بجهاز التوصيل الى\nالجهاز.</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_PBCREQ_DSLR">هل تسمح بالتوصيل من الجهاز؟</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_PBC_ERROR_DSLR">إخفاق مصادقة واتصال Wi-Fi Direct.</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_PIN_OUTPUT_DSLR">يرجى إدخال رمز PIN في جهاز التوصيل\nخلال دقيقتين.</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_TIMEOUT_DSLR">لم تتمكن من التوصيل بسبب نفاد الوقت.</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_WAITING2">قم بتشغيل الهاتف الذكي للاتصال بهذا الجهاز\nعبر Wi-Fi.</string>
+    <string name="STRID_FUNC_SRPLUS_GUIDE">يمكن استخدام الهاتف الذكي أو الجهاز اللوحي كوحدة تحكم عن بعد.\nيمكنك تغيير تهيئات كالفتحة وسرعة الغالق كما تريد.</string>
+    <string name="STRID_FUNC_SRPLUS_INVALID_OPERATION">هذه العملية غير صحيحة.</string>
+    <string name="STRID_FUNC_SRPLUS_IN_TOUCH_AF_MODE">جاري التحكم عن بعد في وضع AF باللمس.\nاضغط زر الغالق نصف ضغطة وحرره لإلغاء الوضع.</string>
+    <string name="STRID_FUNC_SRPLUS_UNDER_REMOTE_CONTROL">جاري التحكم عن بعد.</string>
+    <string name="STRID_FUNC_SRPLUS_UNDER_REMOTE_CONTROL2">جاري التحكم عن بعد.\nلا يمكن التشغيل من هذا الجهاز.</string>
+    <string name="STRID_INFO_PIN_CODE">رمز PIN</string>
+    <string name="STRID_MSG_NO_MEMCARD">قم بإدخال بطاقة ذاكرة</string>
+    <string name="STRID_FUNC_CONTROLWITHSMARTPHONE_MSG_CONTROLLED">التحكم بواسطة هاتف ذكي…\nلا يمكن تشغيل هذا الجهاز مباشرة.</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_GOTO_QRCODE">عرض QR Code ‏خروج</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_GOTO_PASS">اتصال بواسطة كلمة المرور خروج</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_GOTO_QRCODE_NEX">عرض QR Code ‏خروج</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_GOTO_PASS_NEX">اتصال بواسطة كلمة المرور خروج</string>
+    <string name="STRID_MSG_WIFI_CONNECT_QRCODE">قم بتشغيل الهاتف الذكي\nلمسح QR Code باستخدام\nPlayMemories Mobile.</string>
+</resources>

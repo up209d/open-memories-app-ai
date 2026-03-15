@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STRID_SCALARA_DLSYS_AIRPLAIN_MODE_ERROR">Kan inte starta programmet\neftersom flygplansläge är inställt.</string>
+    <string name="STRID_AMC_STR_01176">Behandling pågår...</string>
+    <string name="STRID_AMC_STR_06084">Ansluter...</string>
+    <string name="STRID_AMC_STR_06546">Enter </string>
+    <string name="STRID_CAU_CANT_DISPLAY_EE_DURING_MOVIE_REC">Kan inte visa livevisning på skärmen vid inspelning av filmer.</string>
+    <string name="STRID_CAU_FUNC_INVALID_FOR_THIS_APP_AND_CAMERA">Denna enhet har inte stöd för programmets funktion.</string>
+    <string name="STRID_CAU_FUNC_INVALID_FOR_THIS_CAMERA">Denna enhet har inte stöd för funktionen.</string>
+    <string name="STRID_CAU_MOVIE_INVALID_FOR_THIS_APP_AND_CAMERA">Denna enhet har inte stöd för programmets fotoläge för film.</string>
+    <string name="STRID_CAU_PREV_MS_ERROR_ML">Sätt i samma minneskort som du\nanvände en gång till.</string>
+    <string name="STRID_CMN_MSG_UNFORESEEN_ERROR">Ett oförväntat fel har uppstått.</string>
+    <string name="STRID_CMN_PASSWORD">Lösenord</string>
+    <string name="STRID_CMN_SSID">SSID</string>
+    <string name="STRID_CMN_WIFI_DEVICENAME_DSLR">Enhetsnamn</string>
+    <string name="STRID_FUNC_EZREMOTE">Smart-fjärrkontroll</string>
+    <string name="STRID_FUNC_EZREMOTE_2L">Smart-\nfjärrkontroll</string>
+    <string name="STRID_FUNC_EZREMOTE_EMBEDDED">Inbyggd Smart-fjärr</string>
+    <string name="STRID_FUNC_EZREMOTE_EMBEDDED_2L">Inbyggd\nSmart-fjärr</string>
+    <string name="STRID_FUNC_EZREMOTE_GETTING_PICTURE">Erhåller tagningsinformation...</string>
+    <string name="STRID_FUNC_EZREMOTE_GET_PICTURE_ERROR">Kunde inte erhålla tagningsinformation.</string>
+    <string name="STRID_FUNC_EZREMOTE_GUIDE">Du kan ta stillbilder genom att fjärrstyra enheten med en kompatibel smartphone etc.</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_ENTER_HELP">Enter Hjälp</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_HELP_FOR_SK">Hjälp</string>
+    <string name="STRID_FUNC_NETWORK_SETTINGS_MSG_WIFI_STANDBY">Wi-Fi aktiveras...</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_ERROR_SWKEY_PIN_DSLR">Ange 8- eller 4-siffriga nummer.</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_CHANGEPW_ONE_DSLR">Endast 1 enhet kan anslutas samtidigt.\nVill du avsluta aktuell\nanslutning och upprätta en ny?</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_INPUT_DSLR">Mata in PIN-koden för ansluten enhet i\nenheten.</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_PBCREQ_DSLR">Tillåt anslutning från enheten?</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_PBC_ERROR_DSLR">Verifiering och anslutning av\nWi-Fi Direct misslyckades.</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_PIN_OUTPUT_DSLR">Ange PIN-kod för\nanslutningsenheten inom 2 minuter.</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_TIMEOUT_DSLR">Kunde inte ansluta på grund av\natt det gått för lång tid.</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_WAITING2">Använd din smartphone för att ansluta\ntill denna enhet via Wi-Fi.</string>
+    <string name="STRID_FUNC_SRPLUS_GUIDE">En smartphone eller handdator kan användas som fjärrkontroll.\nInställningar som bländare och slutarhastighet kan ändras efter önskemål.</string>
+    <string name="STRID_FUNC_SRPLUS_INVALID_OPERATION">Denna funktion är ogiltig.</string>
+    <string name="STRID_FUNC_SRPLUS_IN_TOUCH_AF_MODE">Fjärrfunktionen är aktiv med pek-AF-läge.\nTryck ner avtryckaren halvvägs och släpp den sedan för att avbryta.</string>
+    <string name="STRID_FUNC_SRPLUS_UNDER_REMOTE_CONTROL">Fjärrfunktionen är aktiv.</string>
+    <string name="STRID_FUNC_SRPLUS_UNDER_REMOTE_CONTROL2">Fjärrfunktionen är aktiv.\nGår ej att manövrera med denna enhet.</string>
+    <string name="STRID_INFO_PIN_CODE">PIN-kod</string>
+    <string name="STRID_MSG_NO_MEMCARD">Sätt i minneskort</string>
+    <string name="STRID_FUNC_CONTROLWITHSMARTPHONE_MSG_CONTROLLED">Kontroll med smartphone…\nDet går inte att manövrera denna enhet.</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_GOTO_QRCODE">Visa QR Code Avsluta</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_GOTO_PASS">Anslut med lösenord Avsluta</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_GOTO_QRCODE_NEX">Visa QR Code Avsluta</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_GOTO_PASS_NEX">Anslut med lösenord Avsluta</string>
+    <string name="STRID_MSG_WIFI_CONNECT_QRCODE">Manövrera din smartphone\nför att skanna QR Code\nmed PlayMemories Mobile.</string>
+</resources>

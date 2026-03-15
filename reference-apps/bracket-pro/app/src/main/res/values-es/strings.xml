@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STRID_FUNC_BRKMASTER">Variaciones exposic. pro</string>
+    <string name="STRID_FUNC_BRKMASTER_2L">Variaciones\nexposic. pro</string>
+    <string name="STRID_FUNC_BRKMASTER_GUIDE">Múltiples imágenes, con cambios de velocidad del obturador, abertura, enfoque, ajustes de flash, se grabarán.</string>
+    <string name="STRID_FUNC_SSBRK">Variac. expos. velocid. obturador</string>
+    <string name="STRID_FUNC_APERTUREBRK">Variaciones exposición abertura</string>
+    <string name="STRID_FUNC_FOCUSBRK">Variaciones exposición enfoque</string>
+    <string name="STRID_FUNC_FLASHBRK">Variaciones de exposición flash</string>
+    <string name="STRID_FUNC_SSBRK_GUIDE">Dispara 3 tomas con velocidades del obturador variables.</string>
+    <string name="STRID_FUNC_APERTUREBRK_GUIDE">Dispara 3 tomas con aberturas variables.</string>
+    <string name="STRID_FUNC_FOCUSBRK_GUIDE">Dispara 3 tomas con posiciones de enfoque variables.</string>
+    <string name="STRID_FUNC_FLASHBRK_GUIDE">Dispara imágenes con y sin flash.</string>
+    <string name="STRID_FUNC_SHIFT_RANGE">Valor de variaciones de exposición</string>
+    <string name="STRID_FUNC_SHIFT_RANGE_WIDE">Ancho</string>
+    <string name="STRID_FUNC_SHIFT_RANGE_NARROW">Estrecho</string>
+    <string name="STRID_CAU_FLASH_INVALID">No puede disparar el flash.\nCompruebe que el flash esté listo para\ndisparar.</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_RETURN">Guía </string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_EXIT">Guía Salir de la aplicación</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_EXIT_SK">Guía Salir de la aplicación</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_RETURN_SK">Guía </string>
+    <string name="STRID_FOOTERGUIDE_TV_RETURN">Tv </string>
+    <string name="STRID_FOOTERGUIDE_TV_RETURN_SK">Tv </string>
+    <string name="STRID_FOOTERGUIDE_AV_RETURN">Av </string>
+    <string name="STRID_FOOTERGUIDE_AV_RETURN_SK">Av </string>
+</resources>

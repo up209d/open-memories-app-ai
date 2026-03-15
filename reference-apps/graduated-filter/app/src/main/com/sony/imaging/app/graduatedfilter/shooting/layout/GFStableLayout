@@ -1,0 +1,270 @@
+package com.sony.imaging.app.graduatedfilter.shooting.layout;
+
+import android.graphics.Color;
+import android.os.Looper;
+import android.util.SparseArray;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.sony.imaging.app.base.common.DisplayModeObserver;
+import com.sony.imaging.app.base.playback.widget.TouchArea;
+import com.sony.imaging.app.base.shooting.camera.AntiHandBlurController;
+import com.sony.imaging.app.base.shooting.camera.CameraNotificationManager;
+import com.sony.imaging.app.base.shooting.layout.StableLayout;
+import com.sony.imaging.app.base.shooting.widget.AppIconView;
+import com.sony.imaging.app.base.shooting.widget.DigitView;
+import com.sony.imaging.app.base.shooting.widget.ExposureModeIconView;
+import com.sony.imaging.app.graduatedfilter.R;
+import com.sony.imaging.app.graduatedfilter.common.AppLog;
+import com.sony.imaging.app.graduatedfilter.common.GFCommonUtil;
+import com.sony.imaging.app.graduatedfilter.common.GFConstants;
+import com.sony.imaging.app.graduatedfilter.common.SaUtil;
+import com.sony.imaging.app.graduatedfilter.sa.GFHistgramTask;
+import com.sony.imaging.app.graduatedfilter.shooting.GFEffectParameters;
+import com.sony.imaging.app.graduatedfilter.shooting.GFEffectParameters.Parameters;
+import com.sony.imaging.app.graduatedfilter.shooting.base.GFDisplayModeObserver;
+import com.sony.imaging.app.graduatedfilter.shooting.widget.BorderView;
+import com.sony.imaging.app.util.NotificationListener;
+import com.sony.scalar.hardware.CameraEx.ParametersModifier;
+
+public class GFStableLayout extends StableLayout implements NotificationListener {
+	private static final String TAG = AppLog.getClassName();
+	
+	/**
+	 * The LCD Panel's layouts
+	 */
+	protected static final SparseArray<Integer> LAYOUT_LIST_FOR_PANEL;
+	/**
+	 * The finder's layouts
+	 */
+	protected static final SparseArray<Integer> LAYOUT_LIST_FOR_FINDER;
+	/**
+	 * The hdmi's layouts
+	 */
+	protected static final SparseArray<Integer> LAYOUT_LIST_FOR_HDMI;
+	
+	static {
+		LAYOUT_LIST_FOR_PANEL = new SparseArray<Integer>();
+		LAYOUT_LIST_FOR_PANEL.append(DisplayModeObserver.DISPMODE_REC_INFO_ON, R.layout.shooting_main_sid_info_on_panel);
+		LAYOUT_LIST_FOR_PANEL.append(GFDisplayModeObserver.DISPMODE_REC_APP_INFO_OFF, R.layout.shooting_main_sid_info_off_panel);
+		LAYOUT_LIST_FOR_PANEL.append(DisplayModeObserver.DISPMODE_REC_INFO_OFF, R.layout.shooting_main_sid_info_off_panel);
+		LAYOUT_LIST_FOR_PANEL.append(DisplayModeObserver.DISPMODE_REC_HISTOGRAM, R.layout.shooting_main_sid_histogram_panel);
+		LAYOUT_LIST_FOR_PANEL.append(DisplayModeObserver.DISPMODE_REC_DIGITAL_LEVEL, R.layout.shooting_main_sid_digitallevel_panel);
+
+		LAYOUT_LIST_FOR_FINDER = new SparseArray<Integer>();
+		LAYOUT_LIST_FOR_FINDER.append(DisplayModeObserver.DISPMODE_REC_INFO_ON, R.layout.shooting_main_sid_basic_info_evf);
+		LAYOUT_LIST_FOR_FINDER.append(GFDisplayModeObserver.DISPMODE_REC_APP_INFO_OFF, R.layout.shooting_main_sid_info_off_evf);
+		LAYOUT_LIST_FOR_FINDER.append(DisplayModeObserver.DISPMODE_REC_INFO_OFF, R.layout.shooting_main_sid_info_off_evf);
+		LAYOUT_LIST_FOR_FINDER.append(DisplayModeObserver.DISPMODE_REC_HISTOGRAM, R.layout.shooting_main_sid_histogram_evf);
+		LAYOUT_LIST_FOR_FINDER.append(DisplayModeObserver.DISPMODE_REC_DIGITAL_LEVEL, R.layout.shooting_main_sid_digitallevel_evf);
+
+		LAYOUT_LIST_FOR_HDMI = LAYOUT_LIST_FOR_PANEL;
+	}
+	
+	
+
+	@Override
+	public void onResume() {
+		super.onResume();
+		muteOff();
+		CameraNotificationManager.getInstance().setNotificationListener(this);
+		GFDisplayModeObserver.getInstance().setNotificationListener(this);
+		DisplayModeObserver.getInstance().setNotificationListener(this);
+		setAntiBlurOff();
+	}
+
+	@Override
+	public void onPause() {
+		CameraNotificationManager.getInstance().removeNotificationListener(this);
+		GFDisplayModeObserver.getInstance().removeNotificationListener(this);
+		DisplayModeObserver.getInstance().removeNotificationListener(this);
+		if ( !SaUtil.isAVIP() ){
+			GFHistgramTask.getInstance().stopHistgramUpdating();
+		}
+		super.onPause();
+	}
+
+
+	@Override
+	protected void createView() {
+        int device = DisplayModeObserver.getInstance().getActiveDevice();
+        int displayMode = GFDisplayModeObserver.getInstance().getActiveDispMode(DisplayModeObserver.APP_MODE_REC);
+
+        int baseViewId = -1;
+        int mainViewId = -1;
+        int baseFooterViewId = -1;
+        int touchAreaId = -1;
+        
+        if(device == DisplayModeObserver.DEVICE_ID_PANEL) {
+            baseViewId = R.layout.shooting_base_sid_basic_info_panel;
+            baseFooterViewId = R.layout.shooting_base_sid_basic_footer_panel;
+            mainViewId = getLayout(device, displayMode);
+            touchAreaId = R.id.touchArea;
+        }
+        else if(device == DisplayModeObserver.DEVICE_ID_FINDER) {
+            baseViewId = R.layout.shooting_base_sid_basic_info_evf;
+            baseFooterViewId = R.layout.shooting_base_sid_basic_footer_evf;
+            mainViewId = getLayout(device, displayMode);
+        }
+        else if(device == DisplayModeObserver.DEVICE_ID_HDMI) {
+            baseViewId = R.layout.shooting_base_sid_basic_info_panel;
+            baseFooterViewId = R.layout.shooting_base_sid_basic_footer_panel;
+            mainViewId = getLayout(device, displayMode);
+            touchAreaId = R.id.touchArea; // HDMI出力時はタッチイベント自体が飛んでこないので消してOK
+        }
+
+        if ((-1 != baseViewId) && (-1 != baseFooterViewId) && (-1 != mainViewId) &&
+			(baseViewId != mCurrentBaseViewId || baseFooterViewId != mCurrentBaseFooterViewId || mainViewId != mCurrentMainViewId)) {
+
+			detachView();
+
+			mCurrentBaseViewId = baseViewId;
+            mCurrentMainViewId = mainViewId;
+            mCurrentBaseFooterViewId = baseFooterViewId;
+            mCurrentView = obtainViewFromPool(baseViewId);
+            mCurrentBaseView = (ViewGroup)mCurrentView;
+            
+            View baseFooterView = mCurrentBaseFooterView = obtainViewFromPool(baseFooterViewId);
+            mCurrentBaseView.addView(baseFooterView);
+            if (null != baseFooterView) {
+                mUserChangableViews[USER_CHANGING_APERTURE]          = (DigitView)baseFooterView.findViewById(R.id.aperture_view);
+                mUserChangableViews[USER_CHANGING_SHUTTERSPEED]      = (DigitView)baseFooterView.findViewById(R.id.shutterspeed_view);
+                mUserChangableViews[USER_CHANGING_EXPOSURE]          = (DigitView)baseFooterView.findViewById(R.id.exposure_and_meteredmanual_view);
+                mUserChangableViews[USER_CHANGING_ISOSENSITIVITY]    = (DigitView)baseFooterView.findViewById(R.id.iso_sensitivity_view);
+            }
+            
+			Looper.myQueue().addIdleHandler(idleHandler);
+        }
+
+		ExposureModeIconView icon1 = (ExposureModeIconView)mCurrentView.findViewById(R.id.i10_1);
+		AppIconView icon2 = (AppIconView)mCurrentView.findViewById(R.id.app_icon);
+        if (device == DisplayModeObserver.DEVICE_ID_FINDER) {
+			icon1.setAutoDisappear(false);
+			if (DisplayModeObserver.DISPMODE_REC_INFO_ON == displayMode) {
+				icon2.setAutoDisappear(false);
+			}
+			else {
+				icon2.setAutoDisappear(true);
+			}
+		}
+		else {
+			if (DisplayModeObserver.DISPMODE_REC_INFO_ON == displayMode) {
+				icon1.setAutoDisappear(false);
+				icon2.setAutoDisappear(false);
+			}
+			else {
+				icon1.setAutoDisappear(true);
+				icon2.setAutoDisappear(true);
+			}
+		}
+
+        if(-1 != touchAreaId){
+        	mTouchArea = (TouchArea)mCurrentView.findViewById(touchAreaId);
+        	if(null != mTouchArea){
+        		mTouchArea.setTouchAreaListener(getOnTouchListener());
+        	}
+        }
+        handleGraduatedFilterIcon();
+	}
+
+	private void handleGraduatedFilterIcon() {
+    	mCurrentMainView = obtainViewFromPool(mCurrentMainViewId);
+    	Parameters params = GFEffectParameters.getInstance().getParameters();
+		int displayMode = GFDisplayModeObserver.getInstance().getActiveDispMode(DisplayModeObserver.APP_MODE_REC);
+		if (null != mCurrentMainView && GFDisplayModeObserver.DISPMODE_REC_HISTOGRAM == displayMode) {
+			GFHistgramTask.getInstance().startHistgramUpdating();
+		} else {
+			GFHistgramTask.getInstance().stopHistgramUpdating();
+		}
+
+//        if (null != mCurrentMainView && GFDisplayModeObserver.DISPMODE_REC_APP_INFO_ON == displayMode) {
+//        	ImageView evIcon = (ImageView) mCurrentMainView.findViewById(R.id.ev_info_icon);
+//        	TextView evText = (TextView) mCurrentMainView.findViewById(R.id.ev_info_text);
+//        	ImageView wbIcon = (ImageView) mCurrentMainView.findViewById(R.id.wb_info_icon);
+//        	TextView wbText = (TextView) mCurrentMainView.findViewById(R.id.wb_info_text);
+//			if (Parameters.OFF.equalsIgnoreCase(params.getNDFilter())) {
+//				evText.setText("OFF");
+//			} else {
+//				evText.setText("ON");
+//			}
+//			if (Parameters.OFF.equalsIgnoreCase(params.getColorFilter())) {
+//				wbText.setText("OFF");
+//			} else {
+//				wbText.setText("ON");
+//			}
+//	       	ImageView colorRed = (ImageView) mCurrentMainView.findViewById(R.id.color_red);
+//	       	TextView redLevel = (TextView) mCurrentMainView.findViewById(R.id.red_level);
+//	       	ImageView colorBlue = (ImageView) mCurrentMainView.findViewById(R.id.color_blue);
+//	       	TextView blueLevel = (TextView) mCurrentMainView.findViewById(R.id.blue_level);
+//        	boolean isInitialSetting = (params.getWbGM() == Parameters.NO_WB_SHIFT) &&  (params.getWbAB() == Parameters.NO_WB_SHIFT);
+//        	if (isInitialSetting) {
+//        		colorRed.setVisibility(View.INVISIBLE);
+//        		redLevel.setVisibility(View.INVISIBLE);
+//        		colorBlue.setVisibility(View.INVISIBLE);
+//        		blueLevel.setVisibility(View.INVISIBLE);
+//        	} else {
+//        		colorRed.setVisibility(View.VISIBLE);
+//        		redLevel.setVisibility(View.VISIBLE);
+//        		colorBlue.setVisibility(View.VISIBLE);
+//        		blueLevel.setVisibility(View.VISIBLE);
+//        		redLevel.setText(GFCommonUtil.getInstance().getSignedInteger(params.getWbGM()));
+//        		blueLevel.setText(GFCommonUtil.getInstance().getSignedInteger(params.getWbAB()));
+//        	}
+//        }
+		BorderView borderView = (BorderView)mCurrentMainView.findViewById(R.id.border_view);
+		if (GFDisplayModeObserver.DISPMODE_REC_INFO_OFF == displayMode) {
+			borderView.setVisibility(View.INVISIBLE);
+		} else {
+			borderView.setVisibility(View.VISIBLE);
+		}
+
+	}
+
+	@Override
+	protected int getLayout(int device, int dispmode) {
+        int layout = -1;
+        if(device == DisplayModeObserver.DEVICE_ID_PANEL) {
+            layout = LAYOUT_LIST_FOR_PANEL.get(dispmode);
+        } else if(device == DisplayModeObserver.DEVICE_ID_FINDER) {
+            layout = LAYOUT_LIST_FOR_FINDER.get(dispmode);
+        } else if(device == DisplayModeObserver.DEVICE_ID_HDMI) {
+            layout = LAYOUT_LIST_FOR_HDMI.get(dispmode);
+        }
+		return layout;
+	}
+
+	private void setAntiBlurOff() {
+        if (!ParametersModifier.ANTI_HAND_BLUR_MODE_OFF.equals(AntiHandBlurController.getInstance().getValue(AntiHandBlurController.STILL))) {
+        	AntiHandBlurController.getInstance().setValue(AntiHandBlurController.STILL,
+					ParametersModifier.ANTI_HAND_BLUR_MODE_OFF);
+        }
+	}
+
+	private static String[] TAGS = new String[] {
+		DisplayModeObserver.TAG_DEVICE_CHANGE,
+		DisplayModeObserver.TAG_DISPMODE_CHANGE,
+		DisplayModeObserver.TAG_YUVLAYOUT_CHANGE,
+		GFConstants.MUTE_SCREEN
+	};
+
+	@Override
+	public String[] getTags() {
+		return TAGS;
+	}
+
+	@Override
+	public void onNotify(String tag) {
+		if (GFConstants.MUTE_SCREEN.equalsIgnoreCase(tag)) {
+			muteOn();
+		}
+	}
+
+	private void muteOn() {
+		getView().setBackgroundColor(Color.BLACK);
+	}
+	private void muteOff() {
+		getView().setBackgroundColor(0);
+	}
+}

@@ -1,7 +1,7 @@
 # App Architecture & Build Config
 
 ## Reference App Architecture (com.sony.imaging.app.base.*)
-All 7 Sony 1st-party apps share identical base library:
+All 19 Sony 1st-party apps share identical base library:
 
 ### App Lifecycle (single-Activity, Fragment-based)
 1. BaseApp extends Activity - the main entry point

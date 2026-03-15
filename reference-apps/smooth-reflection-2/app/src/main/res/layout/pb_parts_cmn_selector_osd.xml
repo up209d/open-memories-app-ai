@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:focusable="false"
+        android:layout_width="21px"
+        android:layout_height="38px"
+        android:layout_marginLeft="2px"
+        android:layout_marginTop="202px"
+        android:src="0x1080e38"/>
+    <ImageView
+        android:focusable="false"
+        android:layout_width="21px"
+        android:layout_height="38px"
+        android:layout_marginLeft="617px"
+        android:layout_marginTop="202px"
+        android:src="0x1080bd8"/>
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:focusable="false"
+        android:layout_width="40px"
+        android:layout_height="40px"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="241px"
+        android:button="@drawable/checkbox_selector_normal_layout"/>
+</merge>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:base="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pb_parts_cmn_layout_play_error"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.sony.imaging.app.base.common.widget.AbnormalTemperatureIcon
+        android:id="@+id/abnormal_icon"
+        android:layout_width="34px"
+        android:layout_height="36px"
+        android:layout_marginLeft="211px"
+        android:layout_marginTop="35px"
+        base:heat="0x1080d13"/>
+    <com.sony.imaging.app.base.common.widget.DatabaseIcon
+        android:id="@+id/DatabaseIcon"
+        android:layout_width="60px"
+        android:layout_height="36px"
+        android:layout_marginLeft="284px"
+        android:layout_marginTop="35px"
+        base:database_error="@android:drawable/sym_keyboard_shift"
+        base:database_full="0x10809fa"/>
+</RelativeLayout>

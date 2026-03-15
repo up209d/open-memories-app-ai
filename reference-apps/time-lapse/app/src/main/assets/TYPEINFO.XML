@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plist version="1.0">
+	<dict>
+	<key>Id</key><string>APP_TIME_LAPSE</string>
+	<key>DisplayNameLocalizedStrings</key>
+		<dict>
+		<key>en-US</key><string>Time-lapse</string>
+		<key>ja-JP</key><string>タイムラプス</string>
+		<key>it-IT</key><string>Time-lapse</string>
+		<key>nl-NL</key><string>Time-lapse</string>
+		<key>sv-SE</key><string>Tidsförlopp</string>
+		<key>es-ES</key><string>Captura de Tiempo</string>
+		<key>de-DE</key><string>Zeitraffer</string>
+		<key>fr-FR</key><string>Time-lapse</string>
+		<key>pt-BR</key><string>Lapso de tempo</string>
+		<key>ru-RU</key><string>Интервальн. съемка</string>
+		<key>zh-CN</key><string>延时拍摄</string>
+		<key>zh-TW</key><string>縮時</string>
+		<key>ko-KR</key><string>타임랩스</string>
+		<key>pl-PL</key><string>Zdjęcia poklatkowe</string>
+		</dict>
+	</dict>
+</plist>
+

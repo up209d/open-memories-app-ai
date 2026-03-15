@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STRID_FUNC_BRKMASTER">Professionel bracketing</string>
+    <string name="STRID_FUNC_BRKMASTER_2L">Professionel\nbracketing</string>
+    <string name="STRID_FUNC_BRKMASTER_GUIDE">Der vil blive optaget flere billeder med ændringer i lukkerhastighed, blænde, fokus og blitzindstillinger.</string>
+    <string name="STRID_FUNC_SSBRK">Lukkerhastighedsbracketing</string>
+    <string name="STRID_FUNC_APERTUREBRK">Blændebracketing</string>
+    <string name="STRID_FUNC_FOCUSBRK">Fokusbracketing</string>
+    <string name="STRID_FUNC_FLASHBRK">Blitzbracketing</string>
+    <string name="STRID_FUNC_SSBRK_GUIDE">Optager 3 billeder med forskellige lukkerhastigheder.</string>
+    <string name="STRID_FUNC_APERTUREBRK_GUIDE">Optager 3 billeder med forskellig blænde.</string>
+    <string name="STRID_FUNC_FOCUSBRK_GUIDE">Optager 3 billeder med forskellige fokuspositioner.</string>
+    <string name="STRID_FUNC_FLASHBRK_GUIDE">Optager billeder med og uden blitz.</string>
+    <string name="STRID_FUNC_SHIFT_RANGE">Bracketingværdi</string>
+    <string name="STRID_FUNC_SHIFT_RANGE_WIDE">Bred</string>
+    <string name="STRID_FUNC_SHIFT_RANGE_NARROW">Smal</string>
+    <string name="STRID_CAU_FLASH_INVALID">Kan ikke udløse blitz.\nBekræft, at blitzen er klar til at udløses.</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_RETURN">Vejledning </string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_EXIT">Vejledning Afslut applikation</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_EXIT_SK">Vejledning Afslut applikation</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_RETURN_SK">Vejledning </string>
+    <string name="STRID_FOOTERGUIDE_TV_RETURN">Tv </string>
+    <string name="STRID_FOOTERGUIDE_TV_RETURN_SK">Tv </string>
+    <string name="STRID_FOOTERGUIDE_AV_RETURN">Av </string>
+    <string name="STRID_FOOTERGUIDE_AV_RETURN_SK">Av </string>
+</resources>

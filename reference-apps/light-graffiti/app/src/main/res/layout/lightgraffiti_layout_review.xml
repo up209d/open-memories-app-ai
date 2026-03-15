@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:base="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.sony.imaging.app.base.shooting.widget.AppIconView
+        android:id="@+id/app_icon"
+        android:layout_width="70px"
+        android:layout_height="55px"
+        android:layout_marginLeft="6px"
+        android:layout_marginTop="0px"/>
+    <TextView
+        android:textColor="@color/RESID_FONTSTYLE_STD_NORMAL"
+        android:id="@+id/review_title"
+        android:layout_width="422px"
+        android:layout_height="46px"
+        android:layout_marginLeft="80px"
+        android:layout_marginTop="4px"
+        android:text="@string/STRID_FUNC_STOPMOTION_REVIEW"
+        style="@style/RESID_FONTSIZE_BIG_M_EDGE_ON"/>
+    <com.sony.imaging.app.lightgraffiti.shooting.layout.LGBatteryIcon
+        android:id="@+id/BatteryIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="590px"
+        android:layout_marginTop="1px"
+        android:src="@drawable/icon_battery"/>
+    <include
+        android:id="@+id/pb_parts_cmn_layout_play_footer"
+        layout="@layout/pb_parts_cmn_layout_play_footer"/>
+</RelativeLayout>

@@ -1,0 +1,124 @@
+package com.sony.imaging.app.base.menu.layout;
+
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import com.sony.imaging.app.base.caution.CautionProcessingFunction;
+import com.sony.imaging.app.base.caution.CautionUtilityClass;
+import com.sony.imaging.app.base.caution.IkeyDispatchEach;
+import com.sony.imaging.app.base.shooting.camera.ExposureModeController;
+import com.sony.imaging.app.base.shooting.camera.executor.BaseShootingExecutor;
+import com.sony.imaging.app.base.shooting.camera.executor.ExecutorCreator;
+import com.sony.imaging.app.base.shooting.trigger.ModeDialDetector;
+import com.sony.imaging.app.fw.Layout;
+import com.sony.imaging.app.util.BeepUtility;
+
+/* loaded from: classes.dex */
+public class LastBastionMenuLayout extends BaseMenuLayout {
+    @Override // com.sony.imaging.app.base.menu.layout.BaseMenuLayout, com.sony.imaging.app.fw.Layout, com.sony.imaging.app.fw.FakeFragment
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        super.onCreateView(inflater, container, savedInstanceState);
+        return new View(getActivity());
+    }
+
+    @Override // com.sony.imaging.app.base.menu.layout.BaseMenuLayout, com.sony.imaging.app.fw.FakeFragment
+    public void onResume() {
+        super.onResume();
+        ExecutorCreator.getInstance().stableSequence((BaseShootingExecutor.ReleasedListener) null);
+        ExposureModeController emc = ExposureModeController.getInstance();
+        CautionUtilityClass.getInstance().setDispatchKeyEvent(emc.getCautionId(), getKeyHandler());
+        CautionUtilityClass.getInstance().requestTrigger(emc.getCautionId());
+    }
+
+    @Override // com.sony.imaging.app.base.menu.layout.BaseMenuLayout, com.sony.imaging.app.fw.FakeFragment
+    public void onPause() {
+        ExposureModeController emc = ExposureModeController.getInstance();
+        CautionUtilityClass.getInstance().disapperTrigger(emc.getCautionId());
+        CautionUtilityClass.getInstance().setDispatchKeyEvent(emc.getCautionId(), null);
+        super.onPause();
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public int modeDialProcessing() {
+        return super.turnedModeDial();
+    }
+
+    protected IkeyDispatchEach getKeyHandler() {
+        InvalidExposureModeKeyHandler changeModeKeyHandler = new InvalidExposureModeKeyHandler();
+        return changeModeKeyHandler;
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    /* loaded from: classes.dex */
+    public class InvalidExposureModeKeyHandler extends IkeyDispatchEach {
+        public InvalidExposureModeKeyHandler() {
+        }
+
+        public InvalidExposureModeKeyHandler(CautionProcessingFunction p, Layout l) {
+            super(p, l);
+        }
+
+        @Override // com.sony.imaging.app.fw.BaseInvalidKeyHandler, com.sony.imaging.app.fw.BaseKeyHandler, com.sony.imaging.app.fw.IEachFunctionEventHandler
+        public int pushedPlayBackKey() {
+            CautionUtilityClass.getInstance().executeTerminate();
+            return 0;
+        }
+
+        @Override // com.sony.imaging.app.fw.BaseInvalidKeyHandler, com.sony.imaging.app.fw.BaseKeyHandler, com.sony.imaging.app.fw.IEachFunctionEventHandler
+        public int pushedMovieRecKey() {
+            return 0;
+        }
+
+        @Override // com.sony.imaging.app.fw.BaseInvalidKeyHandler, com.sony.imaging.app.fw.BaseKeyHandler, com.sony.imaging.app.fw.IEachFunctionEventHandler
+        public int pushedUmRemoteRecKey() {
+            return 0;
+        }
+
+        @Override // com.sony.imaging.app.fw.BaseInvalidKeyHandler, com.sony.imaging.app.fw.BaseKeyHandler, com.sony.imaging.app.fw.IEachFunctionEventHandler
+        public int pushedIRRecKey() {
+            return 0;
+        }
+
+        @Override // com.sony.imaging.app.fw.BaseInvalidKeyHandler, com.sony.imaging.app.fw.BaseKeyHandler, com.sony.imaging.app.fw.IEachFunctionEventHandler
+        public int pushedShootingModeKey() {
+            return -1;
+        }
+
+        @Override // com.sony.imaging.app.fw.BaseInvalidKeyHandler, com.sony.imaging.app.fw.BaseKeyHandler, com.sony.imaging.app.fw.IEachFunctionEventHandler
+        public int turnedModeDial() {
+            if (ModeDialDetector.getModeDialPosition() == -1) {
+                return 1;
+            }
+            CautionUtilityClass.getInstance().executeTerminate();
+            return LastBastionMenuLayout.this.modeDialProcessing();
+        }
+
+        @Override // com.sony.imaging.app.fw.BaseInvalidKeyHandler, com.sony.imaging.app.fw.BaseKeyHandler, com.sony.imaging.app.fw.IEachFunctionEventHandler
+        public int pushedMenuKey() {
+            LastBastionMenuLayout.this.getActivity().finish();
+            BeepUtility.getInstance().playBeep("BEEP_ID_SELECT");
+            return 1;
+        }
+
+        @Override // com.sony.imaging.app.fw.BaseInvalidKeyHandler, com.sony.imaging.app.fw.BaseKeyHandler, com.sony.imaging.app.fw.IEachFunctionEventHandler
+        public int pushedS1Key() {
+            return 0;
+        }
+
+        @Override // com.sony.imaging.app.fw.BaseInvalidKeyHandler, com.sony.imaging.app.fw.BaseKeyHandler, com.sony.imaging.app.fw.IEachFunctionEventHandler
+        public int releasedS1Key() {
+            return 0;
+        }
+
+        @Override // com.sony.imaging.app.fw.BaseInvalidKeyHandler, com.sony.imaging.app.fw.BaseKeyHandler, com.sony.imaging.app.fw.IEachFunctionEventHandler
+        public int turnedEVDial() {
+            return 0;
+        }
+
+        @Override // com.sony.imaging.app.fw.BaseInvalidKeyHandler, com.sony.imaging.app.fw.BaseKeyHandler, com.sony.imaging.app.fw.IEachFunctionEventHandler
+        public int turnedFocusModeDial() {
+            return 0;
+        }
+    }
+}

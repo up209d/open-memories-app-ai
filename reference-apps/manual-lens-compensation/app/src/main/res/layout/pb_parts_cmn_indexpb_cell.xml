@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:base="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/gridThumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="2px"
+        android:layout_marginTop="3px"
+        android:layout_marginRight="2px"
+        android:layout_marginBottom="3px"
+        android:scaleType="fitCenter"/>
+    <com.sony.imaging.app.base.playback.widget.Icon3D
+        android:id="@+id/icon3d"
+        android:focusable="false"
+        android:layout_width="56px"
+        android:layout_height="38px"
+        android:layout_marginRight="2px"
+        android:layout_marginBottom="3px"
+        android:src="0x10810b6"
+        android:scaleType="matrix"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        base:request_notification="false"/>
+    <com.sony.imaging.app.base.playback.widget.IconAutoFraming
+        android:id="@+id/iconautoframing"
+        android:focusable="false"
+        android:layout_width="56px"
+        android:layout_height="38px"
+        android:layout_marginRight="2px"
+        android:layout_marginBottom="3px"
+        android:src="@android:drawable/item_background_activated_holo_dark"
+        android:scaleType="matrix"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        base:request_notification="false"/>
+</RelativeLayout>

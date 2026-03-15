@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STRID_FUNC_BRKMASTER">Bracket Pro</string>
+    <string name="STRID_FUNC_BRKMASTER_2L">Bracket Pro</string>
+    <string name="STRID_FUNC_BRKMASTER_GUIDE">Meerdere beelden, met verschillen in sluitertijd, diafragma, scherpstellen, instellingen voor flitslicht, zullen worden opgenomen.</string>
+    <string name="STRID_FUNC_SSBRK">Sluitertijd-bracket</string>
+    <string name="STRID_FUNC_APERTUREBRK">Diafragma-bracket</string>
+    <string name="STRID_FUNC_FOCUSBRK">Scherpstellen-bracket</string>
+    <string name="STRID_FUNC_FLASHBRK">Flitslicht-bracket</string>
+    <string name="STRID_FUNC_SSBRK_GUIDE">Maakt 3 opnamen met variërende sluitertijden.</string>
+    <string name="STRID_FUNC_APERTUREBRK_GUIDE">Maakt 3 opnamen met variërende diafragma\'s.</string>
+    <string name="STRID_FUNC_FOCUSBRK_GUIDE">Maakt 3 opnamen met variërende scherpstelposities.</string>
+    <string name="STRID_FUNC_FLASHBRK_GUIDE">Maakt opnamen van beelden met en zonder flitslicht.</string>
+    <string name="STRID_FUNC_SHIFT_RANGE">Bracketing waarde</string>
+    <string name="STRID_FUNC_SHIFT_RANGE_WIDE">Breed</string>
+    <string name="STRID_FUNC_SHIFT_RANGE_NARROW">Smal</string>
+    <string name="STRID_CAU_FLASH_INVALID">Kan het flitslicht niet laten flitsen.\nKijk na of het flitslicht klaar is om te\nflitsen.</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_RETURN">Gids </string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_EXIT">Gids Applicatie sluiten</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_EXIT_SK">Gids Applicatie sluiten</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_RETURN_SK">Gids </string>
+    <string name="STRID_FOOTERGUIDE_TV_RETURN">Tv </string>
+    <string name="STRID_FOOTERGUIDE_TV_RETURN_SK">Tv </string>
+    <string name="STRID_FOOTERGUIDE_AV_RETURN">Av </string>
+    <string name="STRID_FOOTERGUIDE_AV_RETURN_SK">Av </string>
+</resources>

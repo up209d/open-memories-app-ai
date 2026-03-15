@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STRID_FUNC_BRKMASTER">ركيزة احترافية</string>
+    <string name="STRID_FUNC_BRKMASTER_2L">ركيزة احترافية</string>
+    <string name="STRID_FUNC_BRKMASTER_GUIDE">سيتم تسجيل صور متعددة ذات اختلافات في تهيئات سرعة الغالق أو الفتحة أو التركيز البؤري أو الفلاش.</string>
+    <string name="STRID_FUNC_SSBRK">ركيزة بسرعة غالق متغيرة</string>
+    <string name="STRID_FUNC_APERTUREBRK">ركيزة بفتحة متغيرة</string>
+    <string name="STRID_FUNC_FOCUSBRK">ركيزة بتركيز بؤري متغير</string>
+    <string name="STRID_FUNC_FLASHBRK">ركيزة بالفلاش</string>
+    <string name="STRID_FUNC_SSBRK_GUIDE">يقوم بتصوير 3 لقطات بسرعات غالق مختلفة.</string>
+    <string name="STRID_FUNC_APERTUREBRK_GUIDE">يقوم بتصوير 3 لقطات بقيم فتحة مختلفة.</string>
+    <string name="STRID_FUNC_FOCUSBRK_GUIDE">يقوم بتصوير 3 لقطات بمواضع تركيز بؤري مختلفة.</string>
+    <string name="STRID_FUNC_FLASHBRK_GUIDE">يقوم بتصوير صور مع أو بدون إضاءة الفلاش.</string>
+    <string name="STRID_FUNC_SHIFT_RANGE">قيمة الركيزة</string>
+    <string name="STRID_FUNC_SHIFT_RANGE_WIDE">عريض</string>
+    <string name="STRID_FUNC_SHIFT_RANGE_NARROW">ضيق</string>
+    <string name="STRID_CAU_FLASH_INVALID">لا يمكن إضاءة الفلاش.\nيرجى التحقق من أن الفلاش مستعد للإضاءة.</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_RETURN">الدليل </string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_EXIT">الدليل الخروج من البرنامج</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_EXIT_SK">الدليل الخروج من البرنامج</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_RETURN_SK">الدليل </string>
+    <string name="STRID_FOOTERGUIDE_TV_RETURN">Tv </string>
+    <string name="STRID_FOOTERGUIDE_TV_RETURN_SK">Tv </string>
+    <string name="STRID_FOOTERGUIDE_AV_RETURN">Av </string>
+    <string name="STRID_FOOTERGUIDE_AV_RETURN_SK">Av </string>
+</resources>

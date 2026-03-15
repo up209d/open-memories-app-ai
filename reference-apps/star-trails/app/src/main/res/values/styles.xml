@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="RESID_FONTSIZE_S" parent="@android:style/Widget.ActionBar">
+        <item name="android:gravity">center</item>
+        <item name="android:lineSpacingExtra">6px</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+    </style>
+    <style name="RESID_FONTSIZE_S_EDGE" parent="@android:style/Widget.ActionBar">
+        <item name="android:gravity">center</item>
+        <item name="android:lineSpacingExtra">6px</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+        <item name="android:allContactsName">#000000</item>
+        <item name="android:windowActionBar">2px</item>
+    </style>
+    <style name="RESID_FONTSIZE_M" parent="@android:style/Widget.ActionButton">
+        <item name="android:gravity">center</item>
+        <item name="android:lineSpacingExtra">8px</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+    </style>
+    <style name="RESID_FONTSIZE_M_EDGE" parent="@android:style/Widget.ActionButton">
+        <item name="android:gravity">center</item>
+        <item name="android:lineSpacingExtra">8px</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+        <item name="android:allContactsName">#000000</item>
+        <item name="android:windowActionBar">2px</item>
+    </style>
+    <style name="RESID_FONTSIZE_L" parent="@android:style/Widget.ListPopupWindow">
+        <item name="android:gravity">center</item>
+        <item name="android:lineSpacingExtra">20px</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+    </style>
+    <style name="RESID_FONTSIZE_L_EDGE" parent="@android:style/Widget.ListPopupWindow">
+        <item name="android:gravity">center</item>
+        <item name="android:lineSpacingExtra">20px</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+        <item name="android:allContactsName">#000000</item>
+        <item name="android:windowActionBar">2px</item>
+    </style>
+    <style name="RESID_FONTSIZE_REC_BASIC_PANEL_EDGE" parent="@android:style/Widget.Spinner.DropDown">
+        <item name="android:gravity">center</item>
+        <item name="android:lineSpacingExtra">11px</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+        <item name="android:allContactsName">#000000</item>
+        <item name="android:windowActionBar">2px</item>
+    </style>
+    <style name="RESID_FONTSIZE_REC_EXP_PANEL_EDGE" parent="@android:style/Widget.ListPopupWindow">
+        <item name="android:gravity">center</item>
+        <item name="android:lineSpacingExtra">20px</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+        <item name="android:allContactsName">#000000</item>
+        <item name="android:windowActionBar">2px</item>
+    </style>
+    <style name="RESID_FONTSIZE_MOVIE_RECTIME_EXP_PANEL_EDGE" parent="@android:style/Widget.ListPopupWindow">
+        <item name="android:gravity">center</item>
+        <item name="android:lineSpacingExtra">20px</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+        <item name="android:allContactsName">#000000</item>
+        <item name="android:windowActionBar">2px</item>
+    </style>
+    <style name="RESID_FONTSIZE_REC_BASIC_EVF_EDGE" parent="@android:style/TextAppearance.Widget.PopupMenu.Small">
+        <item name="android:gravity">center</item>
+        <item name="android:lineSpacingExtra">16px</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+        <item name="android:allContactsName">#000000</item>
+        <item name="android:windowActionBar">4px</item>
+    </style>
+    <style name="RESID_FONTSIZE_REC_EXP_EVF_EDGE" parent="@android:style/TextAppearance.Widget.PopupMenu.Small">
+        <item name="android:gravity">center</item>
+        <item name="android:lineSpacingExtra">16px</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+        <item name="android:allContactsName">#000000</item>
+        <item name="android:windowActionBar">4px</item>
+    </style>
+    <style name="RESID_FONTSIZE_MOVIE_RECTIME_EVF_EDGE" parent="@android:style/Widget.Spinner.DropDown">
+        <item name="android:gravity">center</item>
+        <item name="android:lineSpacingExtra">11px</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+        <item name="android:allContactsName">#000000</item>
+        <item name="android:windowActionBar">4px</item>
+    </style>
+    <style name="RESID_FONTSIZE_REC_BASIC_PANEL_BIG_CHAR" parent="@android:style/Widget.ActionButton.Overflow">
+        <item name="android:gravity">center</item>
+        <item name="android:lineSpacingExtra">9px</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+        <item name="android:allContactsName">#000000</item>
+        <item name="android:windowActionBar">2px</item>
+    </style>
+    <style name="RESID_FONTSIZE_REC_EXP_PANEL_BIG_CHAR_EDGE" parent="@android:style/Widget.PopupMenu">
+        <item name="android:gravity">center</item>
+        <item name="android:allContactsName">#000000</item>
+        <item name="android:windowActionBar">2px</item>
+    </style>
+    <style name="RESID_FONTSIZE_REC_CLASSIC_EDGE" parent="@android:style/Widget.ActionButton.CloseMode">
+        <item name="android:gravity">center</item>
+        <item name="android:allContactsName">#000000</item>
+        <item name="android:windowActionBar">4px</item>
+    </style>
+    <style name="RESID_FONTSIZE_PLAY_VIEW_INFO_EDGE" parent="@android:style/Widget.ActionBar">
+        <item name="android:gravity">center</item>
+        <item name="android:lineSpacingExtra">6px</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+        <item name="android:allContactsName">#000000</item>
+        <item name="android:windowActionBar">2px</item>
+    </style>
+    <style name="RESID_FONTSIZE_PLAY_BASIC_EDGE" parent="@android:style/Widget.ActionButton">
+        <item name="android:gravity">center</item>
+        <item name="android:textScaleX">0.625</item>
+        <item name="android:lineSpacingExtra">8px</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+        <item name="android:allContactsName">#000000</item>
+        <item name="android:windowActionBar">2px</item>
+    </style>
+    <style name="RESID_FONTSIZE_PLAY_IMG_NUM" parent="@android:style/Widget.ActionBar">
+        <item name="android:gravity">center</item>
+        <item name="android:textScaleX">0.7143</item>
+        <item name="android:lineSpacingExtra">6px</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+    </style>
+    <style name="RESID_FONTSIZE_PLAY_HISTOGRAM_EDGE" parent="@android:style/Widget.ActionButton">
+        <item name="android:gravity">center</item>
+        <item name="android:textScaleX">0.5625</item>
+        <item name="android:lineSpacingExtra">8px</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+        <item name="android:allContactsName">#000000</item>
+        <item name="android:windowActionBar">2px</item>
+    </style>
+    <style name="RESID_FONTSIZE_REC_GRAPHICAL_PANEL_EDGE" parent="@android:style/Widget.ActionBar">
+        <item name="android:gravity">center</item>
+        <item name="android:lineSpacingExtra">6px</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+        <item name="android:allContactsName">#000000</item>
+        <item name="android:windowActionBar">2px</item>
+    </style>
+    <style name="RESID_FONTSIZE_PLAY_VIEW_INFO_FILENAME_EDGE" parent="@android:style/Widget.ActionBar">
+        <item name="android:gravity">center</item>
+        <item name="android:lineSpacingExtra">6px</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+        <item name="android:allContactsName">#000000</item>
+        <item name="android:windowActionBar">2px</item>
+    </style>
+    <style name="RESID_FONTSIZE_STD_L_EDGE_ON" parent="@android:style/Widget.Holo.WebTextView">
+        <item name="android:lineSpacingExtra">20px</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+        <item name="android:allContactsName">#000000</item>
+        <item name="android:windowActionBar">2px</item>
+    </style>
+    <style name="RESID_FONTSIZE_STD_M_EDGE_ON" parent="@android:style/Widget.Holo.Spinner">
+        <item name="android:lineSpacingExtra">8px</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+        <item name="android:allContactsName">#000000</item>
+        <item name="android:windowActionBar">2px</item>
+    </style>
+    <style name="RESID_FONTSIZE_STD_S_EDGE_ON" parent="@android:style/Widget.Holo.ScrollView">
+        <item name="android:lineSpacingExtra">6px</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+        <item name="android:allContactsName">#000000</item>
+        <item name="android:windowActionBar">2px</item>
+    </style>
+    <style name="RESID_FONTSIZE_STD_L_EDGE_OFF" parent="@android:style/Widget.Holo.WebTextView">
+        <item name="android:lineSpacingExtra">20px</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+    </style>
+    <style name="RESID_FONTSIZE_STD_M_EDGE_OFF" parent="@android:style/Widget.Holo.Spinner">
+        <item name="android:lineSpacingExtra">8px</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+    </style>
+    <style name="RESID_FONTSIZE_STD_S_EDGE_OFF" parent="@android:style/Widget.Holo.ScrollView">
+        <item name="android:lineSpacingExtra">6px</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+    </style>
+    <style name="RESID_FONTSIZE_SP_PLAY_INFO" parent="@android:style/Widget.Holo.HorizontalScrollView">
+        <item name="android:lineSpacingExtra">8px</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+        <item name="android:allContactsName">#000000</item>
+        <item name="android:windowActionBar">2px</item>
+    </style>
+    <style name="RESID_FONTSIZE_SP_REC_BASE_INFO" parent="@android:style/Widget.Holo.HorizontalScrollView">
+        <item name="android:lineSpacingExtra">8px</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+        <item name="android:allContactsName">#000000</item>
+        <item name="android:windowActionBar">2px</item>
+    </style>
+    <style name="RESID_FONTSIZE_SP_REC_LV_MOVIE_TIME" parent="@android:style/Widget.Holo.Spinner">
+        <item name="android:lineSpacingExtra">8px</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+        <item name="android:allContactsName">#000000</item>
+        <item name="android:windowActionBar">2px</item>
+    </style>
+    <style name="RESID_FONTSIZE_SP_REC_LV_AV_TV" parent="@android:style/Widget.Holo.DropDownItem">
+        <item name="android:lineSpacingMultiplier">1</item>
+        <item name="android:allContactsName">#000000</item>
+        <item name="android:windowActionBar">2px</item>
+    </style>
+    <style name="RESID_FONTSIZE_SP_REC_LV_ISO" parent="@android:style/Widget.Holo.TabWidget">
+        <item name="android:lineSpacingMultiplier">1</item>
+        <item name="android:allContactsName">#000000</item>
+        <item name="android:windowActionBar">2px</item>
+    </style>
+    <style name="RESID_FONTSIZE_SP_REC_LV_EV" parent="@android:style/Widget.Holo.TabWidget">
+        <item name="android:lineSpacingMultiplier">1</item>
+        <item name="android:allContactsName">#000000</item>
+        <item name="android:windowActionBar">2px</item>
+    </style>
+    <style name="RESID_FONTSIZE_SP_REC_BASE_INFO_EVF" parent="@android:style/Widget.Holo.RatingBar.Small">
+        <item name="android:allContactsName">#000000</item>
+        <item name="android:windowActionBar">2px</item>
+    </style>
+    <style name="RESID_FONTSIZE_SP_REC_LV_MOVIE_TIME_EVF" parent="@android:style/Widget.Holo.ScrollView">
+        <item name="android:lineSpacingExtra">6px</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+        <item name="android:allContactsName">#000000</item>
+        <item name="android:windowActionBar">2px</item>
+    </style>
+    <style name="RESID_FONTSIZE_SP_REC_LV_AV_TV_EVF" parent="@android:style/Widget.Holo.CompoundButton.RadioButton">
+        <item name="android:lineSpacingMultiplier">1</item>
+        <item name="android:allContactsName">#000000</item>
+        <item name="android:windowActionBar">2px</item>
+    </style>
+    <style name="RESID_FONTSIZE_SP_REC_LV_ISO_EVF" parent="@android:style/Widget.Holo.CompoundButton.RadioButton">
+        <item name="android:lineSpacingMultiplier">1</item>
+        <item name="android:allContactsName">#000000</item>
+        <item name="android:windowActionBar">2px</item>
+    </style>
+    <style name="RESID_FONTSIZE_SP_REC_CL_AVTV" parent="@android:style/Widget.Holo.TextView.SpinnerItem">
+        <item name="android:lineSpacingMultiplier">1</item>
+        <item name="android:allContactsName">#000000</item>
+        <item name="android:windowActionBar">2px</item>
+    </style>
+    <style name="RESID_FONTSIZE_SP_REC_CL_ISO" parent="@android:style/Widget.Holo.TabWidget">
+        <item name="android:lineSpacingMultiplier">1</item>
+        <item name="android:allContactsName">#000000</item>
+        <item name="android:windowActionBar">2px</item>
+    </style>
+    <style name="RESID_FONTSIZE_SP_REC_MR_INFO" parent="@android:style/Widget.Holo.TabWidget">
+        <item name="android:lineSpacingMultiplier">1</item>
+        <item name="android:allContactsName">#000000</item>
+        <item name="android:windowActionBar">2px</item>
+    </style>
+    <style name="RESID_FONTSIZE_SP_REC_QN_UPPER" parent="@android:style/Widget.Holo.ListPopupWindow">
+        <item name="android:lineSpacingMultiplier">1</item>
+    </style>
+    <style name="RESID_FONTSIZE_SP_REC_QN_ISO" parent="@android:style/Widget.Holo.TabWidget">
+        <item name="android:lineSpacingMultiplier">1</item>
+        <item name="android:allContactsName">#000000</item>
+        <item name="android:windowActionBar">2px</item>
+    </style>
+    <style name="RESID_FONTSIZE_SP_REC_QN_EV" parent="@android:style/Widget.Holo.CompoundButton.Star">
+        <item name="android:lineSpacingExtra">8px</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+    </style>
+    <style name="RESID_FONTSIZE_U_L" parent="@android:style/Widget.Holo.WebTextView">
+        <item name="android:lineSpacingExtra">20px</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+    </style>
+    <style name="RESID_FONTSIZE_U_M" parent="@android:style/Widget.Holo.Spinner">
+        <item name="android:lineSpacingMultiplier">1</item>
+    </style>
+    <style name="RESID_FONTSIZE_U_S" parent="@android:style/Widget.Holo.ScrollView">
+        <item name="android:lineSpacingExtra">6px</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+    </style>
+    <style name="RESID_FONTSIZE_BIG_L_EDGE_OFF" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:lineSpacingExtra">8px</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+    </style>
+    <style name="RESID_FONTSIZE_BIG_M_EDGE_OFF" parent="@android:style/Widget.Holo.WebView">
+        <item name="android:lineSpacingExtra">8px</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+    </style>
+    <style name="RESID_FONTSIZE_BIG_S_EDGE_OFF" parent="@android:style/Widget.Holo.TabWidget">
+        <item name="android:lineSpacingMultiplier">1</item>
+    </style>
+    <style name="RESID_FONTSIZE_BIG_L_EDGE_ON" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:lineSpacingMultiplier">1</item>
+        <item name="android:allContactsName">#000000</item>
+        <item name="android:windowActionBar">2px</item>
+    </style>
+    <style name="RESID_FONTSIZE_BIG_M_EDGE_ON" parent="@android:style/Widget.Holo.WebView">
+        <item name="android:lineSpacingExtra">8px</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+        <item name="android:allContactsName">#000000</item>
+        <item name="android:windowActionBar">2px</item>
+    </style>
+    <style name="RESID_FONTSIZE_BIG_S_EDGE_ON" parent="@android:style/Widget.Holo.TabWidget">
+        <item name="android:lineSpacingMultiplier">1</item>
+        <item name="android:allContactsName">#000000</item>
+        <item name="android:windowActionBar">2px</item>
+    </style>
+    <style name="RESID_FONTSIZE_SP_PLAY_CALENDAR_YEAR" parent="@android:style/Widget.Holo.CompoundButton.RadioButton">
+        <item name="android:lineSpacingMultiplier">1</item>
+    </style>
+    <style name="RESID_FONTSIZE_SP_GPS_DATE" parent="@android:style/Widget.Holo.Spinner">
+        <item name="android:lineSpacingExtra">8px</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+    </style>
+    <style name="footer_guide" parent="@style/RESID_FONTSIZE_STD_L_EDGE_OFF">
+        <item name="android:textColor">@color/RESID_FONTSTYLE_STD_NORMAL</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="play_footer_guide" parent="@style/footer_guide">
+    </style>
+    <style name="play_histo_legacy_emt_footer_guide" parent="@style/RESID_FONTSIZE_STD_M_EDGE_OFF">
+        <item name="android:textColor">@color/RESID_FONTSTYLE_U_CMN</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="menu_footer_guide" parent="@style/footer_guide">
+        <item name="android:textColor">@color/RESID_FONTSTYLE_U_CMN</item>
+    </style>
+    <style name="transparent_footer_guide" parent="@style/RESID_FONTSIZE_STD_L_EDGE_ON">
+        <item name="android:textColor">@color/RESID_FONTSTYLE_STD_NORMAL</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="focus_adjustment_footer_guide" parent="@style/footer_guide">
+    </style>
+    <style name="RESID_FONTSIZE_ILLIEGAL" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+        <item name="android:textColor">#ffdddddd</item>
+        <item name="android:lineSpacingExtra">6px</item>
+        <item name="android:lineSpacingMultiplier">1</item>
+        <item name="RESID_FONTSIZE_S">@style/RESID_FONTSIZE_S</item>
+        <item name="RESID_FONTSIZE_S_EDGE">@style/RESID_FONTSIZE_S_EDGE</item>
+        <item name="RESID_FONTSIZE_M">@style/RESID_FONTSIZE_M</item>
+        <item name="RESID_FONTSIZE_M_EDGE">@style/RESID_FONTSIZE_M_EDGE</item>
+        <item name="RESID_FONTSIZE_L">@style/RESID_FONTSIZE_L</item>
+        <item name="RESID_FONTSIZE_L_EDGE">@style/RESID_FONTSIZE_L_EDGE</item>
+        <item name="RESID_FONTSIZE_REC_BASIC_PANEL_EDGE">@style/RESID_FONTSIZE_REC_BASIC_PANEL_EDGE</item>
+        <item name="RESID_FONTSIZE_REC_EXP_PANEL_EDGE">@style/RESID_FONTSIZE_REC_EXP_PANEL_EDGE</item>
+        <item name="RESID_FONTSIZE_MOVIE_RECTIME_EXP_PANEL_EDGE">@style/RESID_FONTSIZE_MOVIE_RECTIME_EXP_PANEL_EDGE</item>
+        <item name="RESID_FONTSIZE_REC_BASIC_EVF_EDGE">@style/RESID_FONTSIZE_REC_BASIC_EVF_EDGE</item>
+        <item name="RESID_FONTSIZE_REC_EXP_EVF_EDGE">@style/RESID_FONTSIZE_REC_EXP_EVF_EDGE</item>
+        <item name="RESID_FONTSIZE_MOVIE_RECTIME_EVF_EDGE">@style/RESID_FONTSIZE_MOVIE_RECTIME_EVF_EDGE</item>
+        <item name="RESID_FONTSIZE_REC_BASIC_PANEL_BIG_CHAR">@style/RESID_FONTSIZE_REC_BASIC_PANEL_BIG_CHAR</item>
+        <item name="RESID_FONTSIZE_REC_EXP_PANEL_BIG_CHAR_EDGE">@style/RESID_FONTSIZE_REC_EXP_PANEL_BIG_CHAR_EDGE</item>
+        <item name="RESID_FONTSIZE_REC_CLASSIC_EDGE">@style/RESID_FONTSIZE_REC_CLASSIC_EDGE</item>
+        <item name="RESID_FONTSIZE_PLAY_VIEW_INFO_EDGE">@style/RESID_FONTSIZE_PLAY_VIEW_INFO_EDGE</item>
+        <item name="RESID_FONTSIZE_PLAY_BASIC_EDGE">@style/RESID_FONTSIZE_PLAY_BASIC_EDGE</item>
+        <item name="RESID_FONTSIZE_PLAY_IMG_NUM">@style/RESID_FONTSIZE_PLAY_IMG_NUM</item>
+        <item name="RESID_FONTSIZE_PLAY_HISTOGRAM_EDGE">@style/RESID_FONTSIZE_PLAY_HISTOGRAM_EDGE</item>
+        <item name="RESID_FONTSIZE_REC_GRAPHICAL_PANEL_EDGE">@style/RESID_FONTSIZE_REC_GRAPHICAL_PANEL_EDGE</item>
+        <item name="RESID_FONTSIZE_PLAY_VIEW_INFO_FILENAME_EDGE">@style/RESID_FONTSIZE_PLAY_VIEW_INFO_FILENAME_EDGE</item>
+        <item name="RESID_FONTSIZE_STD_L_EDGE_ON">@style/RESID_FONTSIZE_STD_L_EDGE_ON</item>
+        <item name="RESID_FONTSIZE_STD_M_EDGE_ON">@style/RESID_FONTSIZE_STD_M_EDGE_ON</item>
+        <item name="RESID_FONTSIZE_STD_S_EDGE_ON">@style/RESID_FONTSIZE_STD_S_EDGE_ON</item>
+        <item name="RESID_FONTSIZE_STD_L_EDGE_OFF">@style/RESID_FONTSIZE_STD_L_EDGE_OFF</item>
+        <item name="RESID_FONTSIZE_STD_M_EDGE_OFF">@style/RESID_FONTSIZE_STD_M_EDGE_OFF</item>
+        <item name="RESID_FONTSIZE_STD_S_EDGE_OFF">@style/RESID_FONTSIZE_STD_S_EDGE_OFF</item>
+        <item name="RESID_FONTSIZE_SP_PLAY_INFO">@style/RESID_FONTSIZE_SP_PLAY_INFO</item>
+        <item name="RESID_FONTSIZE_SP_REC_BASE_INFO">@style/RESID_FONTSIZE_SP_REC_BASE_INFO</item>
+        <item name="RESID_FONTSIZE_SP_REC_LV_MOVIE_TIME">@style/RESID_FONTSIZE_SP_REC_LV_MOVIE_TIME</item>
+        <item name="RESID_FONTSIZE_SP_REC_LV_AV_TV">@style/RESID_FONTSIZE_SP_REC_LV_AV_TV</item>
+        <item name="RESID_FONTSIZE_SP_REC_LV_ISO">@style/RESID_FONTSIZE_SP_REC_LV_ISO</item>
+        <item name="RESID_FONTSIZE_SP_REC_LV_EV">@style/RESID_FONTSIZE_SP_REC_LV_EV</item>
+        <item name="RESID_FONTSIZE_SP_REC_BASE_INFO_EVF">@style/RESID_FONTSIZE_SP_REC_BASE_INFO_EVF</item>
+        <item name="RESID_FONTSIZE_SP_REC_LV_MOVIE_TIME_EVF">@style/RESID_FONTSIZE_SP_REC_LV_MOVIE_TIME_EVF</item>
+        <item name="RESID_FONTSIZE_SP_REC_LV_AV_TV_EVF">@style/RESID_FONTSIZE_SP_REC_LV_AV_TV_EVF</item>
+        <item name="RESID_FONTSIZE_SP_REC_LV_ISO_EVF">@style/RESID_FONTSIZE_SP_REC_LV_ISO_EVF</item>
+        <item name="RESID_FONTSIZE_SP_REC_CL_AVTV">@style/RESID_FONTSIZE_SP_REC_CL_AVTV</item>
+        <item name="RESID_FONTSIZE_SP_REC_CL_ISO">@style/RESID_FONTSIZE_SP_REC_CL_ISO</item>
+        <item name="RESID_FONTSIZE_SP_REC_MR_INFO">@style/RESID_FONTSIZE_SP_REC_MR_INFO</item>
+        <item name="RESID_FONTSIZE_SP_REC_QN_UPPER">@style/RESID_FONTSIZE_SP_REC_QN_UPPER</item>
+        <item name="RESID_FONTSIZE_SP_REC_QN_ISO">@style/RESID_FONTSIZE_SP_REC_QN_ISO</item>
+        <item name="RESID_FONTSIZE_SP_REC_QN_EV">@style/RESID_FONTSIZE_SP_REC_QN_EV</item>
+        <item name="RESID_FONTSIZE_U_L">@style/RESID_FONTSIZE_U_L</item>
+        <item name="RESID_FONTSIZE_U_M">@style/RESID_FONTSIZE_U_M</item>
+        <item name="RESID_FONTSIZE_U_S">@style/RESID_FONTSIZE_U_S</item>
+        <item name="RESID_FONTSIZE_BIG_L_EDGE_OFF">@style/RESID_FONTSIZE_BIG_L_EDGE_OFF</item>
+        <item name="RESID_FONTSIZE_BIG_M_EDGE_OFF">@style/RESID_FONTSIZE_BIG_M_EDGE_OFF</item>
+        <item name="RESID_FONTSIZE_BIG_S_EDGE_OFF">@style/RESID_FONTSIZE_BIG_S_EDGE_OFF</item>
+        <item name="RESID_FONTSIZE_BIG_L_EDGE_ON">@style/RESID_FONTSIZE_BIG_L_EDGE_ON</item>
+        <item name="RESID_FONTSIZE_BIG_M_EDGE_ON">@style/RESID_FONTSIZE_BIG_M_EDGE_ON</item>
+        <item name="RESID_FONTSIZE_BIG_S_EDGE_ON">@style/RESID_FONTSIZE_BIG_S_EDGE_ON</item>
+        <item name="RESID_FONTSIZE_SP_PLAY_CALENDAR_YEAR">@style/RESID_FONTSIZE_SP_PLAY_CALENDAR_YEAR</item>
+        <item name="RESID_FONTSIZE_SP_GPS_DATE">@style/RESID_FONTSIZE_SP_GPS_DATE</item>
+    </style>
+    <style name="Theme.Transparent" parent="@style/RESID_FONTSIZE_ILLIEGAL">
+        <item name="android:windowBackground">@drawable/background_transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="footer_guide">@style/footer_guide</item>
+        <item name="play_footer_guide">@style/play_footer_guide</item>
+        <item name="play_histo_legacy_emt_footer_guide">@style/play_histo_legacy_emt_footer_guide</item>
+        <item name="menu_footer_guide">@style/menu_footer_guide</item>
+        <item name="transparent_footer_guide">@style/transparent_footer_guide</item>
+        <item name="focus_adjustment_footer_guide">@style/focus_adjustment_footer_guide</item>
+    </style>
+    <style name="Theme.NoBackground" parent="@android:style/Theme">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="MovieFrame" parent="">
+        <item name="android:background">@drawable/p_16_dd_parts_tm_thumbneil_frame</item>
+        <item name="android:padding">2px</item>
+        <item name="android:visibility">invisible</item>
+        <item name="android:layout_width">104px</item>
+        <item name="android:layout_height">58px</item>
+    </style>
+</resources>

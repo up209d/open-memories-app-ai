@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STRID_FUNC_BRKMASTER" />
+    <string name="STRID_FUNC_BRKMASTER_2L" />
+    <string name="STRID_FUNC_BRKMASTER_GUIDE" />
+    <string name="STRID_FUNC_SSBRK" />
+    <string name="STRID_FUNC_APERTUREBRK" />
+    <string name="STRID_FUNC_FOCUSBRK" />
+    <string name="STRID_FUNC_FLASHBRK" />
+    <string name="STRID_FUNC_SSBRK_GUIDE" />
+    <string name="STRID_FUNC_APERTUREBRK_GUIDE" />
+    <string name="STRID_FUNC_FOCUSBRK_GUIDE" />
+    <string name="STRID_FUNC_FLASHBRK_GUIDE" />
+    <string name="STRID_FUNC_SHIFT_RANGE" />
+    <string name="STRID_FUNC_SHIFT_RANGE_WIDE" />
+    <string name="STRID_FUNC_SHIFT_RANGE_NARROW" />
+    <string name="STRID_CAU_FLASH_INVALID" />
+    <string name="STRID_FOOTERGUIDE_GUIDE_RETURN">Guide </string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_EXIT">Guide Quitter l\'application</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_EXIT_SK">Guide Quitter l\'application</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_RETURN_SK">Guide </string>
+    <string name="STRID_FOOTERGUIDE_TV_RETURN">Tv </string>
+    <string name="STRID_FOOTERGUIDE_TV_RETURN_SK">Tv </string>
+    <string name="STRID_FOOTERGUIDE_AV_RETURN">Av </string>
+    <string name="STRID_FOOTERGUIDE_AV_RETURN_SK">Av </string>
+</resources>

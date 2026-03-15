@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STRID_AMC_STR_01176">در حال پردازش...</string>
+    <string name="STRID_AMC_STR_06084">در حال اتصال...</string>
+    <string name="STRID_AMC_STR_06546">ورود </string>
+    <string name="STRID_CAU_CANT_DISPLAY_EE_DURING_MOVIE_REC">نمی توان نمای زنده را روی نمایشگر در حین ضبط فیلم ها نمایش داد.</string>
+    <string name="STRID_CAU_FUNC_INVALID_FOR_THIS_APP_AND_CAMERA">عملکرد درون این برنامه روی این دستگاه پشتیبانی نمی شود.</string>
+    <string name="STRID_CAU_FUNC_INVALID_FOR_THIS_CAMERA">عملکرد روی این دستگاه پشتیبانی نمی شود.</string>
+    <string name="STRID_CAU_MOVIE_INVALID_FOR_THIS_APP_AND_CAMERA">حالت تصویربرداری فیلم این برنامه روی این دستگاه پشتیبانی نمی شود.</string>
+    <string name="STRID_CAU_PREV_MS_ERROR_ML">كارت حافظه ای كه در حال استفاده از آن بودید\nرا دوباره جای گذاری كنید.</string>
+    <string name="STRID_CMN_MSG_UNFORESEEN_ERROR">یک خطای غیرمنتظره رخ داده است.</string>
+    <string name="STRID_CMN_PASSWORD">گذرواژه</string>
+    <string name="STRID_CMN_SSID">‪SSID‬</string>
+    <string name="STRID_CMN_WIFI_DEVICENAME_DSLR">نام دستگاه</string>
+    <string name="STRID_FUNC_EZREMOTE">کنترل راه دور هوشمند</string>
+    <string name="STRID_FUNC_EZREMOTE_2L">کنترل راه دور\nهوشمند</string>
+    <string name="STRID_FUNC_EZREMOTE_EMBEDDED">کنترل راه دور هوشمند جاسازی شده</string>
+    <string name="STRID_FUNC_EZREMOTE_EMBEDDED_2L">کنترل راه دور هوشمند\nجاسازی شده</string>
+    <string name="STRID_FUNC_EZREMOTE_GETTING_PICTURE">دریافت اطلاعات عکسبرداری...</string>
+    <string name="STRID_FUNC_EZREMOTE_GET_PICTURE_ERROR">دریافت اطلاعات عکسبرداری ناموفق بود.</string>
+    <string name="STRID_FUNC_EZREMOTE_GUIDE">شما می توانید درحالیکه دستگاه را از دور توسط یک تلفن هوشمند سازگار و غیره کنترل می کنید، تصاویر ساکن بگیرید.</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_ENTER_HELP">ورود کمک</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_HELP_FOR_SK">کمک</string>
+    <string name="STRID_FUNC_NETWORK_SETTINGS_MSG_WIFI_STANDBY">آماده Wi-Fi...</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_ERROR_SWKEY_PIN_DSLR">لطفاً یک شماره 4 یا 8 رقمی را وارد کنید.</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_CHANGEPW_ONE_DSLR">هربار فقط 1 دستگاه می تواند متصل شود.\nآیا می خواهید که اتصال فعلی را پایان دهید\nو یک اتصال جدید را آغاز کنید؟</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_INPUT_DSLR">لطفاً کد PIN دستگاه وصل شده را بر دستگاه وارد\nکنید.</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_PBCREQ_DSLR">اجازه اتصال از دستگاه؟</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_PBC_ERROR_DSLR">تصدیق و اتصال Wi-Fi Direct ناموفق بود.</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_PIN_OUTPUT_DSLR">لطفاً کد PIN را طی 2 دقیقه\nوارد دستگاه متصل شده کنید.</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_TIMEOUT_DSLR">اتصال به علت وقفه بر قرار نشد.</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_WAITING2">با تلفن هوشمند کار کنید تا به این دستگاه\nاز طریق Wi-Fi وصل شوید.</string>
+    <string name="STRID_FUNC_SRPLUS_GUIDE">یک تلفن هوشمند یا تبلت می تواند به عنوان یک کنترل راه دور استفاده شود.\nتنظیماتی مانند دیافراگم و سرعت شاتر می توانند مطابق میل شما تغییر کنند.</string>
+    <string name="STRID_FUNC_SRPLUS_INVALID_OPERATION">این عملیات نامعتبر است.</string>
+    <string name="STRID_FUNC_SRPLUS_IN_TOUCH_AF_MODE">هم اکنون در عملیات دور با حالت AF لمسی می باشد.\nبرای لغو کردن، دکمه شاتر را تا نیمه فشار دهید و سپس آن را رها کنید.</string>
+    <string name="STRID_FUNC_SRPLUS_UNDER_REMOTE_CONTROL">هم اکنون در عملیات دور است.</string>
+    <string name="STRID_FUNC_SRPLUS_UNDER_REMOTE_CONTROL2">هم اکنون در عملیات دور است.\nنمی تواند با این دستگاه عمل کند.</string>
+    <string name="STRID_INFO_PIN_CODE">کد PIN</string>
+    <string name="STRID_MSG_NO_MEMCARD">کارت حافظه را وارد کنید</string>
+    <string name="STRID_FUNC_CONTROLWITHSMARTPHONE_MSG_CONTROLLED">در حال کنترل با تلفن هوشمند…\nنمی توانید این دستگاه را مستقیما بکار گیرید.</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_GOTO_QRCODE">نمایش QR Code ‏خروج</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_GOTO_PASS">اتصال با گذرواژه خروج</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_GOTO_QRCODE_NEX">نمایش QR Code ‏خروج</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_GOTO_PASS_NEX">اتصال با گذرواژه خروج</string>
+    <string name="STRID_MSG_WIFI_CONNECT_QRCODE">برای اسکن کردن QR Code با\nPlayMemories Mobile، از\nتلفن هوشمند استفاده کنید.</string>
+</resources>

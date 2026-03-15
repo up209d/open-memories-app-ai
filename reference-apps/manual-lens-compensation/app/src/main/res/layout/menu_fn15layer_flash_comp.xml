@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="72px"
+        android:layout_height="68px"
+        android:layout_marginLeft="209px"
+        android:layout_marginTop="84px"
+        android:src="@android:drawable/list_highlight"/>
+    <ImageView
+        android:id="@+id/left_arrow"
+        android:layout_width="21px"
+        android:layout_height="38px"
+        android:layout_marginLeft="291px"
+        android:layout_marginTop="99px"
+        android:src="0x1081746"/>
+    <ImageView
+        android:id="@+id/right_arrow"
+        android:layout_width="21px"
+        android:layout_height="38px"
+        android:layout_marginLeft="404px"
+        android:layout_marginTop="99px"
+        android:src="0x1081378"/>
+    <com.sony.imaging.app.base.shooting.widget.CompensationWheelAndInfoView xmlns:base="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/CompensationWheelAndInfoView"
+        android:layout_width="640px"
+        android:layout_height="165px"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="95px"
+        base:compbar3_single="0x108128b"
+        base:compbar2_single="0x108128e"
+        base:compbar3_single_evf="0x1081288"
+        base:compbar2_single_evf="0x1081278"
+        base:compind_lower="@android:drawable/unlock_ring"/>
+</RelativeLayout>

@@ -1415,6 +1415,12 @@ ssdp.enqueueStartServer();  // Start SSDP advertisement
 ssdp.enqueueStopServer();
 ```
 
+**WebAPI** (`com.sony.scalar.webapi.*`): Camera-hosted HTTP API for smartphone remote control. Used by srctrl and sync-to-smart-phone. Services include camera control (v1.0-v1.4), content sync (v1.0), access control (pairing/auth). Server built on Leza HTTP framework (`com.sony.scalar.lib.leza.*`).
+
+**AuthLibManager** (`com.sony.scalar.webapi.lib.authlib`): Device authentication for WebAPI pairing. Methods: `initialize()`, `enableMethods()`, `getPrivateMethod()`.
+
+**DdController** (`com.sony.scalar.lib.ddserver`): Device Description server for SSDP/UPnP service advertisement.
+
 **WiFi Direct** (`com.sony.wifi.direct.*`, `com.sony.wifi.p2p.*`): WiFi Direct peer-to-peer connectivity.
 **WPS** (`com.sony.wifi.wps.WpsError`): WiFi Protected Setup error handling.
 
@@ -1450,7 +1456,7 @@ sendBroadcast(intent);
 
 # 11. Base App Framework
 
-All 7 reference apps share a monolithic framework (~80% of each app's code). Key architecture pattern:
+All 19 reference apps share a monolithic framework (~80% of each app's code). Key architecture pattern:
 
 1. **BaseApp** (Activity) — Main activity with lifecycle management and state machine. Handles camera open/close, display switching, key event routing.
 2. **Factory** — Maps states to layouts and key handlers via a constituent table. Each state has associated screen layout and button behavior.
@@ -1740,20 +1746,263 @@ Applies real-time color grading effects to the live view and captured images usi
 
 ---
 
+## 13.8 Bracket Pro
+**Package**: `com.sony.imaging.app.bracketpro`
+
+### Overview
+Advanced multi-exposure bracketing beyond the camera's built-in options. Supports 4 bracket modes: aperture bracket, shutter speed bracket, focus bracket, and flash bracket. Captures 3 sequential shots with parameter variation between each.
+
+### Key APIs
+- `CameraEx.burstableTakePicture()` — sequential capture for each bracket step
+- `CameraEx.adjustAperture(int)` — aperture bracket: steps aperture between shots
+- `CameraEx.adjustShutterSpeed(int)` — shutter bracket: steps shutter speed between shots
+- `CameraEx.shiftFocusPosition(int)` — focus bracket: shifts focus distance between shots
+- `CameraEx.AutoPictureReviewControl` — auto-review timing between bracket shots
+- `ScalarProperties.getString("ro.build.device")` — device-specific timing adjustments
+
+### Processing Pipeline
+1. User selects bracket mode and step size
+2. First shot captured via `burstableTakePicture()`
+3. Parameter adjusted (aperture/shutter/focus/flash) by configured step
+4. Second shot captured
+5. Parameter adjusted again
+6. Third shot captured
+7. All three images stored to SD card
+
+---
+
+## 13.9 Graduated Filter
+**Package**: `com.sony.imaging.app.graduatedfilter`
+
+### Overview
+Simulates a physical graduated ND filter by capturing two raw frames with different exposures and compositing them using DSP hardware. Allows different exposure, white balance, and other settings for upper and lower zones of the frame.
+
+### Key APIs
+- `CameraSequence` with `CameraSequence.Options` — multi-frame raw capture with memory maps
+- `DSP.createProcessor("sony-di-dsp")` — raw compositing engine
+- `DSP.setProgram()` — loads NDSA (ND Simulation Accelerator) program
+- `MemoryMapConfig` — memory allocation for raw frame buffers
+- `DefaultDevelopFilter` — raw-to-RGB development after compositing
+- Async parameter changers: `ChangeAperture`, `ChangeSs`, `ChangeIso`, `ChangeWhiteBalance`
+
+### Processing Pipeline
+1. Capture first raw frame with "sky" exposure settings
+2. DSP stores first frame in work buffer
+3. Change exposure parameters for "ground" zone
+4. Capture second raw frame
+5. DSP composites upper/lower zones with gradient blend
+6. `DefaultDevelopFilter` develops final RGB image
+7. Store to SD card
+
+---
+
+## 13.10 Light Graffiti
+**Package**: `com.sony.imaging.app.lightgraffiti`
+
+### Overview
+Optimizes settings for light painting photography. Provides real-time preview of light trails as they accumulate, using DSP-based live preview compositing with 5 filter modes. Controls LED indicators and supports timed exposures with interval shooting.
+
+### Key APIs
+- `CameraSequence.setPreviewPlugin(DSP)` — real-time DSP preview during capture
+- `CameraSequence.startPreviewSequence()` — begins live compositing preview
+- `LGSAMixFilter` — DSP filter with 5 modes: DIFF, LPF, COMP, DIFF_LPF, COMP_SFR
+- `Light.setState(int)` — hardware LED indicator control
+- `AvindexStore.getVirtualMediaIds()` — virtual media for intermediate storage
+- `ScaleImageFilter` — preview scaling
+- `OptimizedImage` / `DeviceBuffer` conversion for DSP pipeline
+
+---
+
+## 13.11 Light Shaft
+**Package**: `com.sony.imaging.app.lightshaft`
+
+### Overview
+Adds artificial crepuscular rays (god rays/light shafts) to captured photos using DSP post-processing. Detects bright light sources in the image and generates rays emanating from them. Supports 4 effect types with adjustable parameters.
+
+### Key APIs
+- `DSP.createProcessor("sony-di-dsp")` — creates DSP for ray generation
+- `DSP.setProgram("liblightshafts_top.so")` — loads light shaft effect program
+- `DSP.getPropertyAsInt("program-descriptor")` — gets program descriptor for boot params
+- In-place DSP modification of `OptimizedImage` via device memory addresses
+- `DisplayManager` — coordinate mapping for effect placement
+- Dual `sequence.storeImage()` — saves both original and processed versions
+
+### 4 Effect Types
+Angel rays, Star burst, Flare, Beam — each with different ray patterns and intensity curves.
+
+---
+
+## 13.12 Manual Lens Compensation
+**Package**: `com.sony.imaging.app.manuallenscompensation`
+
+### Overview
+Allows manual adjustment of lens optical corrections (peripheral shading/vignetting, chromatic aberration, distortion) for vintage or non-native lenses that lack electronic communication with the camera body. Stores profiles per lens in a local SQLite database.
+
+### Key APIs
+- `CameraEx.ParametersModifier.setLensCorrectionLevel(String tag, int level)` — sets correction intensity per type
+- `CameraEx.ParametersModifier.getSupportedLensCorrections()` — queries available correction types
+- `CameraEx.setExifInfo(HashMap)` — writes custom lens EXIF data (lens name, focal length, f-number)
+- `LensParameterProvider` — custom ContentProvider backed by SQLite for lens profile storage
+- 6 correction tags: peripheral illumination (R/G/B channels), chromatic aberration, distortion
+
+---
+
+## 13.13 Smooth Reflection 2
+**Package**: `com.sony.imaging.app.smoothreflection`
+
+### Overview
+Second version of Smooth Reflection with extended model-specific support. Handles different raw memory layouts across camera models (HX400V, HX60V, RX100M3, ILCE-5000, NEX-5R/5T/6). Uses AVIP direct memory access for older models.
+
+### Key APIs
+- Same DSP raw averaging pipeline as Smooth Reflection v1
+- `DeviceMemory` — AVIP direct memory access for NEX-5R/5T/6 models
+- `MemoryMapConfig.setAllocationPolicy()` — PF v2 camera memory management
+- Model-specific BFNR offset calculations with different formulas per camera model
+- `ScalarProperties.getProperty("model.name")` — model detection for offset selection
+
+### Model-Specific Offsets
+| Model | Offset | Condition |
+|-------|--------|-----------|
+| DSC-RX100M3 | `(canvasSizeX + 64) * 6` | LENR + SS >= 8s |
+| ILCE-5000 | `canvasSizeX * 8` | LENR + SS >= 1s |
+| DSC-HX400V/HX60V | `canvasSizeX * 6` | LENR + SS >= 8s |
+
+---
+
+## 13.14 Sound Photo
+**Package**: `com.sony.imaging.app.soundphoto`
+
+### Overview
+Records ambient audio before and after the shutter press, embedding the audio data into the JPEG file. Uses hardware DSP for LPCM audio encoding and zoom noise reduction. Supports multiple microphone types with automatic detection.
+
+### Key APIs
+- `AudioRecord` — circular buffer recording with frame-level position control
+- `AudioRecord.EncoderParameters` — 7 LPCM encoder configuration keys
+- `AudioTrack` — DSP-based audio playback
+- `AudioManager` — microphone type detection (6 mic types) with change callbacks
+- `DSP` — dual DSP: LPCM encoder + zoom noise reduction (conditional on `dsp.zoomnr.supported`)
+- `ComposeAudioImage` — JNI native method for embedding audio into JPEG
+
+---
+
+## 13.15 Smart Remote Control (SRCtrl)
+**Package**: `com.sony.imaging.app.srctrl`
+
+### Overview
+Runs an HTTP server inside the camera, enabling smartphone apps to remotely control shutter, exposure, live view, and other camera functions via a WebAPI protocol. Supports device discovery (SSDP), authentication (AuthLib), NFC pairing, and live view binary streaming.
+
+### Key APIs
+- **Leza HTTP Server** (`com.sony.scalar.lib.leza.*`) — `ServerBuilder`, `HttpProcessBuilder`, servlet routing
+- **WebAPI** — 90+ method endpoints across versions v1.0-v1.4 (actTakePicture, setExposureMode, startLiveview, etc.)
+- **AuthLibManager** — device authentication and pairing
+- **SsdpDevice** — UPnP service advertisement for smartphone discovery
+- **Nfc** controller — touch-to-connect NFC pairing
+- **ScalarInput** / **ScalarProperties** — button events and model detection
+- Live view binary streaming with AF frame overlay data
+
+### Architecture
+Unlike other apps, SRCtrl is a **server application** — it doesn't directly control the camera hardware but exposes camera controls via HTTP endpoints that smartphone apps call.
+
+---
+
+## 13.16 Star Trails
+**Package**: `com.sony.imaging.app.startrails`
+
+### Overview
+Automates long-duration star trail photography by capturing multiple exposures and compositing them in-camera. Can output both still images and AVI video compilations. Uses DSP for frame compositing and MediaRecorder for video encoding.
+
+### Key APIs
+- `CameraEx` — interval capture control
+- `CameraSequence` with `DefaultDevelopFilter` — raw development per frame
+- `DSP` — frame compositing (lighten blend for star trails)
+- `MediaRecorder` — AVI video encoding from composite frames
+- `AvindexStore` — media database with `AvindexUpdateObserver` for write monitoring
+- `PlainCalendar` / `TimeUtil` / `PlainTimeZone` — precise timing for interval shots
+- `MediaInfo` — SD card type detection
+- `MemoryMapConfig` — memory allocation for multi-frame buffers
+
+---
+
+## 13.17 Sync to Smartphone
+**Package**: `com.sony.imaging.app.synctosmartphone`
+
+### Overview
+Automatically transfers photos to a registered smartphone when the camera powers off. Runs a WebAPI content sync server, discovers paired devices via SSDP, authenticates via AuthLib, and streams images over Wi-Fi Direct.
+
+### Key APIs
+- **WebAPI contentsync v1.0** — `actPairing`, `getInterfaceInformation`, `notifySyncStatus`
+- **SsdpDevice** / **DdController** — UPnP device discovery and advertisement
+- **AuthLibManager** — smartphone pairing and authentication
+- **ScalarWifiInfo** — WiFi product code and connection management
+- **AvindexStore** — `loadMedia()`, `waitLoadMediaComplete()`, `getImageInfo()` for media access
+- `Settings` / `Status` — system configuration and HDMI settings
+
+---
+
+## 13.18 Time-lapse
+**Package**: `com.sony.imaging.app.timelapse`
+
+### Overview
+Captures photos at configurable intervals and compiles them into an AVI or MP4 movie file in-camera. Supports AE tracking between frames to handle changing light conditions. Optional Angle Shift add-on provides dynamic camera angle changes between frames.
+
+### Key APIs
+- `CameraEx` — interval capture with exposure tracking via `TimelapseExposureController`
+- `CameraSequence` with `DefaultDevelopFilter.setRawFileStoreEnabled()` — raw storage control
+- `MediaRecorder` — AVI/MP4 video compilation
+- `RotateImageFilter` — frame rotation for Angle Shift add-on
+- `DisplayManager` — display control during long capture sessions
+- `AudioManager` — audio settings for video compilation
+- `AvindexStore` — media database for output video
+- `Kikilog` — telemetry for capture statistics
+
+---
+
+## 13.19 Touchless Shutter
+**Package**: `com.sony.imaging.app.each`
+
+### Overview
+Uses the EVF (electronic viewfinder) proximity sensor as a touchless shutter trigger — waving your hand in front of the viewfinder fires the shutter without physical contact, eliminating camera shake. Also supports live bulb mode with real-time exposure preview.
+
+### Key APIs
+- `DisplayManager` / `DisplayEventListener` — **event ID 4096** is the EVF proximity sensor trigger (core touchless mechanism)
+- `CameraEx.cancelExposure()` — ends bulb exposure
+- `CameraEx.startSelfTimerShutter()` — self-timer capture
+- `KeyStatus` — hardware key state queries
+- `Kikilog` — telemetry with 4 sub-IDs for boot time, capture events, bulb duration
+- `MediaRecorder` — movie recording mode
+- `AudioManager` — audio control for video
+
+### Capture Modes
+Normal capture, composite 3-exposure, effect mode, bulb/live bulb, and movie recording — all triggered by EVF proximity sensor event.
+
+---
+
 ## Reference App Comparison Summary
 
 | App | Feature | DSP | Key Filters | Key APIs |
 |-----|---------|-----|-------------|----------|
-| smooth-reflection | ND simulation (2-256 frame avg) | Yes | DSP raw blend | adjustAperture, setRemoteControlMode, GammaTable, RawDataInfo |
+| bracket-pro | Multi-exposure bracketing | No | DefaultDevelop | adjustAperture, adjustShutterSpeed, shiftFocusPosition, AutoPictureReviewControl |
 | digital-filter | Graduated ND | Yes (×3) | DSP + MemoryUtil JNI | Preview Plugin, 3 simultaneous DSPs |
 | double-exposure | Multi-overlay (7 blend modes) | Yes | DSP blend + transforms | Live view overlay, SFR modes, DeviceMemory |
-| photo-retouch | Edit tools (crop/rotate/BCS) | Yes | Scale, Crop, Rotate, FaceNR | JpegExporter, LCE, DSP.createImage, AvindexStore save |
-| portrait-beauty | Face beautify | Yes | FaceNR + Analyzer | ImageAnalyzer, SA_PortraitLighting, SA_SoftFocus |
-| picture-effect-plus | Creative fx (Part Color, Miniature) | No | Miniature, DefaultDevelop | ColorSelect, getPreviewDisplayColor, DirectShutter |
+| graduated-filter | Graduated ND filter | Yes | DSP raw compositing | CameraSequence, MemoryMapConfig, DefaultDevelopFilter, NDSA program |
+| light-graffiti | Light painting | Yes | LGSAMixFilter (5 modes) | CameraSequence preview plugin, Light indicator, AvindexStore virtual media |
+| light-shaft | Crepuscular rays (god rays) | Yes | DSP in-place effect | liblightshafts_top.so, DSP.getPropertyAsInt, DisplayManager coordinates |
 | live-view-grading | Real-time LUT color grading | No | DefaultDevelop | GammaTable, RGBMatrix, ColorDepth, WBShift |
+| manual-lens-compensation | Lens correction profiles | No | None | setLensCorrectionLevel, setExifInfo, LensParameterProvider |
+| photo-retouch | Edit tools (crop/rotate/BCS) | Yes | Scale, Crop, Rotate, FaceNR | JpegExporter, LCE, DSP.createImage, AvindexStore save |
+| picture-effect-plus | Creative fx (Part Color, Miniature) | No | Miniature, DefaultDevelop | ColorSelect, getPreviewDisplayColor, DirectShutter |
+| portrait-beauty | Face beautify | Yes | FaceNR + Analyzer | ImageAnalyzer, SA_PortraitLighting, SA_SoftFocus |
+| smooth-reflection | ND simulation (2-256 frame avg) | Yes | DSP raw blend | adjustAperture, setRemoteControlMode, GammaTable, RawDataInfo |
+| smooth-reflection-2 | ND simulation v2 (model-specific) | Yes | DSP raw blend | DeviceMemory AVIP, model-specific BFNR offsets, MemoryMapConfig |
+| sound-photo | Audio + photo capture | Yes | DSP audio encoder | AudioRecord, AudioTrack, AudioManager, ComposeAudioImage JNI |
+| srctrl | Smartphone remote control | No | None | WebAPI server (Leza HTTP), SSDP, AuthLib, NFC, live view streaming |
+| star-trails | Star trail compositing | Yes | Scale, Crop, Miniature, SoftFocus | MediaRecorder (AVI), AvindexStore, PlainCalendar, DSP compositing |
+| sync-to-smart-phone | Auto-sync to smartphone | No | None | WebAPI (contentsync), SSDP/DdController, AuthLib, ScalarWifiInfo |
+| time-lapse | Interval capture to video | Yes | RotateImageFilter | MediaRecorder (AVI/MP4), DisplayManager, TimelapseExposureController |
+| touchless-shutter | EVF sensor trigger + live bulb | No | None | DisplayManager event ID 4096 (EVF sensor), cancelExposure, KeyStatus |
 
 **Shared ~80%**: Framework, camera lifecycle, menus, playback, display management, button handling.
 **App-specific ~20%**: Capture pipeline, DSP programs, edit UI, effect-specific controllers.
 
 ---
-*Analysis: ~5,119 Java files (7 Sony apps) + 323 Jasmin stubs (OpenMemories-Framework)*
+*Analysis: ~10,000+ Java files (19 Sony apps) + 323 Jasmin stubs (OpenMemories-Framework)*

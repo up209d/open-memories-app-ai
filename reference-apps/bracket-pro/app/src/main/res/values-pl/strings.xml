@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STRID_FUNC_BRKMASTER">Bracketing profesjonalny</string>
+    <string name="STRID_FUNC_BRKMASTER_2L">Bracketing\nprofesjonalny</string>
+    <string name="STRID_FUNC_BRKMASTER_GUIDE">Zapisanych zostanie wiele obrazów ze zmianami wprowadzonymi w ustawieniach szybkości migawki, przysłony, ostrości i lampy błyskowej.</string>
+    <string name="STRID_FUNC_SSBRK">Bracketing szybkości migawki</string>
+    <string name="STRID_FUNC_APERTUREBRK">Bracketing przysłony</string>
+    <string name="STRID_FUNC_FOCUSBRK">Bracketing ostrości</string>
+    <string name="STRID_FUNC_FLASHBRK">Bracketing lampy błyskowej</string>
+    <string name="STRID_FUNC_SSBRK_GUIDE">Wykonuje 3 ujęcia z różną szybkością migawki.</string>
+    <string name="STRID_FUNC_APERTUREBRK_GUIDE">Wykonuje 3 ujęcia z różną wartością przysłony.</string>
+    <string name="STRID_FUNC_FOCUSBRK_GUIDE">Wykonuje 3 ujęcia z różną pozycją ostrości.</string>
+    <string name="STRID_FUNC_FLASHBRK_GUIDE">Wykonuje ujęcia z lampą błyskową i bez niej.</string>
+    <string name="STRID_FUNC_SHIFT_RANGE">Wartość bracketingu</string>
+    <string name="STRID_FUNC_SHIFT_RANGE_WIDE">Szeroki</string>
+    <string name="STRID_FUNC_SHIFT_RANGE_NARROW">Wąski</string>
+    <string name="STRID_CAU_FLASH_INVALID">Nie można wyzwolić lampy błyskowej.\nSprawdź, czy lampa błyskowa jest\ngotowa.</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_RETURN">Przewodnik </string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_EXIT">Przewodnik Wyjdź z aplikacji</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_EXIT_SK">Przewodnik Wyjdź z aplikacji</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_RETURN_SK">Przewodnik </string>
+    <string name="STRID_FOOTERGUIDE_TV_RETURN">Tv </string>
+    <string name="STRID_FOOTERGUIDE_TV_RETURN_SK">Tv </string>
+    <string name="STRID_FOOTERGUIDE_AV_RETURN">Av </string>
+    <string name="STRID_FOOTERGUIDE_AV_RETURN_SK">Av </string>
+</resources>

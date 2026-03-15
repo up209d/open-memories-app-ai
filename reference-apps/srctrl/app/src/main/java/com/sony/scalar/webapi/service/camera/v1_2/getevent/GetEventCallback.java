@@ -1,0 +1,68 @@
+package com.sony.scalar.webapi.service.camera.v1_2.getevent;
+
+import com.sony.mexi.orb.service.Callbacks;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventAELockParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventAutoPowerOffParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventAvailableApiListParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventBatteryInfoParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventBeepModeParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventBracketShootModeParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventCameraFunctionParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventCameraFunctionResultParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventCameraStatusParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventColorSettingParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventContShootingModeParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventContShootingParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventContShootingSpeedParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventContinuousErrorParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventCreativeStyleParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventExposureCompensationParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventExposureModeParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventFNumberParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventFlashModeParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventFlipSettingParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventFocusModeParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventFocusStatusParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventFormatStatusParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventInfraredRemoteControlParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventIntervalTimeParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventIsoSpeedRateParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventLiveviewOrientationParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventLiveviewStatusParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventMovieFileFormatParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventMovieQualityParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventNumberOfShotsParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventPictureEffectParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventPostviewImageSizeParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventProgramShiftParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventRecordingTimeParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventSceneRecognitionParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventSceneSelectionParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventSelfTimerParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventShootModeParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventShutterSpeedParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventSteadyModeParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventStillQualityParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventStillSizeParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventStorageInformationParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventTakePictureParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventTimeCodeFormatParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventTimeCodeMakeModeParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventTimeCodePresetParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventTimeCodeRunModeParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventTouchAFPositionParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventTrackingFocusParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventTrackingFocusStatusParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventTriggeredErrorParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventTvColorSystemParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventUserBitPresetParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventUserBitTimeRecParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventViewAngleParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventWhiteBalanceParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventZoomInformationParams;
+import com.sony.scalar.webapi.service.camera.v1_2.common.struct.GetEventZoomSettingParams;
+
+/* loaded from: classes.dex */
+public interface GetEventCallback extends Callbacks {
+    void returnCb(GetEventAvailableApiListParams getEventAvailableApiListParams, GetEventCameraStatusParams getEventCameraStatusParams, GetEventZoomInformationParams getEventZoomInformationParams, GetEventLiveviewStatusParams getEventLiveviewStatusParams, GetEventLiveviewOrientationParams getEventLiveviewOrientationParams, GetEventTakePictureParams[] getEventTakePictureParamsArr, GetEventContinuousErrorParams[] getEventContinuousErrorParamsArr, GetEventTriggeredErrorParams getEventTriggeredErrorParams, GetEventSceneRecognitionParams getEventSceneRecognitionParams, GetEventFormatStatusParams getEventFormatStatusParams, GetEventStorageInformationParams[] getEventStorageInformationParamsArr, GetEventBeepModeParams getEventBeepModeParams, GetEventCameraFunctionParams getEventCameraFunctionParams, GetEventMovieQualityParams getEventMovieQualityParams, GetEventStillSizeParams getEventStillSizeParams, GetEventCameraFunctionResultParams getEventCameraFunctionResultParams, GetEventSteadyModeParams getEventSteadyModeParams, GetEventViewAngleParams getEventViewAngleParams, GetEventExposureModeParams getEventExposureModeParams, GetEventPostviewImageSizeParams getEventPostviewImageSizeParams, GetEventSelfTimerParams getEventSelfTimerParams, GetEventShootModeParams getEventShootModeParams, GetEventAELockParams getEventAELockParams, GetEventBracketShootModeParams getEventBracketShootModeParams, GetEventCreativeStyleParams getEventCreativeStyleParams, GetEventExposureCompensationParams getEventExposureCompensationParams, GetEventFlashModeParams getEventFlashModeParams, GetEventFNumberParams getEventFNumberParams, GetEventFocusModeParams getEventFocusModeParams, GetEventIsoSpeedRateParams getEventIsoSpeedRateParams, GetEventPictureEffectParams getEventPictureEffectParams, GetEventProgramShiftParams getEventProgramShiftParams, GetEventShutterSpeedParams getEventShutterSpeedParams, GetEventWhiteBalanceParams getEventWhiteBalanceParams, GetEventTouchAFPositionParams getEventTouchAFPositionParams, GetEventFocusStatusParams getEventFocusStatusParams, GetEventZoomSettingParams getEventZoomSettingParams, GetEventStillQualityParams getEventStillQualityParams, GetEventContShootingModeParams getEventContShootingModeParams, GetEventContShootingSpeedParams getEventContShootingSpeedParams, GetEventContShootingParams getEventContShootingParams, GetEventFlipSettingParams getEventFlipSettingParams, GetEventSceneSelectionParams getEventSceneSelectionParams, GetEventIntervalTimeParams getEventIntervalTimeParams, GetEventColorSettingParams getEventColorSettingParams, GetEventMovieFileFormatParams getEventMovieFileFormatParams, GetEventTimeCodePresetParams getEventTimeCodePresetParams, GetEventUserBitPresetParams getEventUserBitPresetParams, GetEventTimeCodeFormatParams getEventTimeCodeFormatParams, GetEventTimeCodeRunModeParams getEventTimeCodeRunModeParams, GetEventTimeCodeMakeModeParams getEventTimeCodeMakeModeParams, GetEventUserBitTimeRecParams getEventUserBitTimeRecParams, GetEventInfraredRemoteControlParams getEventInfraredRemoteControlParams, GetEventTvColorSystemParams getEventTvColorSystemParams, GetEventTrackingFocusStatusParams getEventTrackingFocusStatusParams, GetEventTrackingFocusParams getEventTrackingFocusParams, GetEventBatteryInfoParams getEventBatteryInfoParams, GetEventRecordingTimeParams getEventRecordingTimeParams, GetEventNumberOfShotsParams getEventNumberOfShotsParams, GetEventAutoPowerOffParams getEventAutoPowerOffParams);
+}

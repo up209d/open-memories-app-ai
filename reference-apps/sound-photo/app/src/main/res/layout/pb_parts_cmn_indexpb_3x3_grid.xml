@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:base="http://schemas.android.com/apk/res-auto">
+    <com.sony.imaging.app.base.playback.widget.IndexGrid
+        android:id="@+id/indexGrid"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_width="610px"
+        android:layout_height="378px"
+        android:layout_marginLeft="5px"
+        android:layout_marginTop="45px"
+        base:grid_marginLeft="54px"
+        base:grid_marginTop="0px"
+        base:grid_width="556px"
+        base:grid_height="378px"
+        base:groupBar_marginLeft="0px"
+        base:groupBar_marginTop="3px"
+        base:groupBar_width="44px"
+        base:groupBar_height="372px"
+        base:groupBar_center_height="84px"
+        base:groupBar_beep_timing="1"
+        base:groupBar_upper_beep_id="BEEP_ID_WHEEL_UP"
+        base:groupBar_lower_beep_id="BEEP_ID_WHEEL_DOWN"
+        base:columnCount="3"
+        base:rowCount="3"
+        base:line_gap="0px"
+        base:column_gap="2px"/>
+    <com.sony.imaging.app.base.playback.widget.IndexScrollBar
+        android:id="@+id/indexScrollBar"
+        android:layout_width="8px"
+        android:layout_height="372px"
+        android:layout_marginTop="48px"
+        android:layout_marginRight="8px"
+        android:layout_alignParentRight="true"/>
+</merge>

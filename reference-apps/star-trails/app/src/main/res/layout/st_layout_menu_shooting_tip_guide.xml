@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:base="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textColor="@color/RESID_FONTSTYLE_STD_NORMAL"
+        android:gravity="center"
+        android:id="@+id/theme_guide_text"
+        android:scrollbars="vertical"
+        android:layout_width="484px"
+        android:layout_height="212px"
+        android:layout_marginLeft="78px"
+        android:layout_marginTop="120px"
+        android:text="@string/STRID_FUNC_STRLS_INTRODUCTION_GUIDE"
+        android:maxLines="10"
+        style="@style/RESID_FONTSIZE_STD_L_EDGE_OFF"/>
+    <com.sony.imaging.app.base.common.widget.FooterGuide
+        android:id="@+id/footer_guide"
+        android:layout_width="564px"
+        android:layout_height="40px"
+        android:layout_marginLeft="38px"
+        android:layout_marginTop="363px"
+        base:guide_text_style="@attr/footer_guide"
+        base:guide_text_marginLeft="5px"
+        base:guide_text_marginTop="0px"
+        base:guide_text_width="564px"
+        base:guide_text_height="40px"
+        base:guide_text_p1="@android:string/years"
+        base:guide_text_emt="@android:string/years"/>
+</RelativeLayout>

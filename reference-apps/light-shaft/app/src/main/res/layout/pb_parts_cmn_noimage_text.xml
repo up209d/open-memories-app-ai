@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textColor="@color/RESID_FONTSTYLE_STD_NORMAL"
+        android:gravity="center"
+        android:id="@+id/labelCustom"
+        android:layout_width="540px"
+        android:layout_height="84px"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="196px"
+        android:text="0x1040e2c"
+        style="@style/RESID_FONTSIZE_STD_M_EDGE_OFF"/>
+</RelativeLayout>

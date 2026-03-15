@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:typeface="4"
+        android:textColor="@color/RESID_FONTSTYLE_STD_NORMAL"
+        android:gravity="center"
+        android:id="@+id/nw_parts_pin_4_txt"
+        android:layout_width="544px"
+        android:layout_height="46px"
+        android:layout_marginLeft="48px"
+        android:layout_marginTop="220px"
+        style="@style/RESID_FONTSIZE_BIG_L_EDGE_OFF"/>
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STRID_FUNC_BRKMASTER">Професійний брекетинг</string>
+    <string name="STRID_FUNC_BRKMASTER_2L">Професійний\nбрекетинг</string>
+    <string name="STRID_FUNC_BRKMASTER_GUIDE">Будуть записані декілька зображень із змінами в витримці затвора, діафрагмі, фокусі, налаштуваннях спалаху.</string>
+    <string name="STRID_FUNC_SSBRK">Брекетинг Витримка затвора</string>
+    <string name="STRID_FUNC_APERTUREBRK">Брекетинг Діафрагма</string>
+    <string name="STRID_FUNC_FOCUSBRK">Брекетинг Фокус</string>
+    <string name="STRID_FUNC_FLASHBRK">Брекетинг Спалах</string>
+    <string name="STRID_FUNC_SSBRK_GUIDE">Зйомка 3 кадрів з різною витримкою затвора.</string>
+    <string name="STRID_FUNC_APERTUREBRK_GUIDE">Зйомка 3 кадрів з різними діафрагмами.</string>
+    <string name="STRID_FUNC_FOCUSBRK_GUIDE">Зйомка 3 кадрів з різним розташуванням фокуса.</string>
+    <string name="STRID_FUNC_FLASHBRK_GUIDE">Зйомка зображень зі спалахом і без нього.</string>
+    <string name="STRID_FUNC_SHIFT_RANGE">Значення брекетинга</string>
+    <string name="STRID_FUNC_SHIFT_RANGE_WIDE">Широке</string>
+    <string name="STRID_FUNC_SHIFT_RANGE_NARROW">Вузьке</string>
+    <string name="STRID_CAU_FLASH_INVALID">Спалах не може спрацювати.\nПереконайтеся, що спалах готовий\nдо спрацьовування.</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_RETURN">Довідник </string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_EXIT">Довідник Вихід з програми</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_EXIT_SK">Довідник Вихід з програми</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_RETURN_SK">Довідник </string>
+    <string name="STRID_FOOTERGUIDE_TV_RETURN">Tv </string>
+    <string name="STRID_FOOTERGUIDE_TV_RETURN_SK">Tv </string>
+    <string name="STRID_FOOTERGUIDE_AV_RETURN">Av </string>
+    <string name="STRID_FOOTERGUIDE_AV_RETURN_SK">Av </string>
+</resources>

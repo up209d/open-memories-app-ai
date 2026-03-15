@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/parts_cmn_background_img"/>
+    <include
+        android:id="@+id/list_menu_header"
+        layout="@layout/parts_listmenu_header"/>
+    <com.sony.imaging.app.base.menu.layout.list.MenuListView
+        android:scrollbarThumbVertical="@drawable/s_16_dd_parts_scrollbar_active_area"
+        android:scrollbarTrackVertical="@drawable/s_16_dd_parts_scrollbar_background"
+        android:scrollbarStyle="insideInset"
+        android:id="@+id/list_menu_listview"
+        android:padding="0px"
+        android:paddingRight="10px"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:scrollbars="vertical"
+        android:fadingEdge="none"
+        android:animationCache="false"
+        android:layout_width="match_parent"
+        android:layout_height="410px"
+        android:layout_marginTop="65px"
+        android:listSelector="@android:color/transparent"
+        android:drawSelectorOnTop="false"
+        android:scrollingCache="true"
+        android:cacheColorHint="#00000000"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:smoothScrollbar="true"
+        android:fadeScrollbars="false"
+        android:overScrollMode="always"/>
+</RelativeLayout>

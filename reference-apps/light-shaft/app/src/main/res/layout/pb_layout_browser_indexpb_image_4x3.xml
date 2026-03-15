@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:base="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/pb_parts_cmn_indexpb_4x3_grid"
+        layout="@layout/pb_parts_cmn_indexpb_4x3_grid"/>
+    <include
+        android:id="@+id/pb_parts_cmn_header"
+        layout="@layout/pb_parts_cmn_header"/>
+    <include
+        android:id="@+id/pb_parts_cmn_header_contents_info"
+        layout="@layout/pb_parts_cmn_header_contents_info"/>
+    <include
+        android:id="@+id/pb_parts_cmn_indexpb_groupbar_header"
+        layout="@layout/pb_parts_cmn_indexpb_groupbar_header"/>
+    <include
+        android:id="@+id/pb_parts_cmn_layout_play_dayinfo_bottom_nocard"
+        layout="@layout/pb_parts_cmn_layout_play_dayinfo_bottom_nocard"/>
+    <include
+        android:id="@+id/pb_parts_cmn_layout_play_footer"
+        layout="@layout/pb_parts_cmn_layout_play_footer"/>
+    <include
+        android:id="@+id/pb_parts_cmn_layout_play_error"
+        layout="@layout/pb_parts_cmn_layout_play_error"/>
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:base="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/dial_tvav"
+        android:background="@drawable/p_16_dd_parts_hgf_parts_dial"
+        android:layout_width="96px"
+        android:layout_height="48px"
+        android:layout_marginLeft="111px"
+        android:layout_marginTop="381px"/>
+    <ImageView
+        android:id="@+id/func_tvav"
+        android:layout_width="96px"
+        android:layout_height="48px"
+        android:layout_marginLeft="111px"
+        android:layout_marginTop="381px"
+        android:src="@drawable/p_16_dd_parts_hgf_parts_assigned_func_tvav"/>
+    <ImageView
+        android:id="@+id/left_button"
+        android:background="@drawable/p_16_dd_parts_hgf_left_icon"
+        android:layout_width="96px"
+        android:layout_height="48px"
+        android:layout_marginLeft="207px"
+        android:layout_marginTop="381px"/>
+    <ImageView
+        android:id="@+id/left_button_ev"
+        android:layout_width="96px"
+        android:layout_height="48px"
+        android:layout_marginLeft="207px"
+        android:layout_marginTop="381px"
+        android:src="@drawable/p_16_dd_parts_hgf_parts_assigned_func_ev"/>
+    <ImageView
+        android:id="@+id/right_button"
+        android:background="@drawable/p_16_dd_parts_hgf_right_icon"
+        android:layout_width="96px"
+        android:layout_height="48px"
+        android:layout_marginLeft="303px"
+        android:layout_marginTop="381px"/>
+    <ImageView
+        android:id="@+id/right_button_iso"
+        android:layout_width="96px"
+        android:layout_height="48px"
+        android:layout_marginLeft="303px"
+        android:layout_marginTop="381px"
+        android:src="@drawable/p_16_dd_parts_assigned_func_iso"/>
+</merge>

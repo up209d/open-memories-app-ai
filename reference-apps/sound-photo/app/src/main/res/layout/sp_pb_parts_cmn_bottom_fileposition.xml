@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:base="http://schemas.android.com/apk/res-auto">
+    <com.sony.imaging.app.base.playback.widget.LabelFilePosition
+        android:textColor="@color/RESID_FONTSTYLE_STD_NORMAL"
+        android:gravity="center"
+        android:id="@+id/filePosition"
+        android:layout_width="156px"
+        android:layout_height="36px"
+        android:layout_marginLeft="478px"
+        android:layout_marginTop="385px"
+        style="@style/RESID_FONTSIZE_SP_PLAY_INFO"/>
+</merge>

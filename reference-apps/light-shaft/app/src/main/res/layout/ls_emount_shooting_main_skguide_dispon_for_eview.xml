@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:base="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:background="@drawable/p_16_dd_parts_key_sk1"
+        android:layout_width="96px"
+        android:layout_height="48px"
+        android:layout_marginLeft="429px"
+        android:layout_marginTop="381px"/>
+    <ImageView
+        android:layout_width="96px"
+        android:layout_height="48px"
+        android:layout_marginLeft="449px"
+        android:layout_marginTop="381px"
+        android:src="@drawable/p_16_dd_parts_guide_menu"/>
+    <ImageView
+        android:background="@drawable/p_16_dd_parts_key_sk2"
+        android:layout_width="96px"
+        android:layout_height="48px"
+        android:layout_marginLeft="429px"
+        android:layout_marginTop="329px"/>
+    <ImageView
+        android:layout_width="96px"
+        android:layout_height="48px"
+        android:layout_marginLeft="449px"
+        android:layout_marginTop="329px"
+        android:src="@drawable/p_16_dd_parts_iconguide_setting"/>
+</RelativeLayout>

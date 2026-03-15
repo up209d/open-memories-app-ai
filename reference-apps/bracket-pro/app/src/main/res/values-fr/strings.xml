@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STRID_FUNC_BRKMASTER">Bracketing pro</string>
+    <string name="STRID_FUNC_BRKMASTER_2L">Bracketing\npro</string>
+    <string name="STRID_FUNC_BRKMASTER_GUIDE">Plusieurs images, avec changements effectués au niveau de la vitesse d\'obturateur, ouverture, mise au point, réglages du flash, seront enregistrés.</string>
+    <string name="STRID_FUNC_SSBRK">Bracketing vitesse d\'obturateur</string>
+    <string name="STRID_FUNC_APERTUREBRK">Bracketing ouverture</string>
+    <string name="STRID_FUNC_FOCUSBRK">Bracketing mise au point</string>
+    <string name="STRID_FUNC_FLASHBRK">Bracketing flash</string>
+    <string name="STRID_FUNC_SSBRK_GUIDE">Prend 3 photos à vitesses d\'obturateur différentes.</string>
+    <string name="STRID_FUNC_APERTUREBRK_GUIDE">Prend 3 photos à ouvertures différentes.</string>
+    <string name="STRID_FUNC_FOCUSBRK_GUIDE">Prend 3 photos à positions de mise au point différentes.</string>
+    <string name="STRID_FUNC_FLASHBRK_GUIDE">Prend des photos avec et sans flash.</string>
+    <string name="STRID_FUNC_SHIFT_RANGE">Valeur bracketing</string>
+    <string name="STRID_FUNC_SHIFT_RANGE_WIDE">Large</string>
+    <string name="STRID_FUNC_SHIFT_RANGE_NARROW">Étroit</string>
+    <string name="STRID_CAU_FLASH_INVALID">Impossible de déclencher le flash.\nVeuillez vérifier que le flash soit prêt à\nêtre déclenché.</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_RETURN">Guide </string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_EXIT">Guide Quitter l\'application</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_EXIT_SK">Guide Quitter l\'application</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_RETURN_SK">Guide </string>
+    <string name="STRID_FOOTERGUIDE_TV_RETURN">Tv </string>
+    <string name="STRID_FOOTERGUIDE_TV_RETURN_SK">Tv </string>
+    <string name="STRID_FOOTERGUIDE_AV_RETURN">Av </string>
+    <string name="STRID_FOOTERGUIDE_AV_RETURN_SK">Av </string>
+</resources>

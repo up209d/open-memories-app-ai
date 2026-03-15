@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>SmartRemoteControl</title>
+</head>
+<body>
+
+<script type="text/javascript" src="./orb-client.min.js"></script> 
+
+<script type="text/javascript">
+var guide = plenluno.orb.client.service.create({
+    'url': 'http://192.168.122.1:8080/sony/guide',
+    'transport': 'xhrpost',
+    'serializer': 'jsonizer',
+});
+var camera = plenluno.orb.client.service.create({
+    'url': 'http://192.168.122.1:8080/sony/camera',
+    'transport': 'xhrpost',
+    'serializer': 'jsonizer',
+});
+var accessControl = plenluno.orb.client.service.create({
+    'url': 'http://192.168.122.1:8080/sony/accessControl',
+    'transport': 'xhrpost',
+    'serializer': 'jsonizer',
+});
+var avContent = plenluno.orb.client.service.create({
+    'url': 'http://192.168.122.1:8080/sony/avContent',
+    'transport': 'xhrpost',
+    'serializer': 'jsonizer',
+});
+</script>
+
+</body>
+</html>

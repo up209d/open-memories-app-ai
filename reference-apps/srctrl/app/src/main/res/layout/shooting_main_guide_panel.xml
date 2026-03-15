@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:base="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.sony.imaging.app.base.shooting.widget.FocusGuideFocusSetView
+        android:id="@+id/DigitalZoomSettingView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/focus_set_icon"
+            android:layout_width="96px"
+            android:layout_height="48px"
+            android:layout_marginLeft="228px"
+            android:layout_marginTop="333px"
+            android:src="0x1080ddf"/>
+        <TextView
+            android:textColor="@color/RESID_FONTSTYLE_STD_NORMAL"
+            android:gravity="center"
+            android:id="@+id/focus_set_guide"
+            android:layout_width="272px"
+            android:layout_height="40px"
+            android:layout_marginLeft="265px"
+            android:layout_marginTop="339px"
+            android:text="@android:string/keyguard_accessibility_sim_puk_unlock"
+            style="@style/RESID_FONTSIZE_STD_L_EDGE_ON"/>
+    </com.sony.imaging.app.base.shooting.widget.FocusGuideFocusSetView>
+</RelativeLayout>

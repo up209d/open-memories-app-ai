@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_selected="false"
+        android:state_pressed="false"
+        android:drawable="0x10810b7"/>
+    <item
+        android:state_selected="true"
+        android:state_pressed="false"
+        android:drawable="0x1080fdd"/>
+    <item android:state_pressed="true">
+        <level-list>
+            <item
+                android:drawable="@android:drawable/pointer_wait_29"
+                android:maxLevel="0"/>
+            <item
+                android:drawable="0x1080fdd"
+                android:maxLevel="1"/>
+            <item
+                android:drawable="0x1081153"
+                android:maxLevel="2"/>
+        </level-list>
+    </item>
+</selector>

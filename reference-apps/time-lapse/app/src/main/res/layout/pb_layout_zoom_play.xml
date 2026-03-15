@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fw="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/pb_parts_cmn_singlepb_yuv"
+        layout="@layout/pb_parts_cmn_singlepb_yuv"/>
+    <com.sony.imaging.app.util.RelativeLayoutGroup
+        android:id="@+id/pb_zoom_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        fw:group="zoom_osd">
+        <include
+            android:id="@+id/pb_parts_cmn_zoom_osd"
+            layout="@layout/pb_parts_cmn_zoom_osd"/>
+        <include
+            android:id="@+id/pb_parts_cmn_zoom_header"
+            layout="@layout/pb_parts_cmn_zoom_header"/>
+        <ImageView
+            android:id="@+id/testshot"
+            android:layout_width="110px"
+            android:layout_height="48px"
+            android:layout_marginLeft="266px"
+            android:layout_marginTop="35px"
+            android:src="@drawable/p_16_dd_parts_tm_testshot"/>
+        <include
+            android:id="@+id/pb_parts_cmn_layout_play_footer"
+            layout="@layout/pb_parts_cmn_layout_play_footer"/>
+        <include
+            android:id="@+id/pb_parts_cmn_layout_play_info_bottom_nocard"
+            layout="@layout/pb_parts_cmn_layout_play_info_bottom_nocard"/>
+    </com.sony.imaging.app.util.RelativeLayoutGroup>
+    <com.sony.imaging.app.util.RelativeLayoutGroup
+        android:id="@+id/pb_zoom_noinfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        fw:group="zoom_osd">
+        <include
+            android:id="@+id/pb_parts_cmn_header_noinfo"
+            layout="@layout/pb_parts_cmn_header_noinfo"/>
+    </com.sony.imaging.app.util.RelativeLayoutGroup>
+</RelativeLayout>

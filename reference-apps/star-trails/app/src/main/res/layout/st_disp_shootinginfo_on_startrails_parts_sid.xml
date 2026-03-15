@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/shooting_information_shooting_num_icon"
+        android:layout_width="48px"
+        android:layout_height="48px"
+        android:layout_marginLeft="73px"
+        android:layout_marginTop="307px"
+        android:src="@drawable/p_16_dd_parts_tm_shootingnum_icon_small_nomal"
+        style="@style/RESID_FONTSIZE_M"/>
+    <TextView
+        android:typeface="4"
+        android:textColor="@color/RESID_FONTSTYLE_STD_NORMAL"
+        android:id="@+id/shooting_information_shooting_num_info_on"
+        android:visibility="gone"
+        android:layout_width="110px"
+        android:layout_height="36px"
+        android:layout_marginLeft="124px"
+        android:layout_marginTop="314px"
+        android:text="240"
+        style="@style/RESID_FONTSIZE_STD_M_EDGE_ON"/>
+    <com.sony.imaging.app.startrails.shooting.widget.ShootTimeWidget
+        android:typeface="4"
+        android:textColor="@color/RESID_FONTSTYLE_STD_NORMAL"
+        android:id="@+id/shooting_information_normal_time_info_on"
+        android:layout_width="165px"
+        android:layout_height="44px"
+        android:layout_marginLeft="77px"
+        android:layout_marginTop="365px"
+        android:text="03:09:00"
+        style="@style/RESID_FONTSIZE_BIG_L_EDGE_ON"/>
+</RelativeLayout>

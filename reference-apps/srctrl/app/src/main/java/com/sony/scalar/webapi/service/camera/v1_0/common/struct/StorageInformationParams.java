@@ -1,0 +1,48 @@
+package com.sony.scalar.webapi.service.camera.v1_0.common.struct;
+
+import com.sony.mexi.webapi.json.JsonConverter;
+import com.sony.mexi.webapi.json.JsonUtil;
+import org.json.JSONObject;
+
+/* loaded from: classes.dex */
+public class StorageInformationParams {
+    public Integer numberOfRecordableImages;
+    public Boolean recordTarget;
+    public Integer recordableTime;
+    public String storageDescription;
+    public String storageID;
+
+    /* loaded from: classes.dex */
+    public static class Converter implements JsonConverter<StorageInformationParams> {
+        public static final Converter REF = new Converter();
+
+        @Override // com.sony.mexi.webapi.json.JsonConverter
+        public JSONObject toJson(StorageInformationParams src) {
+            if (src == null) {
+                return null;
+            }
+            JSONObject dst = new JSONObject();
+            JsonUtil.putRequired(dst, "storageID", src.storageID);
+            JsonUtil.putRequired(dst, "recordTarget", src.recordTarget);
+            JsonUtil.putRequired(dst, "numberOfRecordableImages", src.numberOfRecordableImages);
+            JsonUtil.putRequired(dst, "recordableTime", src.recordableTime);
+            JsonUtil.putRequired(dst, "storageDescription", src.storageDescription);
+            return dst;
+        }
+
+        /* JADX WARN: Can't rename method to resolve collision */
+        @Override // com.sony.mexi.webapi.json.JsonConverter
+        public StorageInformationParams fromJson(JSONObject src) {
+            if (src == null) {
+                return null;
+            }
+            StorageInformationParams dst = new StorageInformationParams();
+            dst.storageID = JsonUtil.getString(src, "storageID");
+            dst.recordTarget = Boolean.valueOf(JsonUtil.getBoolean(src, "recordTarget"));
+            dst.numberOfRecordableImages = Integer.valueOf(JsonUtil.getInt(src, "numberOfRecordableImages"));
+            dst.recordableTime = Integer.valueOf(JsonUtil.getInt(src, "recordableTime"));
+            dst.storageDescription = JsonUtil.getString(src, "storageDescription");
+            return dst;
+        }
+    }
+}

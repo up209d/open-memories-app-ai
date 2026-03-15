@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/nw_parts_cmn_wifi_0_img"
+        android:layout_width="64px"
+        android:layout_height="32px"
+        android:layout_marginLeft="510px"
+        android:layout_marginTop="10px"
+        android:src="0x1080a90"/>
+</RelativeLayout>

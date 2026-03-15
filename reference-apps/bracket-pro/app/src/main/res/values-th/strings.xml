@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STRID_FUNC_BRKMASTER">คร่อมแบบมืออาชีพ</string>
+    <string name="STRID_FUNC_BRKMASTER_2L">คร่อมแบบ\nมืออาชีพ</string>
+    <string name="STRID_FUNC_BRKMASTER_GUIDE">ทำการบันทึกภาพหลายภาพโดยเปลี่ยนการตั้งค่า\nความเร็วชัตเตอร์, ค่ารูรับแสง, โฟกัส, แฟลช</string>
+    <string name="STRID_FUNC_SSBRK">คร่อมความเร็วชัตเตอร์</string>
+    <string name="STRID_FUNC_APERTUREBRK">คร่อมค่ารูรับแสง</string>
+    <string name="STRID_FUNC_FOCUSBRK">คร่อมโฟกัส</string>
+    <string name="STRID_FUNC_FLASHBRK">คร่อมแฟลช</string>
+    <string name="STRID_FUNC_SSBRK_GUIDE">ถ่ายภาพ 3 ภาพด้วยความเร็วชัตเตอร์\nที่แตกต่างกัน</string>
+    <string name="STRID_FUNC_APERTUREBRK_GUIDE">ถ่ายภาพ 3 ภาพด้วยค่ารูรับแสง\nที่แตกต่างกัน</string>
+    <string name="STRID_FUNC_FOCUSBRK_GUIDE">ถ่ายภาพ 3 ภาพด้วยตำแหน่งโฟกัส\nที่แตกต่างกัน</string>
+    <string name="STRID_FUNC_FLASHBRK_GUIDE">ถ่ายภาพโดยใช้และไม่ใช้แฟลช</string>
+    <string name="STRID_FUNC_SHIFT_RANGE">ค่าถ่ายคร่อม</string>
+    <string name="STRID_FUNC_SHIFT_RANGE_WIDE">กว้าง</string>
+    <string name="STRID_FUNC_SHIFT_RANGE_NARROW">แคบ</string>
+    <string name="STRID_CAU_FLASH_INVALID">ไม่สามารถยิงแฟลช\nโปรดตรวจดูว่าแฟลชพร้อมใช้งานหรือไม่</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_RETURN">แนะนำ </string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_EXIT">แนะนำ ออกจากโปรแกรม</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_EXIT_SK">แนะนำ ออกจากโปรแกรม</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_RETURN_SK">แนะนำ </string>
+    <string name="STRID_FOOTERGUIDE_TV_RETURN">Tv </string>
+    <string name="STRID_FOOTERGUIDE_TV_RETURN_SK">Tv </string>
+    <string name="STRID_FOOTERGUIDE_AV_RETURN">Av </string>
+    <string name="STRID_FOOTERGUIDE_AV_RETURN_SK">Av </string>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, EachActivity!</string>
+    <string name="app_name">Touchless Shutter</string>
+    <string name="STRID_DLAPP_SAMPLE">DLApp Caution Sample</string>
+    <string name="STRID_FUNC_MYAPP_NAME">Touchless Shutter</string>
+    <string name="STRID_FUNC_MYAPP_NAME_2L">Touchless\nShutter</string>
+    <string name="STRID_FUNC_LIVEBULB_MENU_EYESENSOR_SHUTTER_ON_CAUTION">To use Touchless Shutter, make sure [FINDER/MONITOR] or [FINDER/LCD Setting] is set to Auto before launching this application.</string>
+    <string name="STRID_FUNC_TOUCHLESSSHUTTER_MENU_TLS_CONFIRM_AT_BOOT">Startup guide</string>
+    <string name="STRID_FUNC_TOUCHLESSSHUTTER_MENU_TLS_CONFIRM_AT_BOOT_GUIDE">Show the startup guide.</string>
+    <string name="STRID_FUNC_TOUCHLESSSHUTTER_MENU_TLS_CONFIRM_AT_BOOT_ON_GUIDE">Show the usage guide at startup of this application</string>
+    <string name="STRID_FUNC_TOUCHLESSSHUTTER_MENU_TLS_CONFIRM_AT_BOOT_OFF_GUIDE">Does not show the usage guide at startup of this application</string>
+    <string name="STRID_CAU_TIMELAPSE_LENS_STEADYSHOT">Use this application with SteadyShot of lens off.</string>
+</resources>

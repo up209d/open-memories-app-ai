@@ -1,0 +1,66 @@
+package com.sony.imaging.app.base.shooting.widget;
+
+import android.content.Context;
+import android.util.AttributeSet;
+import com.sony.imaging.app.base.common.widget.SubLcdActiveIcon;
+import com.sony.imaging.app.base.shooting.camera.CameraNotificationManager;
+import com.sony.imaging.app.util.NotificationListener;
+import com.sony.imaging.app.util.NotificationManager;
+import java.util.ArrayList;
+import java.util.Arrays;
+
+/* loaded from: classes.dex */
+public abstract class ShootingSubLcdActiveIcon extends SubLcdActiveIcon {
+    private static final String[] NOTIFIER_TAGS = {CameraNotificationManager.SCENE_MODE, CameraNotificationManager.REC_MODE_CHANGED};
+
+    public ShootingSubLcdActiveIcon(Context context) {
+        this(context, null);
+    }
+
+    public ShootingSubLcdActiveIcon(Context context, AttributeSet attrs) {
+        super(context, attrs);
+    }
+
+    @Override // com.sony.imaging.app.base.common.widget.SubLcdActiveIcon
+    protected NotificationManager getNotificationManager() {
+        return CameraNotificationManager.getInstance();
+    }
+
+    @Override // com.sony.imaging.app.base.common.widget.SubLcdActiveIcon
+    protected NotificationListener getNotificationListener() {
+        if (this.mListener == null) {
+            this.mListener = new ActiveIconListener();
+        }
+        return this.mListener;
+    }
+
+    /* loaded from: classes.dex */
+    protected class ActiveIconListener implements NotificationListener {
+        /* JADX INFO: Access modifiers changed from: protected */
+        public ActiveIconListener() {
+        }
+
+        @Override // com.sony.imaging.app.util.NotificationListener
+        public void onNotify(String tag) {
+            boolean visible = ShootingSubLcdActiveIcon.this.isVisible();
+            ShootingSubLcdActiveIcon.this.setOwnVisible(visible);
+            if (visible) {
+                ShootingSubLcdActiveIcon.this.refresh();
+            }
+        }
+
+        @Override // com.sony.imaging.app.util.NotificationListener
+        public final String[] getTags() {
+            ArrayList<String> tags = new ArrayList<>();
+            tags.addAll(Arrays.asList(ShootingSubLcdActiveIcon.NOTIFIER_TAGS));
+            if (addTags() != null) {
+                tags.addAll(Arrays.asList(addTags()));
+            }
+            return (String[]) tags.toArray(new String[(addTags() == null ? 0 : addTags().length) + ShootingSubLcdActiveIcon.NOTIFIER_TAGS.length]);
+        }
+
+        public String[] addTags() {
+            return null;
+        }
+    }
+}

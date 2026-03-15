@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STRID_FUNC_BRKMASTER">ブラケットPro</string>
+    <string name="STRID_FUNC_BRKMASTER_2L">ブラケットPro</string>
+    <string name="STRID_FUNC_BRKMASTER_GUIDE">シャッタースピード、絞り、フォーカス、フラッシュのいずれかの設定を変えた画像が複数枚記録されます</string>
+    <string name="STRID_FUNC_SSBRK">シャッタースピードブラケット</string>
+    <string name="STRID_FUNC_APERTUREBRK">絞りブラケット</string>
+    <string name="STRID_FUNC_FOCUSBRK">フォーカスブラケット</string>
+    <string name="STRID_FUNC_FLASHBRK">フラッシュブラケット</string>
+    <string name="STRID_FUNC_SSBRK_GUIDE">シャッタースピードをずらして3枚撮影します</string>
+    <string name="STRID_FUNC_APERTUREBRK_GUIDE">絞りをずらして3枚撮影します</string>
+    <string name="STRID_FUNC_FOCUSBRK_GUIDE">ピント位置をずらして3枚撮影します</string>
+    <string name="STRID_FUNC_FLASHBRK_GUIDE">フラッシュを発光しない画像と発光した画像を撮影します</string>
+    <string name="STRID_FUNC_SHIFT_RANGE">ずらし量</string>
+    <string name="STRID_FUNC_SHIFT_RANGE_WIDE">広い</string>
+    <string name="STRID_FUNC_SHIFT_RANGE_NARROW">狭い</string>
+    <string name="STRID_CAU_FLASH_INVALID">フラッシュを発光できません\n確認してください</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_RETURN">ガイド </string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_EXIT">ガイド アプリ終了</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_EXIT_SK">ガイド アプリ終了</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_RETURN_SK">ガイド </string>
+    <string name="STRID_FOOTERGUIDE_TV_RETURN">Tv </string>
+    <string name="STRID_FOOTERGUIDE_TV_RETURN_SK">Tv </string>
+    <string name="STRID_FOOTERGUIDE_AV_RETURN">Av </string>
+    <string name="STRID_FOOTERGUIDE_AV_RETURN_SK">Av </string>
+</resources>

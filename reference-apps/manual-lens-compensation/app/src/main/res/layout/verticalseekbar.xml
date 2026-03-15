@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.sony.imaging.app.manuallenscompensation.widget.VerticalSeekBar
+        android:id="@+id/vertical_Seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="602px"
+        android:layout_marginTop="68px"
+        android:thumb="@drawable/p_16_dd_parts_oc_adjust_common_gauge_scale_circle"/>
+    <TextView
+        android:gravity="center"
+        android:id="@+id/vertical_sb_progresstext"
+        android:layout_width="69px"
+        android:layout_height="46px"
+        android:layout_marginLeft="511px"
+        android:layout_marginTop="178px"/>
+</LinearLayout>

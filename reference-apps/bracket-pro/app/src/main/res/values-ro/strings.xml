@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STRID_FUNC_BRKMASTER">Variaţie Pro</string>
+    <string name="STRID_FUNC_BRKMASTER_2L">Variaţie Pro</string>
+    <string name="STRID_FUNC_BRKMASTER_GUIDE">Vor fi înregistrate mai multe imagini, cu modificări pentru setările de viteză a obturatorului, diafragmă, focalizare, bliţ.</string>
+    <string name="STRID_FUNC_SSBRK">Variaţie viteză obturator</string>
+    <string name="STRID_FUNC_APERTUREBRK">Variaţie diafragmă</string>
+    <string name="STRID_FUNC_FOCUSBRK">Variaţie focalizare</string>
+    <string name="STRID_FUNC_FLASHBRK">Variaţie bliţ</string>
+    <string name="STRID_FUNC_SSBRK_GUIDE">Înregistrează 3 cadre cu viteze ale obturatorului variabile.</string>
+    <string name="STRID_FUNC_APERTUREBRK_GUIDE">Înregistrează 3 cadre cu diafragme variabile.</string>
+    <string name="STRID_FUNC_FOCUSBRK_GUIDE">Înregistrează 3 cadre cu poziţii de focalizare variabile.</string>
+    <string name="STRID_FUNC_FLASHBRK_GUIDE">Înregistrează imagini cu şi fără bliţ.</string>
+    <string name="STRID_FUNC_SHIFT_RANGE">Valoare variaţie</string>
+    <string name="STRID_FUNC_SHIFT_RANGE_WIDE">Lat</string>
+    <string name="STRID_FUNC_SHIFT_RANGE_NARROW">Îngust</string>
+    <string name="STRID_CAU_FLASH_INVALID">Bliţul nu se poate declanşa.\nVerificaţi dacă bliţul este pregătit\nsă se declanşeze.</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_RETURN">Ghid </string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_EXIT">Ghid Ieşire aplicaţie</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_EXIT_SK">Ghid Ieşire aplicaţie</string>
+    <string name="STRID_FOOTERGUIDE_GUIDE_RETURN_SK">Ghid </string>
+    <string name="STRID_FOOTERGUIDE_TV_RETURN">Tv </string>
+    <string name="STRID_FOOTERGUIDE_TV_RETURN_SK">Tv </string>
+    <string name="STRID_FOOTERGUIDE_AV_RETURN">Av </string>
+    <string name="STRID_FOOTERGUIDE_AV_RETURN_SK">Av </string>
+</resources>

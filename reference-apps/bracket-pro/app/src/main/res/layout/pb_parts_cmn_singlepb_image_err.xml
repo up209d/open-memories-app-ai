@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/iconerror"
+        android:layout_width="640px"
+        android:layout_height="480px"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="0px"
+        android:src="0x1081108"/>
+    <TextView
+        android:textColor="@color/RESID_FONTSTYLE_STD_NORMAL"
+        android:gravity="center"
+        android:id="@+id/labelCustom"
+        android:layout_width="600px"
+        android:layout_height="40px"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="201px"
+        android:text="@android:string/mediasize_iso_a6"
+        style="@style/RESID_FONTSIZE_STD_M_EDGE_OFF"/>
+</RelativeLayout>

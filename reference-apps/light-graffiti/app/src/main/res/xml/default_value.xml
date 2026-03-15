@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        android:key="ID_PARAMETERS"
+        android:defaultValue="dro-level=5;light-balance-for-white-balance=0;face-detection-mode=off;af-mode=af-s;color-compensation-for-white-balance=0;pe-watercolor-effect-level=2;hdr-exposure-difference-level=1;iso-sensitivity=0;sharpness=0;contrast=0;storage-fmt=jpeg;whitebalance=auto;jpeg-quality=50;scene-mode=shutter-speed;metering-mode=multi;focus-mode=auto;drive-mode=single;anti-blur=off;pe-soft-focus-effect-level=2;pe-soft-high-key-effect=blue;pe-hdr-art-effect-level=2;pe-illust-effect-level=2;pe-rough-mono-effect-level=2;exposure-compensation=0;dro-mode=off;ae-lock=unlocked;pe-toy-camera-tuning=0;pe-miniature-focus-area=auto;flash-mode=off;pe-posterization-effect=posterization-color;aspect=3:2;face-frame-rendering=true;pe-toy-camera-effect=normal;saturation=0;image-size=large;pe-part-color-effect=red;self-timer=0;flash-compensation=0;picture-effect=off;burst-drive-speed=high;image-aspect=3:2;color-mode=standard;focus-area-type=multi;exposure-bracket-period=3;hdr-mode=off"/>
+    <ListPreference
+        android:key="ID_MOVIE_FORMAT_PARAMETERS"
+        android:defaultValue="format=AVCHD;setting_avchd=FH_60i;setting_mpeg4=MP4_1080;setting_xavc_s=XAVC_50M_60p"/>
+    <ListPreference
+        android:key="ID_RECORDING_MODE"
+        android:defaultValue="MODE_STILL"/>
+</PreferenceScreen>

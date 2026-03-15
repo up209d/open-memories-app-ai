@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STRID_SCALARA_DLSYS_AIRPLAIN_MODE_ERROR">Applikation kann nicht gestartet\nwerden, da der Flugzeug-Modus\neingestellt ist.</string>
+    <string name="STRID_AMC_STR_01176">Verarbeitung...</string>
+    <string name="STRID_AMC_STR_06084">Verbindet...</string>
+    <string name="STRID_AMC_STR_06546">Eingabe </string>
+    <string name="STRID_CAU_CANT_DISPLAY_EE_DURING_MOVIE_REC">Live-View kann auf dem Monitor des Geräts während der Aufnahme von Filmen nicht angezeigt werden.</string>
+    <string name="STRID_CAU_FUNC_INVALID_FOR_THIS_APP_AND_CAMERA">Die Funktion in dieser Applikation wird auf diesem Gerät nicht unterstützt.</string>
+    <string name="STRID_CAU_FUNC_INVALID_FOR_THIS_CAMERA">Die Funktion wird auf diesem Gerät nicht unterstützt.</string>
+    <string name="STRID_CAU_MOVIE_INVALID_FOR_THIS_APP_AND_CAMERA">Der Filmaufnahme-Modus dieser Applikation wird auf diesem Gerät nicht unterstützt.</string>
+    <string name="STRID_CAU_PREV_MS_ERROR_ML">Die zuvor benutzte Speicherkarte erneut\neinstecken.</string>
+    <string name="STRID_CMN_MSG_UNFORESEEN_ERROR">Ein unerwarteter Fehler ist aufgetreten.</string>
+    <string name="STRID_CMN_PASSWORD">Passwort</string>
+    <string name="STRID_CMN_SSID">SSID</string>
+    <string name="STRID_CMN_WIFI_DEVICENAME_DSLR">Gerätename</string>
+    <string name="STRID_FUNC_EZREMOTE">Smart-Fernbedienung</string>
+    <string name="STRID_FUNC_EZREMOTE_2L">Smart-Fern-\nbedienung</string>
+    <string name="STRID_FUNC_EZREMOTE_EMBEDDED">Smart Remote eingebettet</string>
+    <string name="STRID_FUNC_EZREMOTE_EMBEDDED_2L">Smart Remote\neingebettet</string>
+    <string name="STRID_FUNC_EZREMOTE_GETTING_PICTURE">Erfasst Aufnahmedaten...</string>
+    <string name="STRID_FUNC_EZREMOTE_GET_PICTURE_ERROR">Erfassen der Aufnahmedaten ist fehlgeschlagen.</string>
+    <string name="STRID_FUNC_EZREMOTE_GUIDE">Standbilder können über die Fernbedienung des Geräts anhand eines kompatiblen Smartphones etc. aufgenommen werden.</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_ENTER_HELP">Eingabe Hilfe</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_HELP_FOR_SK">Hilfe</string>
+    <string name="STRID_FUNC_NETWORK_SETTINGS_MSG_WIFI_STANDBY">Wi-Fi Bereitschaft...</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_ERROR_SWKEY_PIN_DSLR">Bitte eine 8- oder 4-stellige Zahl\neingeben.</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_CHANGEPW_ONE_DSLR">Nur 1 Gerät gleichzeitig verbindbar.\nMöchten Sie die derzeitige Verbindung\nbeenden und eine neue erstellen?</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_INPUT_DSLR">Bitte den PIN-Code des verbundenen\nGeräts in das Gerät eingeben.</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_PBCREQ_DSLR">Verbindung vom Gerät erlauben?</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_PBC_ERROR_DSLR">Authentifizierung und Verbindung von\nWi-Fi Direct fehlgeschlagen.</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_PIN_OUTPUT_DSLR">Bitte den PIN-Code in das\nVerbindungsgerät innerhalb von\n2 Minuten eingeben.</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_TIMEOUT_DSLR">Verbindung war nicht möglich\naufgrund einer Unterbrechung.\nZeit ist abgelaufen.</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_WAITING2">Smartphone bedienen, um mit diesem\nGerät via Wi-Fi zu verbinden.</string>
+    <string name="STRID_FUNC_SRPLUS_GUIDE">Ein Smartphone oder Tablet kann als Fernbedienung verwendet werden. Einstlg., wie Blende und Verschlusszeit, können beliebig geändert werden.</string>
+    <string name="STRID_FUNC_SRPLUS_INVALID_OPERATION">Diese Bedienung ist ungültig.</string>
+    <string name="STRID_FUNC_SRPLUS_IN_TOUCH_AF_MODE">Jetzt unter Fernbetrieb mit Berührungs-AF-Modus.\nDen Auslöser halb herunterdrücken und dann loslassen, um abzubrechen.</string>
+    <string name="STRID_FUNC_SRPLUS_UNDER_REMOTE_CONTROL">Jetzt unter Fernbetrieb.</string>
+    <string name="STRID_FUNC_SRPLUS_UNDER_REMOTE_CONTROL2">Jetzt unter Fernbetrieb.\nMit diesem Gerät nicht bedienbar.</string>
+    <string name="STRID_INFO_PIN_CODE">PIN-Code</string>
+    <string name="STRID_MSG_NO_MEMCARD">Speicherkarte einstecken</string>
+    <string name="STRID_FUNC_CONTROLWITHSMARTPHONE_MSG_CONTROLLED">Gesteuert mit Smartphone…\nDieses Gerät nicht direkt bedient werden.</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_GOTO_QRCODE">QR Code-Anzeige Ende</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_GOTO_PASS">Per Passwort verbinden Ende</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_GOTO_QRCODE_NEX">QR Code-Anzeige Ende</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_GOTO_PASS_NEX">Per Passwort verbinden Ende</string>
+    <string name="STRID_MSG_WIFI_CONNECT_QRCODE">Smartphone bedienen, um\nQR Code mit PlayMemories\nMobile zu scannen.</string>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_pressed="true"
+        android:drawable="@drawable/p_16_dd_parts_oc_list_create_press_button"/>
+    <item
+        android:state_selected="true"
+        android:state_pressed="false"
+        android:drawable="@drawable/p_16_dd_parts_oc_list_create_focus_button"/>
+    <item
+        android:state_selected="false"
+        android:state_pressed="false"
+        android:drawable="@drawable/p_16_dd_parts_oc_list_create_button"/>
+</selector>

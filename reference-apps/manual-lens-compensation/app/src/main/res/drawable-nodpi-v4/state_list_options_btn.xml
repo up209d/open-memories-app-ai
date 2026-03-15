@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:base="http://schemas.android.com/apk/res-auto">
+    <item
+        android:state_pressed="true"
+        android:drawable="@drawable/p_bt_x_48_p"/>
+    <item
+        android:state_focused="true"
+        android:state_pressed="false"
+        android:drawable="0x10811ae"/>
+</selector>

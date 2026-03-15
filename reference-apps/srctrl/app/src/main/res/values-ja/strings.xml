@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="STRID_SCALARA_DLSYS_AIRPLAIN_MODE_ERROR">飛行機モードのため\nアプリケーションを\n起動できません</string>
+    <string name="STRID_AMC_STR_01176">処理中</string>
+    <string name="STRID_AMC_STR_06084">接続中</string>
+    <string name="STRID_AMC_STR_06546">決定 </string>
+    <string name="STRID_CAU_CANT_DISPLAY_EE_DURING_MOVIE_REC">動画撮影中はモニターに\nライブビューは表示されません</string>
+    <string name="STRID_CAU_FUNC_INVALID_FOR_THIS_APP_AND_CAMERA">本機では本アプリケーションの\nこの機能は対応していません</string>
+    <string name="STRID_CAU_FUNC_INVALID_FOR_THIS_CAMERA">本機ではこの機能は対応していません</string>
+    <string name="STRID_CAU_MOVIE_INVALID_FOR_THIS_APP_AND_CAMERA">本機では本アプリケーションの\n動画撮影モードは対応していません</string>
+    <string name="STRID_CAU_PREV_MS_ERROR_ML">前回使用していたメモリーカードを\n入れてください</string>
+    <string name="STRID_CMN_MSG_UNFORESEEN_ERROR">予期せぬエラーが発生しました</string>
+    <string name="STRID_CMN_PASSWORD">パスワード</string>
+    <string name="STRID_CMN_SSID">SSID</string>
+    <string name="STRID_CMN_WIFI_DEVICENAME_DSLR">機器名称</string>
+    <string name="STRID_FUNC_EZREMOTE">スマートリモコン</string>
+    <string name="STRID_FUNC_EZREMOTE_2L">スマート\nリモコン</string>
+    <string name="STRID_FUNC_EZREMOTE_EMBEDDED">スマートリモコン内蔵版</string>
+    <string name="STRID_FUNC_EZREMOTE_EMBEDDED_2L">スマートリモコン\n内蔵版</string>
+    <string name="STRID_FUNC_EZREMOTE_GETTING_PICTURE">撮影データ取得中</string>
+    <string name="STRID_FUNC_EZREMOTE_GET_PICTURE_ERROR">撮影データの取得に失敗しました</string>
+    <string name="STRID_FUNC_EZREMOTE_GUIDE">対応スマートフォンなどで本機を遠隔操作して静止画を撮影できます</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_ENTER_HELP">決定 ヘルプ</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_HELP_FOR_SK">ヘルプ</string>
+    <string name="STRID_FUNC_NETWORK_SETTINGS_MSG_WIFI_STANDBY">Wi-Fi 準備中</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_ERROR_SWKEY_PIN_DSLR">8桁または4桁の数字を入力してください</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_CHANGEPW_ONE_DSLR">同時に接続できる機器は1台です\n現在の接続を終了し、別の接続を開始\nしますか？</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_INPUT_DSLR">接続する機器のPINコードを入力してく\nださい</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_PBCREQ_DSLR">この機器からの接続を許可しますか?</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_PBC_ERROR_DSLR">Wi-Fi Directの認証/接続に失敗しまし\nた</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_PIN_OUTPUT_DSLR">2分以内に、PINコードを相手機器に入\n力してください</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_DIRECT_TIMEOUT_DSLR">タイムアウトにより接続できませんでした</string>
+    <string name="STRID_FUNC_SENDTOSMARTPHONE_MSG_WAITING2">スマートフォンを操作して\n本機にWi-Fi接続してください</string>
+    <string name="STRID_FUNC_SRPLUS_GUIDE">スマートフォンやタブレットをカメラのリモコンとして使用できます\nお好みに合わせて絞りやシャッタースピードなどを設定することができます</string>
+    <string name="STRID_FUNC_SRPLUS_INVALID_OPERATION">この操作は無効です</string>
+    <string name="STRID_FUNC_SRPLUS_IN_TOUCH_AF_MODE">現在タッチAFモードで遠隔操作中です\nシャッターボタンを半押しして離すと解除できます</string>
+    <string name="STRID_FUNC_SRPLUS_UNDER_REMOTE_CONTROL">現在遠隔操作中です</string>
+    <string name="STRID_FUNC_SRPLUS_UNDER_REMOTE_CONTROL2">現在遠隔操作中です\n本機での操作はできません</string>
+    <string name="STRID_INFO_PIN_CODE">PINコード</string>
+    <string name="STRID_MSG_NO_MEMCARD">メモリーカードを入れてください</string>
+    <string name="STRID_FUNC_CONTROLWITHSMARTPHONE_MSG_CONTROLLED">スマートフォンから操作中\n本機を直接操作することはできません</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_GOTO_QRCODE">QRコード表示 終了</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_GOTO_PASS">パスワードで接続 終了</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_GOTO_QRCODE_NEX">QRコード表示 終了</string>
+    <string name="STRID_FUNC_FOOTER_GUIDE_GOTO_PASS_NEX">パスワードで接続 終了</string>
+    <string name="STRID_MSG_WIFI_CONNECT_QRCODE">スマートフォンを操作して\nPlayMemories Mobileで\nQRコードを読み取ってください</string>
+</resources>

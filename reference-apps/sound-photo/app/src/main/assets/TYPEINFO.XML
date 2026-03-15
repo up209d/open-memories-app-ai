@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plist version="1.0">
+	<dict>
+	<key>Id</key><string>APP_SOUNDPHOTO</string>
+	<key>DisplayNameLocalizedStrings</key>
+		<dict>
+		<key>en-US</key><string>Sound Photo</string>
+		<key>ja-JP</key><string>サウンドフォト</string>
+		<key>it-IT</key><string>Sound Photo</string>
+		<key>nl-NL</key><string>Sound Photo</string>
+		<key>sv-SE</key><string>Sound Photo</string>
+		<key>es-ES</key><string>Foto de sonido</string>
+		<key>de-DE</key><string>Sound Photo</string>
+		<key>fr-FR</key><string>Photo avec son</string>
+		<key>pt-BR</key><string>Sound Photo</string>
+		<key>ru-RU</key><string>Sound Photo</string>
+		<key>zh-CN</key><string>声音照片</string>
+		<key>zh-TW</key><string>Sound Photo</string>
+		<key>ko-KR</key><string>Sound Photo</string>
+		<key>pl-PL</key><string>Sound Photo</string>
+		</dict>
+	</dict>
+</plist>
+

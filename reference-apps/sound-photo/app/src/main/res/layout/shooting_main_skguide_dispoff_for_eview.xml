@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:base="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="24px"
+        android:layout_height="60px"
+        android:layout_marginLeft="615px"
+        android:layout_marginTop="30px"
+        android:src="@drawable/s_16_dd_parts_skbutton"/>
+    <ImageView
+        android:layout_width="96px"
+        android:layout_height="48px"
+        android:layout_marginLeft="534px"
+        android:layout_marginTop="36px"
+        android:src="@drawable/p_16_dd_parts_guide_menu"/>
+</RelativeLayout>

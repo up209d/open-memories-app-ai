@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:base="http://schemas.android.com/apk/res/auto" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/pb_parts_deletor_multiple_indexpb_4x3_grid"
+        layout="@layout/pb_parts_deletor_multiple_indexpb_4x3_grid"/>
+    <include
+        android:id="@+id/pb_parts_cmn_header"
+        layout="@layout/pb_parts_cmn_header"/>
+    <include
+        android:id="@+id/pb_parts_cmn_header_contents_info"
+        layout="@layout/pb_parts_cmn_header_contents_info"/>
+    <include
+        android:id="@+id/pb_parts_cmn_indexpb_groupbar_header"
+        layout="@layout/pb_parts_cmn_indexpb_groupbar_header"/>
+    <include
+        android:id="@+id/pb_parts_cmn_bottom_date"
+        layout="@layout/pb_parts_cmn_bottom_date"/>
+    <include
+        android:id="@+id/pb_parts_cmn_deletor_multiple_count"
+        layout="@layout/pb_parts_cmn_deletor_multiple_count"/>
+    <include
+        android:id="@+id/pb_parts_cmn_deletor_multiple_footer_guide_count"
+        layout="@layout/pb_parts_cmn_deletor_multiple_footer_guide_count"/>
+</RelativeLayout>

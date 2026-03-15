@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:base="http://schemas.android.com/apk/res/auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:id="@+id/mute_view_layout"
+        android:layout_width="680px"
+        android:layout_height="480px"/>
+</merge>

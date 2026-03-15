@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1"
+    android:versionName="2.40"
+    package="com.sony.imaging.app.manuallenscompensation">
+    <uses-sdk android:minSdkVersion="10"/>
+    <uses-permission android:name="android.permission.ACCESS_SURFACE_FLINGER"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-feature android:name="android.hardware.camera.flash"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application
+        android:label="@string/STRID_FUNC_OPTICAL_COMPENSATION"
+        android:icon="@drawable/p_16_dd_parts_oc_launchericon"
+        android:name="com.sony.imaging.app.manuallenscompensation.commonUtil.AppContext"
+        android:description="@string/STRID_FUNC_OPTICAL_COMPENSATION_GUIDE">
+        <provider
+            android:name="com.sony.imaging.app.manuallenscompensation.database.LensParameterProvider"
+            android:authorities="com.sony.imaging.app.manuallenscompensation.provider.LensParameterProvider"/>
+        <activity
+            android:theme="@style/Theme.Transparent"
+            android:label="@string/STRID_FUNC_OPTICAL_COMPENSATION_2L"
+            android:name="com.sony.imaging.app.manuallenscompensation.OpticalCompensation"
+            android:launchMode="singleInstance"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
