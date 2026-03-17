@@ -1,7 +1,0 @@
-[
-{
-  "directory": "C:/Users/iMac-27-15/Desktop/sony-apps/cube-lut-app/app/.cxx/cmake/debug/armeabi-v7a",
-  "command": "C:\\Users\\iMac-27-15\\AppData\\Local\\Android\\Sdk\\ndk\\21.4.7075529\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=armv7-none-linux-androideabi16 --gcc-toolchain=C:/Users/iMac-27-15/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/iMac-27-15/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dlut_processor_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\lut-processor.dir\\lut-processor.cpp.o -c C:\\Users\\iMac-27-15\\Desktop\\sony-apps\\cube-lut-app\\app\\src\\main\\cpp\\lut-processor.cpp",
-  "file": "C:\\Users\\iMac-27-15\\Desktop\\sony-apps\\cube-lut-app\\app\\src\\main\\cpp\\lut-processor.cpp"
-}
-]

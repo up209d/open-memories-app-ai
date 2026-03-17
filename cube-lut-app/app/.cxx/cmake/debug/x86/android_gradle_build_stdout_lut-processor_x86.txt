@@ -1,3 +1,0 @@
-ninja: Entering directory `C:\Users\iMac-27-15\Desktop\sony-apps\cube-lut-app\app\.cxx\cmake\debug\x86'
-[1/2] Building CXX object CMakeFiles/lut-processor.dir/lut-processor.cpp.o
-[2/2] Linking CXX shared library C:\Users\iMac-27-15\Desktop\sony-apps\cube-lut-app\app\build\intermediates\cmake\debug\obj\x86\liblut-processor.so
