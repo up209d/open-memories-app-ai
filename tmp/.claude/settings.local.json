@@ -1,8 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Read(//c/Users/iMac-27-15/.claude/sessions/**)",
-      "Read(//c/Users/iMac-27-15/.claude/projects/**)"
-    ]
-  }
-}

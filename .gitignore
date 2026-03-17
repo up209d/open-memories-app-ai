@@ -7,5 +7,6 @@ build
 *.iml
 **/*.iml
 .claude
+**/.claude
 .cxx
 **/.cxx
