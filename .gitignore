@@ -8,3 +8,4 @@ build
 **/*.iml
 .claude
 .cxx
+**/.cxx
