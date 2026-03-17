@@ -1,0 +1,7 @@
+Executable : C:\Users\iMac-27-15\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe
+arguments : 
+-C
+C:\Users\iMac-27-15\Desktop\sony-apps\cube-lut-app\app\.cxx\cmake\debug\x86
+lut-processor
+jvmArgs : 
+

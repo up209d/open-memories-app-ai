@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CC000000"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_close">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CUBE LUT HELP"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#CCCCCC"
+                android:textSize="11sp"
+                android:lineSpacingExtra="4dp"
+                android:text="MENU     - Open LUT selection\nSHUTTER  - Capture with LUT applied\nFN       - Toggle Keep RAW (ON/OFF)\nAEL      - Toggle Preview (ON/OFF)\nDIAL     - Quick-cycle through LUTs\nC1       - This help screen\nDELETE   - Back / Exit\n\nTouch: Tap overlays to toggle settings\n       Swipe L/R to cycle LUTs\n       Tap preview to autofocus\n\nLUTs folder: /sdcard/luts/\nPreview JPG: 128x128, same filename\n\nLong-press C1: Toggle debug overlay\nLogs saved to: /sdcard/UPCubeLutApp/logs" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/btn_close"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:text="OK - Close"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:background="#99333333"
+        android:gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginTop="8dp" />
+
+</RelativeLayout>

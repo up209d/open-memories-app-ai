@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <!-- Full-screen camera preview -->
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Top bar: LUT name + toggles -->
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="4dp">
+
+        <!-- LUT name (tappable to open menu) -->
+        <TextView
+            android:id="@+id/lut_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="LUT: None"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:background="#99000000"
+            android:padding="6dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:minHeight="48dp"
+            android:gravity="center_vertical" />
+
+        <!-- Preview toggle -->
+        <TextView
+            android:id="@+id/prv_toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="PRV"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:background="#99000000"
+            android:padding="6dp"
+            android:layout_marginLeft="4dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center" />
+
+        <!-- RAW toggle -->
+        <TextView
+            android:id="@+id/raw_toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="RAW"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:background="#99000000"
+            android:padding="6dp"
+            android:layout_marginLeft="4dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <!-- Bottom bar: prev/next LUT + help + queue status -->
+    <RelativeLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="4dp">
+
+        <!-- Previous LUT -->
+        <TextView
+            android:id="@+id/prev_lut"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:text="&lt; prev"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:background="#99000000"
+            android:padding="6dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center" />
+
+        <!-- Next LUT -->
+        <TextView
+            android:id="@+id/next_lut"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:text="next &gt;"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:background="#99000000"
+            android:padding="6dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center" />
+
+        <!-- Help button -->
+        <TextView
+            android:id="@+id/help_btn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_below="@id/prev_lut"
+            android:layout_alignParentLeft="true"
+            android:text="?"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:background="#99000000"
+            android:layout_marginTop="4dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center" />
+
+        <!-- Queue status -->
+        <TextView
+            android:id="@+id/queue_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/next_lut"
+            android:layout_alignParentRight="true"
+            android:textColor="#FFFFFF"
+            android:textSize="11sp"
+            android:background="#99000000"
+            android:padding="4dp"
+            android:layout_marginTop="4dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <!-- Debug overlay (hidden by default, toggle via long-press C1) -->
+    <TextView
+        android:id="@+id/debug_overlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="#00FF00"
+        android:textSize="10sp"
+        android:background="#CC000000"
+        android:padding="8dp"
+        android:visibility="gone"
+        android:fontFamily="monospace" />
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+# ninja log v5
+1	1375	795249542	CMakeFiles/lut-processor.dir/lut-processor.cpp.o	ca0bcdc481699812
+1376	1471	795249542	C:/Users/iMac-27-15/Desktop/sony-apps/cube-lut-app/app/build/intermediates/cmake/debug/obj/armeabi-v7a/liblut-processor.so	c9a49732ee0ad2b1
+0	10	0	clean	440f0bcfbb9d8fc1
+3	230	795264758	CMakeFiles/lut-processor.dir/lut-processor.cpp.o	ca0bcdc481699812
+230	569	795264758	C:/Users/iMac-27-15/Desktop/sony-apps/cube-lut-app/app/build/intermediates/cmake/debug/obj/armeabi-v7a/liblut-processor.so	c9a49732ee0ad2b1
+0	29	0	clean	440f0bcfbb9d8fc1
+2	385	795281017	CMakeFiles/lut-processor.dir/lut-processor.cpp.o	ca0bcdc481699812
+385	517	795281017	C:/Users/iMac-27-15/Desktop/sony-apps/cube-lut-app/app/build/intermediates/cmake/debug/obj/armeabi-v7a/liblut-processor.so	c9a49732ee0ad2b1

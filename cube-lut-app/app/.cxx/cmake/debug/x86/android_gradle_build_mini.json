@@ -1,0 +1,33 @@
+{
+  "buildFiles": [
+    "C:\\Users\\iMac-27-15\\Desktop\\sony-apps\\cube-lut-app\\app\\src\\main\\cpp\\CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "C:\\Users\\iMac-27-15\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+      "-C",
+      "C:\\Users\\iMac-27-15\\Desktop\\sony-apps\\cube-lut-app\\app\\.cxx\\cmake\\debug\\x86",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "C:\\Users\\iMac-27-15\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+    "-C",
+    "C:\\Users\\iMac-27-15\\Desktop\\sony-apps\\cube-lut-app\\app\\.cxx\\cmake\\debug\\x86",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "lut-processor-Debug-x86": {
+      "artifactName": "lut-processor",
+      "buildCommandComponents": [
+        "C:\\Users\\iMac-27-15\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+        "-C",
+        "C:\\Users\\iMac-27-15\\Desktop\\sony-apps\\cube-lut-app\\app\\.cxx\\cmake\\debug\\x86",
+        "lut-processor"
+      ],
+      "abi": "x86",
+      "output": "C:\\Users\\iMac-27-15\\Desktop\\sony-apps\\cube-lut-app\\app\\build\\intermediates\\cmake\\debug\\obj\\x86\\liblut-processor.so",
+      "runtimeFiles": []
+    }
+  }
+}

@@ -1,0 +1,53 @@
+apply plugin: 'com.android.application'
+
+android {
+    //noinspection GradleDependency
+    compileSdkVersion 16
+    buildToolsVersion '30.0.2'
+    ndkVersion '21.4.7075529'
+
+    defaultConfig {
+        applicationId "com.github.up209d.cubelut"
+        minSdkVersion 10
+        //noinspection EditedTargetSdkVersion,ExpiredTargetSdkVersion
+        targetSdkVersion 10
+        versionCode 1
+        versionName "1.0"
+        ndk {
+            //noinspection ChromeOsAbiSupport
+            abiFilters 'armeabi-v7a', 'x86'
+        }
+    }
+
+    externalNativeBuild {
+        cmake {
+            path 'src/main/cpp/CMakeLists.txt'
+            version '3.10.2'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lintOptions {
+        checkReleaseBuilds = false
+        abortOnError = false
+        tasks.lint.enabled = false
+    }
+}
+
+android.applicationVariants.configureEach { variant ->
+    variant.outputs.each { output ->
+        def apkName = "UPCubeLutApp-${output.baseName}-${variant.versionName}.apk"
+        output.outputFileName = apkName
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.github.ma1co.OpenMemories-Framework:framework:-SNAPSHOT'
+    compileOnly 'com.github.ma1co.OpenMemories-Framework:stubs:-SNAPSHOT'
+    //implementation 'org.apache.commons:commons-imaging:1.0-alpha2' // DISABLED: may crash Android 4.x on camera
+}

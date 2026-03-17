@@ -44,6 +44,10 @@
 - **sysutil.didep**: Settings, Status, Temperature, Bluetooth, Gps, Gpelibrary (framebuffer: ABGR8888/RGBA4444)
 - **sysutil.TimeUtil**: Camera time. getCurrentCalendar() → PlainCalendar, getCurrentTimeZone() → PlainTimeZone
 
+## Active Projects
+- `./cube-lut-app-plan.md` - Full implementation plan for Cube LUT color grading app
+- `./cube-lut-app/` - App directory (once implementation starts)
+
 ## Critical Patterns
 - **Dual-device**: DeviceInfo.getInstance().isCamera() → CameraXxx or fallback impl
 - **Image pipeline**: RawData → DefaultDevelopFilter → OptimizedImage → imagefilters → JpegExporter/storeImage

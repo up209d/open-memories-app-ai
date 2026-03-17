@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">UPCubeLutApp</string>
+    <string name="title_lut_browser">LUT Browser</string>
+    <string name="title_help">Help</string>
+</resources>
