@@ -750,10 +750,10 @@ public class CubeLutApp extends BaseActivity implements SurfaceHolder.Callback {
 
         // Toggle states
         prvToggle.setText("PRV");
-        prvToggle.setAlpha(previewOn ? 1.0f : 0.5f);
+        prvToggle.setTextColor(previewOn ? 0xFFFFFFFF : 0x80FFFFFF);
 
         rawToggle.setText("RAW");
-        rawToggle.setAlpha(keepRaw ? 1.0f : 0.5f);
+        rawToggle.setTextColor(keepRaw ? 0xFFFFFFFF : 0x80FFFFFF);
 
         // Nav buttons
         boolean hasLuts = lutEntries != null && !lutEntries.isEmpty();

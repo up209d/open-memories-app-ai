@@ -147,6 +147,6 @@
         android:background="#CC000000"
         android:padding="8dp"
         android:visibility="gone"
-        android:fontFamily="monospace" />
+        android:typeface="monospace" />
 
 </RelativeLayout>
